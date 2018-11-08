@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="hibernate-jpa-2.1-api-1.0.0.Final-javadoc">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/Downloads/Setups/jar dependencies/jpa/hibernate-jpa-2.1-api-1.0.0.Final.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/Downloads/Setups/jar dependencies/jpa/hibernate-jpa-2.1-api-1.0.0.Final-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/Downloads/Setups/jar dependencies/jpa/hibernate-jpa-2.1-api-1.0.0.Final-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

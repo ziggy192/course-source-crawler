@@ -1,0 +1,26 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="www.Category.com"
+           xmlns="www.Category.com"
+           elementFormDefault="qualified"
+>
+
+
+    <xs:simpleType name="NonEmptyString">
+        <xs:restriction base="xs:token">
+            <xs:minLength value="1"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:element name="Category">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="ID" type="xs:nonNegativeInteger" minOccurs="0"/>
+                <xs:element name="Name" type="NonEmptyString" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+
+
+</xs:schema>
+

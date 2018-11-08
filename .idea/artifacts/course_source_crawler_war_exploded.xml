@@ -1,0 +1,21 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" build-on-make="true" name="course-source-crawler:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/course_source_crawler_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="course-source-crawler/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="course-source-crawler" />
+          <element id="jpa-descriptors" facet="course-source-crawler/jpa/JPA" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="hibernate-jpa-2.1-api-1.0.0.Final-javadoc" />
+          <element id="library" level="application" name="HIbernateFiles" />
+          <element id="library" level="application" name="mysql-connector-java-8.0.13" />
+          <element id="library" level="project" name="org.apache.commons:commons-text:1.6" />
+          <element id="library" level="application" name="taglibs-standard-impl-1.2.5" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

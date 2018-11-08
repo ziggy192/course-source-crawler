@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Course xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns="www.Course.com"
+        xsi:schemaLocation="www.Course.com Course.xsd">
+
+    <Id>1</Id>
+    <Name>Luyện thi đại học</Name>
+    <Author>Nguyễn Trọng Hiển              </Author>
+    <AuthorDescription >
+        <div xmlns="http://www.w3.org/1999/xhtml" class="crawled">
+                <ul class='crawled'>
+                    <li></li>
+                </ul>
+        </div>
+    </AuthorDescription>
+    <DomainId>1</DomainId>
+    <CategoryId>1</CategoryId>
+    <OverviewDescription>des</OverviewDescription>
+    <AuthorImageURL>https://edumall.vn/course/khoa-hoc-3d-kim-thiet-ke-"ngan-hoa-khoe-sac"</AuthorImageURL>
+    <Rating>4.9</Rating>
+    <RatingNumber>123123</RatingNumber>
+    <Cost>123123</Cost>
+    <Duration>123123</Duration>
+    <Syllabus>
+        <div xmlns="http://www.w3.org/1999/xhtml">
+            <ul>
+                <li>Item1</li>
+                <li>Item2</li>
+                <li>Item3</li>
+                <li>Item4</li>
+            </ul>
+        </div>
+    </Syllabus>
+    <PreviewVideoURL>adfasdf</PreviewVideoURL>
+    <ImageURL>asdfasdf.com</ImageURL>
+    <SourceURL>afasdf.com</SourceURL>
+    <Hash>1231231313</Hash>
+</Course>
