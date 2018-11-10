@@ -1,11 +1,15 @@
 package dao;
 
+import listerner.MainListener;
 import other.DummyDatabase;
 import entity.CourseEntity;
+import sun.applet.Main;
 import util.DBUtils;
 import org.xml.sax.InputSource;
 import org.xml.sax.SAXException;
 
+import javax.inject.Inject;
+import javax.servlet.ServletContext;
 import javax.xml.XMLConstants;
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
@@ -20,14 +24,19 @@ import java.io.IOException;
 import java.util.List;
 import java.util.logging.Logger;
 
-public class CourseDAO extends BaseDAO<CourseEntity,Integer> {
+public class CourseDAO extends BaseDAO<CourseEntity, Integer> {
 	private static Logger logger = Logger.getLogger(CourseDAO.class.toString());
+
+
 
 	private static CourseDAO instance;
 	private static Object LOCK = new Object();
+
 	public CourseDAO() {
 
 	}
+
+
 	public static CourseDAO getInstance() {
 		synchronized (LOCK) {
 			if (instance == null) {
@@ -70,7 +79,17 @@ public class CourseDAO extends BaseDAO<CourseEntity,Integer> {
 			ByteArrayInputStream byteInputStream = new ByteArrayInputStream(byteOutputStream.toByteArray());
 
 			SchemaFactory schemaFactory = SchemaFactory.newInstance(XMLConstants.W3C_XML_SCHEMA_NS_URI);
-			File courseXSDFile = new File(DummyDatabase.class.getClassLoader().getResource("Course.xsd").getFile());
+
+			File courseXSDFile;
+			if (DummyDatabase.getContext() != null) {
+				String realPath = DummyDatabase.getContext().getRealPath("/Course.xsd");
+
+				courseXSDFile = new File(realPath);
+
+			} else {
+
+				courseXSDFile = new File("web/Course.xsd");
+			}
 
 			Schema schema = schemaFactory.newSchema(courseXSDFile);
 			logger.info(courseEntity.toString());
@@ -83,8 +102,6 @@ public class CourseDAO extends BaseDAO<CourseEntity,Integer> {
 
 			//save to database
 //			this.persist(courseEntity);
-
-
 
 
 		} catch (JAXBException e) {

@@ -92,7 +92,7 @@ public class CourseEntity {
 	private String previewVideoUrl;
 	private String imageUrl;
 	private String sourceUrl;
-//	private int hash;
+	private int hash;
 
 	@Id
 	@Column(name = "Id", nullable = false)
@@ -298,12 +298,11 @@ public class CourseEntity {
 	@Column(name = "Hash", nullable = true)
 	@XmlElement(name = "Hash", namespace = "www.Course.com", required = false)
 	public int getHash() {
-		return this.hashCode();
+		return hash;
 	}
 
 	public void setHash(int hash) {
-
-		//do nothing
+		this.hash = hash;
 	}
 
 	@Override
@@ -329,10 +328,6 @@ public class CourseEntity {
 				Objects.equals(sourceUrl, that.sourceUrl) ;
 	}
 
-	@Override
-	public int hashCode() {
-		return Objects.hash(id, name, author, authorDescription, domainId, categoryId, overviewDescription, authorImageUrl, rating, ratingNumber, cost, duration, syllabus, previewVideoUrl, imageUrl, sourceUrl);
-	}
 
 	@Override
 	public String toString() {
@@ -356,7 +351,7 @@ public class CourseEntity {
 				'}';
 	}
 
-	private int hashCourse() {
+	public int hashCourse() {
 		String combine="";
 		if (name != null && author != null) {
 			combine = StringUtils.toRawString(name) + StringUtils.toRawString(author);

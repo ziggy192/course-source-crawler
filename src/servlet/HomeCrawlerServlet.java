@@ -4,6 +4,7 @@ import constant.UrlConstant;
 import crawler.CrawlingThreadManager;
 import crawler.EdumallMainCrawler;
 import crawler.UnicaMainCrawler;
+import test.EdumallTest;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -11,12 +12,13 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.logging.Logger;
 
 @WebServlet(name = "HomeCrawlerServlet"
-		,urlPatterns = {"/","/home"}
+		,urlPatterns = {"/"}
 		,loadOnStartup = 1)
 public class HomeCrawlerServlet extends HttpServlet {
 	public static Logger logger = Logger.getLogger(HomeCrawlerServlet.class.toString());
@@ -36,6 +38,14 @@ public class HomeCrawlerServlet extends HttpServlet {
 		String btAction = request.getParameter("btAction");
 		logger.info("btAction=" + btAction);
 
+		String realPath = request.getServletContext().getRealPath("/Course.xsd");
+		File file = new File(realPath);
+		logger.info("realPath=" + file.getAbsolutePath());
+
+		EdumallTest.testGetCourseDetail();
+
+//		File file = new File(this.getClass().getClassLoader().getResource("Course.xsd").getFile());
+//		logger.info("filePath=" + file.getAbsolutePath());
 		String message = "";
 
 		if (btAction == null) {

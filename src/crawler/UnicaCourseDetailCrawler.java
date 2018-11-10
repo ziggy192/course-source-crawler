@@ -426,12 +426,12 @@ public class UnicaCourseDetailCrawler implements Runnable {
 				//if no exception then save to data base
 
 				logger.info("FinishAllAttributes|" + courseEntity.toString());
-				//todo set hashing
+				// set hashing
+				courseEntity.setHash(courseEntity.hashCourse());
 
 
-//				courseEntity.setHash(StringUtils.hashCourse(courseEntity));
 
-				//todo validate course and save to db
+				// validate course and save to db
 				CourseDAO.getInstance().validateCourseAndSaveToDB(courseEntity);
 //				other.DummyDatabase.validateCourseAndSaveToDB(courseEntity);
 

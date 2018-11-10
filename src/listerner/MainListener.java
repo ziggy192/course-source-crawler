@@ -2,8 +2,11 @@ package listerner;
 
 import dao.CategoryDAO;
 import entity.CategoryMapping;
+import other.DummyDatabase;
 import util.DBUtils;
 
+import javax.annotation.ManagedBean;
+import javax.servlet.ServletContext;
 import javax.servlet.ServletContextEvent;
 import javax.servlet.ServletContextListener;
 import javax.servlet.annotation.WebListener;
@@ -19,6 +22,7 @@ public class MainListener implements ServletContextListener,
 		HttpSessionListener, HttpSessionAttributeListener {
 	public static Logger logger = Logger.getLogger(MainListener.class.toString());
 
+
 	// Public constructor is required by servlet spec
 	public MainListener() {
 	}
@@ -27,6 +31,11 @@ public class MainListener implements ServletContextListener,
 	// ServletContextListener implementation
 	// -------------------------------------------------------
 	public void contextInitialized(ServletContextEvent sce) {
+
+		// TODO: 11/10/18 future: get context directly from this class
+		// separate only because cannot load WebListenner when run JavaApplication
+
+		DummyDatabase.setContext(sce.getServletContext());
 
 		//turn off log for hibernate
 		logger.info("CrawlerServletListener: Context init");
@@ -45,6 +54,9 @@ public class MainListener implements ServletContextListener,
 
 		logger.info("CrawlerServletListener: Context destroy");
 		DBUtils.closeEntityFactory();
+
+
+		// TODO: 11/10/18  	set context = null here
 	}
 
 	// -------------------------------------------------------

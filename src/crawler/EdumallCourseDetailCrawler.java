@@ -474,7 +474,7 @@ public class EdumallCourseDetailCrawler implements Runnable {
 										syllabus += content;
 
 									}
-									if (ParserUtils.checkAttributeContainsKey(startElement, "class", "lecturetitle")) {
+									if (ParserUtils.checkAttributeContainsKey(startElement, "class", "lecture-title")) {
 										String lectureName = ParserUtils.getContentAndJumpToEndElement(staxReader, startElement);
 										stackCount--;
 										lectureNameList.add(lectureName);
@@ -556,12 +556,18 @@ public class EdumallCourseDetailCrawler implements Runnable {
 				courseEntity.setOverviewDescription(overviewDescription);
 
 
+
+				//set hash
+				courseEntity.setHash(courseEntity.hashCourse());
+
 				//if no exception then save to data base
 
 				//todo save to db here
 				//get name, image, url from holder
 				//get the rest except tag from above
 				//get categoryid
+
+
 
 				CourseDAO.getInstance().validateCourseAndSaveToDB(courseEntity);
 //				other.DummyDatabase.validateCourseAndSaveToDB(courseEntity);

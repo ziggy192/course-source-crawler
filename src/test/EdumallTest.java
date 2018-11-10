@@ -31,17 +31,8 @@ public class EdumallTest {
 //		testInsertDomain(constant.AppConstants.EDUMALL_DOMAIN_NAME, constant.AppConstants.EDUMALL_DOMAIN);
 //		testValidate();
 
-//			testGetCourseDetail();
+		testGetCourseDetail();
 
-//		testJDBCConnection();
-//		testValidate();
-
-//		testGetCourseDetail();
-//		testGetDomainByName(constant.AppConstants.EDUMALL_DOMAIN_NAME);
-//		testGetCourseDetail();
-
-//		testEdumall();
-		testEdumallGetCategory();
 	}
 
 
@@ -88,17 +79,17 @@ public class EdumallTest {
 
 	}
 
-	private static void testGetCourseDetail() {
+	public static void testGetCourseDetail() {
 
-		CourseUrlHolder dummyCourseUrlHolder = new CourseUrlHolder("Tạo slide trình bày ấn tượng với Prezi, Google trình chiếu và Power Point"
-				, "d1nzpkv5wwh1xf.cloudfront.net/640/k-5768aeb1047c995f75fdbf6b/20180626-/14-luu-y-giup-ban-thuyet-trin.png"
-				, "edumall.vn/course/tao-slide-trinh-bay-an-tuong-voi-prezi-google-trinh-chieu-va-power-point");
+		CourseUrlHolder dummyCourseUrlHolder = new CourseUrlHolder("Hướng dẫn chi tiết giảm cân an toàn tại nhà"
+				, "https://d1nzpkv5wwh1xf.cloudfront.net/640/k-57b67d6e60af25054a055b20/20180619-a301906/luyen-tap-giam-can.jpg"
+				, "edumall.vn/course/huong-dan-chi-tiet-giam-can-an-toan-tai-nha");
 //				, "https://edumall.vn/course/dao-tao-ky-thuat-truong-cửa-hang-gas");
 //				, "https://edumall.vn/course/tao-slide-trinh-bay-an-tuong-voi-prezi-google-trinh-chieu-va-power-point");
 
 		EdumallMainCrawler.domainId = 3;
 
-		new Thread(new EdumallCourseDetailCrawler(dummyCourseUrlHolder, 4)).start();
+		new Thread(new EdumallCourseDetailCrawler(dummyCourseUrlHolder, 15)).start();
 
 //		getCourseDetail(dummyCourseUrlHolder);
 
