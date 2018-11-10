@@ -1,9 +1,12 @@
 package crawler;
 
+import config.CategoryMapper;
+import config.ConfigManager;
+import config.model.SignType;
 import constant.AppConstants;
 import dao.CategoryDAO;
 import dao.DomainDAO;
-import entity.CategoryMapping;
+import config.model.CategoryNameType;
 import entity.DomainEntity;
 import url_holder.CategoryUrlHolder;
 import util.ParserUtils;
@@ -28,10 +31,15 @@ public class UnicaMainCrawler implements Runnable {
 	public List<CategoryUrlHolder> getCategories() {
 		List<CategoryUrlHolder> categories = new ArrayList<>();
 
-		String uri = AppConstants.UNICA_DOMAIN;
+		String uri = ConfigManager.getInstance().getConfigModel().getUnica().getDomainUrl();
 
-		String beginSign = "col-lg-3 col-md-3 col-sm-4 cate-md";
-		String endSign = "col-lg-5 col-md-5 col-sm-4 cate-sm";
+		SignType categoryListSign = ConfigManager.getInstance().getConfigModel().getUnica().getCategoryListSign();
+
+		String beginSign = categoryListSign.getBeginSign();
+		String endSign = categoryListSign.getEndSign();
+
+//		String beginSign = "col-lg-3 col-md-3 col-sm-4 cate-md";
+//		String endSign = "col-lg-5 col-md-5 col-sm-4 cate-sm";
 
 		String htmlContent = ParserUtils.parseHTML(uri, beginSign, endSign);
 		String newContent = ParserUtils.addMissingTag(htmlContent);
@@ -75,7 +83,7 @@ public class UnicaMainCrawler implements Runnable {
 							//exclude the All Category tag
 
 							String categoryURL = href;
-							categoryURL = AppConstants.UNICA_DOMAIN + categoryURL;
+							categoryURL = ConfigManager.getInstance().getConfigModel().getUnica().getDomainUrl() + categoryURL;
 
 							String categoryName = titleAtt;
 
@@ -110,7 +118,7 @@ public class UnicaMainCrawler implements Runnable {
 //				other.DummyDatabase.insertDomain(constant.AppConstants.EDUMALL_DOMAIN_NAME, constant.AppConstants.EDUMALL_DOMAIN);
 				DomainEntity domainEntity = new DomainEntity();
 				domainEntity.setName(AppConstants.UNICA_DOMAIN_NAME);
-				domainEntity.setDomainUrl(AppConstants.UNICA_DOMAIN);
+				domainEntity.setDomainUrl(ConfigManager.getInstance().getConfigModel().getUnica().getDomainUrl());
 				DomainDAO.getInstance().persist(domainEntity);
 			}
 			domainId = DomainDAO.getInstance().getDomainByName(AppConstants.UNICA_DOMAIN_NAME).getId();
@@ -119,11 +127,8 @@ public class UnicaMainCrawler implements Runnable {
 			List<CategoryUrlHolder> categories = getCategories();
 
 			//check issuspend
-			synchronized (CrawlingThreadManager.getInstance()) {
-				while (CrawlingThreadManager.getInstance().isSuspended()) {
-					CrawlingThreadManager.getInstance().wait();
-				}
-			}
+			CrawlingThreadManager.getInstance().checkSuspendStatus();
+
 
 
 			//domain name and url co truoc trong database
@@ -133,10 +138,10 @@ public class UnicaMainCrawler implements Runnable {
 				//map edumall category name -> my general category name -> categoryId
 				String edumallCategoryName = categoryUrlHolder.getCategoryName();
 
-				CategoryMapping categoryMapping = CategoryMapping.mapUnica(edumallCategoryName);
+				CategoryNameType categoryNameType = CategoryMapper.getInstance().mapUnica(edumallCategoryName);
 
 				//get categoryId from database
-				int categoryId = CategoryDAO.getInstance().getCategoryId(categoryMapping);
+				int categoryId = CategoryDAO.getInstance().getCategoryId(categoryNameType);
 
 
 				Thread unicalEachCategoryCrawler = new Thread(new UnicaEachCategoryCrawler(categoryId, categoryUrlHolder.getCategoryURL()));
@@ -148,11 +153,8 @@ public class UnicaMainCrawler implements Runnable {
 
 
 				//check is suspend
-				synchronized (CrawlingThreadManager.getInstance()) {
-					while (CrawlingThreadManager.getInstance().isSuspended()) {
-						CrawlingThreadManager.getInstance().wait();
-					}
-				}
+				CrawlingThreadManager.getInstance().checkSuspendStatus();
+
 			}
 		} catch (Exception e) {
 			e.printStackTrace();

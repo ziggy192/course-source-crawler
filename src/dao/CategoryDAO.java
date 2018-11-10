@@ -1,7 +1,7 @@
 package dao;
 
 import entity.CategoryEntity;
-import entity.CategoryMapping;
+import config.model.CategoryNameType;
 import util.DBUtils;
 
 import java.util.List;
@@ -15,9 +15,9 @@ public class CategoryDAO extends BaseDAO<CategoryEntity, Integer> {
 	}
 
 
-	public  int getCategoryId(CategoryMapping categoryMapping) {
+	public  int getCategoryId(CategoryNameType categoryNameType) {
 
-		String categoryName = categoryMapping.getValue();
+		String categoryName = categoryNameType.getValue();
 		CategoryEntity category = getCategoryByName(categoryName);
 		return category.getId();
 

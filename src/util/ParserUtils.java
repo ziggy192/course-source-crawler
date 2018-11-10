@@ -393,7 +393,7 @@ public class ParserUtils {
 		final String xsdFilePath = "";
 		try {
 			JAXBContext context = JAXBContext.newInstance(objectToSave.getClass());
-			SchemaFactory schemaFactory = SchemaFactory.newInstance(XMLConstants.W3C_XML_SCHEMA_INSTANCE_NS_URI);
+			SchemaFactory schemaFactory = SchemaFactory.newInstance(XMLConstants.W3C_XML_SCHEMA_NS_URI);
 			Schema schema = schemaFactory.newSchema(new File(xsdFilePath));
 			Validator validator = schema.newValidator();
 			// todo setErrorHandler here
@@ -707,33 +707,4 @@ public class ParserUtils {
 	}
 
 
-	public static void saveToHtmlFileForDebugging(String fileName, String content) {
-		String resourcePath = AppConstants.DEBUGGIN_RESOURCE_PATH;
-
-		File file = new File(resourcePath + fileName);
-		System.out.println("filePath"+file.getAbsolutePath());
-
-		PrintWriter writer = null;
-		FileWriter fileWriter = null;
-		try {
-			fileWriter = new FileWriter(file);
-			writer = new PrintWriter(fileWriter);
-			writer.write(content);
-			writer.flush();
-		} catch (IOException e) {
-			e.printStackTrace();
-		}finally {
-			try {
-				if (fileWriter != null) {
-					fileWriter.close();
-				}
-				if (writer != null) {
-					writer.close();
-				}
-			} catch (IOException e) {
-				e.printStackTrace();
-			}
-		}
-
-	}
 }

@@ -3,9 +3,12 @@ package crawler;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
+import java.util.logging.Logger;
 
 public class CrawlingThreadManager {
+	private static final Logger logger = Logger.getLogger(CrawlingThreadManager.class.toString());
 	public static int THREAD_LIMIT = 10;
+
 
 	private static final Object LOCK = new Object();
 	private static CrawlingThreadManager instance;
@@ -50,7 +53,7 @@ public class CrawlingThreadManager {
 
 	public void suspendThread() {
 		setSuspended(true);
-		System.out.println("Suspended all threads");
+		logger.info("Suspended all threads");
 	}
 
 
@@ -59,8 +62,17 @@ public class CrawlingThreadManager {
 	public synchronized void resumeThread() {
 		setSuspended(false);
 		notifyAll();
-		System.out.println("Resume all threads");
+		logger.info("Resume all threads");
 	}
 
+
+	public synchronized void checkSuspendStatus() throws InterruptedException {
+		while (isSuspended()) {
+			logger.info("Suspend this thread");
+			CrawlingThreadManager.getInstance().wait();
+			logger.info("Resume this thread");
+
+		}
+	}
 
 }

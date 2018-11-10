@@ -10,8 +10,14 @@ public class UnicaTest {
 //		testGetCourseForEachCategoryPage();
 //		testGetCourseDetail();
 //testRemoveComments();
+//		testUnicaGetCategory();
+		testGetCourseDetail();
+		testGetCourseForEachCategoryPage();
 		testUnicaGetCategory();
+		testUnicaMain();
+
 	}
+
 
 	public static void testUnicaGetCategory() {
 		UnicaMainCrawler crawler = new UnicaMainCrawler();

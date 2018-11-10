@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ParserConfig xmlns="www.ParserConfig.com">
+    <Edumall>
+        <DomainUrl>edumall.vn</DomainUrl>
+        <CategoryMappingList>
+            <CategoryMapping source="Luyện thi" to="TestPrep"/>
+            <CategoryMapping source="Multimedia" to="Multimedia"/>
+            <CategoryMapping source="Thiết kế" to="Design"/>
+            <CategoryMapping source="Phát triển cá nhân" to="PersonalDevelopment"/>
+            <CategoryMapping source="Tin học văn phòng" to="OfficeProductivity"/>
+            <CategoryMapping source="Âm nhạc" to="Music"/>
+            <CategoryMapping source="Marketing" to="Marketing"/>
+            <CategoryMapping source="Life style" to="LifeStyle"/>
+            <CategoryMapping source="Ngoại ngữ" to="Language"/>
+            <CategoryMapping source="Công nghệ thông tin" to="IT"/>
+            <CategoryMapping source="Thể thao và sức khỏe" to="HealthAndFitness"/>
+            <CategoryMapping source="Kinh doanh khởi nghiệp" to="Business"/>
+            <CategoryMapping source="Học thuật" to="Academics"/>
+            <CategoryMapping source="Nuôi dạy con" to="Kids"/>
+            <CategoryMapping source="Phong thủy/Nhân tướng học" to="Other"/>
+        </CategoryMappingList>
+        <PaginationSign>
+            <BeginSign><![CDATA[class='list-paginate']]></BeginSign>
+            <EndSign><![CDATA[form class='form-paginate form-inline']]></EndSign>
+        </PaginationSign>
+        <CategoryListSign>
+            <BeginSign><![CDATA[col-xs col-sm col-md col-lg main-header-v4--content-c-header-left]]></BeginSign>
+            <EndSign><![CDATA[col-xs col-sm col-md col-lg main-header-v4--content-c-header-search]]></EndSign>
+        </CategoryListSign>
+        <CourseListSign>
+            <BeginSign><![CDATA[section class='area-display-courses']]></BeginSign>
+            <EndSign><![CDATA[</section>]]></EndSign>
+        </CourseListSign>
+        <CourseDetailSign>
+            <BeginSign><![CDATA[<div class='wrapper']]></BeginSign>
+            <EndSign><![CDATA[<section class='section_rating]]></EndSign>
+        </CourseDetailSign>
+
+    </Edumall>
+    <Unica>
+        <DomainUrl>unica.vn</DomainUrl>
+        <CategoryMappingList>
+
+            <CategoryMapping source="Nhiếp ảnh, dựng phim" to="Multimedia"/>
+            <CategoryMapping source="Học Thiết kế" to="Design"/>
+            <CategoryMapping source="Khóa học Phát triển cá nhân" to="PersonalDevelopment"/>
+            <CategoryMapping source="Tin học văn phòng" to="OfficeProductivity"/>
+            <CategoryMapping source="Âm nhạc" to="Music"/>
+            <CategoryMapping source="Khóa học  Marketing" to="Marketing"/>
+            <CategoryMapping source="Phong cách sống" to="LifeStyle"/>
+            <CategoryMapping source="Khóa học Tiếng Anh, Tiếng Nhật, Tiếng Hàn, Tiếng Trung Giao Tiếp" to="Language"/>
+            <CategoryMapping source="Khóa học Công nghệ thông tin" to="IT"/>
+            <CategoryMapping source="Khóa học Sức khỏe - Giới tính" to="HealthAndFitness"/>
+            <CategoryMapping source="Sale, bán hàng" to="Business"/>
+            <CategoryMapping source="Khóa học Kinh doanh &amp; Khởi nghiệp" to="Business"/>
+            <CategoryMapping source="Khóa học Nuôi dạy con" to="Kids"/>
+        </CategoryMappingList>
+        <PaginationSign>
+            <BeginSign><![CDATA[<ul class="pagination"]]></BeginSign>
+            <EndSign><![CDATA[<li class="next"]]></EndSign>
+        </PaginationSign>
+        <CategoryListSign>
+            <BeginSign><![CDATA[col-lg-3 col-md-3 col-sm-4 cate-md]]></BeginSign>
+            <EndSign><![CDATA[col-lg-5 col-md-5 col-sm-4 cate-sm]]></EndSign>
+        </CategoryListSign>
+        <CourseListSign>
+            <BeginSign><![CDATA[<div class="u-all-course"]]></BeginSign>
+            <EndSign><![CDATA[<div class="u-number-page">]]></EndSign>
+        </CourseListSign>
+        <CourseDetailSign>
+            <BeginSign><![CDATA[<main]]></BeginSign>
+
+            <EndSign><![CDATA[<input type="hidden" id="user_id"]]></EndSign>
+        </CourseDetailSign>
+    </Unica>
+</ParserConfig>

@@ -1,5 +1,7 @@
 package crawler;
 
+import config.ConfigManager;
+import config.model.SignType;
 import util.ParserUtils;
 import java.util.logging.Logger;
 
@@ -21,10 +23,15 @@ public class UnicaEachCategoryCrawler implements Runnable{
 
 	private int getTotalPageForEachCategory(String categoryUrl) {
 
-//		String categoryUrl = urlHolder.getCategoryURL();
 
-		String beginSign = "<ul class=\"pagination\"";
-		String endSign = "<li class=\"next\"";
+		SignType paginationSign = ConfigManager.getInstance().getConfigModel().getUnica().getPaginationSign();
+
+
+		String beginSign = paginationSign.getBeginSign();
+		String endSign = paginationSign.getEndSign();
+//
+//		String beginSign = "<ul class=\"pagination\"";
+//		String endSign = "<li class=\"next\"";
 
 		String htmlContent = ParserUtils.parseHTML(categoryUrl, beginSign, endSign);
 
@@ -73,11 +80,8 @@ public class UnicaEachCategoryCrawler implements Runnable{
 				categoryUrl = categoryUrl.substring(0,categoryUrl.indexOf("page=")-1); //?page= or &page=
 			}
 
-			synchronized (CrawlingThreadManager.getInstance()) {
-				while (CrawlingThreadManager.getInstance().isSuspended()) {
-					CrawlingThreadManager.getInstance().wait();
-				}
-			}
+			CrawlingThreadManager.getInstance().checkSuspendStatus();
+
 
 //
 			for (int i = 1; i <= pageNumber; i++) {
@@ -88,11 +92,8 @@ public class UnicaEachCategoryCrawler implements Runnable{
 				CrawlingThreadManager.getInstance().getExecutor().execute(unicaCourseInEachCategoryPageCrawler);
 
 				//check issuspend
-				synchronized (CrawlingThreadManager.getInstance()) {
-					while (CrawlingThreadManager.getInstance().isSuspended()) {
-						CrawlingThreadManager.getInstance().wait();
-					}
-				}
+				CrawlingThreadManager.getInstance().checkSuspendStatus();
+
 			}
 		} catch (Exception e) {
 			e.printStackTrace();

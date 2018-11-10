@@ -1,5 +1,6 @@
 package servlet;
 
+import config.ConfigManager;
 import constant.UrlConstant;
 import crawler.CrawlingThreadManager;
 import crawler.EdumallMainCrawler;
@@ -38,14 +39,6 @@ public class HomeCrawlerServlet extends HttpServlet {
 		String btAction = request.getParameter("btAction");
 		logger.info("btAction=" + btAction);
 
-		String realPath = request.getServletContext().getRealPath("/Course.xsd");
-		File file = new File(realPath);
-		logger.info("realPath=" + file.getAbsolutePath());
-
-		EdumallTest.testGetCourseDetail();
-
-//		File file = new File(this.getClass().getClassLoader().getResource("Course.xsd").getFile());
-//		logger.info("filePath=" + file.getAbsolutePath());
 		String message = "";
 
 		if (btAction == null) {
@@ -54,8 +47,15 @@ public class HomeCrawlerServlet extends HttpServlet {
 		} else {
 			switch (btAction) {
 				case "start":
+					CrawlingThreadManager.getInstance().resumeThread();
+
+
+					//domains
 					String[] domains = request.getParameterValues("domain");
 					if (domains != null) {
+						//Reread config file before start
+						ConfigManager.getInstance().readConfigFile();
+
 						startCrawlers(domains);
 						message = "Started";
 					}else{
@@ -66,9 +66,11 @@ public class HomeCrawlerServlet extends HttpServlet {
 					break;
 				case "pause":
 					CrawlingThreadManager.getInstance().suspendThread();
+					message = "Paused";
 					break;
 				case "resume":
 					CrawlingThreadManager.getInstance().resumeThread();
+					message = "Resumed";
 					break;
 				default:
 					// do nothing
@@ -86,10 +88,11 @@ public class HomeCrawlerServlet extends HttpServlet {
 
 	}
 
+
 	private void startCrawlers(String[] domains) {
 		ArrayList<Runnable> domainTaskList = new ArrayList<>();
 		for (String domain : domains) {
-			switch (domain) {
+			switch (domain.toLowerCase()) {
 				case "edumall":
 					domainTaskList.add(new EdumallMainCrawler());
 					break;

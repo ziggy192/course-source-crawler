@@ -1,5 +1,7 @@
 package crawler;
 
+import config.ConfigManager;
+import config.model.SignType;
 import util.ParserUtils;
 
 import javax.xml.namespace.QName;
@@ -27,8 +29,13 @@ public class EdumallEachCategoryCrawler implements Runnable{
 
 //		String categoryUrl = urlHolder.getCategoryURL();
 
-		String beginSign = "class='list-paginate'";
-		String endSign = "form class='form-paginate form-inline'";
+		SignType paginationSign = ConfigManager.getInstance().getConfigModel().getEdumall().getPaginationSign();
+
+		String beginSign = paginationSign.getBeginSign();
+		String endSign = paginationSign.getEndSign();
+
+//		String beginSign = "class='list-paginate'";
+//		String endSign = "form class='form-paginate form-inline'";
 
 		String htmlContent = ParserUtils.parseHTML(categoryUrl, beginSign, endSign);
 

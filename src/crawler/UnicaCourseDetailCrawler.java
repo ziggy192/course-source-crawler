@@ -1,10 +1,14 @@
 package crawler;
 
+import com.sun.corba.se.spi.orbutil.threadpool.ThreadPoolManager;
+import config.ConfigManager;
+import config.model.SignType;
 import dao.CourseDAO;
 import entity.CourseEntity;
 import url_holder.UnicaCourseUrlHolder;
 import util.Formater;
 import util.ParserUtils;
+import util.StringUtils;
 
 import java.util.logging.Logger;
 
@@ -64,12 +68,22 @@ public class UnicaCourseDetailCrawler implements Runnable {
 	public void run() {
 
 		try {
+			CrawlingThreadManager.getInstance().checkSuspendStatus();
+
+
 			logger.info("start thread");
+
 			String uri = unicaCourseUrlHolder.getCourseUrl();
 
-			String beginSign = "<main";
-//			String endSign = "</main>";
-			String endSign = "<input type=\"hidden\" id=\"user_id\"";
+			SignType courseDetailSign = ConfigManager.getInstance().getConfigModel().getUnica().getCourseDetailSign();
+
+
+			String beginSign = courseDetailSign.getBeginSign();
+			String endSign = courseDetailSign.getEndSign();
+
+//
+//			String beginSign = "<main";
+//			String endSign = "<input type=\"hidden\" id=\"user_id\"";
 
 
 			String htmlContent = ParserUtils.parseHTML(uri, beginSign, endSign);
@@ -80,8 +94,6 @@ public class UnicaCourseDetailCrawler implements Runnable {
 
 			String overviewDescription = "";
 			String authorDes = "";
-			String videoUrl;
-			double costValue = 0;
 
 			CourseEntity courseEntity = new CourseEntity();
 			courseEntity.setCategoryId(categoryId);
@@ -177,6 +189,8 @@ public class UnicaCourseDetailCrawler implements Runnable {
 							String src = ParserUtils.getAttributeByName(startElement, "src");
 
 							logger.info("AuthorImageUrl=" + src);
+
+							src = StringUtils.beautifyUrl(src, ConfigManager.getInstance().getConfigModel().getUnica().getDomainUrl());
 							courseEntity.setAuthorImageUrl(src);
 
 						}
@@ -438,6 +452,10 @@ public class UnicaCourseDetailCrawler implements Runnable {
 			} catch (XMLStreamException e) {
 				e.printStackTrace();
 			}
+
+
+			CrawlingThreadManager.getInstance().checkSuspendStatus();
+
 			logger.info("END THREAD");
 		} catch (Exception e) {
 			e.printStackTrace();

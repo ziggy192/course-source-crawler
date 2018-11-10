@@ -1,0 +1,69 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            targetNamespace="www.ParserConfig.com"
+            elementFormDefault="qualified"
+            xmlns="www.ParserConfig.com"
+>
+    <xsd:simpleType name="NonEmptyString">
+        <xsd:restriction base="xsd:string">
+            <xsd:minLength value="1"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+    <xsd:complexType name="SignType">
+        <xsd:sequence>
+            <xsd:element name="BeginSign" type="xsd:token"/>
+            <xsd:element name="EndSign" type="xsd:token"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:simpleType name="CategoryNameType">
+        <xsd:restriction base="xsd:string">
+            <xsd:enumeration value="TestPrep"/>
+            <xsd:enumeration value="Multimedia"/>
+            <xsd:enumeration value="Design"/>
+            <xsd:enumeration value="PersonalDevelopment"/>
+            <xsd:enumeration value="OfficeProductivity"/>
+            <xsd:enumeration value="Music"/>
+            <xsd:enumeration value="Marketing"/>
+            <xsd:enumeration value="LifeStyle"/>
+            <xsd:enumeration value="Language"/>
+            <xsd:enumeration value="IT"/>
+            <xsd:enumeration value="HealthAndFitness"/>
+            <xsd:enumeration value="Business"/>
+            <xsd:enumeration value="Academics"/>
+            <xsd:enumeration value="Kids"/>
+            <xsd:enumeration value="Other"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+    <xsd:complexType name="DomainType">
+        <xsd:sequence>
+            <xsd:element name="DomainUrl" type="xsd:token"/>
+            <xsd:element name="CategoryMappingList">
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element name="CategoryMapping" minOccurs="0" maxOccurs="unbounded">
+                            <xsd:complexType>
+                                <xsd:attribute name="source" type="xsd:string" use="required"/>
+                                <xsd:attribute name="to" type="CategoryNameType" use="required"/>
+                            </xsd:complexType>
+                        </xsd:element>
+                    </xsd:sequence>
+                </xsd:complexType>
+
+            </xsd:element>
+
+            <xsd:element name="PaginationSign" type="SignType"/>
+            <xsd:element name="CategoryListSign" type="SignType"/>
+            <xsd:element name="CourseListSign" type="SignType"/>
+            <xsd:element name="CourseDetailSign" type="SignType"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:element name="ParserConfig">
+        <xsd:complexType>
+            <xsd:all>
+                <xsd:element name="Edumall" type="DomainType"/>
+                <xsd:element name="Unica" type="DomainType"/>
+            </xsd:all>
+        </xsd:complexType>
+    </xsd:element>
+
+</xsd:schema>

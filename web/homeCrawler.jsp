@@ -26,7 +26,7 @@
     <input id="cbEdumall" type="checkbox" value="edumall" name="domain"/>
     <label for="cbEdumall"> Edumall </label>
     <br/>
-    <input id="cbUnica" type="checkbox" value="unical" name="domain">
+    <input id="cbUnica" type="checkbox" value="unica" name="domain">
     <label for="cbUnica"> Unica</label>
     <br/>
 

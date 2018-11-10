@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <Course xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xmlns="www.Course.com"
-        xsi:schemaLocation="www.Course.com Course.xsd">
+        xmlns="/Users/ziggy192/Documents/Code/Java/course-source-crawler/web/schema/Course.xsd"
+        xsi:schemaLocation="/Users/ziggy192/Documents/Code/Java/course-source-crawler/web/schema/Course.xsd Course.xsd">
 
     <Id>1</Id>
     <Name>Luyện thi đại học</Name>

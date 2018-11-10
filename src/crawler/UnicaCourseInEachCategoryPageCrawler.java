@@ -1,5 +1,7 @@
 package crawler;
 
+import config.ConfigManager;
+import config.model.SignType;
 import url_holder.UnicaCourseUrlHolder;
 import util.ParserUtils;
 import util.StringUtils;
@@ -36,11 +38,8 @@ public class UnicaCourseInEachCategoryPageCrawler implements Runnable {
 			for (UnicaCourseUrlHolder courseUrlHolder : courseListFromEachPage) {
 				logger.info(courseUrlHolder.toString());
 				//check suspend
-				synchronized (CrawlingThreadManager.getInstance()) {
-					while (CrawlingThreadManager.getInstance().isSuspended()) {
-						CrawlingThreadManager.getInstance().wait();
-					}
-				}
+
+				CrawlingThreadManager.getInstance().checkSuspendStatus();
 
 				UnicaCourseDetailCrawler unicaCourseDetailCrawler = new UnicaCourseDetailCrawler(courseUrlHolder, categoryId);
 				CrawlingThreadManager.getInstance().getExecutor().execute(unicaCourseDetailCrawler);
@@ -58,10 +57,16 @@ public class UnicaCourseInEachCategoryPageCrawler implements Runnable {
 
 //		String uri = "https://edumall.vn/courses/filter&page=2";
 
-//		String uri = categoryUrlHolder.getCategoryURL();
-		String beginSign = "<div class=\"u-all-course\"";
-		String endSign = "<div class=\"u-number-page\">";
-//		String endSign = "form class='form-paginate form-inline'";
+
+		SignType courseListSign = ConfigManager.getInstance().getConfigModel().getUnica().getCourseListSign();
+
+		String beginSign = courseListSign.getBeginSign();
+		String endSign = courseListSign.getEndSign();
+
+//		String beginSign = "<div class=\"u-all-course\"";
+//		String endSign = "<div class=\"u-number-page\">";
+
+
 		String htmlContent = ParserUtils.parseHTML(uri, beginSign, endSign);
 		htmlContent = ParserUtils.addMissingTag(htmlContent);
 
@@ -126,6 +131,7 @@ public class UnicaCourseInEachCategoryPageCrawler implements Runnable {
 								&& ParserUtils.checkAttributeContainsKey(startElement, "class", "img-course")) {
 							startElement = ParserUtils.nextStartEvent(staxReader, "img").asStartElement();
 							String src = ParserUtils.getAttributeByName(startElement, "src");
+
 							courseUrlHolder.setCourseThumbnailUrl(src);
 							logger.info(String.format("course number=%s || thumnail=%s", courseList.size() - 1, src));
 						}

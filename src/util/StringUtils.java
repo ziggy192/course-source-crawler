@@ -62,4 +62,13 @@ public class StringUtils {
 
 		return result;
 	}
+
+	public static String beautifyUrl(String url, String domainURL) {
+		String result = url;
+		if (url.startsWith("/") && !url.startsWith("//")) {
+			/*  /uploads/thaoptt09@gmail.com/February2720171130am_nguyen-ngoc-quang_thumb.jpg */
+			result = domainURL + url;
+		}
+		return result;
+	}
 }

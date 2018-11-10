@@ -1,9 +1,12 @@
 package crawler;
 
+import config.CategoryMapper;
+import config.ConfigManager;
+import config.model.SignType;
 import constant.AppConstants;
 import dao.CategoryDAO;
 import dao.DomainDAO;
-import entity.CategoryMapping;
+import config.model.CategoryNameType;
 import entity.DomainEntity;
 import url_holder.CategoryUrlHolder;
 import util.ParserUtils;
@@ -64,10 +67,15 @@ public class EdumallMainCrawler implements Runnable {
 	public List<CategoryUrlHolder> getCategories() {
 		List<CategoryUrlHolder> categories = new ArrayList<>();
 
-		String uri = AppConstants.EDUMALL_DOMAIN;
+		String uri = ConfigManager.getInstance().getConfigModel().getEdumall().getDomainUrl();
 
-		String beginSign = "col-xs col-sm col-md col-lg main-header-v4--content-c-header-left";
-		String endSign = "col-xs col-sm col-md col-lg main-header-v4--content-c-header-search";
+		SignType categoryListSign = ConfigManager.getInstance().getConfigModel().getEdumall().getCategoryListSign();
+
+		String beginSign = categoryListSign.getBeginSign();
+		String endSign = categoryListSign.getEndSign();
+
+//		String beginSign = "col-xs col-sm col-md col-lg main-header-v4--content-c-header-left";
+//		String endSign = "col-xs col-sm col-md col-lg main-header-v4--content-c-header-search";
 
 		String htmlContent = ParserUtils.parseHTML(uri, beginSign, endSign);
 		String newContent = ParserUtils.addMissingTag(htmlContent);
@@ -114,7 +122,7 @@ public class EdumallMainCrawler implements Runnable {
 								if (href.contains("categories") && !href.contains("sub_categories")) {
 
 									String categoryURL = href;
-									categoryURL = AppConstants.EDUMALL_DOMAIN + categoryURL;
+									categoryURL = ConfigManager.getInstance().getConfigModel().getEdumall().getDomainUrl() + categoryURL;
 
 									startElement = ParserUtils.nextStartEvent(staxReader, "span").asStartElement();
 									String categoryName = ParserUtils.getContentAndJumpToEndElement(staxReader, startElement);
@@ -153,13 +161,12 @@ public class EdumallMainCrawler implements Runnable {
 		logger.info("start thread");
 
 		try {
-			// todo insert domain to db if not yet availabe
 			if (DomainDAO.getInstance().getDomainByName(AppConstants.EDUMALL_DOMAIN_NAME) == null) {
 				//insert to database
 //				other.DummyDatabase.insertDomain(constant.AppConstants.EDUMALL_DOMAIN_NAME, constant.AppConstants.EDUMALL_DOMAIN);
 				DomainEntity domainEntity = new DomainEntity();
 				domainEntity.setName(AppConstants.EDUMALL_DOMAIN_NAME);
-				domainEntity.setDomainUrl(AppConstants.EDUMALL_DOMAIN);
+				domainEntity.setDomainUrl(ConfigManager.getInstance().getConfigModel().getEdumall().getDomainUrl());
 				DomainDAO.getInstance().persist(domainEntity);
 			}
 			domainId = DomainDAO.getInstance().getDomainByName(AppConstants.EDUMALL_DOMAIN_NAME).getId();
@@ -182,10 +189,10 @@ public class EdumallMainCrawler implements Runnable {
 				//map edumall category name -> my general category name -> categoryId
 				String edumallCategoryName = categoryUrlHolder.getCategoryName();
 
-				CategoryMapping categoryMapping = CategoryMapping.mapEdumall(edumallCategoryName);
+				CategoryNameType categoryNameType = CategoryMapper.getInstance().mapEdumall(edumallCategoryName);
 
 				//get categoryId from database
-				int categoryId = CategoryDAO.getInstance().getCategoryId(categoryMapping);
+				int categoryId = CategoryDAO.getInstance().getCategoryId(categoryNameType);
 
 
 				EdumallEachCategoryCrawler edumallEachCategoryCrawler = new EdumallEachCategoryCrawler(categoryId, categoryUrlHolder.getCategoryURL());

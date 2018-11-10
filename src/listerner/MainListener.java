@@ -1,12 +1,9 @@
 package listerner;
 
 import dao.CategoryDAO;
-import entity.CategoryMapping;
-import other.DummyDatabase;
+import config.model.CategoryNameType;
 import util.DBUtils;
 
-import javax.annotation.ManagedBean;
-import javax.servlet.ServletContext;
 import javax.servlet.ServletContextEvent;
 import javax.servlet.ServletContextListener;
 import javax.servlet.annotation.WebListener;
@@ -33,9 +30,9 @@ public class MainListener implements ServletContextListener,
 	public void contextInitialized(ServletContextEvent sce) {
 
 		// TODO: 11/10/18 future: get context directly from this class
-		// separate only because cannot load WebListenner when run JavaApplication
+		// separate just because cannot load WebListenner when run JavaApplication
 
-		DummyDatabase.setContext(sce.getServletContext());
+		ContextHolder.setApplicationContext(sce.getServletContext());
 
 		//turn off log for hibernate
 		logger.info("CrawlerServletListener: Context init");
@@ -43,8 +40,8 @@ public class MainListener implements ServletContextListener,
 		java.util.logging.Logger.getLogger("org.hibernate").setLevel(Level.OFF);
 
 		// todo (do this in servletInit(): insert category names to db if not yet available
-		CategoryMapping[] categoryMappings = CategoryMapping.values();
-		for (CategoryMapping value : categoryMappings) {
+		CategoryNameType[] categoryNameTypes = CategoryNameType.values();
+		for (CategoryNameType value : categoryNameTypes) {
 			CategoryDAO.getInstance().insertCategoryByNameIfNotExist(value.getValue());
 		}
 

@@ -1,5 +1,7 @@
 package dao;
 
+import constant.AppConstants;
+import listerner.ContextHolder;
 import listerner.MainListener;
 import other.DummyDatabase;
 import entity.CourseEntity;
@@ -81,14 +83,14 @@ public class CourseDAO extends BaseDAO<CourseEntity, Integer> {
 			SchemaFactory schemaFactory = SchemaFactory.newInstance(XMLConstants.W3C_XML_SCHEMA_NS_URI);
 
 			File courseXSDFile;
-			if (DummyDatabase.getContext() != null) {
-				String realPath = DummyDatabase.getContext().getRealPath("/Course.xsd");
+			if (ContextHolder.getApplicationContext() != null) {
+				String realPath = ContextHolder.getApplicationContext().getRealPath("/"+ AppConstants.COURSE_SCHEMA_PATH);
 
 				courseXSDFile = new File(realPath);
 
 			} else {
 
-				courseXSDFile = new File("web/Course.xsd");
+				courseXSDFile = new File("web/"+AppConstants.COURSE_SCHEMA_PATH);
 			}
 
 			Schema schema = schemaFactory.newSchema(courseXSDFile);
@@ -108,7 +110,7 @@ public class CourseDAO extends BaseDAO<CourseEntity, Integer> {
 			e.printStackTrace();
 		} catch (SAXException e) {
 			e.printStackTrace();
-			logger.severe(String.format("NOT VALID | Course=%s", courseEntity));
+			logger.severe(String.format("NOT VALID | Message= %s | \n Course=%s", e.getMessage(),courseEntity));
 		} catch (IOException e) {
 			e.printStackTrace();
 		}

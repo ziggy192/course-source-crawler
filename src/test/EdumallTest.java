@@ -31,8 +31,13 @@ public class EdumallTest {
 //		testInsertDomain(constant.AppConstants.EDUMALL_DOMAIN_NAME, constant.AppConstants.EDUMALL_DOMAIN);
 //		testValidate();
 
-		testGetCourseDetail();
+//		testGetCourseDetail();
 
+//		testEdumall();
+//		testGetCourseListFromEachPage();
+//		testEdumallGetCategory();
+
+		testEdumall();
 	}
 
 
@@ -81,15 +86,15 @@ public class EdumallTest {
 
 	public static void testGetCourseDetail() {
 
-		CourseUrlHolder dummyCourseUrlHolder = new CourseUrlHolder("Hướng dẫn chi tiết giảm cân an toàn tại nhà"
-				, "https://d1nzpkv5wwh1xf.cloudfront.net/640/k-57b67d6e60af25054a055b20/20180619-a301906/luyen-tap-giam-can.jpg"
-				, "edumall.vn/course/huong-dan-chi-tiet-giam-can-an-toan-tai-nha");
+		CourseUrlHolder dummyCourseUrlHolder = new CourseUrlHolder("GIÁO DỤC SỚM CHO TRẺ THEO PHƯƠNG PHÁP  GLENN DOMAN: NHẬN BIẾT THẾ GIỚI XUNG Q..."
+				, "d1nzpkv5wwh1xf.cloudfront.net/320/k-577a160c047c994bb7e5b397/20180702-/teach-baby-by-sweet-mother.jpg"
+				, "edumall.vn/course/giao-duc-som-cho-tre-theo-phuong-phap--glenn-doman-nhan-biet-the-gioi-xung-quanh");
 //				, "https://edumall.vn/course/dao-tao-ky-thuat-truong-cửa-hang-gas");
 //				, "https://edumall.vn/course/tao-slide-trinh-bay-an-tuong-voi-prezi-google-trinh-chieu-va-power-point");
 
 		EdumallMainCrawler.domainId = 3;
 
-		new Thread(new EdumallCourseDetailCrawler(dummyCourseUrlHolder, 15)).start();
+		new Thread(new EdumallCourseDetailCrawler(dummyCourseUrlHolder, 5)).start();
 
 //		getCourseDetail(dummyCourseUrlHolder);
 

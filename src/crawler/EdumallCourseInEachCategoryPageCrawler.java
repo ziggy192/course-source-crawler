@@ -1,5 +1,7 @@
 package crawler;
 
+import config.ConfigManager;
+import config.model.SignType;
 import constant.AppConstants;
 import url_holder.CourseUrlHolder;
 import util.ParserUtils;
@@ -62,10 +64,13 @@ public class EdumallCourseInEachCategoryPageCrawler implements Runnable {
 
 //		String uri = "https://edumall.vn/courses/filter&page=2";
 
-//		String uri = categoryUrlHolder.getCategoryURL();
-		String beginSign = "section class='area-display-courses'";
-		String endSign = "</section>";
-//		String endSign = "form class='form-paginate form-inline'";
+		SignType courseListSign = ConfigManager.getInstance().getConfigModel().getEdumall().getCourseListSign();
+
+		String beginSign = courseListSign.getBeginSign();
+		String endSign = courseListSign.getEndSign();
+
+//		String beginSign = "section class='area-display-courses'";
+//		String endSign = "</section>";
 
 		String htmlContent = ParserUtils.parseHTML(uri, beginSign, endSign);
 		htmlContent = ParserUtils.addMissingTag(htmlContent);
@@ -179,7 +184,9 @@ public class EdumallCourseInEachCategoryPageCrawler implements Runnable {
 //										e.printStackTrace();
 //
 //									}
-									hrefValue = AppConstants.EDUMALL_DOMAIN + hrefValue;
+
+
+									hrefValue = ConfigManager.getInstance().getConfigModel().getEdumall().getDomainUrl()+ hrefValue;
 									lastCourse.setCourseUrl(hrefValue);
 									logger.info(String.format("course number=%s || coureUrl=%s", courseList.size() - 1, hrefValue));
 

@@ -7,16 +7,42 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0ca32356-370c-4043-93a2-a18b75fdd2d2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/config/ConfigChangeListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/config/ConfigManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/listerner/ContextHolder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/TestConfigManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/constant/AppConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/constant/AppConstants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/crawler/CrawlingThreadManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/crawler/CrawlingThreadManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/crawler/EdumallCourseDetailCrawler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/crawler/EdumallCourseDetailCrawler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/crawler/EdumallCourseInEachCategoryPageCrawler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/crawler/EdumallCourseInEachCategoryPageCrawler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/crawler/EdumallEachCategoryCrawler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/crawler/EdumallEachCategoryCrawler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/crawler/EdumallMainCrawler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/crawler/EdumallMainCrawler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/crawler/UnicaCourseDetailCrawler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/crawler/UnicaCourseDetailCrawler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/crawler/UnicaCourseInEachCategoryPageCrawler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/crawler/UnicaCourseInEachCategoryPageCrawler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/crawler/UnicaEachCategoryCrawler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/crawler/UnicaEachCategoryCrawler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/crawler/UnicaMainCrawler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/crawler/UnicaMainCrawler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dao/CategoryDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/CategoryDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/dao/CourseDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/CourseDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entity/CourseEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/CourseEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entity/CategoryMapping.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/listerner/MainListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/listerner/MainListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/Course.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/CourseDetail.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/Domain.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/Subject.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/UserProviderFollow.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/UserSubjectFollow.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/other/DummyDatabase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/other/DummyDatabase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/servlet/HomeCrawlerServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/servlet/HomeCrawlerServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/EdumallTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/EdumallTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/Course.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/web/Course.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/UnicaTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/UnicaTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/util/ParserUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/ParserUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/util/StringUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/StringUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/Category.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/web/schema/Category.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/Course.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/web/schema/Course.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/homeCrawler.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/homeCrawler.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/testCourse.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/testCourse.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -69,23 +95,23 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="CourseSourcePersistenceUnit" value="142" />
-          <entry key="java" value="3350" />
+          <entry key="CourseSourcePersistenceUnit" value="244" />
+          <entry key="java" value="7859" />
           <entry key="jsp" value="875" />
           <entry key="properties" value="111" />
           <entry key="txt" value="13" />
-          <entry key="xml" value="47" />
-          <entry key="xsd" value="4" />
+          <entry key="xml" value="892" />
+          <entry key="xsd" value="1246" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Hibernate QL" value="142" />
-          <entry key="JAVA" value="3350" />
+          <entry key="Hibernate QL" value="244" />
+          <entry key="JAVA" value="7859" />
           <entry key="JSP" value="875" />
           <entry key="PLAIN_TEXT" value="13" />
           <entry key="Properties" value="111" />
-          <entry key="XML" value="51" />
+          <entry key="XML" value="2138" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -93,11 +119,11 @@
           <entry key="class" value="4" />
           <entry key="course" value="1" />
           <entry key="html" value="2" />
-          <entry key="java" value="138" />
-          <entry key="jsp" value="5" />
+          <entry key="java" value="254" />
+          <entry key="jsp" value="6" />
           <entry key="properties" value="1" />
-          <entry key="xml" value="15" />
-          <entry key="xsd" value="2" />
+          <entry key="xml" value="26" />
+          <entry key="xsd" value="16" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -105,10 +131,10 @@
           <entry key="CLASS" value="4" />
           <entry key="Database Element" value="1" />
           <entry key="HTML" value="2" />
-          <entry key="JAVA" value="138" />
-          <entry key="JSP" value="5" />
+          <entry key="JAVA" value="254" />
+          <entry key="JSP" value="6" />
           <entry key="Properties" value="1" />
-          <entry key="XML" value="17" />
+          <entry key="XML" value="42" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts" />
@@ -118,56 +144,21 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+    <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/crawler/EdumallCourseDetailCrawler.java">
+        <entry file="file://$PROJECT_DIR$/src/config/model/ParserConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="70">
-              <caret line="561" selection-start-line="561" selection-end-line="561" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/META-INF/persistence.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="30" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
+            <state relative-caret-position="150">
+              <caret line="87" column="18" selection-start-line="87" selection-start-column="18" selection-end-line="87" selection-end-column="18" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/entity/CourseEntity.java">
+        <entry file="file://$PROJECT_DIR$/src/test/TestConfigManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="235">
-              <caret line="330" lean-forward="true" selection-start-line="330" selection-end-line="330" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#8382#8383#0" expanded="true" />
-                <element signature="e#8404#8405#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/util/StringUtils.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="27">
-              <caret line="40" column="22" selection-start-line="40" selection-start-column="22" selection-end-line="40" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/crawler/UnicaCourseDetailCrawler.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="432" lean-forward="true" selection-start-line="432" selection-end-line="432" />
+            <state relative-caret-position="285">
+              <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -176,10 +167,32 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/servlet/HomeCrawlerServlet.java">
+        <entry file="file://$PROJECT_DIR$/src/config/model/SignType.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="271">
-              <caret line="44" column="34" lean-forward="true" selection-start-line="44" selection-start-column="34" selection-end-line="44" selection-end-column="34" />
+            <state relative-caret-position="402">
+              <caret line="93" column="18" selection-start-line="93" selection-start-column="18" selection-end-line="93" selection-end-column="18" />
+              <folding>
+                <element signature="e#2283#2284#0" expanded="true" />
+                <element signature="e#2319#2320#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/config/ConfigChangeListener.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" column="26" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/config/CategoryMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="427">
+              <caret line="63" lean-forward="true" selection-start-line="63" selection-end-line="63" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -188,39 +201,41 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/listerner/MainListener.java">
+        <entry file="file://$PROJECT_DIR$/src/config/ConfigManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="232">
-              <caret line="58" column="28" selection-start-line="58" selection-start-column="28" selection-end-line="58" selection-end-column="28" />
+            <state relative-caret-position="-575">
+              <caret line="47" column="16" selection-start-line="47" selection-start-column="16" selection-end-line="47" selection-end-column="16" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#getInstance#0;class#ConfigManager#0" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/Course.xsd">
+        <entry file="file://$PROJECT_DIR$/src/config/model/DomainType.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="64">
-              <caret line="51" column="20" lean-forward="true" selection-start-line="51" selection-start-column="20" selection-end-line="51" selection-end-column="20" />
+              <caret line="319" column="28" selection-start-line="319" selection-start-column="28" selection-end-line="319" selection-end-column="28" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/testing/Course.xml">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/web/xml/ParserConfig.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-484">
+              <caret line="6" column="47" selection-start-line="6" selection-start-column="47" selection-end-line="6" selection-end-column="47" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/other/DummyDatabase.java">
+        <entry file="file://$PROJECT_DIR$/web/schema/ParserConfig.xsd">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="47" selection-start-line="16" selection-start-column="47" selection-end-line="16" selection-end-column="47" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#414#415#0" expanded="true" />
-                <element signature="e#472#473#0" expanded="true" />
-                <element signature="e#510#511#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="1">
+              <caret line="36" column="39" lean-forward="true" selection-start-line="36" selection-start-column="39" selection-end-line="36" selection-end-column="39" />
             </state>
           </provider>
         </entry>
@@ -230,39 +245,48 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Jsp File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>com.ziggy192.coursesource.</find>
-      <find>Logger</find>
-      <find>LoggerFactory</find>
-      <find>_new</find>
-      <find>new t</find>
-      <find>new thread</find>
-      <find>Logg</find>
-      <find>Logging</find>
-      <find>getCate</find>
-      <find>logging</find>
-      <find>start</find>
-      <find>btac</find>
-      <find>btaction</find>
-      <find>conf/log</find>
-      <find>b</find>
-      <find>inject</find>
-      <find>home</find>
-      <find>syllabus</find>
-      <find>sylla</find>
-      <find>name</find>
+      <find>DummyDatabase</find>
+      <find>Validate</find>
+      <find>validate</find>
+      <find>tostring</find>
+      <find>pagin</find>
+      <find>categor</find>
+      <find>begni</find>
+      <find>logger</find>
+      <find>logger.inf</find>
+      <find>run</find>
+      <find>validated</find>
+      <find>end</find>
+      <find>valid</find>
+      <find>course not e</find>
       <find>course</find>
-      <find>HashCourse</find>
-      <find>has</find>
+      <find>begin</find>
+      <find>authorimage</find>
+      <find>exception</find>
+      <find>seturl</find>
+      <find>image</find>
+      <find>Imageima</find>
+      <find>setImageUrl</find>
+      <find>video</find>
+      <find>AppConstants.EDUMALL_DOMAIN</find>
+      <find>AppConstant</find>
+      <find>ConfigManager.getInstance().getConfigModel().getEdumall().getDomainUrl()</find>
+      <find>AppConstants.EDUMALL_DOMAIN</find>
+      <find>url</find>
+      <find>Mapping</find>
+      <find>Categorymapping</find>
     </findStrings>
     <replaceStrings>
       <replace>Logger</replace>
+      <replace>ConfigManager.getInstance().getConfigModel().getEdumall().getDomainUrl()</replace>
+      <replace>schema/Course.xsd</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -284,55 +308,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/DummyDatabase.java" />
-        <option value="$PROJECT_DIR$/src/dao/BaseDAO.java" />
-        <option value="$PROJECT_DIR$/src/dao/CategoryDAO.java" />
-        <option value="$PROJECT_DIR$/src/dao/DomainDAO.java" />
-        <option value="$PROJECT_DIR$/src/util/ParserUtils.java" />
-        <option value="$PROJECT_DIR$/src/java/crawler/EdumallCourseInEachCategoryPageCrawler.java" />
-        <option value="$PROJECT_DIR$/src/java/crawler/EdumallEachCategoryCrawler.java" />
-        <option value="$PROJECT_DIR$/src/java/crawler/EdumallMainCrawler.java" />
-        <option value="$PROJECT_DIR$/src/java/crawler/UnicaCourseDetailCrawler.java" />
-        <option value="$PROJECT_DIR$/src/java/crawler/UnicaCourseInEachCategoryPageCrawler.java" />
-        <option value="$PROJECT_DIR$/src/java/crawler/UnicaEachCategoryCrawler.java" />
-        <option value="$PROJECT_DIR$/src/java/dao/CourseDAO.java" />
-        <option value="$PROJECT_DIR$/src/java/crawler/UnicaMainCrawler.java" />
-        <option value="$PROJECT_DIR$/src/java/test/MainTest.java" />
-        <option value="$PROJECT_DIR$/src/java/util/ParserUtils.java" />
-        <option value="$PROJECT_DIR$/src/java/entity/CourseEntity.java" />
-        <option value="$PROJECT_DIR$/src/META-INF/persistence.xml" />
-        <option value="$PROJECT_DIR$/src/util/StringUtils.java" />
         <option value="$PROJECT_DIR$/src/listerner/CrawlerServletListener.java" />
         <option value="$PROJECT_DIR$/src/other/Constants.java" />
         <option value="$PROJECT_DIR$/src/other/AppConstants.java" />
-        <option value="$PROJECT_DIR$/src/constant/AppConstants.java" />
         <option value="$PROJECT_DIR$/src/crawler/BaseThread.java" />
         <option value="$PROJECT_DIR$/src/crawler/ThreadManager.java" />
-        <option value="$PROJECT_DIR$/src/crawler/CrawlingThreadManager.java" />
-        <option value="$PROJECT_DIR$/src/crawler/EdumallCourseInEachCategoryPageCrawler.java" />
-        <option value="$PROJECT_DIR$/src/crawler/EdumallEachCategoryCrawler.java" />
-        <option value="$PROJECT_DIR$/src/crawler/UnicaCourseInEachCategoryPageCrawler.java" />
-        <option value="$PROJECT_DIR$/src/crawler/UnicaEachCategoryCrawler.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/web/index.jsp" />
         <option value="$PROJECT_DIR$/src/constant/UrlConstant.java" />
         <option value="$PROJECT_DIR$/src/servlet/ProcessCrawlerServlet.java" />
-        <option value="$PROJECT_DIR$/web/homeCrawler.jsp" />
-        <option value="$PROJECT_DIR$/src/crawler/UnicaMainCrawler.java" />
-        <option value="$PROJECT_DIR$/src/crawler/EdumallMainCrawler.java" />
-        <option value="$PROJECT_DIR$/src/test/UnicaTest.java" />
         <option value="$PROJECT_DIR$/src/test/MainTest.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/logging.properties" />
-        <option value="$PROJECT_DIR$/src/test/EdumallTest.java" />
-        <option value="$PROJECT_DIR$/src/servlet/HomeCrawlerServlet.java" />
-        <option value="$PROJECT_DIR$/src/other/DummyDatabase.java" />
-        <option value="$PROJECT_DIR$/src/listerner/MainListener.java" />
-        <option value="$PROJECT_DIR$/src/dao/CourseDAO.java" />
         <option value="$PROJECT_DIR$/web/Course.xsd" />
         <option value="$PROJECT_DIR$/web/testing/Course.xml" />
-        <option value="$PROJECT_DIR$/src/crawler/EdumallCourseDetailCrawler.java" />
-        <option value="$PROJECT_DIR$/src/crawler/UnicaCourseDetailCrawler.java" />
         <option value="$PROJECT_DIR$/src/entity/CourseEntity.java" />
+        <option value="$PROJECT_DIR$/web/homeCrawler.jsp" />
+        <option value="$PROJECT_DIR$/src/crawler/CrawlingThreadManager.java" />
+        <option value="$PROJECT_DIR$/web/testing/ParserConfig.xml" />
+        <option value="$PROJECT_DIR$/src/manager/ConfigManager.java" />
+        <option value="$PROJECT_DIR$/src/other/DummyDatabase.java" />
+        <option value="$PROJECT_DIR$/src/listerner/ContextHolder.java" />
+        <option value="$PROJECT_DIR$/src/listerner/MainListener.java" />
+        <option value="$PROJECT_DIR$/src/dao/CourseDAO.java" />
+        <option value="$PROJECT_DIR$/src/util/ParserUtils.java" />
+        <option value="$PROJECT_DIR$/src/servlet/HomeCrawlerServlet.java" />
+        <option value="$PROJECT_DIR$/src/config/model/ObjectFactory.java" />
+        <option value="$PROJECT_DIR$/src/crawler/EdumallEachCategoryCrawler.java" />
+        <option value="$PROJECT_DIR$/src/url_holder/UnicaCourseUrlHolder.java" />
+        <option value="$PROJECT_DIR$/src/crawler/UnicaEachCategoryCrawler.java" />
+        <option value="$PROJECT_DIR$/src/test/EdumallTest.java" />
+        <option value="$PROJECT_DIR$/src/test/UnicaTest.java" />
+        <option value="$PROJECT_DIR$/src/util/StringUtils.java" />
+        <option value="$PROJECT_DIR$/src/crawler/EdumallCourseDetailCrawler.java" />
+        <option value="$PROJECT_DIR$/src/crawler/UnicaCourseInEachCategoryPageCrawler.java" />
+        <option value="$PROJECT_DIR$/src/crawler/UnicaCourseDetailCrawler.java" />
+        <option value="$PROJECT_DIR$/src/crawler/EdumallCourseInEachCategoryPageCrawler.java" />
+        <option value="$PROJECT_DIR$/src/constant/AppConstants.java" />
+        <option value="$PROJECT_DIR$/src/entity/CategoryMapping.java" />
+        <option value="$PROJECT_DIR$/web/schema/ParserConfig.xsd" />
+        <option value="$PROJECT_DIR$/src/entity/CategoryMappinger.java" />
+        <option value="$PROJECT_DIR$/src/entity/CategoryNameType.java" />
+        <option value="$PROJECT_DIR$/src/config/ConfigChangeListener.java" />
+        <option value="$PROJECT_DIR$/src/config/ConfigManager.java" />
+        <option value="$PROJECT_DIR$/src/config/CategoryMapper.java" />
+        <option value="$PROJECT_DIR$/src/crawler/EdumallMainCrawler.java" />
+        <option value="$PROJECT_DIR$/src/crawler/UnicaMainCrawler.java" />
+        <option value="$PROJECT_DIR$/src/config/model/DomainType.java" />
+        <option value="$PROJECT_DIR$/src/config/model/CategoryNameType.java" />
+        <option value="$PROJECT_DIR$/src/config/model/ParserConfig.java" />
+        <option value="$PROJECT_DIR$/src/config/model/SignType.java" />
+        <option value="$PROJECT_DIR$/web/xml/ParserConfig.xml" />
+        <option value="$PROJECT_DIR$/src/test/TestConfigManager.java" />
       </list>
     </option>
   </component>
@@ -353,6 +379,26 @@
     <option name="y" value="33" />
     <option name="width" value="1440" />
     <option name="height" value="766" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State />
+          <State>
+            <id>Java</id>
+          </State>
+          <State>
+            <id>Probable bugsJava</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>IgnoreResultOfCall</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -377,6 +423,31 @@
               <item name="course-source-crawler" type="b2602c69:ProjectViewProjectNode" />
               <item name="course-source-crawler" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="course-source-crawler" type="b2602c69:ProjectViewProjectNode" />
+              <item name="course-source-crawler" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="course-source-crawler" type="b2602c69:ProjectViewProjectNode" />
+              <item name="course-source-crawler" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="servlet" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="course-source-crawler" type="b2602c69:ProjectViewProjectNode" />
+              <item name="course-source-crawler" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="course-source-crawler" type="b2602c69:ProjectViewProjectNode" />
+              <item name="course-source-crawler" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="util" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -388,7 +459,25 @@
               <item name="course-source-crawler" type="b2602c69:ProjectViewProjectNode" />
               <item name="course-source-crawler" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="html-crawled" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="course-source-crawler" type="b2602c69:ProjectViewProjectNode" />
+              <item name="course-source-crawler" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="schema" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="course-source-crawler" type="b2602c69:ProjectViewProjectNode" />
+              <item name="course-source-crawler" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
               <item name="testing" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="course-source-crawler" type="b2602c69:ProjectViewProjectNode" />
+              <item name="course-source-crawler" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="xml" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -405,7 +494,7 @@
     <property name="Repository.Attach.Sources" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541838605977" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541872446080" />
     <property name="database.console.LAST_STATE" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -413,12 +502,22 @@
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.25103307" />
+    <property name="settings.editor.selected.configurable" value="editing.templates" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="config.model" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/web/xml" />
+      <recent name="$PROJECT_DIR$/web/schema" />
+      <recent name="$PROJECT_DIR$/web" />
+    </key>
     <key name="ImportMappingsDialog.RecentPackages">
       <recent name="entity_new" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/config/model" />
       <recent name="$PROJECT_DIR$/web" />
       <recent name="$PROJECT_DIR$/src" />
     </key>
@@ -435,9 +534,16 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Edumall Test">
+  <component name="RunManager" selected="Application.Test Config Manger">
     <configuration name="Edumall Test" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="test.EdumallTest" />
+      <module name="course-source-crawler" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test Config Manger" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="test.TestConfigManager" />
       <module name="course-source-crawler" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -525,6 +631,7 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.Test Config Manger" />
       <item itemvalue="Application.Edumall Test" />
       <item itemvalue="Application.Unicat Test" />
       <item itemvalue="TomEE Server.TomEE 9.0.121" />
@@ -543,12 +650,12 @@
       <workItem from="1541579879620" duration="4930000" />
       <workItem from="1541585177965" duration="1875000" />
       <workItem from="1541663260112" duration="12102000" />
-      <workItem from="1541819488507" duration="6244000" />
+      <workItem from="1541819488507" duration="27330000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25151000" />
+    <option name="totallyTimeSpent" value="46237000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -563,9 +670,9 @@
     <frame x="0" y="33" width="1440" height="766" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.7132867" visible="true" weight="0.37768242" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.7113924" visible="true" weight="0.2532189" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Persistence" order="2" sideWeight="0.28671327" side_tool="true" visible="true" weight="0.37768242" />
+      <window_info id="Persistence" order="2" sideWeight="0.2886076" side_tool="true" visible="true" weight="0.2532189" />
       <window_info id="Designer" order="3" />
       <window_info id="Image Layers" order="4" />
       <window_info id="UI Designer" order="5" />
@@ -577,14 +684,14 @@
       <window_info anchor="bottom" id="Hibernate Console" weight="0.5667656" />
       <window_info anchor="bottom" id="JPA Console" weight="0.32937685" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32937685" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3635015" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.5074184" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.4139466" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39910978" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32937685" />
       <window_info anchor="bottom" id="Application Servers" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.33679524" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.33531156" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32937685" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" />
@@ -647,56 +754,51 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/util/Formater.java">
+    <entry file="file://$PROJECT_DIR$/src/dao/DomainDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="16" selection-start-column="16" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/java/someClass.java" />
-    <entry file="file://$PROJECT_DIR$/web/html-crawled/edumall.vn.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/out/artifacts/course_source_crawler_war_exploded/WEB-INF/classes/META-INF/persistence.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/Category.xsd">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/java/entity_new/UserSubjectFollowEntity.java" />
-    <entry file="file://$PROJECT_DIR$/src/entity/CategoryEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="39" column="13" selection-start-line="39" selection-start-column="13" selection-end-line="39" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/Downloads/Setups/jar dependencies/apache-tomee-plume-8.0.0-M1/lib/servlet-api.jar!/javax/servlet/http/HttpServlet.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="291" selection-start-line="291" selection-end-line="291" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/out/production/course-source-crawler/META-INF/persistence.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/util/ParserUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="161" lean-forward="true" selection-start-line="161" selection-end-line="161" />
+        <state relative-caret-position="118">
+          <caret line="25" column="85" selection-start-line="25" selection-start-column="85" selection-end-line="25" selection-end-column="85" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/UserSubjectFollow.java">
+    <entry file="file://$PROJECT_DIR$/src/entity/DomainEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-55">
+          <caret line="8" column="27" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/crawler/CrawlingThreadManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="68" column="47" selection-start-line="68" selection-start-column="29" selection-end-line="68" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/testing/Course.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/homeCrawler.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="36" column="33" lean-forward="true" selection-start-line="36" selection-start-column="33" selection-end-line="36" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/Course.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/CourseDetail.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
@@ -731,246 +833,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/Downloads/Setups/jar dependencies/apache-tomee-plume-8.0.0-M1/lib/servlet-api.jar!/javax/servlet/ServletContextListener.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/Downloads/Setups/jar dependencies/apache-tomee-plume-8.0.0-M1/lib/servlet-api.jar!/javax/servlet/annotation/WebListener.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Listener.java" />
-    <entry file="file://$PROJECT_DIR$/src/model/CourseDetail.java">
+    <entry file="file://$PROJECT_DIR$/src/model/UserSubjectFollow.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/listerner/CrawlerServletListener.java" />
-    <entry file="file://$PROJECT_DIR$/src/dao/CategoryDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="61">
-          <caret line="25" column="16" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/constant/AppConstants.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dao/DomainDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-6">
-          <caret line="2" column="24" lean-forward="true" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/crawler/UnicaEachCategoryCrawler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="87" column="110" selection-start-line="87" selection-start-column="110" selection-end-line="87" selection-end-column="110" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/crawler/UnicaCourseInEachCategoryPageCrawler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="45" column="98" selection-start-line="45" selection-start-column="98" selection-end-line="45" selection-end-column="98" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/crawler/CrawlingThreadManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="61">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#655#656#0" expanded="true" />
-            <element signature="e#677#678#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/crawler/EdumallCourseInEachCategoryPageCrawler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="46" column="100" selection-start-line="46" selection-start-column="100" selection-end-line="46" selection-end-column="100" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/crawler/EdumallEachCategoryCrawler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
-          <caret line="125" column="112" selection-start-line="125" selection-start-column="112" selection-end-line="125" selection-end-column="112" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/index.jsp" />
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/lang/ref/ReferenceQueue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="143" selection-start-line="143" selection-end-line="143" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/constant/UrlConstant.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="49" lean-forward="true" selection-start-line="3" selection-start-column="49" selection-end-line="3" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/logging.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="48" lean-forward="true" selection-start-line="5" selection-start-column="48" selection-end-line="5" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/crawler/UnicaMainCrawler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="50" selection-start-line="21" selection-start-column="41" selection-end-line="21" selection-end-column="50" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/EdumallTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="81" column="23" selection-start-line="81" selection-start-column="23" selection-end-line="81" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/crawler/EdumallMainCrawler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="179" column="8" selection-start-line="179" selection-start-column="8" selection-end-line="179" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/Downloads/Setups/jar dependencies/apache-tomee-plume-8.0.0-M1/lib/servlet-api.jar!/javax/servlet/ServletContext.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1656">
-          <caret line="17" column="17" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/homeCrawler.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="22" column="8" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/UnicaTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="97">
-          <caret line="12" column="31" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/other/DummyDatabase.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="47" selection-start-line="16" selection-start-column="47" selection-end-line="16" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#414#415#0" expanded="true" />
-            <element signature="e#472#473#0" expanded="true" />
-            <element signature="e#510#511#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/servlet/HomeCrawlerServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
-          <caret line="44" column="34" lean-forward="true" selection-start-line="44" selection-start-column="34" selection-end-line="44" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/Course.xsd">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="51" column="20" lean-forward="true" selection-start-line="51" selection-start-column="20" selection-end-line="51" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/testing/Course.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="das://35405006-1886-49af-b85a-a11cf2a37d5e/schema/course_source/table/course">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/META-INF/persistence.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="30" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/crawler/EdumallCourseDetailCrawler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="70">
-          <caret line="561" selection-start-line="561" selection-end-line="561" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dao/CourseDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="71" column="16" selection-start-line="71" selection-start-column="16" selection-end-line="71" selection-end-column="16" />
+        <state relative-caret-position="225">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -979,36 +852,329 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/listerner/MainListener.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="58" column="28" selection-start-line="58" selection-start-column="28" selection-end-line="58" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/crawler/UnicaCourseDetailCrawler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="432" lean-forward="true" selection-start-line="432" selection-end-line="432" />
+        <state relative-caret-position="327">
+          <caret line="37" column="44" selection-start-line="37" selection-start-column="44" selection-end-line="37" selection-end-column="44" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/util/StringUtils.java">
+    <entry file="file://$PROJECT_DIR$/src/listerner/ContextHolder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="40" column="22" selection-start-line="40" selection-start-column="22" selection-end-line="40" selection-end-column="22" />
+        <state relative-caret-position="105">
+          <caret line="7" column="40" lean-forward="true" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="40" />
+          <folding>
+            <element signature="e#171#172#0" expanded="true" />
+            <element signature="e#192#193#0" expanded="true" />
+            <element signature="e#261#262#0" expanded="true" />
+            <element signature="e#299#300#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/javax/xml/XMLConstants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="150" column="31" selection-start-line="150" selection-start-column="31" selection-end-line="150" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/util/ParserUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="401" column="29" lean-forward="true" selection-start-line="401" selection-start-column="29" selection-end-line="401" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/schema/Course.xsd">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="616">
+          <caret line="51" column="20" lean-forward="true" selection-start-line="51" selection-start-column="20" selection-end-line="51" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/servlet/HomeCrawlerServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="90" lean-forward="true" selection-start-line="90" selection-end-line="90" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dao/BaseDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="61">
+          <caret line="44" selection-start-line="44" selection-end-line="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dao/CourseDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="102" selection-start-line="102" selection-end-line="102" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/crawler/EdumallEachCategoryCrawler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="73">
+          <caret line="148" column="18" selection-start-line="148" selection-start-column="8" selection-end-line="148" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/EdumallTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="94">
+          <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/crawler/UnicaEachCategoryCrawler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="148">
+          <caret line="30" column="53" selection-start-line="30" selection-start-column="53" selection-end-line="30" selection-end-column="53" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/UnicaTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="41" column="73" lean-forward="true" selection-start-line="41" selection-start-column="73" selection-end-line="41" selection-end-column="73" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/entity/CourseEntity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="330" lean-forward="true" selection-start-line="330" selection-end-line="330" />
+        <state relative-caret-position="80">
+          <caret line="194" column="16" selection-start-line="194" selection-start-column="16" selection-end-line="194" selection-end-column="16" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#5878#5879#0" expanded="true" />
+            <element signature="e#5921#5922#0" expanded="true" />
             <element signature="e#8382#8383#0" expanded="true" />
-            <element signature="e#8404#8405#0" expanded="true" />
+            <element signature="e#8405#8406#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/crawler/UnicaCourseInEachCategoryPageCrawler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141">
+          <caret line="133" lean-forward="true" selection-start-line="133" selection-end-line="133" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/url_holder/UnicaCourseUrlHolder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="137">
+          <caret line="17" column="18" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
+          <folding>
+            <element signature="e#411#412#0" expanded="true" />
+            <element signature="e#443#444#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/util/StringUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="65" column="36" selection-start-line="65" selection-start-column="36" selection-end-line="65" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/crawler/EdumallCourseDetailCrawler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="121" column="72" selection-start-line="121" selection-start-column="64" selection-end-line="121" selection-end-column="72" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/crawler/UnicaCourseDetailCrawler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="192" column="135" selection-start-line="192" selection-start-column="135" selection-end-line="192" selection-end-column="135" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/crawler/EdumallCourseInEachCategoryPageCrawler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="187" selection-start-line="187" selection-end-line="187" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/constant/AppConstants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="113">
+          <caret line="13" column="53" lean-forward="true" selection-start-line="13" selection-start-column="53" selection-end-line="13" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/config/model/ParserConfig.xsd">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/constant/UrlConstant.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/config/model_to_delete/DomainType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="321" column="37" selection-start-line="321" selection-start-column="37" selection-end-line="321" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/config/model_to_delete/CategoryNameType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="355">
+          <caret line="38" column="12" selection-start-line="38" selection-start-column="12" selection-end-line="38" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/config/model/CategoryNameType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="509">
+          <caret line="80" column="56" selection-start-line="80" selection-start-column="50" selection-end-line="80" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/crawler/UnicaMainCrawler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="229">
+          <caret line="140" column="80" selection-start-line="140" selection-start-column="80" selection-end-line="140" selection-end-column="80" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/config/model/ObjectFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="489">
+          <caret line="69" column="4" selection-start-line="69" selection-start-column="4" selection-end-line="69" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/crawler/EdumallMainCrawler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="191" column="80" selection-start-line="191" selection-start-column="80" selection-end-line="191" selection-end-column="80" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/config/ConfigChangeListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="26" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/config/CategoryMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="427">
+          <caret line="63" lean-forward="true" selection-start-line="63" selection-end-line="63" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/config/model/DomainType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="319" column="28" selection-start-line="319" selection-start-column="28" selection-end-line="319" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/config/model/CategoryNameType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="40" column="12" selection-start-line="40" selection-start-column="12" selection-end-line="40" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/config/model/SignType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="402">
+          <caret line="93" column="18" selection-start-line="93" selection-start-column="18" selection-end-line="93" selection-end-column="18" />
+          <folding>
+            <element signature="e#2283#2284#0" expanded="true" />
+            <element signature="e#2319#2320#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/schema/ParserConfig.xsd">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1">
+          <caret line="36" column="39" lean-forward="true" selection-start-line="36" selection-start-column="39" selection-end-line="36" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/xml/ParserConfig.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-484">
+          <caret line="6" column="47" selection-start-line="6" selection-start-column="47" selection-end-line="6" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/config/model/ParserConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="87" column="18" selection-start-line="87" selection-start-column="18" selection-end-line="87" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/config/ConfigManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-575">
+          <caret line="47" column="16" selection-start-line="47" selection-start-column="16" selection-end-line="47" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#getInstance#0;class#ConfigManager#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/TestConfigManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -1,5 +1,7 @@
 package crawler;
 
+import config.ConfigManager;
+import config.model.SignType;
 import dao.CourseDAO;
 import entity.CourseEntity;
 import sun.java2d.xr.MutableInteger;
@@ -54,30 +56,28 @@ public class EdumallCourseDetailCrawler implements Runnable {
 	@Override
 	public void run() {
 
+
 		try {
 			logger.info("start thread");
+
+			synchronized (CrawlingThreadManager.getInstance()) {
+				while (CrawlingThreadManager.getInstance().isSuspended()) {
+					CrawlingThreadManager.getInstance().wait();
+				}
+			}
+
 //		String uri = "https://edumall.vn/course/guitar-dem-hat-trong-30-ngay";
-//		String uri = "https://edumall.vn/v4/course/microsoft-word-co-ban-va-hieu-qua";
 			String uri = courseDetailUrlHolder.getCourseUrl();
 
-			String beginSign = "<div class='wrapper'";
-			String endSign = "<section class='section_rating";
-
-
-			// add '/v4' to uri because that's what edumall.vn do
-			// ---- no need anymore because edumall.vn fixed it - well-played assholes
-//
-//			int index = uri.indexOf("edumall.vn/course/") + "edumall.vn/course/".length();
-//			if (!uri.substring(index).startsWith("v4")) {
-//				uri = "https://edumall.vn/course/v4/" + uri.substring(index);
-//
-//			}
+//			String beginSign = "<div class='wrapper'";
+//			String endSign = "<section class='section_rating";
+			SignType courseDetailSign = ConfigManager.getInstance().getConfigModel().getEdumall().getCourseDetailSign();
+			String beginSign =courseDetailSign.getBeginSign();
+			String endSign = courseDetailSign.getEndSign();
 
 
 			String htmlContent = ParserUtils.parseHTML(uri, beginSign, endSign);
-//		System.out.println(htmlContent);
 			htmlContent = ParserUtils.addMissingTag(htmlContent);
-//		System.out.println(newContent);
 
 
 			String overviewDescription = "";
@@ -215,6 +215,8 @@ public class EdumallCourseDetailCrawler implements Runnable {
 										}
 
 //										logger.info("AuthorImage=" + imageUrl);
+
+										StringUtils.beautifyUrl(imageUrl, ConfigManager.getInstance().getConfigModel().getEdumall().getDomainUrl());
 										courseEntity.setAuthorImageUrl(imageUrl);
 									}
 									if (ParserUtils.checkAttributeContainsKey(startElement, "id", "author_info")) {
@@ -575,6 +577,13 @@ public class EdumallCourseDetailCrawler implements Runnable {
 			} catch (XMLStreamException e) {
 				e.printStackTrace();
 			}
+
+			synchronized (CrawlingThreadManager.getInstance()) {
+				while (CrawlingThreadManager.getInstance().isSuspended()) {
+					CrawlingThreadManager.getInstance().wait();
+				}
+			}
+
 			logger.info("END THREAD");
 		} catch (Exception e) {
 			e.printStackTrace();
