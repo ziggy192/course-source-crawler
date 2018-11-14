@@ -3,7 +3,7 @@ package crawler;
 import config.ConfigManager;
 import config.model.SignType;
 import url_holder.UnicaCourseUrlHolder;
-import util.ParserUtils;
+import util.StaxParserUtils;
 import util.StringUtils;
 import java.util.logging.Logger;
 
@@ -67,8 +67,8 @@ public class UnicaCourseInEachCategoryPageCrawler implements Runnable {
 //		String endSign = "<div class=\"u-number-page\">";
 
 
-		String htmlContent = ParserUtils.parseHTML(uri, beginSign, endSign);
-		htmlContent = ParserUtils.addMissingTag(htmlContent);
+		String htmlContent = StaxParserUtils.parseHTML(uri, beginSign, endSign);
+		htmlContent = StaxParserUtils.addMissingTag(htmlContent);
 
 		logger.info(htmlContent);
 
@@ -76,7 +76,7 @@ public class UnicaCourseInEachCategoryPageCrawler implements Runnable {
 
 		boolean insideCourseListSection = false;
 		try {
-			XMLEventReader staxReader = ParserUtils.getStaxReader(htmlContent);
+			XMLEventReader staxReader = StaxParserUtils.getStaxReader(htmlContent);
 			UnicaCourseUrlHolder courseUrlHolder = null;
 			while (staxReader.hasNext()) {
 				XMLEvent event = staxReader.nextEvent();
@@ -114,7 +114,7 @@ public class UnicaCourseInEachCategoryPageCrawler implements Runnable {
 
 						//todo traverse each div with  <div class='col-4'>
 						if (startElement.getName().getLocalPart().equals("div")
-								&& ParserUtils.checkAttributeContainsKey(startElement, "class", "box-pop")) {
+								&& StaxParserUtils.checkAttributeContainsKey(startElement, "class", "box-pop")) {
 //							courseCount++;
 //							XMLEvent articleElement = nextStartEvent(staxReader, "article");
 							if (courseUrlHolder != null) {
@@ -128,28 +128,31 @@ public class UnicaCourseInEachCategoryPageCrawler implements Runnable {
 						//todo get thumbnail image
 
 						if (startElement.getName().getLocalPart().equals("div")
-								&& ParserUtils.checkAttributeContainsKey(startElement, "class", "img-course")) {
-							startElement = ParserUtils.nextStartEvent(staxReader, "img").asStartElement();
-							String src = ParserUtils.getAttributeByName(startElement, "src");
+								&& StaxParserUtils.checkAttributeContainsKey(startElement, "class", "img-course")) {
+							startElement = StaxParserUtils.nextStartEvent(staxReader, "img").asStartElement();
+							String src = StaxParserUtils.getAttributeByName(startElement, "src");
 
+							src = StringUtils.beautifyUrl(src, ConfigManager.getInstance().getConfigModel().getUnica().getDomainUrl());
 							courseUrlHolder.setCourseThumbnailUrl(src);
 							logger.info(String.format("course number=%s || thumnail=%s", courseList.size() - 1, src));
 						}
 
 						//todo get course URL
 						if (startElement.getName().getLocalPart().equals("a")
-								&& ParserUtils.checkAttributeContainsKey(startElement, "class", "course-box-slider")) {
-							String href = ParserUtils.getAttributeByName(startElement, "href");
+								&& StaxParserUtils.checkAttributeContainsKey(startElement, "class", "course-box-slider")) {
+							String href = StaxParserUtils.getAttributeByName(startElement, "href");
 
-							courseUrlHolder.setCourseUrl(href);
+							courseUrlHolder.setCourseUrl(StringUtils.beautifyUrl(href,ConfigManager.getInstance().getConfigModel().getUnica().getDomainUrl()));
+
+
 							logger.info(String.format("course number=%s || courseURL=%s", courseList.size() - 1, href));
 
 						}
 
 						//todo get cost
 						if (startElement.getName().getLocalPart().equals("span")
-								&& ParserUtils.checkAttributeContainsKey(startElement, "class", "price-a")) {
-							String costStr = ParserUtils.getContentAndJumpToEndElement(staxReader, startElement);
+								&& StaxParserUtils.checkAttributeContainsKey(startElement, "class", "price-a")) {
+							String costStr = StaxParserUtils.getContentAndJumpToEndElement(staxReader, startElement);
 
 							if (!costStr.isEmpty()) {
 								double costValue = StringUtils.getNumberValueFromString(costStr);

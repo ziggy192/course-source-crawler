@@ -5,6 +5,7 @@ import constant.AppConstants;
 import listerner.ContextHolder;
 import org.xml.sax.InputSource;
 import org.xml.sax.SAXException;
+import util.AppUtils;
 
 import javax.validation.ValidatorFactory;
 import javax.xml.XMLConstants;
@@ -37,6 +38,7 @@ public class ConfigManager {
 
 		//subscribe listeners
 		configChangeListeners.add(CategoryMapper.getInstance());
+
 	}
 
 
@@ -45,33 +47,38 @@ public class ConfigManager {
 	}
 
 
-	public void readConfigFile() {
+
+	public boolean readConfigFile() {
 
 
 		try {
 			//read xml config file
-			File parserConfigXml;
-			if (ContextHolder.getApplicationContext() != null) {
-				String realPath = ContextHolder.getApplicationContext().getRealPath("/" + AppConstants.PARSER_CONFIG_XML_PATH);
-
-				parserConfigXml = new File(realPath);
-
-			} else {
-
-				parserConfigXml = new File("web/" + AppConstants.PARSER_CONFIG_XML_PATH);
-			}
 
 
-			File parserConfigSchema;
-			if (ContextHolder.getApplicationContext() != null) {
-				String realPath = ContextHolder.getApplicationContext().getRealPath("/" + AppConstants.PARSER_CONFIG_SCHEMA_PATH);
+			File parserConfigXml = AppUtils.getFileWithRealPath(AppConstants.PARSER_CONFIG_XML_PATH);
 
-				parserConfigSchema = new File(realPath);
+//			if (ContextHolder.getApplicationContext() != null) {
+//				String realPath = ContextHolder.getApplicationContext().getRealPath("/" + AppConstants.PARSER_CONFIG_XML_PATH);
+//
+//				parserConfigXml = new File(realPath);
+//
+//			} else {
+//
+//				parserConfigXml = new File("web/" + AppConstants.PARSER_CONFIG_XML_PATH);
+//			}
 
-			} else {
 
-				parserConfigSchema = new File("web/" + AppConstants.PARSER_CONFIG_SCHEMA_PATH);
-			}
+			File parserConfigSchema = AppUtils.getFileWithRealPath(AppConstants.PARSER_CONFIG_SCHEMA_PATH);
+
+//			if (ContextHolder.getApplicationContext() != null) {
+//				String realPath = ContextHolder.getApplicationContext().getRealPath("/" + AppConstants.PARSER_CONFIG_SCHEMA_PATH);
+//
+//				parserConfigSchema = new File(realPath);
+//
+//			} else {
+//
+//				parserConfigSchema = new File("web/" + AppConstants.PARSER_CONFIG_SCHEMA_PATH);
+//			}
 
 
 			// validate xml file
@@ -91,10 +98,19 @@ public class ConfigManager {
 
 		} catch (SAXException e) {
 			e.printStackTrace();
-			logger.info("Config file not validated | Exception="+e.getMessage());
+			logger.info("Config file not validated | Exception=" + e.getMessage());
+			return false;
 		} catch (Exception e) {
 			e.printStackTrace();
+			return false;
 		}
+
+		for (ConfigChangeListener configChangeListener : configChangeListeners) {
+			configChangeListener.onConfigChange();
+		}
+
+
+		return true;
 	}
 
 

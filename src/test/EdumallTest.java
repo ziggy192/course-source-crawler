@@ -37,8 +37,10 @@ public class EdumallTest {
 //		testGetCourseListFromEachPage();
 //		testEdumallGetCategory();
 
-		testEdumall();
+//		testEdumall();
+		testGetCourseDetail();
 	}
+
 
 
 	public static void testEdumallGetCategory() {
@@ -87,8 +89,8 @@ public class EdumallTest {
 	public static void testGetCourseDetail() {
 
 		CourseUrlHolder dummyCourseUrlHolder = new CourseUrlHolder("GIÁO DỤC SỚM CHO TRẺ THEO PHƯƠNG PHÁP  GLENN DOMAN: NHẬN BIẾT THẾ GIỚI XUNG Q..."
-				, "d1nzpkv5wwh1xf.cloudfront.net/320/k-577a160c047c994bb7e5b397/20180702-/teach-baby-by-sweet-mother.jpg"
-				, "edumall.vn/course/giao-duc-som-cho-tre-theo-phuong-phap--glenn-doman-nhan-biet-the-gioi-xung-quanh");
+				, "//d1nzpkv5wwh1xf.cloudfront.net/320/k-577a160c047c994bb7e5b397/20180702-/teach-baby-by-sweet-mother.jpg"
+				, "https://edumall.vn/course/giao-duc-som-cho-tre-theo-phuong-phap--glenn-doman-nhan-biet-the-gioi-xung-quanh");
 //				, "https://edumall.vn/course/dao-tao-ky-thuat-truong-cửa-hang-gas");
 //				, "https://edumall.vn/course/tao-slide-trinh-bay-an-tuong-voi-prezi-google-trinh-chieu-va-power-point");
 

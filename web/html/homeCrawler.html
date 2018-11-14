@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="../css/crawlerMain.css" rel="stylesheet"/>
+
+</head>
+<body>
+<div class="wrapper">
+
+    <h1>Home crawler</h1>
+    <form id="mainForm" action="" method="post">
+        <div class="row_wrapper">
+
+            <div class="list_wrapper col1">
+
+                <h3>Domain List to Crawl</h3>
+                <input id="cbEdumall" type="checkbox" value="edumall" name="domain"/>
+                <label for="cbEdumall"> Edumall </label>
+                <br/>
+                <br/>
+                <input id="cbUnica" type="checkbox" value="unica" name="domain">
+                <label for="cbUnica"> Unica</label>
+                <br/>
+                <br/>
+            </div>
+
+            <div class="column_wrapper col2">
+                <div class="button_list_wapper">
+                    <button class="button green" type="submit" name="btAction" value="start">Start</button>
+                    <button class="button red" type="submit" name="btAction" value="pause">Pause</button>
+                    <button class="button blue" type="submit" name="btAction" value="resume">Resume</button>
+                </div>
+
+                <div>
+                    <h3>
+                        Message
+                    </h3>
+                </div>
+            </div>
+
+        </div>
+
+    </form>
+</div>
+</body>
+</html>

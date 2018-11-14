@@ -2,7 +2,8 @@ package crawler;
 
 import config.ConfigManager;
 import config.model.SignType;
-import util.ParserUtils;
+import util.StaxParserUtils;
+
 import java.util.logging.Logger;
 
 import javax.xml.stream.XMLEventReader;
@@ -33,21 +34,21 @@ public class UnicaEachCategoryCrawler implements Runnable{
 //		String beginSign = "<ul class=\"pagination\"";
 //		String endSign = "<li class=\"next\"";
 
-		String htmlContent = ParserUtils.parseHTML(categoryUrl, beginSign, endSign);
+		String htmlContent = StaxParserUtils.parseHTML(categoryUrl, beginSign, endSign);
 
-		htmlContent = ParserUtils.addMissingTag(htmlContent);
+		htmlContent = StaxParserUtils.addMissingTag(htmlContent);
 		int pageCount = 1;
 		try {
-			XMLEventReader staxReader = ParserUtils.getStaxReader(htmlContent);
+			XMLEventReader staxReader = StaxParserUtils.getStaxReader(htmlContent);
 			while (staxReader.hasNext()) {
 				XMLEvent event = staxReader.nextEvent();
 				if (event.isStartElement()) {
 					StartElement startElement = event.asStartElement();
 					if (startElement.getName().getLocalPart().equals("a")
 					) {
-						String href = ParserUtils.getAttributeByName(startElement, "href");
+						String href = StaxParserUtils.getAttributeByName(startElement, "href");
 						if (href.contains("page=")) {
-							String pageContent = ParserUtils.getContentAndJumpToEndElement(staxReader, startElement);
+							String pageContent = StaxParserUtils.getContentAndJumpToEndElement(staxReader, startElement);
 							try {
 								int pageNumber = Integer.parseInt(pageContent);
 

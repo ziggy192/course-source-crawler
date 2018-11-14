@@ -1,0 +1,1548 @@
+<root>
+    <div class='wrapper'></div>
+    <div class='course_detail_v4'></div>
+    <div class='set_background_intro'>
+        <div class='card-mark'></div>
+        <div class='bg_image'>
+            <img src='//d1nzpkv5wwh1xf.cloudfront.net/640/k-5768aeb1047c995f75fdbf6b/20170817-anhdaidienmoi_thinh/hiennt01.png'></img>
+        </div>
+    </div>
+    <div class='row container'></div>
+    <div class='col-xs-12 col-md-4 content_cart'>
+        <div class='content_section'>
+            <div class='btn_buy_fixed_header hidden-md col-xs-12'>
+                <div class='col-xs-6 pull-left price_course'>699,000đ</div>
+                <a class='col-xs-6 pull-right btn_buy_course add_course_to_cart_v4' role='buy'>Mua</a>
+            </div>
+            <section class='section_course_price'>
+                <div class='image_course_in_cart'>
+                    <iframe allowfullscreen='' frameborder='0' height='100%'
+                            src='https://www.youtube.com/embed/cyGq22d1sbk?modestbranding=0&amp;amp;rel=0&amp;amp;showinfo=0'
+                            width='100%'></iframe>
+                </div>
+                <div class='hidden-md col-xs-12 section-intro-mobile'>
+                    <div class='teacher-info'>
+                        <img class='avatar-teacher'
+                             src='//d303ny97lru840.cloudfront.net/kelley-57bfb0d3ce4b1438274ba1fd/20160829-hiennt02-edumall/533079_556033297754623_542734647_n.jpg'></img>
+                        <div class='teacher-name'>Nguyễn Thượng Hiển</div>
+                    </div>
+                    <p class='course_name'>Guitar đệm hát trong 30 ngày</p>
+                    <p class='short-description'></p>
+                    <span class='pull-left count_student'>e
+                        <i class='fas fa-user'>
+                            <span class='count_student_color'>28.492</span>
+                            <span>học viên</span>
+                        </i>
+                    </span>
+                    <div class='star-rating'>
+                        <div class='back-stars'>
+                            <i aria-hidden='true' class='fa fa-star'></i>
+                            <i aria-hidden='true' class='fa fa-star'></i>
+                            <i aria-hidden='true' class='fa fa-star'></i>
+                            <i aria-hidden='true' class='fa fa-star'></i>
+                            <i aria-hidden='true' class='fa fa-star'></i>
+                            <div class='front-stars' style='width: 92.0%'>
+                                <i aria-hidden='true' class='fa fa-star'></i>
+                                <i aria-hidden='true' class='fa fa-star'></i>
+                                <i aria-hidden='true' class='fa fa-star'></i>
+                                <i aria-hidden='true' class='fa fa-star'></i>
+                                <i aria-hidden='true' class='fa fa-star'></i>
+                            </div>
+                        </div>
+                        <b style='padding-left:10px; padding-right:10px;'>4.6</b>(290)
+                    </div>
+                </div>
+                <div class='cover_price'>
+                    <div class='price'>
+                        <div class='count_down_label hidden-md hidden-xs hidden-sm col-xs-12'>
+                            <div class='count_down'>
+                                <i class='far fa-clock col-xs-1'></i>
+                                <p class='time col-xs-10'>Còn 2 ngày nữa</p>
+                                <div class='clear'></div>
+                            </div>
+                        </div>
+                        <p class='col-md-12 col-xs-12 price_course price'>699,000đ</p>
+                        <input class='course_price' type='hidden' value='699000'></input>
+                    </div>
+                    <div class='buy_course'>
+                        <a class='btn buy_now buy_checking add_course_to_cart_v4' role='buy'>Mua ngay</a>
+                    </div>
+                    <button class='add_cart add_course_to_cart_v4' role='add'>
+                        <i class='fa fa-shopping-cart'></i>
+                        <span class='text_add_cart'>Thêm vào giỏ hàng</span>
+                    </button>
+                    <div class='prop'>
+                        <div class='form-layout col-xs-12'>
+                            <i class='icon icon-layers pull-left padding_icon'></i>
+                            <span class='pull-left'>Thể loại</span>
+                            <span class='pull-right'>Phát triển cá nhân</span>
+                        </div>
+                        <div class='form-layout col-xs-12'>
+                            <i class='fas fa-book pull-left padding_icon'></i>
+                            <span class='pull-left'>Số bài học</span>
+                            <span class='pull-right'>77</span>
+                        </div>
+                        <div class='form-layout col-xs-12'>
+                            <i class='fas fa-clock pull-left padding_icon'></i>
+                            <span class='pull-left'>Thời lượng video</span>
+                            <span class='pull-right'>05:58:48</span>
+                        </div>
+                        <div class='form-layout col-xs-12'>
+                            <i class='fas fa-sync-alt pull-left padding_icon'></i>
+                            <span class='pull-left'>Học trọn đời</span>
+                        </div>
+                        <div class='form-layout col-xs-12'>
+                            <div class='learn_all col-xs-1 padding_icon'>
+                                <img class='img-all-devide'
+                                     src='https://png.icons8.com/metro/50/000000/multiple-devices.png'></img>
+                            </div>
+                            <span class='pull-left text-all-devide'>Học được trên mọi thiết bị</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class='section_discount'>
+                <form action='/course/guitar-dem-hat-trong-30-ngay/detail' id='use_coupon' method='GET'>
+                    <div class='insert_code'>
+                        <input name='coupon_code' placeholder='Mã giảm giá (nếu có)' type='text' value=''></input>
+                    </div>
+                    <input class='apply_code' type='submit' value='Áp dụng'></input>
+                </form>
+            </section>
+            <div class='clear'></div>
+            <section class='banner_course_detail' id='banner_course_detail'>
+                <a href='#' target='blank'>
+                    <img src='https://dvkhfbm6djrbs.cloudfront.net/5a8e6efd4191600191017aac/root/BN1069-3.jpg'></img>
+                </a>
+            </section>
+        </div>
+    </div>
+    <div class='col-xs-12 col-md-8 content_course'></div>
+    <section class='section_course_intro'>
+        <div id='banner'>
+            <div class='head_banner'>e
+                <span href='/'>Trang chủ</span>
+                <i class='fas fa-angle-right'></i>
+                <span>Guitar đệm hát trong 30 ngày</span>
+            </div>
+            <div class='course_name'>
+                <p>Guitar đệm hát trong 30 ngày</p>
+            </div>
+            <div class='introduce'>
+                <p></p>
+            </div>
+            <div class='intro_course'>e
+                <div class='info'>
+                    <div class='teacher_name pull-left'>
+                        <div class='avatar_teacher'>
+                            <img src='//d303ny97lru840.cloudfront.net/kelley-57bfb0d3ce4b1438274ba1fd/20160829-hiennt02-edumall/533079_556033297754623_542734647_n.jpg'></img>
+                        </div>
+                        <span class='name_teacher'>Nguyễn Thượng Hiển</span>
+                    </div>
+                </div>
+                <div class='count_student pull-left'>
+                    <i class='far fa-user'></i>
+                    <span class='count_student_color'>28.492</span>
+                    <span>học viên</span>
+                </div>
+                <div class='star-rating'>
+                    <div class='back-stars'>
+                        <i aria-hidden='true' class='fa fa-star'></i>
+                        <i aria-hidden='true' class='fa fa-star'></i>
+                        <i aria-hidden='true' class='fa fa-star'></i>
+                        <i aria-hidden='true' class='fa fa-star'></i>
+                        <i aria-hidden='true' class='fa fa-star'></i>
+                        <div class='front-stars' style='width: 92.0%'>
+                            <i aria-hidden='true' class='fa fa-star'></i>
+                            <i aria-hidden='true' class='fa fa-star'></i>
+                            <i aria-hidden='true' class='fa fa-star'></i>
+                            <i aria-hidden='true' class='fa fa-star'></i>
+                            <i aria-hidden='true' class='fa fa-star'></i>
+                        </div>
+                    </div>
+                    <b style='padding-left:10px; padding-right:10px;'>4.6</b>(290)
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class='section-navigation-tab hidden-sm hidden-xs'>
+        <nav class='navbar navbar-inverse navigation-tab-content' data-offset-top='450' data-spy='affix'>
+            <ul class='nav nav-tabs navigation-tab-content-tabs'>
+                <li>
+                    <a class='navigation-tab-content-tabs-item' href='#general-info-tab'>Thông tin chung</a>
+                    <span></span>
+                </li>
+                <li>
+                    <a class='navigation-tab-content-tabs-item' href='#general-lecture-tab'>Giáo trình</a>
+                    <span></span>
+                </li>
+                <li>
+                    <a class='navigation-tab-content-tabs-item' href='#general-author-tab'>Giảng viên</a>
+                    <span></span>
+                </li>
+                <li>
+                    <a class='navigation-tab-content-tabs-item' href='#section_rating'>Đánh giá</a>
+                    <span></span>
+                </li>
+            </ul>
+        </nav>
+    </section>
+    <section class='section_benefit section-setting' id='general-info-tab'>
+        <p class='title'>Lợi ích từ khóa học</p>
+        <div class='content'>
+            <div class='content_benefit'>
+                <i class='fas fa-check-circle'></i>
+                <span>Nắm vững nhạc lý: Cách đọc tọa độ, bấm hợp âm, tiết tấu; Cách rải âm và quạt chả.</span>
+            </div>
+            <div class='content_benefit'>
+                <i class='fas fa-check-circle'></i>
+                <span>Thành thạo các điệu cơ bản: Surf nhanh - chậm, Disco, Blue, Ballad, Báo, Fox, Valse, Bolero, Slow
+                    Rock,...
+                </span>
+            </div>
+            <div class='content_benefit'>
+                <i class='fas fa-check-circle'></i>
+                <span>Thành thạo cách dò các nhịp, điệu của một bài hát, bắt nhịp và chọn điệu, bắt tông cho ca sĩ, đánh
+                    intro và outro, search hợp âm chuẩn,...
+                </span>
+            </div>
+            <div class='content_benefit'>
+                <i class='fas fa-check-circle'></i>
+                <span>Biết cách chọn đàn sao cho phù hợp với mục đích, túi tiền và phong cách nhưng vẫn phải đảm bảo
+                    những yêu tố thiết yếu.
+                </span>
+            </div>
+        </div>
+        <div class='clear'></div>
+    </section>
+    <section class='section_requirement section-setting'>
+        <p class='title'>Đối tượng mục tiêu</p>
+        <ul class='required'>
+            <div class='cover-require col-md-12'>
+                <li class='require'>Yêu thích âm nhạc và có cảm hứng đặc biệt với những cây đàn Guitar.</li>
+            </div>
+            <div class='clear'></div>
+            <div class='cover-require col-md-12'>
+                <li class='require'>Muốn học Guitar đệm hát nhưng chưa biết bắt đầu từ đâu</li>
+            </div>
+            <div class='clear'></div>
+            <div class='cover-require col-md-12'>
+                <li class='require'>Muốn học Guitar nhưng bị giới hạn về thời gian và tài chính</li>
+            </div>
+            <div class='clear'></div>
+            <div class='cover-require col-md-12'>
+                <li class='require'>Học đệm hát để chơi các bài hát mà mình yêu thích</li>
+            </div>
+            <div class='clear'></div>
+        </ul>
+    </section>
+    <section class='section_description section-setting'>
+        <div class='title'>Tổng quát</div>
+        <div class='description-content show-more-content' id='show_more_des'>
+            <div class='text_description'>
+                <p>Khóa học gồm :<br/>- 6 học phần<br/>- 77 bài giảng được hướng dẫn cụ thể từ giảng viên<br/>- 5 cấp độ
+                    từ cơ bản đến nâng cao<br/>- Hệ thống tài liệu chi tiết cho từng học phần.
+                </p>
+            </div>
+        </div>
+        <div class='show_more' id='show_more_des_button'>XEM THÊM</div>
+    </section>
+    <section class='section_requirement section-setting'>
+        <p class='title'>Yêu cầu của khóa học</p>
+        <ul class='required'>
+            <div class='cover-require col-md-12'>
+                <li class='require'>Một cây guitar và một tâm hồn yêu thích âm nhạc</li>
+            </div>
+            <div class='clear'></div>
+            <div class='cover-require col-md-12'>
+                <li class='require'>Không cần phải có bất kì một kiến thức nào về guitar</li>
+            </div>
+            <div class='clear'></div>
+        </ul>
+    </section>
+    <section class='section_lecture section-setting' id='general-lecture-tab'>
+        <p class='title'>Giáo trình</p>
+        <div class='summary'>
+            <div class='lecture_length'>05:58:48</div>
+            <div class='lecture_count'>77 Bài</div>
+            <div class='clearfix'></div>
+        </div>
+        <div class='panel-menu'>
+            <div class='menu-list col-md-12' id='section_lecture'>
+                <li class='menu'>
+                    <div class='col-md-12 div-menu'>
+                        <div class='col-md-10 col-xs-10 menu-title'>Những điều cơ bản đầu tiên</div>
+                        <div class='col-md-2 col-xs-2 lecture_of_title'>
+                            <span class='count_lecture'>16 Bài</span>
+                            <span class='incon_lecture fas fa-angle-down'></span>
+                        </div>
+                    </div>
+                    <div class='clear'></div>
+                    <div class='lecture lecture_menu'>
+                        <div class='lecture-icon col-md-1 col-xs-1'>
+                            <div class='play_icon'>
+                                <i class='material-icons'>play_circle_outline</i>
+                            </div>
+                        </div>
+                        <div class='lecture_name col-md-9 col-xs-10'>
+                            <div class='lecture_title'>Bài 1: Tài liệu giáo trình phần 1</div>
+                        </div>
+                        <div class='lecture_duration col-md-2'>00:32</div>
+                    </div>
+                    <div class='clear'></div>
+                    <div class='lecture lecture_menu'>
+                        <div class='lecture-icon col-md-1 col-xs-1'>
+                            <div class='play_icon'>
+                                <i class='material-icons'>play_circle_outline</i>
+                            </div>
+                        </div>
+                        <div class='lecture_name col-md-9 col-xs-10'>
+                            <div class='lecture_title'>Bài 2: Giới thiệu chương 1</div>
+                        </div>
+                        <div class='lecture_duration col-md-2'>04:16</div>
+                    </div>
+                    <div class='clear'></div>
+                    <div class='lecture lecture_menu'>
+                        <div class='lecture-icon col-md-1 col-xs-1'>
+                            <div class='play_icon'>
+                                <i class='material-icons'>play_circle_outline</i>
+                            </div>
+                        </div>
+                        <div class='lecture_name col-md-9 col-xs-10'>
+                            <div class='lecture_title'>Bài 3: Guitar đệm hát là gì? Làm quen với nhịp phách.</div>
+                        </div>
+                        <div class='lecture_duration col-md-2'>06:19</div>
+                    </div>
+                    <div class='clear'></div>
+                    <div class='lecture lecture_menu'>
+                        <div class='lecture-icon col-md-1 col-xs-1'>
+                            <div class='play_icon'>
+                                <i class='material-icons'>play_circle_outline</i>
+                            </div>
+                        </div>
+                        <div class='lecture_name col-md-9 col-xs-10'>
+                            <div class='lecture_title'>Bài 4: Làm thế nào để mua đàn Guitar tốt?</div>
+                        </div>
+                        <div class='lecture_duration col-md-2'>19:54</div>
+                    </div>
+                    <div class='clear'></div>
+                    <div class='lecture lecture_menu'>
+                        <div class='lecture-icon col-md-1 col-xs-1'>
+                            <div class='play_icon'>
+                                <i class='material-icons'>play_circle_outline</i>
+                            </div>
+                        </div>
+                        <div class='lecture_name col-md-9 col-xs-10'>
+                            <div class='lecture_title'>Bài 5: Các phụ kiện đi kèm với Guitar, Nên chơi bằng móng ( Pick
+                                ) hay bằng tay?
+                            </div>
+                        </div>
+                        <div class='lecture_duration col-md-2'>04:48</div>
+                    </div>
+                    <div class='clear'></div>
+                    <div class='lecture lecture_menu'>
+                        <div class='lecture-icon col-md-1 col-xs-1'>
+                            <div class='play_icon'>
+                                <i class='material-icons'>play_circle_outline</i>
+                            </div>
+                        </div>
+                        <div class='lecture_name col-md-9 col-xs-10'>
+                            <div class='lecture_title'>Bài 6: Thay dây, lên dây và cách bảo quản</div>
+                        </div>
+                        <div class='lecture_duration col-md-2'>17:08</div>
+                    </div>
+                    <div class='clear'></div>
+                    <div class='lecture lecture_menu'>
+                        <div class='lecture-icon col-md-1 col-xs-1'>
+                            <div class='play_icon'>
+                                <i class='material-icons'>play_circle_outline</i>
+                            </div>
+                        </div>
+                        <div class='lecture_name col-md-9 col-xs-10'>
+                            <div class='lecture_title'>Bài 7: Cách đọc tọa độ hợp âm và tiết tấu điệu, các từ ngữ chuyên
+                                môn trong guitar
+                            </div>
+                        </div>
+                        <div class='lecture_duration col-md-2'>04:48</div>
+                    </div>
+                    <div class='clear'></div>
+                    <div class='lecture lecture_menu'>
+                        <div class='lecture-icon col-md-1 col-xs-1'>
+                            <div class='play_icon'>
+                                <i class='material-icons'>play_circle_outline</i>
+                            </div>
+                        </div>
+                        <div class='lecture_name col-md-9 col-xs-10'>
+                            <div class='lecture_title'>Bài 8: Làm thế nào để bấm hợp âm chuẩn</div>
+                        </div>
+                        <div class='lecture_duration col-md-2'>14:51</div>
+                    </div>
+                    <div class='clear'></div>
+                    <div class='lecture lecture_menu'>
+                        <div class='lecture-icon col-md-1 col-xs-1'>
+                            <div class='play_icon'>
+                                <i class='material-icons'>play_circle_outline</i>
+                            </div>
+                        </div>
+                        <div class='lecture_name col-md-9 col-xs-10'>
+                            <div class='lecture_title'>Bài 9: 7 Hợp âm thứ cơ bản</div>
+                        </div>
+                        <div class='lecture_duration col-md-2'>03:21</div>
+                    </div>
+                    <div class='clear'></div>
+                    <div class='lecture lecture_menu'>
+                        <div class='lecture-icon col-md-1 col-xs-1'>
+                            <div class='play_icon'>
+                                <i class='material-icons'>play_circle_outline</i>
+                            </div>
+                        </div>
+                        <div class='lecture_name col-md-9 col-xs-10'>
+                            <div class='lecture_title'>Bài 10: 7 Hợp âm Trưởng cơ bản</div>
+                        </div>
+                        <div class='lecture_duration col-md-2'>04:27</div>
+                    </div>
+                    <div class='clear'></div>
+                    <div class='lecture lecture_menu'>
+                        <div class='lecture-icon col-md-1 col-xs-1'>
+                            <div class='play_icon'>
+                                <i class='material-icons'>play_circle_outline</i>
+                            </div>
+                        </div>
+                        <div class='lecture_name col-md-9 col-xs-10'>
+                            <div class='lecture_title'>Bài 11: 7 hợp âm 7 cơ bản</div>
+                        </div>
+                        <div class='lecture_duration col-md-2'>02:42</div>
+                    </div>
+                    <div class='clear'></div>
+                    <div class='lecture lecture_menu'>
+                        <div class='lecture-icon col-md-1 col-xs-1'>
+                            <div class='play_icon'>
+                                <i class='material-icons'>play_circle_outline</i>
+                            </div>
+                        </div>
+                        <div class='lecture_name col-md-9 col-xs-10'>
+                            <div class='lecture_title'>Bài 12: Quạt sao cho chuẩn</div>
+                        </div>
+                        <div class='lecture_duration col-md-2'>16:32</div>
+                    </div>
+                    <div class='clear'></div>
+                    <div class='lecture lecture_menu'>
+                        <div class='lecture-icon col-md-1 col-xs-1'>
+                            <div class='play_icon'>
+                                <i class='material-icons'>play_circle_outline</i>
+                            </div>
+                        </div>
+                        <div class='lecture_name col-md-9 col-xs-10'>
+                            <div class='lecture_title'>Bài 13: Rải sao cho chuẩn và bài tập luyện</div>
+                        </div>
+                        <div class='lecture_duration col-md-2'>07:08</div>
+                    </div>
+                    <div class='clear'></div>
+                    <div class='lecture lecture_menu'>
+                        <div class='lecture-icon col-md-1 col-xs-1'>
+                            <div class='play_icon'>
+                                <i class='material-icons'>play_circle_outline</i>
+                            </div>
+                        </div>
+                        <div class='lecture_name col-md-9 col-xs-10'>
+                            <div class='lecture_title'>Bài 14: Làm thế nào để vừa đàn vừa hát?</div>
+                        </div>
+                        <div class='lecture_duration col-md-2'>19:42</div>
+                    </div>
+                    <div class='clear'></div>
+                    <div class='lecture lecture_menu'>
+                        <div class='lecture-icon col-md-1 col-xs-1'>
+                            <div class='play_icon'>
+                                <i class='material-icons'>play_circle_outline</i>
+                            </div>
+                        </div>
+                        <div class='lecture_name col-md-9 col-xs-10'>
+                            <div class='lecture_title'>Bài 15: Thế nào là đủ kiến thức cơ bản, thế nào gọi là bài dễ,
+                                bài trung bình, bài khó
+                            </div>
+                        </div>
+                        <div class='lecture_duration col-md-2'>07:44</div>
+                    </div>
+                    <div class='clear'></div>
+                    <div class='lecture lecture_menu'>
+                        <div class='lecture-icon col-md-1 col-xs-1'>
+                            <div class='play_icon'>
+                                <i class='material-icons'>play_circle_outline</i>
+                            </div>
+                        </div>
+                        <div class='lecture_name col-md-9 col-xs-10'>
+                            <div class='lecture_title'>Bài 16: Tổng kết phần 1</div>
+                        </div>
+                        <div class='lecture_duration col-md-2'>03:44</div>
+                    </div>
+                    <div class='clear'></div>
+                </li>
+                <li class='menu'>
+                    <div class='col-md-12 div-menu'>
+                        <div class='col-md-10 col-xs-10 menu-title'>Cấp độ 1 – Làm quen với cây đàn</div>
+                        <div class='col-md-2 col-xs-2 lecture_of_title'>
+                            <span class='count_lecture'>8 Bài</span>
+                            <span class='incon_lecture fas fa-angle-down'></span>
+                        </div>
+                    </div>
+                    <div class='clear'></div>
+                    <div class='lecture lecture_menu'>
+                        <div class='lecture-icon col-md-1 col-xs-1'>
+                            <div class='play_icon'>
+                                <i class='material-icons'>play_circle_outline</i>
+                            </div>
+                        </div>
+                        <div class='lecture_name col-md-9 col-xs-10'>
+                            <div class='lecture_title'>Bài 17: Tài liệu giáo trình phần 2</div>
+                        </div>
+                        <div class='lecture_duration col-md-2'>00:32</div>
+                    </div>
+                    <div class='clear'></div>
+                    <div class='lecture lecture_menu'>
+                        <div class='lecture-icon col-md-1 col-xs-1'>
+                            <div class='play_icon'>
+                                <i class='material-icons'>play_circle_outline</i>
+                            </div>
+                        </div>
+                        <div class='lecture_name col-md-9 col-xs-10'>
+                            <div class='lecture_title'>Bài 18: Giới thiệu phần 2</div>
+                        </div>
+                        <div class='lecture_duration col-md-2'>01:03</div>
+                    </div>
+                    <div class='clear'></div>
+                    <div class='lecture lecture_menu'>
+                        <div class='lecture-icon col-md-1 col-xs-1'>
+                            <div class='play_icon'>
+                                <i class='material-icons'>play_circle_outline</i>
+                            </div>
+                        </div>
+                        <div class='lecture_name col-md-9 col-xs-10'>
+                            <div class='lecture_title'>Bài 19: Hooray Hooray với C và G, tập chuyển hai hợp âm cơ bản
+                            </div>
+                        </div>
+                        <div class='lecture_duration col-md-2'>06:18</div>
+                    </div>
+                    <div class='clear'></div>
+                    <div class='lecture lecture_menu'>
+                        <div class='lecture-icon col-md-1 col-xs-1'>
+                            <div class='play_icon'>
+                                <i class='material-icons'>play_circle_outline</i>
+                            </div>
+                        </div>
+                        <div class='lecture_name col-md-9 col-xs-10'>
+                            <div class='lecture_title'>Bài 20: Happy Birthday và C G F, tập chuyển ba hợp âm cơ bản
+                            </div>
+                        </div>
+                        <div class='lecture_duration col-md-2'>06:11</div>
+                    </div>
+                    <div class='clear'></div>
+                    <div class='lecture lecture_menu'>
+                        <div class='lecture-icon col-md-1 col-xs-1'>
+                            <div class='play_icon'>
+                                <i class='material-icons'>play_circle_outline</i>
+                            </div>
+                        </div>
+                        <div class='lecture_name col-md-9 col-xs-10'>
+                            <div class='lecture_title'>Bài 21: Chúc bé ngủ ngon và hợp âm Dm, tập chia đôi hợp âm và
+                                chuyển bốn hợp âm nhanh hơn
+                            </div>
+                        </div>
+                        <div class='lecture_duration col-md-2'>05:50</div>
+                    </div>
+                    <div class='clear'></div>
+                    <div class='lecture lecture_menu'>
+                        <div class='lecture-icon col-md-1 col-xs-1'>
+                            <div class='play_icon'>
+                                <i class='material-icons'>play_circle_outline</i>
+                            </div>
+                        </div>
+                        <div class='lecture_name col-md-9 col-xs-10'>
+                            <div class='lecture_title'>Bài 22: Tuổi hồng thơ ngây với Am và G7, tập làm quen với rải
+                                dây
+                            </div>
+                        </div>
+                        <div class='lecture_duration col-md-2'>06:09</div>
+                    </div>
+                    <div class='clear'></div>
+                    <div class='lecture lecture_menu'>
+                        <div class='lecture-icon col-md-1 col-xs-1'>
+                            <div class='play_icon'>
+                                <i class='material-icons'>play_circle_outline</i>
+                            </div>
+                        </div>
+                        <div class='lecture_name col-md-9 col-xs-10'>
+                            <div class='lecture_title'>Bài 23: Hallelujah với Em và hòa âm dài không cố định</div>
+                        </div>
+                        <div class='lecture_duration col-md-2'>04:14</div>
+                    </div>
+                    <div class='clear'></div>
+                    <div class='lecture lecture_menu'>
+                        <div class='lecture-icon col-md-1 col-xs-1'>
+                            <div class='play_icon'>
+                                <i class='material-icons'>play_circle_outline</i>
+                            </div>
+                        </div>
+                        <div class='lecture_name col-md-9 col-xs-10'>
+                            <div class='lecture_title'>Bài 24: Tổng kết phần 2</div>
+                        </div>
+                        <div class='lecture_duration col-md-2'>03:21</div>
+                    </div>
+                    <div class='clear'></div>
+                </li>
+                <li class='menu'>
+                    <div class='col-md-12 div-menu'>
+                        <div class='col-md-10 col-xs-10 menu-title'>Cấp độ 2 – Điệu Surf nhanh và chậm và những hợp âm
+                            chặn đầu tiên
+                        </div>
+                        <div class='col-md-2 col-xs-2 lecture_of_title'>
+                            <span class='count_lecture'>14 Bài</span>
+                            <span class='incon_lecture fas fa-angle-down'></span>
+                        </div>
+                    </div>
+                    <div class='clear'></div>
+                    <div class='lecture lecture_menu'>
+                        <div class='lecture-icon col-md-1 col-xs-1'>
+                            <div class='play_icon'>
+                                <i class='material-icons'>play_circle_outline</i>
+                            </div>
+                        </div>
+                        <div class='lecture_name col-md-9 col-xs-10'>
+                            <div class='lecture_title'>Bài 25: Tài liệu giáo trình phần 3</div>
+                        </div>
+                        <div class='lecture_duration col-md-2'>00:32</div>
+                    </div>
+                    <div class='clear'></div>
+                    <div class='lecture lecture_menu'>
+                        <div class='lecture-icon col-md-1 col-xs-1'>
+                            <div class='play_icon'>
+                                <i class='material-icons'>play_circle_outline</i>
+                            </div>
+                        </div>
+                        <div class='lecture_name col-md-9 col-xs-10'>
+                            <div class='lecture_title'>Bài 26: Giới thiệu phần 3</div>
+                        </div>
+                        <div class='lecture_duration col-md-2'>01:11</div>
+                    </div>
+                    <div class='clear'></div>
+                    <div class='lecture lecture_menu'>
+                        <div class='lecture-icon col-md-1 col-xs-1'>
+                            <div class='play_icon'>
+                                <i class='material-icons'>play_circle_outline</i>
+                            </div>
+                        </div>
+                        <div class='lecture_name col-md-9 col-xs-10'>
+                            <div class='lecture_title'>Bài 27: Giới thiệu điệu Surf chậm</div>
+                        </div>
+                        <div class='lecture_duration col-md-2'>07:26</div>
+                    </div>
+                    <div class='clear'></div>
+                    <div class='lecture lecture_menu'>
+                        <div class='lecture-icon col-md-1 col-xs-1'>
+                            <div class='play_icon'>
+                                <i class='material-icons'>play_circle_outline</i>
+                            </div>
+                        </div>
+                        <div class='lecture_name col-md-9 col-xs-10'>
+                            <div class='lecture_title'>Bài 28: Tập rải Surf chậm với vòng G cơ bản bằng bài Remember
+                                when
+                            </div>
+                        </div>
+                        <div class='lecture_duration col-md-2'>07:13</div>
+                    </div>
+                    <div class='clear'></div>
+                    <div class='lecture lecture_menu'>
+                        <div class='lecture-icon col-md-1 col-xs-1'>
+                            <div class='play_icon'>
+                                <i class='material-icons'>play_circle_outline</i>
+                            </div>
+                        </div>
+                        <div class='lecture_name col-md-9 col-xs-10'>
+                            <div class='lecture_title'>Bài 29: Tập thêm với Bèo Dạt Mây Trôi</div>
+                        </div>
+                        <div class='lecture_duration col-md-2'>03:35</div>
+                    </div>
+                    <div class='clear'></div>
+                    <div class='lecture lecture_menu'>
+                        <div class='lecture-icon col-md-1 col-xs-1'>
+                            <div class='play_icon'>
+                                <i class='material-icons'>play_circle_outline</i>
+                            </div>
+                        </div>
+                        <div class='lecture_name col-md-9 col-xs-10'>
+                            <div class='lecture_title'>Bài 30: Hợp âm chặn đầu tiên và làm thế nào để chơi chuẩn</div>
+                        </div>
+                        <div class='lecture_duration col-md-2'>13:45</div>
+                    </div>
+                    <div class='clear'></div>
+                    <div class='lecture lecture_menu'>
+                        <div class='lecture-icon col-md-1 col-xs-1'>
+                            <div class='play_icon'>
+                                <i class='material-icons'>play_circle_outline</i>
+                            </div>
+                        </div>
+                        <div class='lecture_name col-md-9 col-xs-10'>
+                            <div class='lecture_title'>Bài 31: Tập thêm với bài Hòn đá cô đơn và làm quen với vòng thần
+                                thánh Canon C
+                            </div>
+                        </div>
+                        <div class='lecture_duration col-md-2'>05:35</div>
+                    </div>
+                    <div class='clear'></div>
+                    <div class='lecture lecture_menu'>
+                        <div class='lecture-icon col-md-1 col-xs-1'>
+                            <div class='play_icon'>
+                                <i class='material-icons'>play_circle_outline</i>
+                            </div>
+                        </div>
+                        <div class='lecture_name col-md-9 col-xs-10'>
+                            <div class='lecture_title'>Bài 32: Làm quen với hợp âm chặn thứ nhất (F) và tập quạt chả với
+                                bài Forever
+                            </div>
+                        </div>
+                        <div class='lecture_duration col-md-2'>04:55</div>
+                    </div>
+                    <div class='clear'></div>
+                    <div class='lecture lecture_menu'>
+                        <div class='lecture-icon col-md-1 col-xs-1'>
+                            <div class='play_icon'>
+                                <i class='material-icons'>play_circle_outline</i>
+                            </div>
+                        </div>
+                        <div class='lecture_name col-md-9 col-xs-10'>
+                            <div class='lecture_title'>Bài 33: Tập thêm với hòa âm dài không cố định và thay đổi cảm xúc
+                                nhạc với Cô bé mùa đông
+                            </div>
+                        </div>
+                        <div class='lecture_duration col-md-2'>04:04</div>
+                    </div>
+                    <div class='clear'></div>
+                    <div class='lecture lecture_menu'>
+                        <div class='lecture-icon col-md-1 col-xs-1'>
+                            <div class='play_icon'>
+                                <i class='material-icons'>play_circle_outline</i>
+                            </div>
+                        </div>
+                        <div class='lecture_name col-md-9 col-xs-10'>
+                            <div class='lecture_title'>Bài 34: Giới thiệu điệu Surf nhanh và bài Forever alone</div>
+                        </div>
+                        <div class='lecture_duration col-md-2'>05:12</div>
+                    </div>
+                    <div class='clear'></div>
+                    <div class='lecture lecture_menu'>
+                        <div class='lecture-icon col-md-1 col-xs-1'>
+                            <div class='play_icon'>
+                                <i class='material-icons'>play_circle_outline</i>
+                            </div>
+                        </div>
+                        <div class='lecture_name col-md-9 col-xs-10'>
+                            <div class='lecture_title'>Bài 35: Tập thêm với bài Và tôi cũng yêu em</div>
+                        </div>
+                        <div class='lecture_duration col-md-2'>02:03</div>
+                    </div>
+                    <div class='clear'></div>
+                    <div class='lecture lecture_menu'>
+                        <div class='lecture-icon col-md-1 col-xs-1'>
+                            <div class='play_icon'>
+                                <i class='material-icons'>play_circle_outline</i>
+                            </div>
+                        </div>
+                        <div class='lecture_name col-md-9 col-xs-10'>
+                            <div class='lecture_title'>Bài 36: Làm quen với hợp âm chặn thứ hai (Bm) và tập chuyển vòng
+                                D với bài Demon
+                            </div>
+                        </div>
+                        <div class='lecture_duration col-md-2'>03:40</div>
+                    </div>
+                    <div class='clear'></div>
+                    <div class='lecture lecture_menu'>
+                        <div class='lecture-icon col-md-1 col-xs-1'>
+                            <div class='play_icon'>
+                                <i class='material-icons'>play_circle_outline</i>
+                            </div>
+                        </div>
+                        <div class='lecture_name col-md-9 col-xs-10'>
+                            <div class='lecture_title'>Bài 37: Làm quen với hợp âm chặn thứ ba và bốn (Bb) (Gm) với Đêm
+                                nằm mơ phố
+                            </div>
+                        </div>
+                        <div class='lecture_duration col-md-2'>05:01</div>
+                    </div>
+                    <div class='clear'></div>
+                    <div class='lecture lecture_menu'>
+                        <div class='lecture-icon col-md-1 col-xs-1'>
+                            <div class='play_icon'>
+                                <i class='material-icons'>play_circle_outline</i>
+                            </div>
+                        </div>
+                        <div class='lecture_name col-md-9 col-xs-10'>
+                            <div class='lecture_title'>Bài 38: Tổng kết phần 3</div>
+                        </div>
+                        <div class='lecture_duration col-md-2'>02:25</div>
+                    </div>
+                    <div class='clear'></div>
+                </li>
+                <li class='menu'>
+                    <div class='col-md-12 div-menu'>
+                        <div class='col-md-10 col-xs-10 menu-title'>Cấp độ 3 – Disco, Blue và Ballad, hợp âm thế tay
+                            cao, báo và hoàn thiện nhạc trẻ
+                        </div>
+                        <div class='col-md-2 col-xs-2 lecture_of_title'>
+                            <span class='count_lecture'>19 Bài</span>
+                            <span class='incon_lecture fas fa-angle-down'></span>
+                        </div>
+                    </div>
+                    <div class='clear'></div>
+                    <div class='lecture lecture_menu'>
+                        <div class='lecture-icon col-md-1 col-xs-1'>
+                            <div class='play_icon'>
+                                <i class='material-icons'>play_circle_outline</i>
+                            </div>
+                        </div>
+                        <div class='lecture_name col-md-9 col-xs-10'>
+                            <div class='lecture_title'>Bài 39: Tài liệu giáo trình phần 4</div>
+                        </div>
+                        <div class='lecture_duration col-md-2'>00:32</div>
+                    </div>
+                    <div class='clear'></div>
+                    <div class='lecture lecture_menu'>
+                        <div class='lecture-icon col-md-1 col-xs-1'>
+                            <div class='play_icon'>
+                                <i class='material-icons'>play_circle_outline</i>
+                            </div>
+                        </div>
+                        <div class='lecture_name col-md-9 col-xs-10'>
+                            <div class='lecture_title'>Bài 40: Giới thiệu phần 4</div>
+                        </div>
+                        <div class='lecture_duration col-md-2'>01:16</div>
+                    </div>
+                    <div class='clear'></div>
+                    <div class='lecture lecture_menu'>
+                        <div class='lecture-icon col-md-1 col-xs-1'>
+                            <div class='play_icon'>
+                                <i class='material-icons'>play_circle_outline</i>
+                            </div>
+                        </div>
+                        <div class='lecture_name col-md-9 col-xs-10'>
+                            <div class='lecture_title'>Bài 41: Giới thiệu điệu Disco</div>
+                        </div>
+                        <div class='lecture_duration col-md-2'>05:37</div>
+                    </div>
+                    <div class='clear'></div>
+                    <div class='lecture lecture_menu'>
+                        <div class='lecture-icon col-md-1 col-xs-1'>
+                            <div class='play_icon'>
+                                <i class='material-icons'>play_circle_outline</i>
+                            </div>
+                        </div>
+                        <div class='lecture_name col-md-9 col-xs-10'>
+                            <div class='lecture_title'>Bài 42: Làm quen với hợp âm màu ( Dm7 và G/B ) và tập chặt Disco
+                                với Anh không đòi quà
+                            </div>
+                        </div>
+                        <div class='lecture_duration col-md-2'>04:53</div>
+                    </div>
+                    <div class='clear'></div>
+                    <div class='lecture lecture_menu'>
+                        <div class='lecture-icon col-md-1 col-xs-1'>
+                            <div class='play_icon'>
+                                <i class='material-icons'>play_circle_outline</i>
+                            </div>
+                        </div>
+                        <div class='lecture_name col-md-9 col-xs-10'>
+                            <div class='lecture_title'>Bài 43: Tập quạt và rải thêm với Just the way you are</div>
+                        </div>
+                        <div class='lecture_duration col-md-2'>04:08</div>
+                    </div>
+                    <div class='clear'></div>
+                    <div class='lecture lecture_menu'>
+                        <div class='lecture-icon col-md-1 col-xs-1'>
+                            <div class='play_icon'>
+                                <i class='material-icons'>play_circle_outline</i>
+                            </div>
+                        </div>
+                        <div class='lecture_name col-md-9 col-xs-10'>
+                            <div class='lecture_title'>Bài 44: Tập đánh chuyển hợp âm cực nhanh với Grenade</div>
+                        </div>
+                        <div class='lecture_duration col-md-2'>04:11</div>
+                    </div>
+                    <div class='clear'></div>
+                    <div class='lecture lecture_menu'>
+                        <div class='lecture-icon col-md-1 col-xs-1'>
+                            <div class='play_icon'>
+                                <i class='material-icons'>play_circle_outline</i>
+                            </div>
+                        </div>
+                        <div class='lecture_name col-md-9 col-xs-10'>
+                            <div class='lecture_title'>Bài 45: Giới thiệu điệu Blue</div>
+                        </div>
+                        <div class='lecture_duration col-md-2'>03:44</div>
+                    </div>
+                    <div class='clear'></div>
+                    <div class='lecture lecture_menu'>
+                        <div class='lecture-icon col-md-1 col-xs-1'>
+                            <div class='play_icon'>
+                                <i class='material-icons'>play_circle_outline</i>
+                            </div>
+                        </div>
+                        <div class='lecture_name col-md-9 col-xs-10'>
+                            <div class='lecture_title'>Bài 46: Tập rải và quạt với bài Một nhà</div>
+                        </div>
+                        <div class='lecture_duration col-md-2'>04:19</div>
+                    </div>
+                    <div class='clear'></div>
+                    <div class='lecture lecture_menu'>
+                        <div class='lecture-icon col-md-1 col-xs-1'>
+                            <div class='play_icon'>
+                                <i class='material-icons'>play_circle_outline</i>
+                            </div>
+                        </div>
+                        <div class='lecture_name col-md-9 col-xs-10'>
+                            <div class='lecture_title'>Bài 47: Tập thêm với bài Là con gái thật tuyệt</div>
+                        </div>
+                        <div class='lecture_duration col-md-2'>02:13</div>
+                    </div>
+                    <div class='clear'></div>
+                    <div class='lecture lecture_menu'>
+                        <div class='lecture-icon col-md-1 col-xs-1'>
+                            <div class='play_icon'>
+                                <i class='material-icons'>play_circle_outline</i>
+                            </div>
+                        </div>
+                        <div class='lecture_name col-md-9 col-xs-10'>
+                            <div class='lecture_title'>Bài 48: Tập thêm với Gót hồng</div>
+                        </div>
+                        <div class='lecture_duration col-md-2'>03:10</div>
+                    </div>
+                    <div class='clear'></div>
+                    <div class='lecture lecture_menu'>
+                        <div class='lecture-icon col-md-1 col-xs-1'>
+                            <div class='play_icon'>
+                                <i class='material-icons'>play_circle_outline</i>
+                            </div>
+                        </div>
+                        <div class='lecture_name col-md-9 col-xs-10'>
+                            <div class='lecture_title'>Bài 49: Làm thế nào để đánh các hợp âm thế cao ( Eb, Ab,
+                                C#..v..v.. ) và áp dụng vào bài Vợ Người Ta
+                            </div>
+                        </div>
+                        <div class='lecture_duration col-md-2'>12:06</div>
+                    </div>
+                    <div class='clear'></div>
+                    <div class='lecture lecture_menu'>
+                        <div class='lecture-icon col-md-1 col-xs-1'>
+                            <div class='play_icon'>
+                                <i class='material-icons'>play_circle_outline</i>
+                            </div>
+                        </div>
+                        <div class='lecture_name col-md-9 col-xs-10'>
+                            <div class='lecture_title'>Bài 50: Giới thiệu điệu Ballad</div>
+                        </div>
+                        <div class='lecture_duration col-md-2'>01:49</div>
+                    </div>
+                    <div class='clear'></div>
+                    <div class='lecture lecture_menu'>
+                        <div class='lecture-icon col-md-1 col-xs-1'>
+                            <div class='play_icon'>
+                                <i class='material-icons'>play_circle_outline</i>
+                            </div>
+                        </div>
+                        <div class='lecture_name col-md-9 col-xs-10'>
+                            <div class='lecture_title'>Bài 51: Tập kết hợp điệu Surf với ballad trong bài Tìm</div>
+                        </div>
+                        <div class='lecture_duration col-md-2'>03:32</div>
+                    </div>
+                    <div class='clear'></div>
+                    <div class='lecture lecture_menu'>
+                        <div class='lecture-icon col-md-1 col-xs-1'>
+                            <div class='play_icon'>
+                                <i class='material-icons'>play_circle_outline</i>
+                            </div>
+                        </div>
+                        <div class='lecture_name col-md-9 col-xs-10'>
+                            <div class='lecture_title'>Bài 52: Tập chơi ballad và tìm hợp âm thế cao với Price Tag</div>
+                        </div>
+                        <div class='lecture_duration col-md-2'>02:13</div>
+                    </div>
+                    <div class='clear'></div>
+                    <div class='lecture lecture_menu'>
+                        <div class='lecture-icon col-md-1 col-xs-1'>
+                            <div class='play_icon'>
+                                <i class='material-icons'>play_circle_outline</i>
+                            </div>
+                        </div>
+                        <div class='lecture_name col-md-9 col-xs-10'>
+                            <div class='lecture_title'>Bài 53: Báo là gì? Có tác dụng gì trong chơi đệm hát?</div>
+                        </div>
+                        <div class='lecture_duration col-md-2'>06:33</div>
+                    </div>
+                    <div class='clear'></div>
+                    <div class='lecture lecture_menu'>
+                        <div class='lecture-icon col-md-1 col-xs-1'>
+                            <div class='play_icon'>
+                                <i class='material-icons'>play_circle_outline</i>
+                            </div>
+                        </div>
+                        <div class='lecture_name col-md-9 col-xs-10'>
+                            <div class='lecture_title'>Bài 54: Tập báo với bài Nồng nàn Hà Nội</div>
+                        </div>
+                        <div class='lecture_duration col-md-2'>02:53</div>
+                    </div>
+                    <div class='clear'></div>
+                    <div class='lecture lecture_menu'>
+                        <div class='lecture-icon col-md-1 col-xs-1'>
+                            <div class='play_icon'>
+                                <i class='material-icons'>play_circle_outline</i>
+                            </div>
+                        </div>
+                        <div class='lecture_name col-md-9 col-xs-10'>
+                            <div class='lecture_title'>Bài 55: Tập chia đôi Ballad với Để em rời xa</div>
+                        </div>
+                        <div class='lecture_duration col-md-2'>03:37</div>
+                    </div>
+                    <div class='clear'></div>
+                    <div class='lecture lecture_menu'>
+                        <div class='lecture-icon col-md-1 col-xs-1'>
+                            <div class='play_icon'>
+                                <i class='material-icons'>play_circle_outline</i>
+                            </div>
+                        </div>
+                        <div class='lecture_name col-md-9 col-xs-10'>
+                            <div class='lecture_title'>Bài 56: Tập cách kết hợp ba điệu vào một bài hát trong The day
+                                you went away
+                            </div>
+                        </div>
+                        <div class='lecture_duration col-md-2'>03:15</div>
+                    </div>
+                    <div class='clear'></div>
+                    <div class='lecture lecture_menu'>
+                        <div class='lecture-icon col-md-1 col-xs-1'>
+                            <div class='play_icon'>
+                                <i class='material-icons'>play_circle_outline</i>
+                            </div>
+                        </div>
+                        <div class='lecture_name col-md-9 col-xs-10'>
+                            <div class='lecture_title'>Bài 57: Tổng kết phần 4</div>
+                        </div>
+                        <div class='lecture_duration col-md-2'>01:18</div>
+                    </div>
+                    <div class='clear'></div>
+                </li>
+                <li class='menu'>
+                    <div class='col-md-12 div-menu'>
+                        <div class='col-md-10 col-xs-10 menu-title'>Cấp độ 4 – Hoàn thiện các điệu ít dung và hoàn thiện
+                            nhịp lẻ
+                        </div>
+                        <div class='col-md-2 col-xs-2 lecture_of_title'>
+                            <span class='count_lecture'>12 Bài</span>
+                            <span class='incon_lecture fas fa-angle-down'></span>
+                        </div>
+                    </div>
+                    <div class='clear'></div>
+                    <div class='lecture lecture_menu'>
+                        <div class='lecture-icon col-md-1 col-xs-1'>
+                            <div class='play_icon'>
+                                <i class='material-icons'>play_circle_outline</i>
+                            </div>
+                        </div>
+                        <div class='lecture_name col-md-9 col-xs-10'>
+                            <div class='lecture_title'>Bài 58: Tài liệu giáo trình phần 5</div>
+                        </div>
+                        <div class='lecture_duration col-md-2'>00:32</div>
+                    </div>
+                    <div class='clear'></div>
+                    <div class='lecture lecture_menu'>
+                        <div class='lecture-icon col-md-1 col-xs-1'>
+                            <div class='play_icon'>
+                                <i class='material-icons'>play_circle_outline</i>
+                            </div>
+                        </div>
+                        <div class='lecture_name col-md-9 col-xs-10'>
+                            <div class='lecture_title'>Bài 59: Giới thiệu phần 5</div>
+                        </div>
+                        <div class='lecture_duration col-md-2'>00:51</div>
+                    </div>
+                    <div class='clear'></div>
+                    <div class='lecture lecture_menu'>
+                        <div class='lecture-icon col-md-1 col-xs-1'>
+                            <div class='play_icon'>
+                                <i class='material-icons'>play_circle_outline</i>
+                            </div>
+                        </div>
+                        <div class='lecture_name col-md-9 col-xs-10'>
+                            <div class='lecture_title'>Bài 60: Giới thiệu điệu Fox</div>
+                        </div>
+                        <div class='lecture_duration col-md-2'>01:54</div>
+                    </div>
+                    <div class='clear'></div>
+                    <div class='lecture lecture_menu'>
+                        <div class='lecture-icon col-md-1 col-xs-1'>
+                            <div class='play_icon'>
+                                <i class='material-icons'>play_circle_outline</i>
+                            </div>
+                        </div>
+                        <div class='lecture_name col-md-9 col-xs-10'>
+                            <div class='lecture_title'>Bài 61: Tập chơi điệu Fox với bài I’m yours</div>
+                        </div>
+                        <div class='lecture_duration col-md-2'>01:55</div>
+                    </div>
+                    <div class='clear'></div>
+                    <div class='lecture lecture_menu'>
+                        <div class='lecture-icon col-md-1 col-xs-1'>
+                            <div class='play_icon'>
+                                <i class='material-icons'>play_circle_outline</i>
+                            </div>
+                        </div>
+                        <div class='lecture_name col-md-9 col-xs-10'>
+                            <div class='lecture_title'>Bài 62: Tập thêm với bài Thằng tàu lai</div>
+                        </div>
+                        <div class='lecture_duration col-md-2'>02:15</div>
+                    </div>
+                    <div class='clear'></div>
+                    <div class='lecture lecture_menu'>
+                        <div class='lecture-icon col-md-1 col-xs-1'>
+                            <div class='play_icon'>
+                                <i class='material-icons'>play_circle_outline</i>
+                            </div>
+                        </div>
+                        <div class='lecture_name col-md-9 col-xs-10'>
+                            <div class='lecture_title'>Bài 63: Giới thiệu điệu Bolero và bài phổ thông</div>
+                        </div>
+                        <div class='lecture_duration col-md-2'>02:38</div>
+                    </div>
+                    <div class='clear'></div>
+                    <div class='lecture lecture_menu'>
+                        <div class='lecture-icon col-md-1 col-xs-1'>
+                            <div class='play_icon'>
+                                <i class='material-icons'>play_circle_outline</i>
+                            </div>
+                        </div>
+                        <div class='lecture_name col-md-9 col-xs-10'>
+                            <div class='lecture_title'>Bài 64: Giới thiệu điệu Valse</div>
+                        </div>
+                        <div class='lecture_duration col-md-2'>01:34</div>
+                    </div>
+                    <div class='clear'></div>
+                    <div class='lecture lecture_menu'>
+                        <div class='lecture-icon col-md-1 col-xs-1'>
+                            <div class='play_icon'>
+                                <i class='material-icons'>play_circle_outline</i>
+                            </div>
+                        </div>
+                        <div class='lecture_name col-md-9 col-xs-10'>
+                            <div class='lecture_title'>Bài 65: Tập điệu Valse với bài Bụi Phấn</div>
+                        </div>
+                        <div class='lecture_duration col-md-2'>01:32</div>
+                    </div>
+                    <div class='clear'></div>
+                    <div class='lecture lecture_menu'>
+                        <div class='lecture-icon col-md-1 col-xs-1'>
+                            <div class='play_icon'>
+                                <i class='material-icons'>play_circle_outline</i>
+                            </div>
+                        </div>
+                        <div class='lecture_name col-md-9 col-xs-10'>
+                            <div class='lecture_title'>Bài 66: Giới thiệu điệu Slow Rock</div>
+                        </div>
+                        <div class='lecture_duration col-md-2'>01:57</div>
+                    </div>
+                    <div class='clear'></div>
+                    <div class='lecture lecture_menu'>
+                        <div class='lecture-icon col-md-1 col-xs-1'>
+                            <div class='play_icon'>
+                                <i class='material-icons'>play_circle_outline</i>
+                            </div>
+                        </div>
+                        <div class='lecture_name col-md-9 col-xs-10'>
+                            <div class='lecture_title'>Bài 67: Tập Slow rock với bài Chắc ai đó sẽ về</div>
+                        </div>
+                        <div class='lecture_duration col-md-2'>02:50</div>
+                    </div>
+                    <div class='clear'></div>
+                    <div class='lecture lecture_menu'>
+                        <div class='lecture-icon col-md-1 col-xs-1'>
+                            <div class='play_icon'>
+                                <i class='material-icons'>play_circle_outline</i>
+                            </div>
+                        </div>
+                        <div class='lecture_name col-md-9 col-xs-10'>
+                            <div class='lecture_title'>Bài 68: Tập ghép điệu Slow rock với Valse, làm quen với hợp âm
+                                đảo bass với Không còn mùa thu
+                            </div>
+                        </div>
+                        <div class='lecture_duration col-md-2'>04:12</div>
+                    </div>
+                    <div class='clear'></div>
+                    <div class='lecture lecture_menu'>
+                        <div class='lecture-icon col-md-1 col-xs-1'>
+                            <div class='play_icon'>
+                                <i class='material-icons'>play_circle_outline</i>
+                            </div>
+                        </div>
+                        <div class='lecture_name col-md-9 col-xs-10'>
+                            <div class='lecture_title'>Bài 69: Tổng kết phần 5</div>
+                        </div>
+                        <div class='lecture_duration col-md-2'>00:56</div>
+                    </div>
+                    <div class='clear'></div>
+                </li>
+                <li class='menu'>
+                    <div class='col-md-12 div-menu'>
+                        <div class='col-md-10 col-xs-10 menu-title'>Cấp độ 5 – Làm thế nào để bất kì bài cơ bản trung
+                            bình nào cũng chơi được?
+                        </div>
+                        <div class='col-md-2 col-xs-2 lecture_of_title'>
+                            <span class='count_lecture'>8 Bài</span>
+                            <span class='incon_lecture fas fa-angle-down'></span>
+                        </div>
+                    </div>
+                    <div class='clear'></div>
+                    <div class='lecture lecture_menu'>
+                        <div class='lecture-icon col-md-1 col-xs-1'>
+                            <div class='play_icon'>
+                                <i class='material-icons'>play_circle_outline</i>
+                            </div>
+                        </div>
+                        <div class='lecture_name col-md-9 col-xs-10'>
+                            <div class='lecture_title'>Bài 70: Tài liệu giáo trình phần 6</div>
+                        </div>
+                        <div class='lecture_duration col-md-2'>00:32</div>
+                    </div>
+                    <div class='clear'></div>
+                    <div class='lecture lecture_menu'>
+                        <div class='lecture-icon col-md-1 col-xs-1'>
+                            <div class='play_icon'>
+                                <i class='material-icons'>play_circle_outline</i>
+                            </div>
+                        </div>
+                        <div class='lecture_name col-md-9 col-xs-10'>
+                            <div class='lecture_title'>Bài 71: Giới thiệu phần 6</div>
+                        </div>
+                        <div class='lecture_duration col-md-2'>01:05</div>
+                    </div>
+                    <div class='clear'></div>
+                    <div class='lecture lecture_menu'>
+                        <div class='lecture-icon col-md-1 col-xs-1'>
+                            <div class='play_icon'>
+                                <i class='material-icons'>play_circle_outline</i>
+                            </div>
+                        </div>
+                        <div class='lecture_name col-md-9 col-xs-10'>
+                            <div class='lecture_title'>Bài 72: Làm thế nào để biết một bài hát là nhịp bao nhiêu và chơi
+                                điệu gì là hợp lý?
+                            </div>
+                        </div>
+                        <div class='lecture_duration col-md-2'>07:37</div>
+                    </div>
+                    <div class='clear'></div>
+                    <div class='lecture lecture_menu'>
+                        <div class='lecture-icon col-md-1 col-xs-1'>
+                            <div class='play_icon'>
+                                <i class='material-icons'>play_circle_outline</i>
+                            </div>
+                        </div>
+                        <div class='lecture_name col-md-9 col-xs-10'>
+                            <div class='lecture_title'>Bài 73: Làm thế nào để bắt tông cho ca sỹ không bị lệch tông?
+                            </div>
+                        </div>
+                        <div class='lecture_duration col-md-2'>04:43</div>
+                    </div>
+                    <div class='clear'></div>
+                    <div class='lecture lecture_menu'>
+                        <div class='lecture-icon col-md-1 col-xs-1'>
+                            <div class='play_icon'>
+                                <i class='material-icons'>play_circle_outline</i>
+                            </div>
+                        </div>
+                        <div class='lecture_name col-md-9 col-xs-10'>
+                            <div class='lecture_title'>Bài 74: Làm thế nào để đánh intro và outro?</div>
+                        </div>
+                        <div class='lecture_duration col-md-2'>04:39</div>
+                    </div>
+                    <div class='clear'></div>
+                    <div class='lecture lecture_menu'>
+                        <div class='lecture-icon col-md-1 col-xs-1'>
+                            <div class='play_icon'>
+                                <i class='material-icons'>play_circle_outline</i>
+                            </div>
+                        </div>
+                        <div class='lecture_name col-md-9 col-xs-10'>
+                            <div class='lecture_title'>Bài 75: Các bài tốt nghiệp</div>
+                        </div>
+                        <div class='lecture_duration col-md-2'>01:46</div>
+                    </div>
+                    <div class='clear'></div>
+                    <div class='lecture lecture_menu'>
+                        <div class='lecture-icon col-md-1 col-xs-1'>
+                            <div class='play_icon'>
+                                <i class='material-icons'>play_circle_outline</i>
+                            </div>
+                        </div>
+                        <div class='lecture_name col-md-9 col-xs-10'>
+                            <div class='lecture_title'>Bài 76: Làm thế nào để search được hợp âm chuẩn?</div>
+                        </div>
+                        <div class='lecture_duration col-md-2'>03:12</div>
+                    </div>
+                    <div class='clear'></div>
+                    <div class='lecture lecture_menu'>
+                        <div class='lecture-icon col-md-1 col-xs-1'>
+                            <div class='play_icon'>
+                                <i class='material-icons'>play_circle_outline</i>
+                            </div>
+                        </div>
+                        <div class='lecture_name col-md-9 col-xs-10'>
+                            <div class='lecture_title'>Bài 77: Tổng kết phần 6</div>
+                        </div>
+                        <div class='lecture_duration col-md-2'>02:38</div>
+                    </div>
+                    <div class='clear'></div>
+                </li>
+            </div>
+            <div class='clear'></div>
+        </div>
+    </section>
+    <section class='section_author' id='general-author-tab'>
+        <div class='info_author'>
+            <div class='pull-left image_author'>
+                <img src='//d303ny97lru840.cloudfront.net/kelley-57bfb0d3ce4b1438274ba1fd/20160829-hiennt02-edumall/533079_556033297754623_542734647_n.jpg'></img>
+            </div>
+            <div class='pull-left name_author'>
+                <p class='author' style='font-size: 16px;'>Giảng viên</p>
+                <div class='name'>Nguyễn Thượng Hiển</div>
+                <div class='star-rating'>
+                    <div class='back-stars'>
+                        <i aria-hidden='true' class='fa fa-star'></i>
+                        <i aria-hidden='true' class='fa fa-star'></i>
+                        <i aria-hidden='true' class='fa fa-star'></i>
+                        <i aria-hidden='true' class='fa fa-star'></i>
+                        <i aria-hidden='true' class='fa fa-star'></i>
+                        <div class='front-stars' style='width: 94.0%'>
+                            <i aria-hidden='true' class='fa fa-star'></i>
+                            <i aria-hidden='true' class='fa fa-star'></i>
+                            <i aria-hidden='true' class='fa fa-star'></i>
+                            <i aria-hidden='true' class='fa fa-star'></i>
+                            <i aria-hidden='true' class='fa fa-star'></i>
+                        </div>
+                    </div>
+                    <b style='padding-left:10px; padding-right:10px;color:#464646;transform: translateY(-5px)'>4.7</b>
+                </div>
+                <div class='rating_info'>
+                    <p>
+                        <span class='moble-oder'>Đánh giá</span>
+                        <span style='color: #006fba;'>306</span>
+                    </p>
+                    <p>
+                        <span class='moble-oder'>Học viên</span>
+                        <span style='color: #006fba;'>30920</span>
+                    </p>
+                    <p>
+                        <span class='moble-oder'>Khoá học</span>
+                        <span style='color: #006fba;'>2</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class='introduce_author' id='author_info'>
+            <p style='font-size: 20px; line-height:24px;letter-spacing:0.4px;font-weight:bold; padding-top:50px;'>Tiểu
+                sử
+            </p>
+            <li>Nghệ danh: Hiển Râu</li>
+            <li>Là giảng viên nổi tiếng về dạy guitar online</li>
+            <li>Đã có hàng chục năm học, làm việc và giảng dạy với đàn guitar</li>
+            <li>Đã mở hàng trăm lớp dạy nhạc cụ cho hàng ngàn học viên về guitar</li>
+            <li>Có hơn 300.000 Follower trên Youtube và gần 200.000 Follower trên Facebook</li>
+            <li>"Khóa học "Guitar đệm hát trong 30 ngày" là tôi tổng hợp tất cả các kiến thức cần thiết để cho người mới
+                bắt đầu có thể học và đệm hát được sau ít nhất 30 ngày hoặc 1 người đã đệm hát được nhưng muốn nâng cao
+                kỹ thuật của mình..."
+            </li>
+        </div>
+        <div class='show_more' id='show_more_author'>XEM THÊM</div>
+        <div class='clear'></div>
+    </section>
+    <section class='section_course_of_author'>
+        <p class='text_course_of_author title'>Khoá học cùng giảng viên</p>
+        <div class='hidden-xs course_of_author_pc'>
+            <div class='slider variable-width'>
+                <a href='guitar-dem-hat-trong-30-ngay'>
+                    <div class='info_course_suggestion'>
+                        <div class='info'>
+                            <div class='image_course'>
+                                <img alt='Course image'
+                                     src='//d1nzpkv5wwh1xf.cloudfront.net/320/k-5768aeb1047c995f75fdbf6b/20170817-anhdaidienmoi_thinh/hiennt01.png'></img>
+                            </div>
+                            <div class='rating_course'>
+                                <div class='star-rating' style='display: inline-block;letter-spacing: 0.3em'>
+                                    <div class='back-stars'>
+                                        <i aria-hidden='true' class='fa fa-star'></i>
+                                        <i aria-hidden='true' class='fa fa-star'></i>
+                                        <i aria-hidden='true' class='fa fa-star'></i>
+                                        <i aria-hidden='true' class='fa fa-star'></i>
+                                        <i aria-hidden='true' class='fa fa-star'></i>
+                                        <div class='front-stars' style='width: 92.0%'>
+                                            <i aria-hidden='true' class='fa fa-star'></i>
+                                            <i aria-hidden='true' class='fa fa-star'></i>
+                                            <i aria-hidden='true' class='fa fa-star'></i>
+                                            <i aria-hidden='true' class='fa fa-star'></i>
+                                            <i aria-hidden='true' class='fa fa-star'></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <span class='rated'>4.6</span>
+                            </div>
+                            <div class='name_course'>
+                                <p>Guitar đệm hát trong 30 ngày</p>
+                            </div>
+                            <div class='info_author'>
+                                <div class='pull-left image_author'>
+                                    <img src='https://d303ny97lru840.cloudfront.net/kelley-57bfb0d3ce4b1438274ba1fd/20160829-hiennt02-edumall/533079_556033297754623_542734647_n.jpg'></img>
+                                </div>
+                                <div class='pull-left name_author'>
+                                    <p>Nguyễn Thượng Hiển</p>
+                                </div>
+                                <div class='clear'></div>
+                            </div>
+                            <div class='price_course'>
+                                <p class='price'>699.000 vnđ</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href='lam-chu-ukulele-dem-hat-trong-30-ngay'>
+                    <div class='info_course_suggestion'>
+                        <div class='info'>
+                            <div class='image_course'>
+                                <img alt='Course image'
+                                     src='//d1nzpkv5wwh1xf.cloudfront.net/320/k-57b67d6e60af25054a055b20/20170817-tungnt9image1708/hiennt02.png'></img>
+                            </div>
+                            <div class='rating_course'>
+                                <div class='star-rating' style='display: inline-block;letter-spacing: 0.3em'>
+                                    <div class='back-stars'>
+                                        <i aria-hidden='true' class='fa fa-star'></i>
+                                        <i aria-hidden='true' class='fa fa-star'></i>
+                                        <i aria-hidden='true' class='fa fa-star'></i>
+                                        <i aria-hidden='true' class='fa fa-star'></i>
+                                        <i aria-hidden='true' class='fa fa-star'></i>
+                                        <div class='front-stars' style='width: 96.0%'>
+                                            <i aria-hidden='true' class='fa fa-star'></i>
+                                            <i aria-hidden='true' class='fa fa-star'></i>
+                                            <i aria-hidden='true' class='fa fa-star'></i>
+                                            <i aria-hidden='true' class='fa fa-star'></i>
+                                            <i aria-hidden='true' class='fa fa-star'></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <span class='rated'>4.8</span>
+                            </div>
+                            <div class='name_course'>
+                                <p>Chinh phục Ukulele trong 7 ngày cùng Hiển Râu</p>
+                            </div>
+                            <div class='info_author'>
+                                <div class='pull-left image_author'>
+                                    <img src='https://d303ny97lru840.cloudfront.net/kelley-57bfb0d3ce4b1438274ba1fd/20160829-hiennt02-edumall/533079_556033297754623_542734647_n.jpg'></img>
+                                </div>
+                                <div class='pull-left name_author'>
+                                    <p>Nguyễn Thượng Hiển</p>
+                                </div>
+                                <div class='clear'></div>
+                            </div>
+                            <div class='price_course'>
+                                <p class='price'>599.000 vnđ</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class='hidden-md course_of_author_mb' id='show_more_course_of_author_mb'>
+            <li class='course'>
+                <a href='guitar-dem-hat-trong-30-ngay'>
+                    <div class='image_course'>
+                        <img alt='Course image' class='course-img'
+                             src='//d1nzpkv5wwh1xf.cloudfront.net/320/k-5768aeb1047c995f75fdbf6b/20170817-anhdaidienmoi_thinh/hiennt01.png'></img>
+                    </div>
+                    <div class='info_course'>
+                        <div class='info_course_left'>
+                            <div class='course_name'>
+                                <p>Guitar đệm hát trong 30 ngày</p>
+                            </div>
+                            <div class='student_teacher'>
+                                <div class='author_name pull-left'>
+                                    <div class='author_image'>
+                                        <img src='https://d303ny97lru840.cloudfront.net/kelley-57bfb0d3ce4b1438274ba1fd/20160829-hiennt02-edumall/533079_556033297754623_542734647_n.jpg'></img>
+                                    </div>
+                                    <span>Nguyễn Thượng Hiển</span>
+                                </div>
+                                <div class='students_course pull-right'>
+                                    <span class='user_icon'>
+                                        <i class='fas fa-user'></i>
+                                    </span>
+                                    <span>28492</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='info_course_right'>
+                            <div class='course_price'>
+                                <p class='price'>699.000 vnđ</p>
+                            </div>
+                            <div class='course_rating'>
+                                <div class='star'>
+                                    <span class='star_check fas fa-star'></span>
+                                    <span class='star_check fas fa-star'></span>
+                                    <span class='star_check fas fa-star'></span>
+                                    <span class='star_check fas fa-star'></span>
+                                    <span class='fas fa-star'></span>
+                                </div>
+                                <span class='rated'>4.6</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li class='course'>
+                <a href='lam-chu-ukulele-dem-hat-trong-30-ngay'>
+                    <div class='image_course'>
+                        <img alt='Course image' class='course-img'
+                             src='//d1nzpkv5wwh1xf.cloudfront.net/320/k-57b67d6e60af25054a055b20/20170817-tungnt9image1708/hiennt02.png'></img>
+                    </div>
+                    <div class='info_course'>
+                        <div class='info_course_left'>
+                            <div class='course_name'>
+                                <p>Chinh phục Ukulele trong 7 ngày cùng Hiển Râu</p>
+                            </div>
+                            <div class='student_teacher'>
+                                <div class='author_name pull-left'>
+                                    <div class='author_image'>
+                                        <img src='https://d303ny97lru840.cloudfront.net/kelley-57bfb0d3ce4b1438274ba1fd/20160829-hiennt02-edumall/533079_556033297754623_542734647_n.jpg'></img>
+                                    </div>
+                                    <span>Nguyễn Thượng Hiển</span>
+                                </div>
+                                <div class='students_course pull-right'>
+                                    <span class='user_icon'>
+                                        <i class='fas fa-user'></i>
+                                    </span>
+                                    <span>2428</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='info_course_right'>
+                            <div class='course_price'>
+                                <p class='price'>599.000 vnđ</p>
+                            </div>
+                            <div class='course_rating'>
+                                <div class='star'>
+                                    <span class='star_check fas fa-star'></span>
+                                    <span class='star_check fas fa-star'></span>
+                                    <span class='star_check fas fa-star'></span>
+                                    <span class='star_check fas fa-star'></span>
+                                    <span class='fas fa-star'></span>
+                                </div>
+                                <span class='rated'>4.8</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <div class='clear'></div>
+            <div class='show_more' id='show_more_course_of_author_mb_button'>XEM THÊM</div>
+        </div>
+    </section>
+</root>

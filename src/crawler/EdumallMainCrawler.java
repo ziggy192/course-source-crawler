@@ -9,7 +9,7 @@ import dao.DomainDAO;
 import config.model.CategoryNameType;
 import entity.DomainEntity;
 import url_holder.CategoryUrlHolder;
-import util.ParserUtils;
+import util.StaxParserUtils;
 
 import java.util.logging.Logger;
 
@@ -77,15 +77,15 @@ public class EdumallMainCrawler implements Runnable {
 //		String beginSign = "col-xs col-sm col-md col-lg main-header-v4--content-c-header-left";
 //		String endSign = "col-xs col-sm col-md col-lg main-header-v4--content-c-header-search";
 
-		String htmlContent = ParserUtils.parseHTML(uri, beginSign, endSign);
-		String newContent = ParserUtils.addMissingTag(htmlContent);
+		String htmlContent = StaxParserUtils.parseHTML(uri, beginSign, endSign);
+		String newContent = StaxParserUtils.addMissingTag(htmlContent);
 
 //		System.out.println(newContent);;
 		logger.info(newContent);
 
 
 		try {
-			XMLEventReader staxReader = ParserUtils.getStaxReader(newContent);
+			XMLEventReader staxReader = StaxParserUtils.getStaxReader(newContent);
 			boolean insideMainMenu = false;
 			while (staxReader.hasNext()) {
 				XMLEvent event = staxReader.nextEvent();
@@ -114,7 +114,7 @@ public class EdumallMainCrawler implements Runnable {
 //					}
 					if (insideMainMenu) {
 						if (startElement.getName().getLocalPart().equals("li")) {
-							startElement = ParserUtils.nextStartEvent(staxReader).asStartElement();
+							startElement = StaxParserUtils.nextStartEvent(staxReader).asStartElement();
 
 							if (startElement.getName().getLocalPart().equals("a")) {
 								String href = startElement.getAttributeByName(new QName("href")).getValue();
@@ -124,8 +124,8 @@ public class EdumallMainCrawler implements Runnable {
 									String categoryURL = href;
 									categoryURL = ConfigManager.getInstance().getConfigModel().getEdumall().getDomainUrl() + categoryURL;
 
-									startElement = ParserUtils.nextStartEvent(staxReader, "span").asStartElement();
-									String categoryName = ParserUtils.getContentAndJumpToEndElement(staxReader, startElement);
+									startElement = StaxParserUtils.nextStartEvent(staxReader, "span").asStartElement();
+									String categoryName = StaxParserUtils.getContentAndJumpToEndElement(staxReader, startElement);
 
 
 //									logger.info(String.format("categoryURL=%s | categoryName=%s", categoryURL,categoryName));

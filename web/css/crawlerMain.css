@@ -1,0 +1,68 @@
+.wrapper{
+    padding: 50px 10%;
+}
+.list_wrapper{
+    padding: 10px 10px;
+    border-radius: 5px;
+    box-shadow: #cccccc 0px 8px 5px 0px;
+
+    font-size: 20px;
+}
+h1{
+
+}
+
+.row_wrapper{
+    display: flex;
+    flex-direction: row;
+
+}
+
+.button_list_wapper{
+    padding: 20px 10px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    align-items: center;
+}
+
+.button{
+    font-size: 16px;
+    border-radius: 5px;
+
+    height: 40px;
+    width: 120px;
+    padding: 5px 10px;
+
+
+
+}
+
+.red{
+    background-color: lightcoral;
+}
+
+.green{
+    background-color: lightgreen;
+}
+
+.blue{
+    background-color: lightskyblue;
+}
+
+.column_wrapper{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.col1 {
+    width: 30%;
+}
+
+.col2{
+    width: 60%;
+    margin-left: 50px;
+}

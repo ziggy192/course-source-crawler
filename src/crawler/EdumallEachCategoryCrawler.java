@@ -2,7 +2,7 @@ package crawler;
 
 import config.ConfigManager;
 import config.model.SignType;
-import util.ParserUtils;
+import util.StaxParserUtils;
 
 import javax.xml.namespace.QName;
 import javax.xml.stream.XMLEventReader;
@@ -37,13 +37,13 @@ public class EdumallEachCategoryCrawler implements Runnable{
 //		String beginSign = "class='list-paginate'";
 //		String endSign = "form class='form-paginate form-inline'";
 
-		String htmlContent = ParserUtils.parseHTML(categoryUrl, beginSign, endSign);
+		String htmlContent = StaxParserUtils.parseHTML(categoryUrl, beginSign, endSign);
 
-		htmlContent = ParserUtils.addMissingTag(htmlContent);
+		htmlContent = StaxParserUtils.addMissingTag(htmlContent);
 		System.out.println(htmlContent);
 		int pageCount = 1;
 		try {
-			XMLEventReader staxReader = ParserUtils.getStaxReader(htmlContent);
+			XMLEventReader staxReader = StaxParserUtils.getStaxReader(htmlContent);
 			boolean insidePaginationDiv = false;
 			while (staxReader.hasNext()) {
 				XMLEvent event = staxReader.nextEvent();
@@ -78,11 +78,11 @@ public class EdumallEachCategoryCrawler implements Runnable{
 						//todo get all <em class="current"> or <a href="...&page=[number]> content
 
 
-						if (ParserUtils.checkAttributeContainsKey(startElement, "class", "current")
-								|| ParserUtils.getAttributeByName(startElement, "href").contains("page=")
+						if (StaxParserUtils.checkAttributeContainsKey(startElement, "class", "current")
+								|| StaxParserUtils.getAttributeByName(startElement, "href").contains("page=")
 						) {
 
-							String pageContent = ParserUtils.getContentAndJumpToEndElement(staxReader, startElement);
+							String pageContent = StaxParserUtils.getContentAndJumpToEndElement(staxReader, startElement);
 							try {
 								int pageNumber = Integer.parseInt(pageContent);
 

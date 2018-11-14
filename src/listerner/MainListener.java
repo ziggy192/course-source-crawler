@@ -1,5 +1,7 @@
 package listerner;
 
+import com.sun.corba.se.spi.orbutil.threadpool.ThreadPoolManager;
+import crawler.CrawlingThreadManager;
 import dao.CategoryDAO;
 import config.model.CategoryNameType;
 import util.DBUtils;
@@ -51,6 +53,9 @@ public class MainListener implements ServletContextListener,
 
 		logger.info("CrawlerServletListener: Context destroy");
 		DBUtils.closeEntityFactory();
+
+		CrawlingThreadManager.getInstance().stopAllThread();
+
 
 
 		// TODO: 11/10/18  	set context = null here

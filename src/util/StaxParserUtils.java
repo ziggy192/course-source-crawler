@@ -1,7 +1,6 @@
 package util;
 
 import com.sun.xml.internal.stream.events.EndElementEvent;
-import constant.AppConstants;
 import org.apache.commons.text.StringEscapeUtils;
 import org.w3c.dom.Document;
 import org.xml.sax.SAXException;
@@ -35,10 +34,10 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.logging.Logger;
 
-public class ParserUtils {
+public class StaxParserUtils {
 
-	//	public static Logger logger = Logger.getLogger(ParserUtils.class.toString());
-	public static Logger logger = Logger.getLogger(ParserUtils.class.toString());
+	//	public static Logger logger = Logger.getLogger(StaxParserUtils.class.toString());
+	public static Logger logger = Logger.getLogger(StaxParserUtils.class.toString());
 
 
 	public static boolean isAlphaCharOrNumberChar(char x) {
@@ -231,7 +230,7 @@ public class ParserUtils {
 					Attribute classAttribute = startElement.getAttributeByName(new QName("class"));
 					if (classAttribute != null) {
 //						found = true;
-						found = ParserUtils.checkAttributeContainsKey(startElement, "class", classAttributeValues);
+						found = StaxParserUtils.checkAttributeContainsKey(startElement, "class", classAttributeValues);
 //						for (String classAttributeValue : classAttributeValues) {
 //							if (!classAttribute.getValue().contains(classAttributeValue)) {
 //								found = false;

@@ -16,9 +16,12 @@ public class CrawlingThreadManager {
 	private ThreadPoolExecutor executor;
 	private CrawlingThreadManager() {
 		executor = (ThreadPoolExecutor) Executors.newFixedThreadPool(THREAD_LIMIT);
+		executor.allowCoreThreadTimeOut(false);
+
+
 		//or else the thread would survise all along
-		executor.setKeepAliveTime(5, TimeUnit.SECONDS);
-		executor.allowCoreThreadTimeOut(true);
+//		executor.setKeepAliveTime(5, TimeUnit.SECONDS);
+
 
 	}
 
@@ -73,6 +76,10 @@ public class CrawlingThreadManager {
 			logger.info("Resume this thread");
 
 		}
+	}
+
+	public void stopAllThread() {
+		executor.shutdownNow();
 	}
 
 }

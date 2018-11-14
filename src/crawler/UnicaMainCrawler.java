@@ -9,7 +9,7 @@ import dao.DomainDAO;
 import config.model.CategoryNameType;
 import entity.DomainEntity;
 import url_holder.CategoryUrlHolder;
-import util.ParserUtils;
+import util.StaxParserUtils;
 
 import javax.xml.namespace.QName;
 import javax.xml.stream.XMLEventReader;
@@ -41,15 +41,15 @@ public class UnicaMainCrawler implements Runnable {
 //		String beginSign = "col-lg-3 col-md-3 col-sm-4 cate-md";
 //		String endSign = "col-lg-5 col-md-5 col-sm-4 cate-sm";
 
-		String htmlContent = ParserUtils.parseHTML(uri, beginSign, endSign);
-		String newContent = ParserUtils.addMissingTag(htmlContent);
+		String htmlContent = StaxParserUtils.parseHTML(uri, beginSign, endSign);
+		String newContent = StaxParserUtils.addMissingTag(htmlContent);
 
 //		System.out.println(newContent);;
 		logger.info(newContent);
 
 
 		try {
-			XMLEventReader staxReader = ParserUtils.getStaxReader(newContent);
+			XMLEventReader staxReader = StaxParserUtils.getStaxReader(newContent);
 			boolean insideMainMenu = false;
 			while (staxReader.hasNext()) {
 				XMLEvent event = staxReader.nextEvent();
@@ -77,9 +77,9 @@ public class UnicaMainCrawler implements Runnable {
 					if (insideMainMenu) {
 
 						if (startElement.getName().getLocalPart().equals("a")
-								&& !ParserUtils.getAttributeByName(startElement,"title").trim().isEmpty()) {
-							String href = ParserUtils.getAttributeByName(startElement, "href");
-							String titleAtt = ParserUtils.getAttributeByName(startElement, "title");
+								&& !StaxParserUtils.getAttributeByName(startElement,"title").trim().isEmpty()) {
+							String href = StaxParserUtils.getAttributeByName(startElement, "href");
+							String titleAtt = StaxParserUtils.getAttributeByName(startElement, "title");
 							//exclude the All Category tag
 
 							String categoryURL = href;

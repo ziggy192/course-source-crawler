@@ -2,7 +2,7 @@ package test;
 
 import crawler.*;
 import url_holder.UnicaCourseUrlHolder;
-import util.ParserUtils;
+import util.StaxParserUtils;
 
 public class UnicaTest {
 	public static void main(String[] args) {
@@ -72,7 +72,7 @@ public class UnicaTest {
 //				"</body>\n" +
 //				"</html>";
 
-		System.out.println(ParserUtils.removeComment(content));
+		System.out.println(StaxParserUtils.removeComment(content));
 	}
 
 	public static void testGetCourseDetail() {

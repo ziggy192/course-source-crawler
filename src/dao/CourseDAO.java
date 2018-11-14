@@ -6,6 +6,7 @@ import listerner.MainListener;
 import other.DummyDatabase;
 import entity.CourseEntity;
 import sun.applet.Main;
+import util.AppUtils;
 import util.DBUtils;
 import org.xml.sax.InputSource;
 import org.xml.sax.SAXException;
@@ -19,10 +20,7 @@ import javax.xml.transform.sax.SAXSource;
 import javax.xml.validation.Schema;
 import javax.xml.validation.SchemaFactory;
 import javax.xml.validation.Validator;
-import java.io.ByteArrayInputStream;
-import java.io.ByteArrayOutputStream;
-import java.io.File;
-import java.io.IOException;
+import java.io.*;
 import java.util.List;
 import java.util.logging.Logger;
 
@@ -57,11 +55,19 @@ public class CourseDAO extends BaseDAO<CourseEntity, Integer> {
 
 		if (!resultList.isEmpty()) {
 			//set correct id to courseEntity
-			courseEntity.setId(resultList.get(0).getId());
+			CourseEntity foundCourseEntity = resultList.get(0);
 
-			//update course
-			logger.info(String.format("course exist, update course|%s", courseEntity));
-			this.merge(courseEntity);
+			if (!foundCourseEntity.isDataFixed()) {
+				courseEntity.setId(foundCourseEntity.getId());
+
+				//update course
+				logger.info(String.format("course exist, update course|%s", courseEntity));
+				this.merge(courseEntity);
+			} else {
+				logger.info(String.format("course exist, BUT DATAFIXED -> NOT UPDATE |%s", courseEntity));
+
+			}
+
 		} else {
 			//insert new coure entity
 			logger.info(String.format("course not exist, insert new course|%s", courseEntity));
@@ -82,16 +88,8 @@ public class CourseDAO extends BaseDAO<CourseEntity, Integer> {
 
 			SchemaFactory schemaFactory = SchemaFactory.newInstance(XMLConstants.W3C_XML_SCHEMA_NS_URI);
 
-			File courseXSDFile;
-			if (ContextHolder.getApplicationContext() != null) {
-				String realPath = ContextHolder.getApplicationContext().getRealPath("/"+ AppConstants.COURSE_SCHEMA_PATH);
+			File courseXSDFile  = AppUtils.getFileWithRealPath(AppConstants.COURSE_SCHEMA_PATH);
 
-				courseXSDFile = new File(realPath);
-
-			} else {
-
-				courseXSDFile = new File("web/"+AppConstants.COURSE_SCHEMA_PATH);
-			}
 
 			Schema schema = schemaFactory.newSchema(courseXSDFile);
 			logger.info(courseEntity.toString());
@@ -100,10 +98,9 @@ public class CourseDAO extends BaseDAO<CourseEntity, Integer> {
 
 			logger.info(String.format("Validated, saving to db | Course=%s", courseEntity));
 
+
 			checkIfExistOrInsertToDB(courseEntity);
 
-			//save to database
-//			this.persist(courseEntity);
 
 
 		} catch (JAXBException e) {

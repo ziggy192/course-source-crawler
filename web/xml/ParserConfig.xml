@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<ParserConfig xmlns="www.ParserConfig.com">
+<ParserConfig xmlns="www.ParserConfig.com"
+              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xsi:schemaLocation="www.ParserConfig.com ../schema/ParserConfig.xsd"
+>
     <Edumall>
-        <DomainUrl>edumall.vn</DomainUrl>
+        <DomainUrl>https://edumall.vn</DomainUrl>
         <CategoryMappingList>
             <CategoryMapping source="Luyện thi" to="TestPrep"/>
             <CategoryMapping source="Multimedia" to="Multimedia"/>
@@ -38,7 +41,7 @@
 
     </Edumall>
     <Unica>
-        <DomainUrl>unica.vn</DomainUrl>
+        <DomainUrl>https://unica.vn</DomainUrl>
         <CategoryMappingList>
 
             <CategoryMapping source="Nhiếp ảnh, dựng phim" to="Multimedia"/>

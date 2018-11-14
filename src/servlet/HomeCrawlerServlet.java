@@ -5,6 +5,8 @@ import constant.UrlConstant;
 import crawler.CrawlingThreadManager;
 import crawler.EdumallMainCrawler;
 import crawler.UnicaMainCrawler;
+import dao.DomainDAO;
+import entity.DomainEntity;
 import test.EdumallTest;
 
 import javax.servlet.RequestDispatcher;
@@ -16,6 +18,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.List;
 import java.util.logging.Logger;
 
 @WebServlet(name = "HomeCrawlerServlet"
@@ -54,10 +57,16 @@ public class HomeCrawlerServlet extends HttpServlet {
 					String[] domains = request.getParameterValues("domain");
 					if (domains != null) {
 						//Reread config file before start
-						ConfigManager.getInstance().readConfigFile();
+						if (ConfigManager.getInstance().readConfigFile()) {
 
-						startCrawlers(domains);
-						message = "Started";
+							startCrawlers(domains);
+							message = "Started";
+						} else {
+							//error
+							message = "Error when reading Config file - Cannot start";
+						}
+
+
 					}else{
 						message = "NO DOMAIN SELECTED";
 					}

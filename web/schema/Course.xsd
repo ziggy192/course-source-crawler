@@ -36,7 +36,8 @@
                 <xs:element name="PreviewVideoURL" type="URL" minOccurs="0"/>
                 <xs:element name="ImageURL" type="URL"/>
                 <xs:element name="SourceURL" type="URL"/>
-                <xs:element name="Hash" type="xs:int"/>
+                <xs:element name="Hash" type="xs:int" default="0" />
+                <xs:element name="DataFixed" type="xs:boolean" default="0" minOccurs="0"/>
 
             </xs:sequence>
         </xs:complexType>

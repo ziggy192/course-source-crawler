@@ -33,6 +33,12 @@ public class DomainDAO extends BaseDAO<DomainEntity, Integer> {
 		}
 	}
 
+	public List<DomainEntity> getAllDomain() {
+		EntityManager entityManager = DBUtils.getEntityManager();
+		List resultList = entityManager.createNamedQuery("Domain.getAllDomain").getResultList();
+		return resultList;g
+	}
+
 
 
 }

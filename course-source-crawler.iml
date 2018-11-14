@@ -31,10 +31,10 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="hibernate-jpa-2.1-api-1.0.0.Final-javadoc" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="TomEE 9.0.121" level="application_server_libraries" />
     <orderEntry type="library" name="org.apache.commons:commons-text:1.6" level="project" />
     <orderEntry type="library" name="taglibs-standard-impl-1.2.5" level="application" />
     <orderEntry type="library" name="HIbernateFiles" level="application" />
     <orderEntry type="library" name="mysql-connector-java-8.0.13" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="TomEE 9.0.12" level="application_server_libraries" />
   </component>
 </module>

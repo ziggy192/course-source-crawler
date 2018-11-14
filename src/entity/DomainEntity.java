@@ -6,7 +6,9 @@ import java.util.Objects;
 @Entity
 @Table(name = "Domain", schema = "course_source", catalog = "")
 @NamedQueries(
-		@NamedQuery(name = "Domain.getDomainByDomainName",query = "select d from DomainEntity  d where d.name like :domainName")
+		{	@NamedQuery(name = "Domain.getDomainByDomainName",query = "select d from DomainEntity  d where d.name like :domainName")
+			,@NamedQuery(name = "Domain.getAllDomain", query = "select d from DomainEntity d")}
+
 
 )
 public class DomainEntity {

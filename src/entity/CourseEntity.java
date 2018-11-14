@@ -66,7 +66,8 @@ import util.StringUtils;
 		"previewVideoUrl",
 		"imageUrl",
 		"sourceUrl",
-		"hash"
+		"hash",
+		"dataFixed"
 })
 @XmlRootElement(name = "Course", namespace = "www.Course.com")
 @Entity
@@ -93,6 +94,8 @@ public class CourseEntity {
 	private String imageUrl;
 	private String sourceUrl;
 	private int hash;
+	private boolean dataFixed;
+
 
 	@Id
 	@Column(name = "Id", nullable = false)
@@ -303,6 +306,18 @@ public class CourseEntity {
 
 	public void setHash(int hash) {
 		this.hash = hash;
+	}
+
+
+	@Basic
+	@Column(name = "DataFixed", nullable = true)
+	@XmlElement(name = "DataFixed", namespace = "www.Course.com", required = false)
+	public boolean isDataFixed() {
+		return dataFixed;
+	}
+
+	public void setDataFixed(boolean dataFixed) {
+		this.dataFixed = dataFixed;
 	}
 
 	@Override

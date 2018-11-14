@@ -7,7 +7,7 @@ import entity.CourseEntity;
 import sun.java2d.xr.MutableInteger;
 import url_holder.CourseUrlHolder;
 import util.Formater;
-import util.ParserUtils;
+import util.StaxParserUtils;
 import util.StringUtils;
 
 import javax.xml.namespace.QName;
@@ -76,8 +76,8 @@ public class EdumallCourseDetailCrawler implements Runnable {
 			String endSign = courseDetailSign.getEndSign();
 
 
-			String htmlContent = ParserUtils.parseHTML(uri, beginSign, endSign);
-			htmlContent = ParserUtils.addMissingTag(htmlContent);
+			String htmlContent = StaxParserUtils.parseHTML(uri, beginSign, endSign);
+			htmlContent = StaxParserUtils.addMissingTag(htmlContent);
 
 
 			String overviewDescription = "";
@@ -98,7 +98,7 @@ public class EdumallCourseDetailCrawler implements Runnable {
 			courseEntity.setDomainId(EdumallMainCrawler.domainId);
 
 			try {
-				XMLEventReader staxReader = ParserUtils.getStaxReader(htmlContent);
+				XMLEventReader staxReader = StaxParserUtils.getStaxReader(htmlContent);
 				while (staxReader.hasNext()) {
 					XMLEvent event = staxReader.nextEvent();
 					if (event.isStartElement()) {
@@ -110,8 +110,8 @@ public class EdumallCourseDetailCrawler implements Runnable {
 
 						//<iframe allowfullscreen="" frameborder="0" height="100%" src="https://www.youtube.com/embed/cyGq22d1sbk?modestbranding=0&amp;amp;rel=0&amp;amp;showinfo=0" width="100%"></iframe>
 						if (startElement.getName().getLocalPart().equals("iframe")
-							//								&& ParserUtils.checkAttributeContainsKey(startElement, "class", "ytp-title-link")
-							//								&& ParserUtils.checkAttributeContainsKey(startElement, "class", "yt-uix-sessionlink")
+							//								&& StaxParserUtils.checkAttributeContainsKey(startElement, "class", "ytp-title-link")
+							//								&& StaxParserUtils.checkAttributeContainsKey(startElement, "class", "yt-uix-sessionlink")
 						) {
 
 							Attribute srcAtt = startElement.getAttributeByName(new QName("src"));
@@ -130,13 +130,13 @@ public class EdumallCourseDetailCrawler implements Runnable {
 						//<p class="col-md-12 col-xs-12 price" style="" xpath="1">699,000đ</p>
 
 						if (startElement.getName().getLocalPart().equals("p")
-								&& (ParserUtils.checkAttributeContainsKey(startElement, "class", new String[]{
+								&& (StaxParserUtils.checkAttributeContainsKey(startElement, "class", new String[]{
 								"col-md-12", "col-xs-12", "price"})
-								|| ParserUtils.checkAttributeContainsKey(startElement, "class", new String[]{
+								|| StaxParserUtils.checkAttributeContainsKey(startElement, "class", new String[]{
 								"price_sale"
 						}))
 						) {
-							String cost = ParserUtils.getContentAndJumpToEndElement(staxReader, startElement);
+							String cost = StaxParserUtils.getContentAndJumpToEndElement(staxReader, startElement);
 							if (!cost.isEmpty()) {
 
 								//get int value from cost
@@ -154,12 +154,12 @@ public class EdumallCourseDetailCrawler implements Runnable {
 						//<span class="pull-right">05:58:48</span>
 						//</div>
 						if (startElement.getName().getLocalPart().equals("div")
-								&& ParserUtils.checkAttributeContainsKey(startElement, "class", "prop")) {
-							ParserUtils.nextStartEvent(staxReader, "i", new String[]{
+								&& StaxParserUtils.checkAttributeContainsKey(startElement, "class", "prop")) {
+							StaxParserUtils.nextStartEvent(staxReader, "i", new String[]{
 									"fas", "fa-clock"
 							});
-							startElement = ParserUtils.nextStartEvent(staxReader, "span", new String[]{"pull-right"}).asStartElement();
-							String durationStr = ParserUtils.getContentAndJumpToEndElement(staxReader, startElement);
+							startElement = StaxParserUtils.nextStartEvent(staxReader, "span", new String[]{"pull-right"}).asStartElement();
+							String durationStr = StaxParserUtils.getContentAndJumpToEndElement(staxReader, startElement);
 							if (!durationStr.isEmpty()) {
 								int duration = toDuration(durationStr);
 //								logger.info("Duration In seconds=" + duration);
@@ -181,7 +181,7 @@ public class EdumallCourseDetailCrawler implements Runnable {
 						</div>
 						</div>*/
 						if (startElement.getName().getLocalPart().equals("section")
-								&& ParserUtils.checkAttributeContainsKey(startElement, "id", "general-author-tab")) {
+								&& StaxParserUtils.checkAttributeContainsKey(startElement, "id", "general-author-tab")) {
 							//traverse to end section
 							String authorInfo = Formater.toHeading2("Tiểu sử");
 
@@ -197,8 +197,8 @@ public class EdumallCourseDetailCrawler implements Runnable {
 									startElement = event.asStartElement();
 
 									if (startElement.getName().getLocalPart().equals("div")
-											&& ParserUtils.checkAttributeContainsKey(startElement, "class", "name")) {
-										String authorName = ParserUtils.getContentAndJumpToEndElement(staxReader, startElement);
+											&& StaxParserUtils.checkAttributeContainsKey(startElement, "class", "name")) {
+										String authorName = StaxParserUtils.getContentAndJumpToEndElement(staxReader, startElement);
 										stackCount--;
 										if (!authorName.isEmpty()) {
 //											logger.info("Author=" + authorName);
@@ -210,22 +210,20 @@ public class EdumallCourseDetailCrawler implements Runnable {
 									//<img src="//d303ny97lru840.cloudfront.net/kelley-57bfb0d3ce4b1438274ba1fd/20160829-hiennt02-edumall/533079_556033297754623_542734647_n.jpg" style="">
 									if (startElement.getName().getLocalPart().equals("img")) {
 										String imageUrl = startElement.getAttributeByName(new QName("src")).getValue();
-										if (imageUrl.startsWith("//")) {
-											imageUrl = imageUrl.substring(2);
-										}
+
 
 //										logger.info("AuthorImage=" + imageUrl);
 
-										StringUtils.beautifyUrl(imageUrl, ConfigManager.getInstance().getConfigModel().getEdumall().getDomainUrl());
+										imageUrl = StringUtils.beautifyUrl(imageUrl, ConfigManager.getInstance().getConfigModel().getEdumall().getDomainUrl());
 										courseEntity.setAuthorImageUrl(imageUrl);
 									}
-									if (ParserUtils.checkAttributeContainsKey(startElement, "id", "author_info")) {
+									if (StaxParserUtils.checkAttributeContainsKey(startElement, "id", "author_info")) {
 										insideAuthorInfo = true;
 
 									}
 									if (insideAuthorInfo) {
 										if (startElement.getName().getLocalPart().equals("li")) {
-											String content = ParserUtils.getContentAndJumpToEndElement(staxReader, startElement);
+											String content = StaxParserUtils.getContentAndJumpToEndElement(staxReader, startElement);
 											stackCount--;
 											content = Formater.toParagraph(content);
 											authorInfo += content;
@@ -271,7 +269,7 @@ public class EdumallCourseDetailCrawler implements Runnable {
 						<div class="clear"></div>
 						</section>*/
 						if (startElement.getName().getLocalPart().equals("section")
-								&& ParserUtils.checkAttributeContainsKey(startElement, "id", "general-info-tab")) {
+								&& StaxParserUtils.checkAttributeContainsKey(startElement, "id", "general-info-tab")) {
 
 							//traverse to end section
 							int stackCount = 1;
@@ -282,9 +280,9 @@ public class EdumallCourseDetailCrawler implements Runnable {
 									stackCount++;
 									startElement = event.asStartElement();
 
-									if (ParserUtils.checkAttributeContainsKey(startElement, "class", "title")) {
+									if (StaxParserUtils.checkAttributeContainsKey(startElement, "class", "title")) {
 										//title
-										String title = ParserUtils.getContentAndJumpToEndElement(staxReader, startElement);
+										String title = StaxParserUtils.getContentAndJumpToEndElement(staxReader, startElement);
 										stackCount--; // getContentAndJumpToEndElement() traverse to EndElement
 
 										title = Formater.toHeading1(title);
@@ -294,12 +292,12 @@ public class EdumallCourseDetailCrawler implements Runnable {
 
 									}
 
-									if (ParserUtils.checkAttributeContainsKey(startElement, "class", "content_benefit")) {
+									if (StaxParserUtils.checkAttributeContainsKey(startElement, "class", "content_benefit")) {
 										//content benefit
-										startElement = ParserUtils.nextStartEvent(staxReader, "span").asStartElement();
+										startElement = StaxParserUtils.nextStartEvent(staxReader, "span").asStartElement();
 										MutableInteger mutableStack = new MutableInteger(stackCount);
 
-										String contentBenefit = ParserUtils.getContentAndJumpToEndElement(staxReader, startElement);
+										String contentBenefit = StaxParserUtils.getContentAndJumpToEndElement(staxReader, startElement);
 										stackCount--; // getContentAndJumpToEndElement() traverse to EndElement
 										contentList.add(contentBenefit);
 									}
@@ -342,7 +340,7 @@ public class EdumallCourseDetailCrawler implements Runnable {
 							</section>
 						*/
 						if (startElement.getName().getLocalPart().equals("section")
-								&& ParserUtils.checkAttributeContainsKey(startElement, "class", "section_requirement")
+								&& StaxParserUtils.checkAttributeContainsKey(startElement, "class", "section_requirement")
 						) {
 							//traverse to end section
 							int stackCount = 1;
@@ -355,8 +353,8 @@ public class EdumallCourseDetailCrawler implements Runnable {
 									startElement = event.asStartElement();
 
 									//title
-									if (ParserUtils.checkAttributeContainsKey(startElement, "class", "title")) {
-										String title = ParserUtils.getContentAndJumpToEndElement(staxReader, startElement);
+									if (StaxParserUtils.checkAttributeContainsKey(startElement, "class", "title")) {
+										String title = StaxParserUtils.getContentAndJumpToEndElement(staxReader, startElement);
 										stackCount--; // getContentAndJumpToEndElement() traverse to EndElement
 
 										overviewDescription += Formater.toHeading1(title);
@@ -365,7 +363,7 @@ public class EdumallCourseDetailCrawler implements Runnable {
 
 									//list
 									if (startElement.getName().getLocalPart().equals("li")) {
-										String listItem = ParserUtils.getContentAndJumpToEndElement(staxReader, startElement);
+										String listItem = StaxParserUtils.getContentAndJumpToEndElement(staxReader, startElement);
 										stackCount--; // getContentAndJumpToEndElement() traverse to EndElement
 
 										contentList.add(listItem);
@@ -397,7 +395,7 @@ public class EdumallCourseDetailCrawler implements Runnable {
 						*/
 
 						if (startElement.getName().getLocalPart().equals("section")
-								&& ParserUtils.checkAttributeContainsKey(startElement, "class", "section_description")) {
+								&& StaxParserUtils.checkAttributeContainsKey(startElement, "class", "section_description")) {
 							//traverse to end section
 							int stackCount = 1;
 
@@ -408,8 +406,8 @@ public class EdumallCourseDetailCrawler implements Runnable {
 									startElement = event.asStartElement();
 
 									//title
-									if (ParserUtils.checkAttributeContainsKey(startElement, "class", "title")) {
-										String title = ParserUtils.getContentAndJumpToEndElement(staxReader, startElement);
+									if (StaxParserUtils.checkAttributeContainsKey(startElement, "class", "title")) {
+										String title = StaxParserUtils.getContentAndJumpToEndElement(staxReader, startElement);
 										stackCount--; // getContentAndJumpToEndElement() traverse to EndElement
 
 										overviewDescription += Formater.toHeading1(title);
@@ -418,8 +416,8 @@ public class EdumallCourseDetailCrawler implements Runnable {
 
 									//content
 									if (startElement.getName().getLocalPart().equals("div")
-											&& ParserUtils.checkAttributeContainsKey(startElement, "class", "text_description")) {
-										String htmlDescriptionContent = ParserUtils.getAllHtmlContentAndJumpToEndElement(staxReader, startElement);
+											&& StaxParserUtils.checkAttributeContainsKey(startElement, "class", "text_description")) {
+										String htmlDescriptionContent = StaxParserUtils.getAllHtmlContentAndJumpToEndElement(staxReader, startElement);
 										stackCount--;
 										overviewDescription += htmlDescriptionContent;
 									}
@@ -450,7 +448,7 @@ public class EdumallCourseDetailCrawler implements Runnable {
 						 * */
 
 
-						if (ParserUtils.checkAttributeContainsKey(startElement, "id", "section_lecture")) {
+						if (StaxParserUtils.checkAttributeContainsKey(startElement, "id", "section_lecture")) {
 							//traverse
 							String syllabus = "";
 							int stackCount = 1;
@@ -461,9 +459,9 @@ public class EdumallCourseDetailCrawler implements Runnable {
 								if (event.isStartElement()) {
 									stackCount++;
 									startElement = event.asStartElement();
-									if (ParserUtils.checkAttributeContainsKey(startElement, "class", "menu-title")) {
+									if (StaxParserUtils.checkAttributeContainsKey(startElement, "class", "menu-title")) {
 
-										String content = ParserUtils.getContentAndJumpToEndElement(staxReader, startElement);
+										String content = StaxParserUtils.getContentAndJumpToEndElement(staxReader, startElement);
 										stackCount--;
 										content = Formater.toHeading3(content);
 
@@ -476,8 +474,8 @@ public class EdumallCourseDetailCrawler implements Runnable {
 										syllabus += content;
 
 									}
-									if (ParserUtils.checkAttributeContainsKey(startElement, "class", "lecture-title")) {
-										String lectureName = ParserUtils.getContentAndJumpToEndElement(staxReader, startElement);
+									if (StaxParserUtils.checkAttributeContainsKey(startElement, "class", "lecture_title")) {
+										String lectureName = StaxParserUtils.getContentAndJumpToEndElement(staxReader, startElement);
 										stackCount--;
 										lectureNameList.add(lectureName);
 									}
@@ -516,15 +514,15 @@ public class EdumallCourseDetailCrawler implements Runnable {
 						//(153)
 						//</div>
 						if (startElement.getName().getLocalPart().equals("div")
-								&& ParserUtils.checkAttributeContainsKey(startElement, "class", "intro_course")) {
+								&& StaxParserUtils.checkAttributeContainsKey(startElement, "class", "intro_course")) {
 							//						startElement = nextStartEvent(staxReader, "div", new String[]{"star-rating"}).asStartElement();
 							//					}
 							//					if (startElement.getName().getLocalPart().equals("div")
-							//							&& ParserUtils.checkAttributeContainsKey(startElement, "class", "star-rating")
+							//							&& StaxParserUtils.checkAttributeContainsKey(startElement, "class", "star-rating")
 							//					) {
-							startElement = ParserUtils.nextStartEvent(staxReader, "b").asStartElement();
+							startElement = StaxParserUtils.nextStartEvent(staxReader, "b").asStartElement();
 
-							String rating = ParserUtils.getContentAndJumpToEndElement(staxReader, startElement);
+							String rating = StaxParserUtils.getContentAndJumpToEndElement(staxReader, startElement);
 							try {
 								double ratingDouble = Double.parseDouble(rating);
 								courseEntity.setRating(ratingDouble);
@@ -592,4 +590,6 @@ public class EdumallCourseDetailCrawler implements Runnable {
 
 
 	}
+
+
 }
