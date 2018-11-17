@@ -18,11 +18,12 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.logging.Logger;
 
 @WebServlet(name = "HomeCrawlerServlet"
-		,urlPatterns = {"/"}
+		,urlPatterns = {"/admin"}
 		,loadOnStartup = 1)
 public class HomeCrawlerServlet extends HttpServlet {
 	public static Logger logger = Logger.getLogger(HomeCrawlerServlet.class.toString());
@@ -99,21 +100,17 @@ public class HomeCrawlerServlet extends HttpServlet {
 
 
 	private void startCrawlers(String[] domains) {
-		ArrayList<Runnable> domainTaskList = new ArrayList<>();
 		for (String domain : domains) {
-			switch (domain.toLowerCase()) {
-				case "edumall":
-					domainTaskList.add(new EdumallMainCrawler());
-					break;
-				case "unica":
-					domainTaskList.add(new UnicaMainCrawler());
-					break;
-
+			if (domain.toLowerCase().equals("edumall")) {
+				CrawlingThreadManager.getInstance().getEdumallExecutor().execute(new EdumallMainCrawler());
+				break;
 			}
 		}
-		for (Runnable task : domainTaskList) {
-
-			CrawlingThreadManager.getInstance().getExecutor().execute(task);
+		for (String domain : domains) {
+			if (domain.toLowerCase().equals("unica")) {
+				CrawlingThreadManager.getInstance().getUnicaExecutor().execute(new UnicaMainCrawler());
+				break;
+			}
 		}
 	}
 }

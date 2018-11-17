@@ -85,7 +85,7 @@ public class UnicaCourseDetailCrawler implements Runnable {
 //			String endSign = "<input type=\"hidden\" id=\"user_id\"";
 
 
-			String htmlContent = StaxParserUtils.parseHTML(uri, beginSign, endSign);
+			String htmlContent = StaxParserUtils.parseHtml(uri, beginSign, endSign);
 
 			htmlContent = StaxParserUtils.addMissingTag(htmlContent);
 
@@ -449,7 +449,6 @@ public class UnicaCourseDetailCrawler implements Runnable {
 //				other.DummyDatabase.validateCourseAndSaveToDB(courseEntity);
 
 			} catch (XMLStreamException e) {
-				e.printStackTrace();
 			}
 
 
@@ -457,8 +456,6 @@ public class UnicaCourseDetailCrawler implements Runnable {
 
 			logger.info("END THREAD");
 		} catch (Exception e) {
-			e.printStackTrace();
-
 		}
 
 

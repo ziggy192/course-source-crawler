@@ -26,8 +26,8 @@ public class UnicaTest {
 
 
 	public static void testUnicaMain() {
-		Thread unicaMainCrawler = new Thread(new UnicaMainCrawler());
-		CrawlingThreadManager.getInstance().getExecutor().execute(unicaMainCrawler);
+		Runnable unicaMainCrawler = new UnicaMainCrawler();
+		CrawlingThreadManager.getInstance().getUnicaExecutor().execute(unicaMainCrawler);
 
 	}
 
@@ -83,7 +83,7 @@ public class UnicaTest {
 
 		Thread courseDetailCrawler = new Thread(new UnicaCourseDetailCrawler(holder, 6));
 		UnicaMainCrawler.domainId = 4;
-		CrawlingThreadManager.getInstance().getExecutor().execute(courseDetailCrawler);
+		CrawlingThreadManager.getInstance().getUnicaExecutor().execute(courseDetailCrawler);
 	}
 
 	public static void testGetCourseForEachCategoryPage() {
@@ -94,7 +94,7 @@ public class UnicaTest {
 						, 5));
 		//todo thread execute
 //		courseInEachCategoryPageCrawler.start();
-		CrawlingThreadManager.getInstance().getExecutor().execute(courseInEachCategoryPageCrawler);
+		CrawlingThreadManager.getInstance().getUnicaExecutor().execute(courseInEachCategoryPageCrawler);
 
 	}
 }

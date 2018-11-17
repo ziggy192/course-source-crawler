@@ -76,4 +76,34 @@
             <EndSign><![CDATA[<input type="hidden" id="user_id"]]></EndSign>
         </CourseDetailSign>
     </Unica>
+    <KhoaHocOnline>
+        <DomainUrl>https://khoahoc.online</DomainUrl>
+        <CategoryMappingList>
+            <CategoryMapping source="Công Nghệ Đời Sống" to="LifeStyle"/>
+            <CategoryMapping source="Công Nghệ Thông Tin" to="IT"/>
+            <CategoryMapping source="Đầu Tư Tài Chính" to="Business"/>
+            <CategoryMapping source="Kiếm Tiền Online ( MMO )" to="Business"/>
+            <CategoryMapping source="Kinh Doanh Và Khởi Nghiệp" to="Business"/>
+            <CategoryMapping source="Phát Triển Bản Thân" to="PersonalDevelopment"/>
+            <CategoryMapping source="Sale - Marketting" to="Marketing"/>
+            <CategoryMapping source="Thiết Kế Đồ Họa" to="Design"/>
+        </CategoryMappingList>
+        
+        <PaginationSign>
+            <BeginSign><![CDATA[<nav class="learn-press-pagination navigation pagination"]]></BeginSign>
+            <EndSign><![CDATA[</nav]]></EndSign>
+        </PaginationSign>
+        <CategoryListSign>
+            <BeginSign><![CDATA[<aside id="course-categories-3"]]></BeginSign>
+            <EndSign><![CDATA[</aside]]></EndSign>
+        </CategoryListSign>
+        <CourseListSign>
+            <BeginSign><![CDATA[<article id="post-0"]]></BeginSign>
+            <EndSign><![CDATA[</article]]></EndSign>
+        </CourseListSign>
+        <CourseDetailSign>
+            <BeginSign><![CDATA[<main id="main"]]></BeginSign>
+            <EndSign><![CDATA[<div id="sidebar"]]></EndSign>
+        </CourseDetailSign>
+    </KhoaHocOnline>
 </ParserConfig>

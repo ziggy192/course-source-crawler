@@ -43,7 +43,7 @@ public class EdumallMainCrawler implements Runnable {
 
 //		getAllCoursesFromCategory(categoryUrlHolder);
 
-//		for (CourseUrlHolder courseUrlHolder : allCoursesFromCategory) {
+//		for (EdumallCourseUrlHolder courseUrlHolder : allCoursesFromCategory) {
 //			logger.info("Detail=======================");
 //			getCourseDetail(courseUrlHolder);
 //
@@ -77,7 +77,7 @@ public class EdumallMainCrawler implements Runnable {
 //		String beginSign = "col-xs col-sm col-md col-lg main-header-v4--content-c-header-left";
 //		String endSign = "col-xs col-sm col-md col-lg main-header-v4--content-c-header-search";
 
-		String htmlContent = StaxParserUtils.parseHTML(uri, beginSign, endSign);
+		String htmlContent = StaxParserUtils.parseHtml(uri, beginSign, endSign);
 		String newContent = StaxParserUtils.addMissingTag(htmlContent);
 
 //		System.out.println(newContent);;
@@ -187,20 +187,23 @@ public class EdumallMainCrawler implements Runnable {
 			for (CategoryUrlHolder categoryUrlHolder : categories) {
 
 				//map edumall category name -> my general category name -> categoryId
-				String edumallCategoryName = categoryUrlHolder.getCategoryName();
+				try {
+					String edumallCategoryName = categoryUrlHolder.getCategoryName();
 
-				CategoryNameType categoryNameType = CategoryMapper.getInstance().mapEdumall(edumallCategoryName);
+					CategoryNameType categoryNameType = CategoryMapper.getInstance().mapEdumall(edumallCategoryName);
 
-				//get categoryId from database
-				int categoryId = CategoryDAO.getInstance().getCategoryId(categoryNameType);
-
-
-				EdumallEachCategoryCrawler edumallEachCategoryCrawler = new EdumallEachCategoryCrawler(categoryId, categoryUrlHolder.getCategoryURL());
+					//get categoryId from database
+					int categoryId = CategoryDAO.getInstance().getCategoryId(categoryNameType);
 
 
-				//todo thread executor
-				CrawlingThreadManager.getInstance().getExecutor().execute(edumallEachCategoryCrawler);
+					EdumallEachCategoryCrawler edumallEachCategoryCrawler = new EdumallEachCategoryCrawler(categoryId, categoryUrlHolder.getCategoryURL());
+
+
+					//todo thread executor
+					CrawlingThreadManager.getInstance().getEdumallExecutor().execute(edumallEachCategoryCrawler);
 //				edumallEachCategoryCrawler.start();
+				} catch (Exception e) {
+				}
 
 
 				//check is suspend

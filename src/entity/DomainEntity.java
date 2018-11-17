@@ -16,6 +16,16 @@ public class DomainEntity {
 	private String name;
 	private String domainUrl;
 
+
+	public DomainEntity() {
+	}
+
+	public DomainEntity(String name, String domainUrl) {
+		this.id = -1;
+		this.name = name;
+		this.domainUrl = domainUrl;
+	}
+
 	@Id
 	@Column(name = "Id", nullable = false)
 	public int getId() {

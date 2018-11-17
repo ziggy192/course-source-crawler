@@ -28,11 +28,15 @@ import java.net.URL;
 import java.net.URLConnection;
 import java.net.URLEncoder;
 import java.nio.charset.StandardCharsets;
+import java.nio.file.Files;
+import java.nio.file.StandardCopyOption;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Iterator;
 import java.util.List;
 import java.util.logging.Logger;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class StaxParserUtils {
 
@@ -78,6 +82,99 @@ public class StaxParserUtils {
 		return result;
 	}
 
+	private static String removeOnClickAttributes(String tag) {
+		String onlickRegex = "onclick=\\'.+?\\'";
+		String onclickRegex2 = "onclick=\\\".+?\\\"";
+		return tag.replaceAll(onlickRegex, "")
+				.replaceAll(onclickRegex2, "");
+	}
+
+	private static String getRealTagnameWithRegex(String tag) {
+		//WARNING: not return '/' in tagname
+
+		String tagNameRegex = "(</?\\s?)([^\\s>/]+)";
+		Pattern pattern = Pattern.compile(tagNameRegex);
+		Matcher matcher = pattern.matcher(tag);
+		if (matcher.find()) {
+			//count from 1
+			String tagName = matcher.group(2);
+			return tagName;
+		}
+
+		return null;
+
+	}
+	private static String removeEmptyAttFromHtmlTag(String tag) {
+
+
+		if (tag.contains("input placeholder=\"Name *\"")) {
+			logger.info(tag);
+		}
+		//remove onclick=''
+		tag = removeOnClickAttributes(tag);
+
+		String tagName = getRealTagnameWithRegex(tag);
+
+		if (tagName == null) {
+			return tag;
+		}
+
+		StringBuilder result = new StringBuilder();
+		result.append("<");
+		if (tag.charAt(1) == '/') {
+			result.append("/");
+		}
+		result.append(tagName);
+
+		String regExForAtt = "(\\S+)=[\"'].*?[\"']";
+		Pattern pattern = Pattern.compile(regExForAtt);
+		Matcher matcher = pattern.matcher(tag);
+		while (matcher.find()) {
+
+			String att = tag.substring(matcher.start(), matcher.end());
+			result.append(" ");
+			result.append(att);
+			result.append(" ");
+
+		}
+
+		if (tag.trim().endsWith("/>")) {
+			result.append("/>");
+		} else {
+			result.append(">");
+		}
+
+		return result.toString();
+	}
+
+	public static String removeEmptyAttributes(String content) {
+		int i = 0;
+
+		StringBuilder result = new StringBuilder();
+		while (i < content.length()) {
+			if (content.charAt(i) == '<') {
+
+				int j = content.indexOf('>', i);
+				if (j != -1) {
+					String tag = content.substring(i, j+1);
+					// process tag
+					String processedTag = removeEmptyAttFromHtmlTag(tag);
+					i = j+1;
+					result.append(processedTag);
+
+				} else {
+					result.append(content.substring(i));
+					break;
+				}
+			} else {
+				result.append(content.charAt(i));
+				i++;
+
+			}
+		}
+
+		return result.toString();
+	}
 
 	public static String addMissingTag(String content) {
 		List<String> stack = new ArrayList<>();
@@ -103,8 +200,13 @@ public class StaxParserUtils {
 					j++;
 				}
 
-				int curEnd = j;
+
 				tagTmp = tagTmp + '>';
+				//remove attributes without value
+				//  adfasf="safsf" item asfsf="asfsdf
+
+
+				int curEnd = j;
 				i = j + 1;
 				String tag = getTagName(tagTmp);
 				if (tag != null) {
@@ -163,6 +265,7 @@ public class StaxParserUtils {
 		}
 		return "<root>" + newContent + "</root>";
 	}
+
 
 	public static String getContentAndJumpToEndElement(XMLEventReader eventReader, XMLEvent currentEvent) throws XMLStreamException {
 
@@ -412,45 +515,97 @@ public class StaxParserUtils {
 	}
 
 
-	public static StreamSource parseHTML(String uri) throws UnsupportedEncodingException {
-
-		StringBuffer stringBuffer = new StringBuffer();
+	public static void saveHtmlToFile(String uri, File file) {
 		try {
+			if (!uri.startsWith("https://") && !uri.startsWith("http://") && !uri.startsWith("//")) {
+				uri = "https://" + uri;
+			}
 			URL url = new URL(uri);
 			URLConnection connection = url.openConnection();
 			connection.addRequestProperty("User-Agent", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36");
-
 			InputStream inputStream = connection.getInputStream();
-			BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(inputStream, "UTF-8"));
-			String inputLine;
-//			writer = new BufferedWriter(new OutputStreamWriter(
-//					new FileOutputStream(filePath), "UTF-8"));
+			Files.copy(inputStream, file.toPath(), StandardCopyOption.REPLACE_EXISTING);
 
-
-			while ((inputLine = bufferedReader.readLine()) != null) {
-				inputLine = replaceEntities(inputLine);
-				stringBuffer.append(inputLine.trim() + "\n");
-			}
-		} catch (
-				IOException e) {
+		} catch (IOException e) {
 			e.printStackTrace();
 		}
-		InputStream inputStream = new ByteArrayInputStream(stringBuffer.toString().getBytes("UTF-8"));
-		return new StreamSource(inputStream);
+
 	}
 
-	public static String encodeURL(String uri) throws UnsupportedEncodingException {
-		StringBuilder result = new StringBuilder("");
+	public static void saveStringToFile(String content, File file) {
 
-		String[] strings = uri.split("/");
-		for (String string : strings) {
-			result.append(URLEncoder.encode(string, "ISO-8859-1"));
+		try {
+			PrintWriter writer = new PrintWriter(file);
+			writer.write(content);
+			writer.flush();
+			writer.close();
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
 		}
-		return result.toString();
 	}
 
-	public static String parseHTML(String uri, String beginSign, String endSign) {
-		if (!uri.startsWith("https://") && !uri.startsWith("http://")) {
+	public static String parseDebuggingHtml(File htmlFile, String beginSign, String endSign) {
+		StringBuilder htmlBuilder = new StringBuilder();
+
+		boolean isInside = false;
+
+
+		try {
+			InputStream inputStream = new FileInputStream(htmlFile);
+			BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(inputStream, StandardCharsets.UTF_8));
+			String inputLine;
+
+			while ((inputLine = bufferedReader.readLine()) != null) {
+//				System.out.println(inputLine);
+				if (inputLine.contains(beginSign)) {
+					isInside = true;
+				}
+
+				if (isInside) {
+
+					int beginIndex = 0;
+					if (inputLine.contains(beginSign) && beginSign.startsWith("<")) {
+						beginIndex = inputLine.indexOf(beginSign);
+					}
+
+					int endIndex = inputLine.length();
+					if (inputLine.contains(endSign) && endSign.startsWith("<")) {
+						endIndex = inputLine.indexOf(endSign);
+					}
+
+					//for small performance optimize
+					if (beginIndex != 0 || endIndex != inputLine.length()) {
+
+						htmlBuilder.append(inputLine.substring(beginIndex, endIndex));
+					} else {
+						htmlBuilder.append(inputLine);
+					}
+
+				}
+
+				if (isInside && inputLine.contains(endSign)) {
+					isInside = false;
+					break;
+				}
+
+			}
+
+			inputStream.close();
+
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+
+
+		String content = htmlBuilder.toString();
+		content = StringEscapeUtils.unescapeHtml4(content);
+		content = replaceEntities(content);
+		content = removeComment(content);
+		return content;
+	}
+
+	public static String parseHtml(String uri, String beginSign, String endSign) {
+		if (!uri.startsWith("https://") && !uri.startsWith("http://") && !uri.startsWith("//")) {
 			uri = "https://" + uri;
 		}
 		StringBuilder htmlBuilder = new StringBuilder();
@@ -510,6 +665,7 @@ public class StaxParserUtils {
 
 
 		String content = htmlBuilder.toString();
+		//remove before unescaping because of &quotes;
 		content = StringEscapeUtils.unescapeHtml4(content);
 		content = replaceEntities(content);
 		content = removeComment(content);
@@ -530,18 +686,8 @@ public class StaxParserUtils {
 
 	public static boolean checkAttributeContainsKey(XMLEvent eventElement, String attributeName, String key) {
 //
-//		if (eventElement.isStartElement()) {
-//			StartElement startElement = eventElement.asStartElement();
-//			Attribute attribute = startElement.getAttributeByName(new QName(attributeName));
-//			if (attribute != null) {
-//				return attribute.getValue().contains(key);
-//
-//			}
-//		}
-
 		return checkAttributeContainsKey(eventElement, attributeName, new String[]{key});
 	}
-
 
 
 	public static boolean checkAttributeContainsKey(XMLEvent eventElement, String attributeName, String[] keys) {
@@ -553,10 +699,10 @@ public class StaxParserUtils {
 			if (attribute != null) {
 				//delimiter ' '
 				String attValue = attribute.getValue();
-				List<String> attValueItem = Arrays.asList(attValue.split(" "));
+				List<String> attValueItems = Arrays.asList(attValue.split(" "));
 				for (String key : keys) {
-					if (!attValueItem.contains(key)) {
-						//list.contains() use "equals()" to compare -> good
+					if (!attValueItems.contains(key)) {
+						//list.contains() already use "equals()" to compare -> good
 						return false;
 					}
 				}
@@ -654,41 +800,6 @@ public class StaxParserUtils {
 		return result;
 	}
 
-	public static void parseHTML(String filePath, String uri) {
-
-		Writer writer = null;
-		try {
-			URL url = new URL(uri);
-			URLConnection connection = url.openConnection();
-			connection.addRequestProperty("User-Agent", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36");
-
-			InputStream inputStream = connection.getInputStream();
-			BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(inputStream, "UTF-8"));
-			String inputLine;
-			writer = new BufferedWriter(new OutputStreamWriter(
-					new FileOutputStream(filePath), "UTF-8"));
-
-
-			while ((inputLine = bufferedReader.readLine()) != null) {
-				writer.write(inputLine + "\n");
-			}
-			bufferedReader.close();
-
-		} catch (IOException e) {
-			e.printStackTrace();
-		} finally {
-			try {
-
-				if (writer != null) {
-					writer.close();
-
-				}
-			} catch (IOException e) {
-				e.printStackTrace();
-			}
-		}
-
-	}
 
 	public static String getAttributeByName(StartElement startElement, String attributeName) {
 		Attribute attribute = startElement.getAttributeByName(new QName(attributeName));
@@ -700,7 +811,7 @@ public class StaxParserUtils {
 
 	public static String removeComment(String content) {
 		//remove all line breaks
-		content  = content.replace("\n", "");
+		content = content.replace("\n", "");
 		String commentPattern = "<!--.*?-->";
 		return content.replaceAll(commentPattern, "");
 	}

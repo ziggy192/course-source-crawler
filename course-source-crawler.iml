@@ -36,5 +36,7 @@
     <orderEntry type="library" name="HIbernateFiles" level="application" />
     <orderEntry type="library" name="mysql-connector-java-8.0.13" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="TomEE 9.0.12" level="application_server_libraries" />
+    <orderEntry type="library" name="FOP" level="application" />
+    <orderEntry type="library" name="FO Lib Depedency" level="application" />
   </component>
 </module>

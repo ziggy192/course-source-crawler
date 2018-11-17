@@ -42,7 +42,7 @@ public class UnicaCourseInEachCategoryPageCrawler implements Runnable {
 				CrawlingThreadManager.getInstance().checkSuspendStatus();
 
 				UnicaCourseDetailCrawler unicaCourseDetailCrawler = new UnicaCourseDetailCrawler(courseUrlHolder, categoryId);
-				CrawlingThreadManager.getInstance().getExecutor().execute(unicaCourseDetailCrawler);
+				CrawlingThreadManager.getInstance().getUnicaExecutor().execute(unicaCourseDetailCrawler);
 
 
 			}
@@ -67,7 +67,7 @@ public class UnicaCourseInEachCategoryPageCrawler implements Runnable {
 //		String endSign = "<div class=\"u-number-page\">";
 
 
-		String htmlContent = StaxParserUtils.parseHTML(uri, beginSign, endSign);
+		String htmlContent = StaxParserUtils.parseHtml(uri, beginSign, endSign);
 		htmlContent = StaxParserUtils.addMissingTag(htmlContent);
 
 		logger.info(htmlContent);

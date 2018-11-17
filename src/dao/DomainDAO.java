@@ -1,6 +1,9 @@
 package dao;
 
+import config.ConfigManager;
+import constant.AppConstants;
 import entity.DomainEntity;
+import org.omg.CORBA.PUBLIC_MEMBER;
 import util.DBUtils;
 
 import javax.persistence.EntityManager;
@@ -21,6 +24,12 @@ public class DomainDAO extends BaseDAO<DomainEntity, Integer> {
 		}
 		return instance;
 	}
+
+	public void insertDomainIfNotExist(DomainEntity domainEntity) {
+		if (getDomainByName(domainEntity.getName()) == null) {
+			DomainDAO.getInstance().persist(domainEntity);
+		}
+	}
 	public DomainEntity getDomainByName(String domainName) {
 		EntityManager entityManager = DBUtils.getEntityManager();
 		List<DomainEntity> resultList = entityManager.createNamedQuery("Domain.getDomainByDomainName")
@@ -36,8 +45,10 @@ public class DomainDAO extends BaseDAO<DomainEntity, Integer> {
 	public List<DomainEntity> getAllDomain() {
 		EntityManager entityManager = DBUtils.getEntityManager();
 		List resultList = entityManager.createNamedQuery("Domain.getAllDomain").getResultList();
-		return resultList;g
+		return resultList;
 	}
+
+
 
 
 

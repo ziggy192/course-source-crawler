@@ -2,7 +2,7 @@ package crawler;
 
 import config.ConfigManager;
 import config.model.SignType;
-import url_holder.CourseUrlHolder;
+import url_holder.EdumallCourseUrlHolder;
 import util.StaxParserUtils;
 
 import javax.xml.namespace.QName;
@@ -33,9 +33,9 @@ public class EdumallCourseInEachCategoryPageCrawler implements Runnable {
 	public void run() {
 		logger.info("start thread");
 		try {
-			List<CourseUrlHolder> courseListFromEachPage = getCourseListFromEachPage(categoryPageUrl);
-			for (CourseUrlHolder courseUrlHolder : courseListFromEachPage) {
-				EdumallCourseDetailCrawler edumallCourseDetailCrawler = new EdumallCourseDetailCrawler(courseUrlHolder, categoryId);
+			List<EdumallCourseUrlHolder> courseListFromEachPage = getCourseListFromEachPage(categoryPageUrl);
+			for (EdumallCourseUrlHolder edumallCourseUrlHolder : courseListFromEachPage) {
+				EdumallCourseDetailCrawler edumallCourseDetailCrawler = new EdumallCourseDetailCrawler(edumallCourseUrlHolder, categoryId);
 
 				//check suspend
 				synchronized (CrawlingThreadManager.getInstance()) {
@@ -45,7 +45,7 @@ public class EdumallCourseInEachCategoryPageCrawler implements Runnable {
 				}
 
 				//todo thread execute
-				CrawlingThreadManager.getInstance().getExecutor().execute(edumallCourseDetailCrawler);
+				CrawlingThreadManager.getInstance().getEdumallExecutor().execute(edumallCourseDetailCrawler);
 //				courseDetailCrawler.start();
 
 
@@ -59,7 +59,7 @@ public class EdumallCourseInEachCategoryPageCrawler implements Runnable {
 
 	}
 
-	public static List<CourseUrlHolder> getCourseListFromEachPage(String uri) {
+	public  List<EdumallCourseUrlHolder> getCourseListFromEachPage(String uri) {
 
 //		String uri = "https://edumall.vn/courses/filter&page=2";
 
@@ -71,11 +71,11 @@ public class EdumallCourseInEachCategoryPageCrawler implements Runnable {
 //		String beginSign = "section class='area-display-courses'";
 //		String endSign = "</section>";
 
-		String htmlContent = StaxParserUtils.parseHTML(uri, beginSign, endSign);
+		String htmlContent = StaxParserUtils.parseHtml(uri, beginSign, endSign);
 		htmlContent = StaxParserUtils.addMissingTag(htmlContent);
 
 
-		List<CourseUrlHolder> courseList = new ArrayList<>();
+		List<EdumallCourseUrlHolder> courseList = new ArrayList<>();
 
 		boolean insideCourseListDiv = false;
 		try {
@@ -119,8 +119,8 @@ public class EdumallCourseInEachCategoryPageCrawler implements Runnable {
 //							XMLEvent articleElement = nextStartEvent(staxReader, "article");
 
 
-							CourseUrlHolder courseUrlHolder = new CourseUrlHolder();
-							courseList.add(courseUrlHolder);
+							EdumallCourseUrlHolder edumallCourseUrlHolder = new EdumallCourseUrlHolder();
+							courseList.add(edumallCourseUrlHolder);
 
 						}
 						//todo get thumnail image in
@@ -136,8 +136,8 @@ public class EdumallCourseInEachCategoryPageCrawler implements Runnable {
 
 								String thumnaillUrl = thumnailAttribute.getValue();
 
-								CourseUrlHolder courseUrlHolder = courseList.get(courseList.size() - 1);
-								courseUrlHolder.setCourseThumbnailUrl(thumnaillUrl);
+								EdumallCourseUrlHolder edumallCourseUrlHolder = courseList.get(courseList.size() - 1);
+								edumallCourseUrlHolder.setCourseThumbnailUrl(thumnaillUrl);
 								logger.info(String.format("course number=%s || thumnail=%s", courseList.size() - 1, thumnaillUrl));
 							}
 						}
@@ -149,7 +149,7 @@ public class EdumallCourseInEachCategoryPageCrawler implements Runnable {
 								&& StaxParserUtils.checkAttributeContainsKey(startElement, "class", "gtm_section_recommendation")
 								&& StaxParserUtils.checkAttributeContainsKey(startElement, "class", "course-title")) {
 							String title = StaxParserUtils.getContentAndJumpToEndElement(staxReader, startElement);
-							CourseUrlHolder lastCourse = courseList.get(courseList.size() - 1);
+							EdumallCourseUrlHolder lastCourse = courseList.get(courseList.size() - 1);
 							lastCourse.setCourseName(title);
 							logger.info(String.format("course number=%s || courseName =%s", courseList.size() - 1, title));
 
@@ -159,7 +159,7 @@ public class EdumallCourseInEachCategoryPageCrawler implements Runnable {
 
 						if (startElement.getName().getLocalPart().equals("a")
 								&& StaxParserUtils.checkAttributeContainsKey(startElement, "class", "gtm_section_recommendation")) {
-							CourseUrlHolder lastCourse = courseList.get(courseList.size() - 1);
+							EdumallCourseUrlHolder lastCourse = courseList.get(courseList.size() - 1);
 							if (lastCourse.getCourseUrl() == null || lastCourse.getCourseUrl().isEmpty()) {
 								//check for dupplicate a tags
 								Attribute hrefAttribute = startElement.getAttributeByName(new QName("href"));
@@ -182,7 +182,6 @@ public class EdumallCourseInEachCategoryPageCrawler implements Runnable {
 			}
 
 		} catch (XMLStreamException e) {
-			e.printStackTrace();
 		}
 		return courseList;
 	}

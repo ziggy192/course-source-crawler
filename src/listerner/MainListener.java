@@ -33,7 +33,6 @@ public class MainListener implements ServletContextListener,
 
 		// TODO: 11/10/18 future: get context directly from this class
 		// separate just because cannot load WebListenner when run JavaApplication
-
 		ContextHolder.setApplicationContext(sce.getServletContext());
 
 		//turn off log for hibernate
@@ -41,7 +40,6 @@ public class MainListener implements ServletContextListener,
 
 		java.util.logging.Logger.getLogger("org.hibernate").setLevel(Level.OFF);
 
-		// todo (do this in servletInit(): insert category names to db if not yet available
 		CategoryNameType[] categoryNameTypes = CategoryNameType.values();
 		for (CategoryNameType value : categoryNameTypes) {
 			CategoryDAO.getInstance().insertCategoryByNameIfNotExist(value.getValue());
@@ -55,10 +53,6 @@ public class MainListener implements ServletContextListener,
 		DBUtils.closeEntityFactory();
 
 		CrawlingThreadManager.getInstance().stopAllThread();
-
-
-
-		// TODO: 11/10/18  	set context = null here
 	}
 
 	// -------------------------------------------------------

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<fo:root xmlns:fo="http://www.w3.org/1999/XSL/Format">
+    <fo:layout-master-set>
+        <fo:simple-page-master master-name="A4" page-height="8.5in" page-width="11in"
+                               margin-top="0.5in" margin-bottom="0.5in" margin-left="1in" margin-right="1in">
+            <fo:region-body margin-top="0.5in"/>
+            <fo:region-before extent="1in"/>
+            <fo:region-after extent="0.75in"/>
+        </fo:simple-page-master>
+    </fo:layout-master-set>
+    <fo:page-sequence master-reference="A4">
+        <fo:static-content flow-name="xsl-region-before" >
+            <fo:block/>
+        </fo:static-content>
+        <fo:static-content flow-name="xsl-region-after">
+            <fo:block font-size="18pt" font-family="Arial" line-height="24pt"
+                      space-after.optimum="15pt" text-align="center" padding-top="3pt">
+                <fo:page-number/>
+            </fo:block>
+        </fo:static-content>
+        <fo:flow flow-name="xsl-region-body" font-family="Arial">
+            <fo:table font-size="10pt" width="100%" table-layout="fixed">
+                <fo:table-column column-width="proportional-column-width(20)"/>
+                <fo:table-column column-width="proportional-column-width(20)"/>
+                <fo:table-column column-width="proportional-column-width(20)"/>
+                <fo:table-body>
+                    <fo:table-row>
+                        <fo:table-cell display-align="center" text-align="center">
+                            <fo:block
+                                    font-weight="bold"
+                                    color="#87cefa"
+                            >COURSE SOURCE
+                            </fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell display-align="center" text-align="center">
+                            <fo:block
+                                    font-size="28pt"
+                                    font-weight="bold"
+                                    padding-top="13pt"
+                            >Course detail
+                            </fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell display-align="center" text-align="center">
+                            <fo:block>Date:</fo:block>
+
+
+                        </fo:table-cell>
+                    </fo:table-row>
+                </fo:table-body>
+            </fo:table>
+            <fo:block margin-top="2.8cm">
+                <fo:table border-collapse="separate" table-layout="fixed" font-family="Arial">
+                    <fo:table-column column-width="5cm"/>
+                    <fo:table-column column-width="15cm"/>
+                    <fo:table-body>
+                        <fo:table-row>
+                            <fo:table-cell font-weight="bold">
+                                <fo:block padding="2mm" >
+                                    Name:
+                                </fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block padding="2mm">
+                                    GIÁO DỤC SỚM CHO TRẺ THEO PHƯƠNG PHÁP GLENN DOMAN: NHẬN BIẾT THẾ GIỚI XUNG Q...
+                                </fo:block>
+                            </fo:table-cell>
+                        </fo:table-row>
+                        <fo:table-row >
+                            <fo:table-cell font-weight="bold">
+                                <fo:block padding="2mm" >
+                                    Domain:
+                                </fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block padding="2mm" >
+                                    Edumall
+                                </fo:block>
+                            </fo:table-cell>
+                        </fo:table-row>
+                        <fo:table-row >
+                            <fo:table-cell font-weight="bold">
+                                <fo:block padding="2mm" >
+                                    Category:
+                                </fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block padding="2mm" >
+                                    Luyện thi
+                                </fo:block>
+                            </fo:table-cell>
+                        </fo:table-row>
+                        <fo:table-row >
+                            <fo:table-cell font-weight="bold">
+                                <fo:block padding="2mm" >
+                                    Cost:
+                                </fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block padding="2mm" >
+                                    699999.0
+                                </fo:block>
+                            </fo:table-cell>
+                        </fo:table-row>
+                        <fo:table-row >
+                            <fo:table-cell font-weight="bold">
+                                <fo:block padding="2mm" >
+                                    Video length:
+                                </fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block padding="2mm" >
+                                    01:35:19
+                                </fo:block>
+                            </fo:table-cell>
+                        </fo:table-row>
+                    </fo:table-body>
+                </fo:table>
+
+            </fo:block>
+        </fo:flow>
+    </fo:page-sequence>
+</fo:root>

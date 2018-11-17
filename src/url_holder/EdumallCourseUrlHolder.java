@@ -1,18 +1,18 @@
 package url_holder;
 
-public class CourseUrlHolder {
+public class EdumallCourseUrlHolder {
 	private String courseName;
 	private String courseThumbnailUrl;
 	private String courseUrl;
 
 
-	public CourseUrlHolder(String courseName, String courseThumbnailUrl, String courseUrl) {
+	public EdumallCourseUrlHolder(String courseName, String courseThumbnailUrl, String courseUrl) {
 		this.courseName = courseName;
 		this.courseThumbnailUrl = courseThumbnailUrl;
 		this.courseUrl = courseUrl;
 	}
 
-	public CourseUrlHolder() {
+	public EdumallCourseUrlHolder() {
 	}
 
 	public String getCourseThumbnailUrl() {
@@ -41,7 +41,7 @@ public class CourseUrlHolder {
 
 	@Override
 	public String toString() {
-		return "CourseUrlHolder{" +
+		return "EdumallCourseUrlHolder{" +
 				"courseName='" + courseName + '\'' +
 				", courseThumbnailUrl='" + courseThumbnailUrl + '\'' +
 				", courseUrl='" + courseUrl + '\'' +

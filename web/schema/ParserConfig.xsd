@@ -63,6 +63,7 @@
             <xsd:all>
                 <xsd:element name="Edumall" type="DomainType"/>
                 <xsd:element name="Unica" type="DomainType"/>
+                <xsd:element name="KhoaHocOnline" type="DomainType"/>
             </xsd:all>
         </xsd:complexType>
     </xsd:element>

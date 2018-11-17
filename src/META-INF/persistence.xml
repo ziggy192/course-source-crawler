@@ -6,10 +6,6 @@
         <class>entity.CategoryEntity</class>
         <class>entity.CourseEntity</class>
         <class>entity.DomainEntity</class>
-        <class>entity.UserEntity</class>
-        <class>entity.UserCourseInterestEntity</class>
-        <class>entity.UserProviderFollowEntity</class>
-        <class>entity.UserSubjectFollowEntity</class>
         <properties>
             <property name="hibernate.connection.url" value="jdbc:mysql://localhost:3306/course_source"/>
             <property name="hibernate.connection.driver_class" value="com.mysql.jdbc.Driver"/>

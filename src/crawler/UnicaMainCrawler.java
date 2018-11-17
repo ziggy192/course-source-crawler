@@ -41,7 +41,7 @@ public class UnicaMainCrawler implements Runnable {
 //		String beginSign = "col-lg-3 col-md-3 col-sm-4 cate-md";
 //		String endSign = "col-lg-5 col-md-5 col-sm-4 cate-sm";
 
-		String htmlContent = StaxParserUtils.parseHTML(uri, beginSign, endSign);
+		String htmlContent = StaxParserUtils.parseHtml(uri, beginSign, endSign);
 		String newContent = StaxParserUtils.addMissingTag(htmlContent);
 
 //		System.out.println(newContent);;
@@ -135,23 +135,26 @@ public class UnicaMainCrawler implements Runnable {
 			//
 			for (CategoryUrlHolder categoryUrlHolder : categories) {
 
-				//map edumall category name -> my general category name -> categoryId
-				String edumallCategoryName = categoryUrlHolder.getCategoryName();
+				try {
 
-				CategoryNameType categoryNameType = CategoryMapper.getInstance().mapUnica(edumallCategoryName);
+					//map edumall category name -> my general category name -> categoryId
+					String edumallCategoryName = categoryUrlHolder.getCategoryName();
 
-				//get categoryId from database
-				int categoryId = CategoryDAO.getInstance().getCategoryId(categoryNameType);
+					CategoryNameType categoryNameType = CategoryMapper.getInstance().mapUnica(edumallCategoryName);
 
-
-				Thread unicalEachCategoryCrawler = new Thread(new UnicaEachCategoryCrawler(categoryId, categoryUrlHolder.getCategoryURL()));
-
-
-				//todo thread executor
-				CrawlingThreadManager.getInstance().getExecutor().execute(unicalEachCategoryCrawler);
-//				edumallEachCategoryCrawler.start();
+					//get categoryId from database
+					int categoryId = CategoryDAO.getInstance().getCategoryId(categoryNameType);
 
 
+					Thread unicalEachCategoryCrawler = new Thread(new UnicaEachCategoryCrawler(categoryId, categoryUrlHolder.getCategoryURL()));
+
+
+					//todo thread executor
+					CrawlingThreadManager.getInstance().getUnicaExecutor().execute(unicalEachCategoryCrawler);
+
+				} catch (Exception e) {
+
+				}
 				//check is suspend
 				CrawlingThreadManager.getInstance().checkSuspendStatus();
 

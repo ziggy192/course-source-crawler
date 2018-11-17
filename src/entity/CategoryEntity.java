@@ -23,8 +23,6 @@ import java.util.Objects;
  *   &lt;/complexContent>
  * &lt;/complexType>
  * </pre>
- *
- *
  */
 @XmlAccessorType(XmlAccessType.PROPERTY)
 @XmlType(name = "", propOrder = {
@@ -35,7 +33,10 @@ import java.util.Objects;
 @Entity
 @Table(name = "Category", schema = "course_source")
 @NamedQueries(
-		@NamedQuery(name = "CategoryEntity.getCategoryByName",query = "select d from CategoryEntity  d where d.name like :categoryName")
+		{@NamedQuery(name = "CategoryEntity.getCategoryByName", query = "select d from CategoryEntity  d where d.name like :categoryName")
+				, @NamedQuery(name = "CategoryEntity.getCategoryList", query = "select d from CategoryEntity d")
+
+		}
 )
 public class CategoryEntity {
 	private int id;

@@ -10,37 +10,48 @@
 <html>
 <head>
     <title>Home Cralwer</title>
+    <link href="css/crawlerMain.css" rel="stylesheet" type="text/css"/>
     <script type="text/javascript">
-        function submit(btActionName) {
-            var form = document.getElementById("mainForm");
-
-
-            form.submit();
-        }
     </script>
 </head>
 <body>
-<h1>Home crawler</h1>
-<form id="mainForm" action="" method="post">
-    <h3>Domain List to Crawl</h3>
-    <input id="cbEdumall" type="checkbox" value="edumall" name="domain"/>
-    <label for="cbEdumall"> Edumall </label>
-    <br/>
-    <input id="cbUnica" type="checkbox" value="unica" name="domain">
-    <label for="cbUnica"> Unica</label>
-    <br/>
+<div class="wrapper">
 
-    <div>
-        <button type="submit" name="btAction" value="start">Start</button>
-        <button type="submit" name="btAction" value="pause">Pause</button>
-        <button type="submit" name="btAction" value="resume">Resume</button>
-        <button type="submit" name="btAction" value="stop">Stop</button>
-    </div>
+    <h1>Home crawler</h1>
+    <form id="mainForm" action="" method="post">
+        <div class="row_wrapper">
 
-    <div>
-        <h3><c:out value="${requestScope.message}" default="No message"/></h3>
-    </div>
+            <div class="list_wrapper col1">
 
-</form>
+                <h3>Domain List to Crawl</h3>
+                <input id="cbEdumall" type="checkbox" value="edumall" name="domain"/>
+                <label for="cbEdumall"> Edumall </label>
+                <br/>
+                <br/>
+                <input id="cbUnica" type="checkbox" value="unica" name="domain">
+                <label for="cbUnica"> Unica</label>
+                <br/>
+                <br/>
+            </div>
+
+            <div class="column_wrapper col2">
+                <div class="button_list_wapper">
+                    <button class="button green" type="submit" name="btAction" value="start">Start</button>
+                    <button class="button red" type="submit" name="btAction" value="pause">Pause</button>
+                    <button class="button blue" type="submit" name="btAction" value="resume">Resume</button>
+                </div>
+
+                <div>
+                    <h3>
+                        <h3><c:out value="${requestScope.message}" default="No message"/></h3>
+                    </h3>
+                </div>
+            </div>
+
+        </div>
+
+    </form>
+
+</div>
 </body>
 </html>

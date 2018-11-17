@@ -8,7 +8,7 @@ import dao.DomainDAO;
 import entity.CategoryEntity;
 import entity.DomainEntity;
 import url_holder.CategoryUrlHolder;
-import url_holder.CourseUrlHolder;
+import url_holder.EdumallCourseUrlHolder;
 import util.DBUtils;
 
 
@@ -37,8 +37,8 @@ public class EdumallTest {
 //		testGetCourseListFromEachPage();
 //		testEdumallGetCategory();
 
-//		testEdumall();
-		testGetCourseDetail();
+		testEdumall();
+//		testGetCourseDetail();
 	}
 
 
@@ -49,7 +49,7 @@ public class EdumallTest {
 	}
 	public static void testEdumall() {
 		EdumallMainCrawler edumallMainCrawler = new EdumallMainCrawler();
-		CrawlingThreadManager.getInstance().getExecutor().execute(edumallMainCrawler);
+		CrawlingThreadManager.getInstance().getEdumallExecutor().execute(edumallMainCrawler);
 	}
 
 
@@ -88,7 +88,7 @@ public class EdumallTest {
 
 	public static void testGetCourseDetail() {
 
-		CourseUrlHolder dummyCourseUrlHolder = new CourseUrlHolder("GIÁO DỤC SỚM CHO TRẺ THEO PHƯƠNG PHÁP  GLENN DOMAN: NHẬN BIẾT THẾ GIỚI XUNG Q..."
+		EdumallCourseUrlHolder dummyEdumallCourseUrlHolder = new EdumallCourseUrlHolder("GIÁO DỤC SỚM CHO TRẺ THEO PHƯƠNG PHÁP  GLENN DOMAN: NHẬN BIẾT THẾ GIỚI XUNG Q..."
 				, "//d1nzpkv5wwh1xf.cloudfront.net/320/k-577a160c047c994bb7e5b397/20180702-/teach-baby-by-sweet-mother.jpg"
 				, "https://edumall.vn/course/giao-duc-som-cho-tre-theo-phuong-phap--glenn-doman-nhan-biet-the-gioi-xung-quanh");
 //				, "https://edumall.vn/course/dao-tao-ky-thuat-truong-cửa-hang-gas");
@@ -96,9 +96,9 @@ public class EdumallTest {
 
 		EdumallMainCrawler.domainId = 3;
 
-		new Thread(new EdumallCourseDetailCrawler(dummyCourseUrlHolder, 5)).start();
+		new Thread(new EdumallCourseDetailCrawler(dummyEdumallCourseUrlHolder, 5)).start();
 
-//		getCourseDetail(dummyCourseUrlHolder);
+//		getCourseDetail(dummyEdumallCourseUrlHolder);
 
 	}
 

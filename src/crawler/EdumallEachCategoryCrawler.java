@@ -37,7 +37,7 @@ public class EdumallEachCategoryCrawler implements Runnable{
 //		String beginSign = "class='list-paginate'";
 //		String endSign = "form class='form-paginate form-inline'";
 
-		String htmlContent = StaxParserUtils.parseHTML(categoryUrl, beginSign, endSign);
+		String htmlContent = StaxParserUtils.parseHtml(categoryUrl, beginSign, endSign);
 
 		htmlContent = StaxParserUtils.addMissingTag(htmlContent);
 		System.out.println(htmlContent);
@@ -130,7 +130,7 @@ public class EdumallEachCategoryCrawler implements Runnable{
 
 				EdumallCourseInEachCategoryPageCrawler edumallCourseInEachCategoryPageCrawler = new EdumallCourseInEachCategoryPageCrawler(eachPageUri, categoryId);
 				//todo thread execute
-				CrawlingThreadManager.getInstance().getExecutor().execute(edumallCourseInEachCategoryPageCrawler);
+				CrawlingThreadManager.getInstance().getEdumallExecutor().execute(edumallCourseInEachCategoryPageCrawler);
 
 //				courseInEachCategoryPageCrawler.start();
 

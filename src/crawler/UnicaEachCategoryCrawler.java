@@ -34,7 +34,7 @@ public class UnicaEachCategoryCrawler implements Runnable{
 //		String beginSign = "<ul class=\"pagination\"";
 //		String endSign = "<li class=\"next\"";
 
-		String htmlContent = StaxParserUtils.parseHTML(categoryUrl, beginSign, endSign);
+		String htmlContent = StaxParserUtils.parseHtml(categoryUrl, beginSign, endSign);
 
 		htmlContent = StaxParserUtils.addMissingTag(htmlContent);
 		int pageCount = 1;
@@ -90,7 +90,7 @@ public class UnicaEachCategoryCrawler implements Runnable{
 				logger.info(String.format("pageNumber=%s | pageURL=%s", pageNumber,eachPageUri));
 				UnicaCourseInEachCategoryPageCrawler unicaCourseInEachCategoryPageCrawler = new UnicaCourseInEachCategoryPageCrawler(eachPageUri, categoryId);
 				//todo thread execute
-				CrawlingThreadManager.getInstance().getExecutor().execute(unicaCourseInEachCategoryPageCrawler);
+				CrawlingThreadManager.getInstance().getUnicaExecutor().execute(unicaCourseInEachCategoryPageCrawler);
 
 				//check issuspend
 				CrawlingThreadManager.getInstance().checkSuspendStatus();

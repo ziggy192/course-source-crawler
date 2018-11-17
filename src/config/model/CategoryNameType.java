@@ -101,6 +101,8 @@ public enum CategoryNameType {
 				'}';
 	}
 
+
+
 //for future reference to category names
 
 //	public static CategoryNameType mapEdumall(String edumallCategoryName) {

@@ -1,0 +1,49 @@
+<ns1:Course xmlns:ns1="www.Course.com">
+    <ns1:Id>2153</ns1:Id>
+    <ns1:Name>7 bước làm sao tận hưởng một chuyến du lịch nước ngoài với chi phí thấp</ns1:Name>
+    <ns1:Author>Hoàng Lê Giang</ns1:Author>
+    <ns1:AuthorDescription>&lt;div class='crawled' xmlns="http://www.w3.org/1999/xhtml"&gt;&lt;h2 class='crawled'&gt;Tiểu
+        sử&lt;/h2&gt;&lt;p class='crawled'&gt;Kinh nghiệm du lịch qua 33 quốc gia&lt;/p&gt;&lt;p class='crawled'&gt;Có
+        kiến thức chuyên môn và thực tế về trekking, leo núi.&lt;/p&gt;&lt;p class='crawled'&gt;Hoàn thành chuyến đi
+        gần nhất lên đỉnh núi cao nhất Châu Âu&lt;/p&gt;&lt;p class='crawled'&gt;Người đầu tiên đại diện Việt Nam
+        tham gia hành trình khám phá Bắc Cực.&lt;/p&gt;&lt;p class='crawled'&gt;Các bài viết, phỏng vấn về kinh
+        nghiệm du lịch có lượt chia sẻ cao.&lt;/p&gt;&lt;p class='crawled'&gt;&lt;/p&gt;&lt;p class='crawled'&gt;&lt;/p&gt;&lt;p
+        class='crawled'&gt;&lt;/p&gt;&lt;p class='crawled'&gt;&lt;/p&gt;&lt;p class='crawled'&gt;&lt;/p&gt;&lt;/div&gt;
+    </ns1:AuthorDescription>
+    <ns1:DomainId>3</ns1:DomainId>
+    <ns1:CategoryId>12</ns1:CategoryId>
+    <ns1:OverviewDescription>
+        &lt;div class='crawled' xmlns="http://www.w3.org/1999/xhtml"&gt;&lt;h1 class='crawled'&gt;Lợi
+        ích từ khóa học&lt;/h1&gt;&lt;ul class='crawled'&gt;&lt;li class='crawled'&gt; Kết thúc khóa học, các bạn
+        học viên sẽ tự tin hơn trong việc thực hiện một chuyến du lịch, dù là đi 1 mình hay nhóm.&lt;/li&gt;&lt;li
+        class='crawled'&gt; Biết cách làm sao tiết kiệm chi phí tối đa&lt;/li&gt;&lt;/ul&gt;&lt;h1 class='crawled'&gt;Đối
+        tượng mục tiêu&lt;/h1&gt;&lt;ul class='crawled'&gt;&lt;li class='crawled'&gt; Dành cho những người đam mê du
+        lịch khám phá trải nghiệm nước ngoài. Độ tuổi từ 22 đến 35&lt;/li&gt;&lt;/ul&gt;&lt;h1 class='crawled'&gt;Tổng
+        quát&lt;/h1&gt;&lt;p&gt;- Học viên là những người yêu thích du lịch nhưng còn nhiếu kỹ năng và kiến thức
+        thực tế.&lt;/p&gt;&lt;p&gt;- Khóa học sẽ giúp học viên tự tin hơn trong việc thực hiện một chuyến du lịch
+        trải nghiệm bằng cách hướng dẫn chi tiết qua video và hình ảnh đi kèm.&lt;/p&gt;&lt;p&gt;- Điều đặc biệt của
+        khóa học: Giảng viên có kinh nghiệm du lịch trải nghiệm trên 30 quốc gia, bên cạnh việc tiếp nhận những kinh
+        nghiệm tổng quát, học viên sẽ nhận được những lời khuyên bổ ích thiết thực về những rủi ro khi đi du lịch
+        một cách cụ thể nhất.&lt;/p&gt;&lt;h1 class='crawled'&gt;Yêu cầu của khóa học&lt;/h1&gt;&lt;ul
+        class='crawled'&gt;&lt;li class='crawled'&gt; Có kết nối internet ổn định&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;
+    </ns1:OverviewDescription>
+    <ns1:AuthorImageURL>
+        d1nzpkv5wwh1xf.cloudfront.net/320/k-57b67d6f60af25054a055b25/20170928-gianghl_2809/gianghl01.jpg
+    </ns1:AuthorImageURL>
+    <ns1:Rating>0.0</ns1:Rating>
+    <ns1:RatingNumber>0</ns1:RatingNumber>
+    <ns1:Cost>599000.0</ns1:Cost>
+    <ns1:Duration>13774</ns1:Duration>
+    <ns1:Syllabus>&lt;div class='crawled' xmlns="http://www.w3.org/1999/xhtml"&gt;&lt;h3 class='crawled'&gt;Giới
+        thiệu tổng quan&lt;/h3&gt;&lt;h3 class='crawled'&gt;Thế nào là du lịch trải nghiệm ?&lt;/h3&gt;&lt;h3
+        class='crawled'&gt;Yếu tố an toàn trong du lịch trải nghiệm&lt;/h3&gt;&lt;h3 class='crawled'&gt;Dụng cụ,
+        trang phục &lt;/h3&gt;&lt;h3 class='crawled'&gt;Tiết kiệm chi phí như thế nào ?&lt;/h3&gt;&lt;h3
+        class='crawled'&gt;Một vài điểm đến lý tưởng&lt;/h3&gt;&lt;h3 class='crawled'&gt;Trên đường&lt;/h3&gt;&lt;h3
+        class='crawled'&gt;Du lịch một mình và du lịch nhóm&lt;/h3&gt;&lt;/div&gt;
+    </ns1:Syllabus>
+    <ns1:ImageURL>https://d1nzpkv5wwh1xf.cloudfront.net/320/k-57b67d6f60af25054a055b25/20170928-gianghl_2809/gianghl02.jpg
+    </ns1:ImageURL>
+    <ns1:SourceURL>https://edumall.vn/course/7-buoc-lam-sao-tan-huong-mot-chuyen-du-lich-nuoc-ngoai-voi-chi-phi-thap
+    </ns1:SourceURL>
+    <ns1:Hash>-824328190</ns1:Hash>
+</ns1:Course>

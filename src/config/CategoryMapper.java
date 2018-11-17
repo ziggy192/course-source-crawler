@@ -25,10 +25,12 @@ public class CategoryMapper implements ConfigChangeListener {
 
 	private HashMap<String, CategoryNameType> edumallCategoryMap;
 	private HashMap<String, CategoryNameType> unicaCategoryMap;
+	private HashMap<String, CategoryNameType> kholCategoryMap;
 
 	private CategoryMapper() {
 		edumallCategoryMap = new HashMap<>();
 		unicaCategoryMap = new HashMap<>();
+		kholCategoryMap = new HashMap<>();
 
 	}
 
@@ -36,7 +38,6 @@ public class CategoryMapper implements ConfigChangeListener {
 	public CategoryNameType mapEdumall(String edumallCategoryName) {
 
 		if (edumallCategoryMap.containsKey(edumallCategoryName)) {
-
 			return edumallCategoryMap.get(edumallCategoryName);
 		}
 		return CategoryNameType.OTHER;
@@ -48,6 +49,15 @@ public class CategoryMapper implements ConfigChangeListener {
 		}
 		return CategoryNameType.OTHER;
 	}
+
+
+	public CategoryNameType mapKhoaHocOnline(String khoaHocOnlineCategoryName) {
+		if (kholCategoryMap.containsKey(khoaHocOnlineCategoryName)) {
+			return kholCategoryMap.get(khoaHocOnlineCategoryName);
+		}
+		return CategoryNameType.OTHER;
+	}
+
 
 
 
@@ -67,6 +77,13 @@ public class CategoryMapper implements ConfigChangeListener {
 		List<DomainType.CategoryMappingList.CategoryMapping> unicalMappingList = ConfigManager.getInstance().getConfigModel().getUnica().getCategoryMappingList().getCategoryMapping();
 		for (DomainType.CategoryMappingList.CategoryMapping categoryMapping : unicalMappingList) {
 			unicaCategoryMap.put(categoryMapping.getSource(), categoryMapping.getTo());
+		}
+
+		//update khol
+		kholCategoryMap.clear();
+		List<DomainType.CategoryMappingList.CategoryMapping> khoaHocOnlineMappingList = ConfigManager.getInstance().getConfigModel().getKhoaHocOnline().getCategoryMappingList().getCategoryMapping();
+		for (DomainType.CategoryMappingList.CategoryMapping categoryMapping : khoaHocOnlineMappingList) {
+			kholCategoryMap.put(categoryMapping.getSource(), categoryMapping.getTo());
 		}
 
 	}

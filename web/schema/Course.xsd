@@ -30,11 +30,11 @@
                 <xs:element name="Duration" type="xs:nonNegativeInteger"/>
 
                 <!--todo validate syllabus-->
-                <xs:element name="Syllabus" type="HTMLString"/>
+                <xs:element name="Syllabus" type="HTMLString" minOccurs="0"/>
 
                 <!---->
                 <xs:element name="PreviewVideoURL" type="URL" minOccurs="0"/>
-                <xs:element name="ImageURL" type="URL"/>
+                <xs:element name="ImageURL" type="ABSOLUTEURL"/>
                 <xs:element name="SourceURL" type="URL"/>
                 <xs:element name="Hash" type="xs:int" default="0" />
                 <xs:element name="DataFixed" type="xs:boolean" default="0" minOccurs="0"/>
@@ -48,6 +48,12 @@
     <xs:simpleType name="URL">
         <xs:restriction base="xs:token">
             <xs:pattern value="(https?:)?(//)?(www\.)?[-a-zA-Z0-9@:%._+~#=]{2,256}\.[a-z]{2,6}[^\s]*"/>
+            <xs:minLength value="1"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="ABSOLUTEURL">
+        <xs:restriction base="xs:token">
+            <xs:pattern value="(https?:)?(//)(www\.)?[-a-zA-Z0-9@:%._+~#=]{2,256}\.[a-z]{2,6}[^\s]*"/>
             <xs:minLength value="1"/>
         </xs:restriction>
     </xs:simpleType>

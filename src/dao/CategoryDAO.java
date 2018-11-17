@@ -4,6 +4,8 @@ import entity.CategoryEntity;
 import config.model.CategoryNameType;
 import util.DBUtils;
 
+import javax.persistence.EntityManager;
+import javax.persistence.Query;
 import java.util.List;
 
 public class CategoryDAO extends BaseDAO<CategoryEntity, Integer> {
@@ -43,6 +45,16 @@ public class CategoryDAO extends BaseDAO<CategoryEntity, Integer> {
 		} else {
 			return resultList.get(0);
 		}
+
+	}
+
+
+	public List<CategoryEntity> getCategoryList() {
+		EntityManager entityManager = DBUtils.getEntityManager();
+		Query namedQuery = entityManager.createNamedQuery("CategoryEntity.getCategoryList");
+
+		return namedQuery.getResultList();
+
 
 	}
 

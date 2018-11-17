@@ -57,17 +57,6 @@ public class ConfigManager {
 
 			File parserConfigXml = AppUtils.getFileWithRealPath(AppConstants.PARSER_CONFIG_XML_PATH);
 
-//			if (ContextHolder.getApplicationContext() != null) {
-//				String realPath = ContextHolder.getApplicationContext().getRealPath("/" + AppConstants.PARSER_CONFIG_XML_PATH);
-//
-//				parserConfigXml = new File(realPath);
-//
-//			} else {
-//
-//				parserConfigXml = new File("web/" + AppConstants.PARSER_CONFIG_XML_PATH);
-//			}
-
-
 			File parserConfigSchema = AppUtils.getFileWithRealPath(AppConstants.PARSER_CONFIG_SCHEMA_PATH);
 
 //			if (ContextHolder.getApplicationContext() != null) {

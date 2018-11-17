@@ -5,7 +5,7 @@ import config.model.SignType;
 import dao.CourseDAO;
 import entity.CourseEntity;
 import sun.java2d.xr.MutableInteger;
-import url_holder.CourseUrlHolder;
+import url_holder.EdumallCourseUrlHolder;
 import util.Formater;
 import util.StaxParserUtils;
 import util.StringUtils;
@@ -25,10 +25,10 @@ public class EdumallCourseDetailCrawler implements Runnable {
 	private static Logger logger = Logger.getLogger(EdumallCourseDetailCrawler.class.toString());
 
 
-	private CourseUrlHolder courseDetailUrlHolder;
+	private EdumallCourseUrlHolder courseDetailUrlHolder;
 	private int categoryId;
 
-	public EdumallCourseDetailCrawler(CourseUrlHolder courseDetailUrlHolder, int categoryId) {
+	public EdumallCourseDetailCrawler(EdumallCourseUrlHolder courseDetailUrlHolder, int categoryId) {
 		this.courseDetailUrlHolder = courseDetailUrlHolder;
 		this.categoryId = categoryId;
 	}
@@ -76,7 +76,7 @@ public class EdumallCourseDetailCrawler implements Runnable {
 			String endSign = courseDetailSign.getEndSign();
 
 
-			String htmlContent = StaxParserUtils.parseHTML(uri, beginSign, endSign);
+			String htmlContent = StaxParserUtils.parseHtml(uri, beginSign, endSign);
 			htmlContent = StaxParserUtils.addMissingTag(htmlContent);
 
 
@@ -570,10 +570,8 @@ public class EdumallCourseDetailCrawler implements Runnable {
 
 
 				CourseDAO.getInstance().validateCourseAndSaveToDB(courseEntity);
-//				other.DummyDatabase.validateCourseAndSaveToDB(courseEntity);
 
 			} catch (XMLStreamException e) {
-				e.printStackTrace();
 			}
 
 			synchronized (CrawlingThreadManager.getInstance()) {
@@ -584,8 +582,6 @@ public class EdumallCourseDetailCrawler implements Runnable {
 
 			logger.info("END THREAD");
 		} catch (Exception e) {
-			e.printStackTrace();
-
 		}
 
 
