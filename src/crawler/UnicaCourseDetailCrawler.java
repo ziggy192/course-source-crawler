@@ -31,14 +31,6 @@ public class UnicaCourseDetailCrawler implements Runnable {
 	}
 
 
-	public void setUnicaCourseUrlHolder(UnicaCourseUrlHolder unicaCourseUrlHolder) {
-		this.unicaCourseUrlHolder = unicaCourseUrlHolder;
-	}
-
-	public void setCategoryId(int categoryId) {
-		this.categoryId = categoryId;
-	}
-
 
 	public static int toDuration(String durationContent) {
 		//hh giờ mm phút

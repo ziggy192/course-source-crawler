@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?><fo:root xmlns:fo="http://www.w3.org/1999/XSL/Format">
+<fo:layout-master-set>
+<fo:simple-page-master margin-right="1in" margin-left="1in" margin-bottom="0.5in" margin-top="0.5in" page-width="11in" page-height="8.5in" master-name="A4">
+<fo:region-body margin-top="0.5in"/>
+<fo:region-before extent="1in"/>
+<fo:region-after extent="0.75in"/>
+</fo:simple-page-master>
+</fo:layout-master-set>
+<fo:page-sequence master-reference="A4">
+<fo:static-content flow-name="xsl-region-before">
+<fo:block/>
+</fo:static-content>
+<fo:static-content flow-name="xsl-region-after">
+<fo:block padding-top="3pt" text-align="center" space-after.optimum="15pt" line-height="24pt" font-family="Arial" font-size="18pt">
+<fo:page-number/>
+</fo:block>
+</fo:static-content>
+<fo:flow font-family="Arial" flow-name="xsl-region-body">
+<fo:table border-collapse="separate" table-layout="fixed" width="100%" font-size="10pt">
+<fo:table-column column-width="proportional-column-width(20)"/>
+<fo:table-column column-width="proportional-column-width(20)"/>
+<fo:table-body>
+<fo:table-row>
+<fo:table-cell text-align="left" display-align="center">
+<fo:block font-size="20pt" color="#87cefa" font-weight="bold">COURSE SOURCE
+                                </fo:block>
+</fo:table-cell>
+<fo:table-cell text-align="right" display-align="center">
+<fo:block>Date: 19-11-2018&gt;</fo:block>
+</fo:table-cell>
+</fo:table-row>
+</fo:table-body>
+</fo:table>
+<fo:block padding-top="1cm" font-weight="bold" font-size="28pt" text-align="center" display-align="center">Course detail
+                </fo:block>
+<fo:block margin-top="2.0cm">
+<fo:table font-family="Arial" table-layout="fixed" border-collapse="separate">
+<fo:table-column column-width="5cm"/>
+<fo:table-column column-width="15cm"/>
+<fo:table-body>
+<fo:table-row>
+<fo:table-cell font-weight="bold">
+<fo:block padding="2mm">
+                                        Name:
+                                    </fo:block>
+</fo:table-cell>
+<fo:table-cell>
+<fo:block padding="2mm">Hoc nua hoc mai</fo:block>
+</fo:table-cell>
+</fo:table-row>
+<fo:table-row>
+<fo:table-cell font-weight="bold">
+<fo:block padding="2mm">
+                                        Author:
+                                    </fo:block>
+</fo:table-cell>
+<fo:table-cell>
+<fo:block padding="2mm">Nghia</fo:block>
+</fo:table-cell>
+</fo:table-row>
+<fo:table-row>
+<fo:table-cell font-weight="bold">
+<fo:block padding="2mm">
+                                        Domain:
+                                    </fo:block>
+</fo:table-cell>
+<fo:table-cell>
+<fo:block padding="2mm">Emoon</fo:block>
+</fo:table-cell>
+</fo:table-row>
+<fo:table-row>
+<fo:table-cell font-weight="bold">
+<fo:block padding="2mm">
+                                        Category:
+                                    </fo:block>
+</fo:table-cell>
+<fo:table-cell>
+<fo:block padding="2mm">Luyện Thi</fo:block>
+</fo:table-cell>
+</fo:table-row>
+<fo:table-row>
+<fo:table-cell font-weight="bold">
+<fo:block padding="2mm">
+                                        Cost:
+                                    </fo:block>
+</fo:table-cell>
+<fo:table-cell>
+<fo:block padding="2mm">1</fo:block>
+</fo:table-cell>
+</fo:table-row>
+<fo:table-row>
+<fo:table-cell font-weight="bold">
+<fo:block padding="2mm">
+                                        Source:
+                                    </fo:block>
+</fo:table-cell>
+<fo:table-cell>
+<fo:block padding="2mm">
+<fo:basic-link text-decoration="underline" color="blue" external-destination="url('https://tuyensinh247.com//khoa-luyen-thi-lop-9-len-10-mon-toan-k628.html')">https://tuyensinh247.com//khoa-luyen-thi-lop-9-len-10-mon-toan-k628.html</fo:basic-link>
+</fo:block>
+</fo:table-cell>
+</fo:table-row>
+</fo:table-body>
+</fo:table>
+</fo:block>
+<fo:block padding-bottom="0.5cm" padding-top="0.5cm" margin-top="1cm" font-weight="bold" text-align="center" font-size="20pt">Thank you for supporting us!
+                </fo:block>
+</fo:flow>
+</fo:page-sequence>
+</fo:root>

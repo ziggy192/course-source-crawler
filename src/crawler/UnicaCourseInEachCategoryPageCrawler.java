@@ -155,7 +155,7 @@ public class UnicaCourseInEachCategoryPageCrawler implements Runnable {
 							String costStr = StaxParserUtils.getContentAndJumpToEndElement(staxReader, startElement);
 
 							if (!costStr.isEmpty()) {
-								double costValue = StringUtils.getNumberValueFromString(costStr);
+								double costValue = StringUtils.toCost(costStr);
 								courseUrlHolder.setCost(costValue);
 								logger.info(String.format("course number=%s || cost=%s", courseList.size() - 1, costValue));
 

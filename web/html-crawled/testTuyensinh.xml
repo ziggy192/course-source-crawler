@@ -1,0 +1,23 @@
+<root>
+    <data>
+        <course_id>673</course_id>
+        <link_course>/phuong-phap-hoc-tot-vat-ly-8-cung-co-nguyen-loan-k673.html</link_course>
+        <teachers>
+            <link>/giao-vien-co-nguyen-thi-loan-g46.html</link>
+            <title>Cô Nguyễn Thị Loan</title>
+        </teachers>
+        <origin_avatar>https://images.tuyensinh247.com/picture/2018/0827/600-imggv13_1.png</origin_avatar>
+        <title>Cô Loan - Khóa phương pháp học tốt vật lý 8</title>
+    </data>
+    <data>
+        <course_id>674</course_id>
+        <link_course>/vat-ly-nang-cao-chuan-bi-kien-thuc-vao-chuyen-k674.html</link_course>
+        <teachers>
+            <link>/giao-vien-thay-pham-quoc-toan-g7.html</link>
+            <title>Thầy Phạm Quốc Toản</title>
+        </teachers>
+        <origin_avatar>https://images.tuyensinh247.com/picture/2018/0827/600-imggv1_11.png</origin_avatar>
+        <title>Thầy Toản - Khóa vật lý nâng cao chuẩn bị kiến thức vào chuyên vật lý</title>
+    </data>
+    <success>true</success>
+</root>

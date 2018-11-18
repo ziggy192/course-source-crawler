@@ -104,6 +104,7 @@ public class StaxParserUtils {
 		return null;
 
 	}
+
 	private static String removeEmptyAttFromHtmlTag(String tag) {
 
 
@@ -126,7 +127,7 @@ public class StaxParserUtils {
 		}
 		result.append(tagName);
 
-		String regExForAtt = "(\\S+)=[\"'].*?[\"']";
+		String regExForAtt = "(\\S+)=([\"']).*?\\2";
 		Pattern pattern = Pattern.compile(regExForAtt);
 		Matcher matcher = pattern.matcher(tag);
 		while (matcher.find()) {
@@ -156,10 +157,10 @@ public class StaxParserUtils {
 
 				int j = content.indexOf('>', i);
 				if (j != -1) {
-					String tag = content.substring(i, j+1);
+					String tag = content.substring(i, j + 1);
 					// process tag
 					String processedTag = removeEmptyAttFromHtmlTag(tag);
-					i = j+1;
+					i = j + 1;
 					result.append(processedTag);
 
 				} else {
@@ -672,6 +673,29 @@ public class StaxParserUtils {
 		return content;
 	}
 
+	public static String parseXml(String uri) {
+		StringBuilder result = new StringBuilder();
+
+		try {
+			URL url = new URL(uri);
+			URLConnection connection = url.openConnection();
+			connection.addRequestProperty("User-Agent", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36");
+			InputStream inputStream = connection.getInputStream();
+			BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(inputStream, StandardCharsets.UTF_8));
+			String inputLine;
+
+			while ((inputLine = bufferedReader.readLine()) != null) {
+				result.append(inputLine);
+			}
+
+		} catch (IOException e) {
+			e.printStackTrace();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+		return result.toString();
+	}
 
 	public static String replaceEntities(String content) {
 		content = content

@@ -14,6 +14,9 @@
           <element id="library" level="application" name="mysql-connector-java-8.0.13" />
           <element id="library" level="project" name="org.apache.commons:commons-text:1.6" />
           <element id="library" level="application" name="taglibs-standard-impl-1.2.5" />
+          <element id="library" level="application" name="FO Lib Depedency" />
+          <element id="library" level="application" name="FOP" />
+          <element id="library" level="application" name="org.json:json:20180813" />
         </element>
       </element>
     </root>

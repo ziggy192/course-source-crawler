@@ -1,5 +1,7 @@
 package test;
 
+import dao.CourseDAO;
+import entity.CourseEntity;
 import org.hibernate.annotations.common.util.impl.LoggerFactory;
 import org.jboss.logging.Logger;
 import util.AppUtils;
@@ -16,9 +18,32 @@ public class UtilsTest {
 
 	public static void main(String[] args) throws IOException {
 //		testRemoveEmptyAttributes();
+//		testPDF();
+//		testXSL();
+		testPDFWithXSL();
 	}
 
-	public static void testPOF() {
+	public static void testXSL() {
+		try {
+			PDFUtils.transformToFo();
+		} catch (Exception e) {
+			e.printStackTrace();
+
+		}
+	}
+
+	public static void testPDFWithXSL() {
+		try {
+			CourseEntity courseEntity = CourseDAO.getInstance().findByID(3409);
+			PDFUtils.transformCourseToPDF(new FileOutputStream(AppUtils.getFileWithRealPath("test/pdfResult.pdf"))
+					, courseEntity);
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+
+		}
+
+	}
+	public static void testPDF() {
 		try {
 			PDFUtils.transformToPDF(new FileOutputStream(AppUtils.getFileWithRealPath("test/pdfResult.pdf")));
 		} catch (FileNotFoundException e) {

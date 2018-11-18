@@ -55,7 +55,7 @@ public class StringUtils {
 	}
 
 
-	public static double getNumberValueFromString(String input) {
+	public static double toCost(String input) {
 		double result = 0;
 		for (int i = 0; i < input.length(); i++) {
 			if (input.charAt(i) >= '0' && input.charAt(i) <= '9') {

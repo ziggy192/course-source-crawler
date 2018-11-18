@@ -1,10 +1,9 @@
 package servlet;
 
 import config.ConfigManager;
+import constant.AppConstants;
 import constant.UrlConstant;
-import crawler.CrawlingThreadManager;
-import crawler.EdumallMainCrawler;
-import crawler.UnicaMainCrawler;
+import crawler.*;
 import dao.DomainDAO;
 import entity.DomainEntity;
 import test.EdumallTest;
@@ -23,16 +22,17 @@ import java.util.List;
 import java.util.logging.Logger;
 
 @WebServlet(name = "HomeCrawlerServlet"
-		,urlPatterns = {"/admin"}
-		,loadOnStartup = 1)
+		, urlPatterns = {"/admin"}
+		, loadOnStartup = 1)
 public class HomeCrawlerServlet extends HttpServlet {
 	public static Logger logger = Logger.getLogger(HomeCrawlerServlet.class.toString());
+
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		processRequest(request,response);
+		processRequest(request, response);
 	}
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		processRequest(request,response);
+		processRequest(request, response);
 
 	}
 
@@ -42,6 +42,11 @@ public class HomeCrawlerServlet extends HttpServlet {
 		logger.info("Thử viết Unicode");
 		String btAction = request.getParameter("btAction");
 		logger.info("btAction=" + btAction);
+
+
+		List<DomainEntity> domainEntityList = DomainDAO.getInstance().getAllDomain();
+		request.setAttribute("domains", domainEntityList);
+
 
 		String message = "";
 
@@ -59,7 +64,6 @@ public class HomeCrawlerServlet extends HttpServlet {
 					if (domains != null) {
 						//Reread config file before start
 						if (ConfigManager.getInstance().readConfigFile()) {
-
 							startCrawlers(domains);
 							message = "Started";
 						} else {
@@ -68,11 +72,12 @@ public class HomeCrawlerServlet extends HttpServlet {
 						}
 
 
-					}else{
+					} else {
 						message = "NO DOMAIN SELECTED";
 					}
 					break;
 				case "stop":
+//					CrawlingThreadManager.getInstance().stopAllThread();
 					break;
 				case "pause":
 					CrawlingThreadManager.getInstance().suspendThread();
@@ -95,21 +100,26 @@ public class HomeCrawlerServlet extends HttpServlet {
 		requestDispatcher.forward(request, response);
 
 
-
 	}
 
 
 	private void startCrawlers(String[] domains) {
+
 		for (String domain : domains) {
-			if (domain.toLowerCase().equals("edumall")) {
-				CrawlingThreadManager.getInstance().getEdumallExecutor().execute(new EdumallMainCrawler());
-				break;
-			}
-		}
-		for (String domain : domains) {
-			if (domain.toLowerCase().equals("unica")) {
-				CrawlingThreadManager.getInstance().getUnicaExecutor().execute(new UnicaMainCrawler());
-				break;
+			switch (domain) {
+				case AppConstants.TUYENSINH_DOMAIN_NAME:
+					CrawlingThreadManager.getInstance().getTuyenSinhExecutor().execute(new TuyenSinhMainCrawler());
+
+					break;
+				case AppConstants.EMOON_DOMAIN_NAME:
+					CrawlingThreadManager.getInstance().getEmoonExecutor().execute(new EmoonMainCrawler());
+
+					break;
+				case AppConstants.KHOL_DOMAIN_NAME:
+					CrawlingThreadManager.getInstance().getkHOLExcecutor().execute(new KHOLMainCrawler());
+
+					break;
+
 			}
 		}
 	}

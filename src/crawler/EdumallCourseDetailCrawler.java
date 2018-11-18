@@ -140,7 +140,7 @@ public class EdumallCourseDetailCrawler implements Runnable {
 							if (!cost.isEmpty()) {
 
 								//get int value from cost
-								costValue = StringUtils.getNumberValueFromString(cost);
+								costValue = StringUtils.toCost(cost);
 
 //								logger.info("Cost=" + costValue);
 								courseEntity.setCost(costValue);

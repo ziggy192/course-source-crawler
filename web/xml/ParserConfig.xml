@@ -4,6 +4,7 @@
               xsi:schemaLocation="www.ParserConfig.com ../schema/ParserConfig.xsd"
 >
     <Edumall>
+        <ThreadLimit>10</ThreadLimit>
         <DomainUrl>https://edumall.vn</DomainUrl>
         <CategoryMappingList>
             <CategoryMapping source="Luyện thi" to="TestPrep"/>
@@ -41,6 +42,8 @@
 
     </Edumall>
     <Unica>
+        <ThreadLimit>10</ThreadLimit>
+
         <DomainUrl>https://unica.vn</DomainUrl>
         <CategoryMappingList>
 
@@ -77,6 +80,8 @@
         </CourseDetailSign>
     </Unica>
     <KhoaHocOnline>
+        <ThreadLimit>10</ThreadLimit>
+
         <DomainUrl>https://khoahoc.online</DomainUrl>
         <CategoryMappingList>
             <CategoryMapping source="Công Nghệ Đời Sống" to="LifeStyle"/>
@@ -106,4 +111,54 @@
             <EndSign><![CDATA[<div id="sidebar"]]></EndSign>
         </CourseDetailSign>
     </KhoaHocOnline>
+    <Emoon>
+        <ThreadLimit>10</ThreadLimit>
+
+        <DomainUrl>https://emoon.vn</DomainUrl>
+        <CategoryMappingList>
+            <CategoryMapping source="Luyện thi TOEIC" to="TestPrep"/>
+            <CategoryMapping source="Luyện thi  IELTS" to="TestPrep"/>
+            <CategoryMapping source="Tiếng anh cơ bản" to="Language"/>
+            <CategoryMapping source="Giao tiếp" to="Language"/>
+            <CategoryMapping source="Ngữ pháp" to="Language"/>
+            <CategoryMapping source="Toán cao cấp" to="Academics"/>
+        </CategoryMappingList>
+        <PaginationSign>
+            <BeginSign></BeginSign>
+            <EndSign></EndSign>
+        </PaginationSign>
+        <CategoryListSign>
+            <BeginSign><![CDATA[<ul class="navbar-nav ml-auto"]]></BeginSign>
+            <EndSign><![CDATA[<ul class="navbar-nav navbar-right"]]></EndSign>
+        </CategoryListSign>
+        <CourseListSign>
+            <BeginSign><![CDATA[<header]]></BeginSign>
+            <EndSign><![CDATA[<footer class="py-5 bg-dark" ]]></EndSign>
+        </CourseListSign>
+        <CourseDetailSign>
+            <BeginSign><![CDATA[<div class="bg_Course"]]></BeginSign>
+            <EndSign><![CDATA[<footer class="py-5 bg-dark" ]]></EndSign>
+        </CourseDetailSign>
+    </Emoon>
+    <TuyenSinh247>
+        <ThreadLimit>10</ThreadLimit>
+        <DomainUrl>https://tuyensinh247.com/</DomainUrl>
+        <CategoryMappingList></CategoryMappingList>
+        <PaginationSign>
+            <BeginSign></BeginSign>
+            <EndSign></EndSign>
+        </PaginationSign>
+        <CategoryListSign>
+            <BeginSign><![CDATA[<div class="td-all-study"]]></BeginSign>
+            <EndSign><![CDATA[<div class="right" ]]></EndSign>
+        </CategoryListSign>
+        <CourseListSign>
+            <BeginSign></BeginSign>
+            <EndSign></EndSign>
+        </CourseListSign>
+        <CourseDetailSign>
+            <BeginSign><![CDATA[<div class="left"]]></BeginSign>
+            <EndSign><![CDATA[<div class="right"]]></EndSign>
+        </CourseDetailSign>
+    </TuyenSinh247>
 </ParserConfig>

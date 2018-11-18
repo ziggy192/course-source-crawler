@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <Course xmlns="www.Course.com">
-    <Name>Nghia</Name>
+    <Name>Hoc nua hoc mai</Name>
     <Author>Nghia</Author>
     <DomainId>1</DomainId>
     <CategoryId>1</CategoryId>
     <OverviewDescription>2</OverviewDescription>
-    <Rating>11</Rating>
+    <Rating>5</Rating>
     <RatingNumber>1</RatingNumber>
     <Cost>1</Cost>
     <Duration>1</Duration>
     <Syllabus>1</Syllabus>
-    <ImageURL>1</ImageURL>
-    <SourceURL>1</SourceURL>
+    <ImageURL>https://tuyensinh247.com//khoa-luyen-thi-lop-9-len-10-mon-toan-k628.html</ImageURL>
+    <SourceURL>https://tuyensinh247.com//khoa-luyen-thi-lop-9-len-10-mon-toan-k628.html</SourceURL>
     <Hash>1</Hash>
 </Course>

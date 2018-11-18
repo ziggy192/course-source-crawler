@@ -13,6 +13,15 @@ public class AppConstants {
 	public static final String KHOL_DOMAIN_NAME = "KhoaHocOnline";
 
 
+/*===================emoon.vn=====================*/
+	public static final String EMOON_DOMAIN_NAME = "Emoon";
+
+	/*===================tuyensinh247.com=====================*/
+	public static final String TUYENSINH_DOMAIN_NAME = "TuyenSinh247";
+
+
+
+
 	/*=====================General=================*/
 	public static final long BREAK_TIME_CRAWLING = 5000;
 

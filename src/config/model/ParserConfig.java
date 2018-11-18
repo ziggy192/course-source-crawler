@@ -35,6 +35,10 @@ public class ParserConfig {
 	protected DomainType unica;
 	@XmlElement(name = "KhoaHocOnline", namespace = "www.ParserConfig.com", required = true)
 	protected DomainType khoaHocOnline;
+	@XmlElement(name = "Emoon", namespace = "www.ParserConfig.com", required = true)
+	protected DomainType emoon;
+	@XmlElement(name = "TuyenSinh247", namespace = "www.ParserConfig.com", required = true)
+	protected DomainType tuyenSinh247;
 
 
 	/**
@@ -87,6 +91,7 @@ public class ParserConfig {
 		return khoaHocOnline;
 	}
 
+
 	/**
 	 * Sets the value of the khoaHocOnline property.
 	 *
@@ -94,7 +99,26 @@ public class ParserConfig {
 	 *              {@link DomainType }
 	 */
 	public void setKhoaHocOnline(DomainType value) {
+
+
 		this.khoaHocOnline = value;
+	}
+
+	public DomainType getEmoon() {
+		return emoon;
+	}
+
+	public void setEmoon(DomainType emoon) {
+		this.emoon = emoon;
+	}
+
+
+	public DomainType getTuyenSinh247() {
+		return tuyenSinh247;
+	}
+
+	public void setTuyenSinh247(DomainType tuyenSinh247) {
+		this.tuyenSinh247 = tuyenSinh247;
 	}
 
 	@Override
@@ -103,6 +127,7 @@ public class ParserConfig {
 				"edumall=" + edumall +
 				", unica=" + unica +
 				", khoaHocOnline=" + khoaHocOnline +
+				", emoon=" + emoon +
 				'}';
 	}
 }

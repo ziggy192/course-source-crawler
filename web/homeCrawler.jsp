@@ -24,14 +24,12 @@
             <div class="list_wrapper col1">
 
                 <h3>Domain List to Crawl</h3>
-                <input id="cbEdumall" type="checkbox" value="edumall" name="domain"/>
-                <label for="cbEdumall"> Edumall </label>
-                <br/>
-                <br/>
-                <input id="cbUnica" type="checkbox" value="unica" name="domain">
-                <label for="cbUnica"> Unica</label>
-                <br/>
-                <br/>
+                <c:forEach items="${requestScope.domains}" var="domain">
+                    <input id="cb${domain.name}" type="checkbox" value="${domain.name}" name="domain"/>
+                    <label for="cb${domain.name}"> ${domain.name} </label>
+                    <br/>
+                    <br/>
+                </c:forEach>
             </div>
 
             <div class="column_wrapper col2">
@@ -40,6 +38,7 @@
                     <button class="button red" type="submit" name="btAction" value="pause">Pause</button>
                     <button class="button blue" type="submit" name="btAction" value="resume">Resume</button>
                 </div>
+
 
                 <div>
                     <h3>

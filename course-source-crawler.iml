@@ -38,5 +38,6 @@
     <orderEntry type="library" scope="PROVIDED" name="TomEE 9.0.12" level="application_server_libraries" />
     <orderEntry type="library" name="FOP" level="application" />
     <orderEntry type="library" name="FO Lib Depedency" level="application" />
+    <orderEntry type="library" name="org.json:json:20180813" level="application" />
   </component>
 </module>

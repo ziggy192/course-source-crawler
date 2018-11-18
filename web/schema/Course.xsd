@@ -15,7 +15,7 @@
                 <xs:element name="DomainId" type="xs:nonNegativeInteger"/>
                 <xs:element name="CategoryId" type="xs:nonNegativeInteger"/>
                 <!--todo validate overviewDes-->
-                <xs:element name="OverviewDescription" type="HTMLString"/>
+                <xs:element name="OverviewDescription" type="HTMLString" minOccurs="0"/>
                 <xs:element name="AuthorImageURL" type="URL" minOccurs="0"/>
                 <xs:element name="Rating">
                     <xs:simpleType>

@@ -46,11 +46,14 @@
 
         function requestXslByXmlHttpRequest() {
 
-            loadXml(location.origin+"/xsl/search.xsl"
-                , function (xmcourse-source-webappWeblHttpObject) {
-                    xsdHttp = xmlHttpObject;
-                    render(xmlHttp, xsdHttp);
-                });
+            loadXml(location.origin + "/xsl/search.xsl"
+                , function (xmlHttpObject)
+            {
+                xsdHttp = xmlHttpObject;
+                render(xmlHttp, xsdHttp);
+            }
+        )
+            ;
             xsltProcessor.importStylesheet(xslDoc);
         }
 
@@ -210,7 +213,7 @@
             var paramMap = getParamMap();
 
 
-            var xmlResultUrl = buildUrl(location.origin+ "/resources/course", paramMap);
+            var xmlResultUrl = buildUrl(location.origin + "/resources/course", paramMap);
 
 
             //todo search param url
@@ -236,7 +239,7 @@
                 });
 
 
-            loadXml(location.origin+"/xsl/search.xsl"
+            loadXml(location.origin + "/xsl/search.xsl"
                 , function (xmlHttpObject) {
                     xslHttp = xmlHttpObject;
                     render(xmlHttp, xslHttp);
@@ -449,22 +452,22 @@
                     </thead>
                     <tbody id="xmlResult">
                     <%--<tr>--%>
-                        <%--<td class="col1">--%>
-                            <%--<div class="course_name">--%>
-                                <%--<a href="https://edumall.vn/course/nghe-thuat-ban-hang-dinh-cao-voi-google-adwords-gia-toc">KỸ--%>
-                                    <%--THUẬT CHỈNH DÂY ĐÀN PIANO CƠ BẢN </a></div>--%>
-                            <%--<div class="course_small_detail">--%>
-                                <%--<img class="img_author_small"--%>
-                                     <%--src="//d1nzpkv5wwh1xf.cloudfront.net/320/k-5a3b209dce4b1465e6c2cf73/20180626-/vu-hoang-hiep-1.jpg">--%>
-                                <%--<span class="author_name">  Vũ Hoàng Hiệp </span>--%>
+                    <%--<td class="col1">--%>
+                    <%--<div class="course_name">--%>
+                    <%--<a href="https://edumall.vn/course/nghe-thuat-ban-hang-dinh-cao-voi-google-adwords-gia-toc">KỸ--%>
+                    <%--THUẬT CHỈNH DÂY ĐÀN PIANO CƠ BẢN </a></div>--%>
+                    <%--<div class="course_small_detail">--%>
+                    <%--<img class="img_author_small"--%>
+                    <%--src="//d1nzpkv5wwh1xf.cloudfront.net/320/k-5a3b209dce4b1465e6c2cf73/20180626-/vu-hoang-hiep-1.jpg">--%>
+                    <%--<span class="author_name">  Vũ Hoàng Hiệp </span>--%>
 
-                            <%--</div>--%>
+                    <%--</div>--%>
 
 
-                        <%--</td>--%>
+                    <%--</td>--%>
 
-                        <%--<td class="col2">799000</td>--%>
-                        <%--<td class="col3">0</td>--%>
+                    <%--<td class="col2">799000</td>--%>
+                    <%--<td class="col3">0</td>--%>
                     <%--</tr>--%>
                     </tbody>
                 </table>

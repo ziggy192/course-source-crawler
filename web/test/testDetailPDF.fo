@@ -9,7 +9,7 @@
         </fo:simple-page-master>
     </fo:layout-master-set>
     <fo:page-sequence master-reference="A4">
-        <fo:static-content flow-name="xsl-region-before" >
+        <fo:static-content flow-name="xsl-region-before">
             <fo:block/>
         </fo:static-content>
         <fo:static-content flow-name="xsl-region-after">
@@ -19,43 +19,47 @@
             </fo:block>
         </fo:static-content>
         <fo:flow flow-name="xsl-region-body" font-family="Arial">
-            <fo:table font-size="10pt" width="100%" table-layout="fixed">
-                <fo:table-column column-width="proportional-column-width(20)"/>
+            <fo:table font-size="10pt" width="100%" table-layout="fixed"
+            border-collapse="separate"
+            >
                 <fo:table-column column-width="proportional-column-width(20)"/>
                 <fo:table-column column-width="proportional-column-width(20)"/>
                 <fo:table-body>
                     <fo:table-row>
-                        <fo:table-cell display-align="center" text-align="center">
+                        <fo:table-cell display-align="center" text-align="left"
+                        >
                             <fo:block
                                     font-weight="bold"
                                     color="#87cefa"
+                                    font-size="20pt"
                             >COURSE SOURCE
                             </fo:block>
                         </fo:table-cell>
-                        <fo:table-cell display-align="center" text-align="center">
-                            <fo:block
-                                    font-size="28pt"
-                                    font-weight="bold"
-                                    padding-top="13pt"
-                            >Course detail
-                            </fo:block>
-                        </fo:table-cell>
-                        <fo:table-cell display-align="center" text-align="center">
-                            <fo:block>Date:</fo:block>
+
+                        <fo:table-cell display-align="center" text-align="right" >
+                            <fo:block>Date: 22-12-2018</fo:block>
 
 
                         </fo:table-cell>
                     </fo:table-row>
                 </fo:table-body>
             </fo:table>
-            <fo:block margin-top="2.8cm">
+            <fo:block display-align="center"
+
+                      text-align="center"
+                      font-size="28pt"
+                    font-weight="bold"
+                    padding-top="1cm"
+            >Course detail
+            </fo:block>
+            <fo:block margin-top="2.0cm">
                 <fo:table border-collapse="separate" table-layout="fixed" font-family="Arial">
                     <fo:table-column column-width="5cm"/>
                     <fo:table-column column-width="15cm"/>
                     <fo:table-body>
                         <fo:table-row>
                             <fo:table-cell font-weight="bold">
-                                <fo:block padding="2mm" >
+                                <fo:block padding="2mm">
                                     Name:
                                 </fo:block>
                             </fo:table-cell>
@@ -65,57 +69,85 @@
                                 </fo:block>
                             </fo:table-cell>
                         </fo:table-row>
-                        <fo:table-row >
+                        <fo:table-row>
                             <fo:table-cell font-weight="bold">
-                                <fo:block padding="2mm" >
+                                <fo:block padding="2mm">
+                                    Author:
+                                </fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block padding="2mm">
+                                    Trần Trọng Nam
+                                </fo:block>
+                            </fo:table-cell>
+                        </fo:table-row>
+                        <fo:table-row>
+                            <fo:table-cell font-weight="bold">
+                                <fo:block padding="2mm">
                                     Domain:
                                 </fo:block>
                             </fo:table-cell>
                             <fo:table-cell>
-                                <fo:block padding="2mm" >
+                                <fo:block padding="2mm">
                                     Edumall
                                 </fo:block>
                             </fo:table-cell>
                         </fo:table-row>
-                        <fo:table-row >
+                        <fo:table-row>
                             <fo:table-cell font-weight="bold">
-                                <fo:block padding="2mm" >
+                                <fo:block padding="2mm">
                                     Category:
                                 </fo:block>
                             </fo:table-cell>
                             <fo:table-cell>
-                                <fo:block padding="2mm" >
+                                <fo:block padding="2mm">
                                     Luyện thi
                                 </fo:block>
                             </fo:table-cell>
                         </fo:table-row>
-                        <fo:table-row >
+                        <fo:table-row>
                             <fo:table-cell font-weight="bold">
-                                <fo:block padding="2mm" >
+                                <fo:block padding="2mm">
                                     Cost:
                                 </fo:block>
                             </fo:table-cell>
                             <fo:table-cell>
-                                <fo:block padding="2mm" >
+                                <fo:block padding="2mm">
                                     699999.0
                                 </fo:block>
                             </fo:table-cell>
                         </fo:table-row>
-                        <fo:table-row >
+
+                        <fo:table-row>
                             <fo:table-cell font-weight="bold">
-                                <fo:block padding="2mm" >
-                                    Video length:
+                                <fo:block padding="2mm">
+                                    Source:
                                 </fo:block>
                             </fo:table-cell>
                             <fo:table-cell>
-                                <fo:block padding="2mm" >
-                                    01:35:19
+                                <fo:block padding="2mm">
+                                    <fo:basic-link
+                                            external-destination="url('https://tuyensinh247.com//khoa-luyen-thi-lop-9-len-10-mon-toan-k628.html')"
+                                            color="blue" text-decoration="underline">
+                                        https://tuyensinh247.com//khoa-luyen-thi-lop-9-len-10-mon-toan-k628.html
+                                    </fo:basic-link>
+
                                 </fo:block>
                             </fo:table-cell>
                         </fo:table-row>
+
                     </fo:table-body>
                 </fo:table>
 
+            </fo:block>
+            <fo:block
+            font-size="20pt"
+            text-align="center"
+            font-weight="bold"
+            margin-top="1cm"
+            padding-top="0.5cm"
+            padding-bottom="0.5cm"
+            >Thank you for supporting us!
             </fo:block>
         </fo:flow>
     </fo:page-sequence>

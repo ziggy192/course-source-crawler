@@ -7,94 +7,45 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0ca32356-370c-4043-93a2-a18b75fdd2d2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/crawler/KHOLCourseDetailCrawler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/crawler/KHOLCourseInEachCategoryPageCrawler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/crawler/KHOLEachCategoryCrawler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/crawler/KHOLMainCrawler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resource/ApplicationConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resource/CourseResource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/servlet/CourseDetailServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/servlet/MainListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/servlet/SearchServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/KHOLTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/MainTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/UtilsTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/url_holder/BaseCourseUrlHolder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/util/PDFUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/foconfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/fonts/Arial Bold Italic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/fonts/Arial Bold.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/fonts/Arial Italic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/fonts/Arial.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/fonts/Roboto-Black.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/fonts/Roboto-BlackItalic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/fonts/Roboto-Bold.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/fonts/Roboto-BoldItalic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/fonts/Roboto-Italic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/fonts/Roboto-Light.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/fonts/Roboto-LightItalic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/fonts/Roboto-Medium.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/fonts/Roboto-MediumItalic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/fonts/Roboto-Regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/fonts/Roboto-Thin.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/fonts/Roboto-ThinItalic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/courseDetail.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/css/detail.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/css/main.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/css/search.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/html-crawled/TypeScript - ES6 (Javascript) Shopping Cart -Node.js và AngularJs 2.htm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/html/courseDetail.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/html/search.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/js/test.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/js/utils.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/searchResult.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/test/pdfResult.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/test/testDetailPDF.fo" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/test/testXML.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/xsl/detailPDF.xsl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/xsl/search.xsl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/crawler/EmoonCourseDetailCrawler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/crawler/EmoonCourseInEachCategoryPageCrawler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/crawler/EmoonMainCrawler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/crawler/TuyenSinhCourseDetailCrawler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/crawler/TuyenSinhCourseInEachCategoryPageCrawler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/crawler/TuyenSinhMainCrawler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/TestEmoon.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/TestTuyenSinh.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/url_holder/TuyenSinhCourseUrlHolder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/course_source_crawler_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/course_source_crawler_war_exploded.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/course-source-crawler.iml" beforeDir="false" afterPath="$PROJECT_DIR$/course-source-crawler.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/META-INF/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/TomCatCatalina.txt" beforeDir="false" afterPath="$PROJECT_DIR$/log/TomCatCatalina.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/config/CategoryMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/CategoryMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/config/ConfigManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/ConfigManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/config/model/CategoryNameType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/model/CategoryNameType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config/model/DomainType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/model/DomainType.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/config/model/ParserConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/model/ParserConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/constant/AppConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/constant/AppConstants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/constant/UrlConstant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/constant/UrlConstant.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/crawler/CrawlingThreadManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/crawler/CrawlingThreadManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/crawler/EdumallCourseDetailCrawler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/crawler/EdumallCourseDetailCrawler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/crawler/EdumallCourseInEachCategoryPageCrawler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/crawler/EdumallCourseInEachCategoryPageCrawler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/crawler/EdumallEachCategoryCrawler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/crawler/EdumallEachCategoryCrawler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/crawler/EdumallMainCrawler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/crawler/EdumallMainCrawler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/crawler/KHOLCourseDetailCrawler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/crawler/KHOLCourseDetailCrawler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/crawler/UnicaCourseDetailCrawler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/crawler/UnicaCourseDetailCrawler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/crawler/UnicaCourseInEachCategoryPageCrawler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/crawler/UnicaCourseInEachCategoryPageCrawler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/crawler/UnicaEachCategoryCrawler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/crawler/UnicaEachCategoryCrawler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/crawler/UnicaMainCrawler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/crawler/UnicaMainCrawler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dao/CategoryDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/CategoryDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dao/CourseDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/CourseDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dao/DomainDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/DomainDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entity/CategoryEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/CategoryEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entity/CourseEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/CourseEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entity/DomainEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/DomainEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entity/UserCourseInterestEntity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entity/UserEntity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entity/UserProviderFollowEntity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entity/UserSubjectFollowEntity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/listerner/MainListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/listerner/MainListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/other/DummyDatabase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resource/CourseResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/resource/CourseResource.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/servlet/HomeCrawlerServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/servlet/HomeCrawlerServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/EdumallTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/EdumallTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/UnicaTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/UnicaTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/url_holder/CourseUrlHolder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/url_holder/EdumallCourseUrlHolder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/util/DomParserUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/UtilsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/UtilsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/util/PDFUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/PDFUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/util/StaxParserUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/StaxParserUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/util/StringUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/StringUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/courseDetail.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/courseDetail.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/css/detail.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/css/detail.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/homeCrawler.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/homeCrawler.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/schema/Course.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/web/schema/Course.xsd" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/schema/ParserConfig.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/web/schema/ParserConfig.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/searchResult.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/searchResult.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/test/pdfResult.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/web/test/pdfResult.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/test/testDetailPDF.fo" beforeDir="false" afterPath="$PROJECT_DIR$/web/test/testDetailPDF.fo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/testing/Course.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/testing/Course.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/xml/ParserConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/xml/ParserConfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/xsl/detailPDF.xsl" beforeDir="false" afterPath="$PROJECT_DIR$/web/xsl/detailPDF.xsl" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -151,64 +102,70 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="CourseSourcePersistenceUnit" value="244" />
-          <entry key="css" value="502" />
+          <entry key="css" value="532" />
           <entry key="dummy" value="7" />
+          <entry key="fo" value="307" />
           <entry key="html" value="275" />
-          <entry key="java" value="25006" />
-          <entry key="jsp" value="1055" />
+          <entry key="java" value="33379" />
+          <entry key="jsp" value="1917" />
           <entry key="properties" value="111" />
           <entry key="txt" value="13" />
-          <entry key="xml" value="1220" />
-          <entry key="xpath" value="166" />
-          <entry key="xsd" value="1342" />
-          <entry key="xsl" value="1236" />
+          <entry key="xml" value="1331" />
+          <entry key="xpath" value="181" />
+          <entry key="xsd" value="1410" />
+          <entry key="xsl" value="1668" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="502" />
+          <entry key="CSS" value="532" />
           <entry key="HTML" value="275" />
           <entry key="Hibernate QL" value="244" />
-          <entry key="JAVA" value="25000" />
-          <entry key="JSP" value="1055" />
+          <entry key="JAVA" value="33372" />
+          <entry key="JSP" value="1917" />
+          <entry key="MXML" value="307" />
           <entry key="PLAIN_TEXT" value="20" />
           <entry key="Properties" value="111" />
-          <entry key="RegExp" value="6" />
-          <entry key="XML" value="3790" />
-          <entry key="XPath" value="174" />
+          <entry key="RegExp" value="7" />
+          <entry key="XML" value="4399" />
+          <entry key="XPath" value="191" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="class" value="6" />
+          <entry key="class" value="9" />
           <entry key="course" value="1" />
-          <entry key="css" value="2" />
+          <entry key="css" value="7" />
+          <entry key="fo" value="6" />
           <entry key="htm" value="2" />
-          <entry key="html" value="22" />
-          <entry key="java" value="485" />
+          <entry key="html" value="24" />
+          <entry key="java" value="580" />
           <entry key="js" value="1" />
-          <entry key="jsp" value="15" />
+          <entry key="jsp" value="22" />
           <entry key="kt" value="1" />
           <entry key="properties" value="1" />
+          <entry key="ts" value="2" />
           <entry key="vn" value="1" />
-          <entry key="xml" value="48" />
-          <entry key="xsd" value="33" />
-          <entry key="xsl" value="3" />
+          <entry key="xml" value="64" />
+          <entry key="xsd" value="37" />
+          <entry key="xsl" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="6" />
-          <entry key="CSS" value="2" />
+          <entry key="CLASS" value="9" />
+          <entry key="CSS" value="7" />
           <entry key="Database Element" value="1" />
-          <entry key="HTML" value="24" />
-          <entry key="JAVA" value="485" />
-          <entry key="JSP" value="15" />
+          <entry key="HTML" value="26" />
+          <entry key="JAVA" value="580" />
+          <entry key="JSP" value="22" />
           <entry key="JavaScript" value="1" />
           <entry key="Kotlin" value="1" />
+          <entry key="MXML" value="6" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="Properties" value="1" />
-          <entry key="XML" value="84" />
+          <entry key="TypeScript" value="2" />
+          <entry key="XML" value="112" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts" />
@@ -221,14 +178,50 @@
     <favorites_list name="course-source-crawler" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
+    <splitter split-orientation="horizontal" split-proportion="0.81688887">
       <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+        <leaf>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/dao/CourseDAO.java">
+            <entry file="file://$PROJECT_DIR$/src/util/PDFUtils.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1050">
-                  <caret line="88" column="51" selection-start-line="88" selection-start-column="51" selection-end-line="88" selection-end-column="51" />
+                <state relative-caret-position="118">
+                  <caret line="106" column="41" selection-start-line="106" selection-start-column="27" selection-end-line="106" selection-end-column="41" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/resource/CourseResource.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="116">
+                  <caret line="49" selection-start-line="49" selection-end-line="49" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/web/homeCrawler.jsp">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="387">
+                  <caret line="40" selection-start-line="40" selection-end-line="40" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/web/courseDetail.jsp">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-155">
+                  <caret line="27" column="53" selection-start-line="27" selection-start-column="45" selection-end-line="27" selection-end-column="53" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/crawler/EdumallCourseDetailCrawler.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="116">
+                  <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -237,54 +230,10 @@
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/util/StaxParserUtils.java">
+            <entry file="file://$PROJECT_DIR$/web/test/testDetailPDF.fo">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="870">
-                  <caret line="546" column="34" selection-start-line="546" selection-start-column="34" selection-end-line="546" selection-end-column="34" />
-                  <folding>
-                    <element signature="e#1517#1635#0" />
-                    <element signature="e#1638#2345#0" />
-                    <element signature="e#2004#2051#0" />
-                    <element signature="e#2348#2579#0" />
-                    <element signature="e#2582#2945#0" />
-                    <element signature="e#2947#3831#0" />
-                    <element signature="e#3834#4426#0" />
-                    <element signature="e#4429#6628#0" />
-                    <element signature="e#4670#4737#0" />
-                    <element signature="e#5098#5131#0" />
-                    <element signature="e#5310#5323#0" />
-                    <element signature="e#6632#7282#0" />
-                    <element signature="e#6788#6828#0" />
-                    <element signature="e#7285#7588#0" />
-                    <element signature="e#7591#7772#0" />
-                    <element signature="e#7775#8691#0" />
-                    <element signature="e#8449#8514#0" />
-                    <element signature="e#8694#8896#0" />
-                    <element signature="e#8899#8999#0" />
-                    <element signature="e#9002#10038#0" />
-                    <element signature="e#10041#11042#0" />
-                    <element signature="e#11045#11260#0" />
-                    <element signature="e#11264#11616#0" />
-                    <element signature="e#11619#11937#0" />
-                    <element signature="e#11868#11884#0" />
-                    <element signature="e#11940#12320#0" />
-                    <element signature="e#12323#12477#0" />
-                    <element signature="e#12480#13199#0" />
-                    <element signature="e#13203#13846#0" />
-                    <element signature="e#13849#14102#0" />
-                    <element signature="e#14105#15594#0" />
-                    <element signature="e#15597#17497#0" />
-                    <element signature="e#17501#17722#0" />
-                    <element signature="e#17725#17921#0" />
-                    <element signature="e#17925#18656#0" />
-                    <element signature="e#18657#18659#0" />
-                    <element signature="e#19094#20395#0" />
-                    <element signature="e#19249#19289#0" />
-                    <element signature="e#19714#19744#0" />
-                    <element signature="e#20398#20673#0" />
-                    <element signature="e#20677#20929#0" />
-                    <element signature="e#20932#21142#0" />
-                  </folding>
+                <state relative-caret-position="532">
+                  <caret line="153" column="10" lean-forward="true" selection-start-line="1" selection-end-line="153" selection-end-column="10" />
                 </state>
               </provider>
             </entry>
@@ -292,64 +241,35 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/web/searchResult.jsp">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="4950">
-                  <caret line="330" column="21" selection-start-line="330" selection-start-column="21" selection-end-line="330" selection-end-column="21" />
+                <state relative-caret-position="4083">
+                  <caret line="292" column="33" selection-start-line="292" selection-start-column="29" selection-end-line="292" selection-end-column="33" />
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/web/homeCrawler.jsp">
-              <provider selected="true" editor-type-id="text-editor" />
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/web/courseDetail.jsp">
+            <entry file="file://$PROJECT_DIR$/web/css/main.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1905">
-                  <caret line="127" column="46" selection-start-line="127" selection-start-column="46" selection-end-line="127" selection-end-column="46" />
+                <state relative-caret-position="117">
+                  <caret line="21" column="13" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="13" />
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/crawler/KHOLMainCrawler.java">
+            <entry file="file://$PROJECT_DIR$/web/css/crawlerMain.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="450">
-                  <caret line="50" column="38" selection-start-line="50" selection-start-column="38" selection-end-line="50" selection-end-column="38" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/web/xml/ParserConfig.xml">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="427">
-                  <caret line="101" column="39" selection-start-line="101" selection-start-column="39" selection-end-line="101" selection-end-column="39" />
+                <state relative-caret-position="82">
+                  <caret line="30" selection-start-line="30" selection-end-line="52" selection-end-column="1" />
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/config/CategoryMapper.java">
+            <entry file="file://$PROJECT_DIR$/web/css/detail.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1080">
-                  <caret line="78" column="53" selection-start-line="78" selection-start-column="52" selection-end-line="78" selection-end-column="53" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/crawler/KHOLCourseDetailCrawler.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="3195">
-                  <caret line="231" selection-start-line="231" selection-end-line="231" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
+                <state relative-caret-position="126">
+                  <caret line="176" column="18" selection-start-line="176" selection-start-column="18" selection-end-line="176" selection-end-column="18" />
                 </state>
               </provider>
             </entry>
@@ -357,60 +277,21 @@
         </leaf>
       </split-first>
       <split-second>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+        <leaf>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/crawler/KHOLMainCrawler.java">
+            <entry file="file://$PROJECT_DIR$/web/testing/Course.xml">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1125">
-                  <caret line="95" column="57" selection-start-line="95" selection-start-column="57" selection-end-line="95" selection-end-column="57" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/crawler/KHOLCourseDetailCrawler.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="2235">
-                  <caret line="167" column="58" selection-start-line="167" selection-start-column="58" selection-end-line="167" selection-end-column="58" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/crawler/KHOLEachCategoryCrawler.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="570">
-                  <caret line="46" column="28" selection-start-line="46" selection-start-column="28" selection-end-line="46" selection-end-column="28" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/crawler/KHOLCourseInEachCategoryPageCrawler.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="630">
-                  <caret line="55" column="115" selection-start-line="55" selection-start-column="115" selection-end-line="55" selection-end-column="115" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
+                <state relative-caret-position="90">
+                  <caret line="6" column="14" lean-forward="true" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/constant/AppConstants.java">
+            <entry file="file://$PROJECT_DIR$/web/xsl/search.xsl">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="502">
-                  <caret line="44" selection-start-line="44" selection-end-line="44" />
+                <state relative-caret-position="26">
+                  <caret line="2" column="60" lean-forward="true" selection-start-line="2" selection-start-column="60" selection-end-line="2" selection-end-column="60" />
                 </state>
               </provider>
             </entry>
@@ -431,42 +312,48 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>authorimage</find>
-      <find>course-de</find>
-      <find>course-description</find>
-      <find>course-descriptionthin</find>
-      <find>assessments-feature</find>
-      <find>schema</find>
-      <find>domainId</find>
-      <find>domainid</find>
-      <find>-1</find>
-      <find>DomainId</find>
-      <find>Exception</find>
-      <find>hash</find>
-      <find>sethash</find>
-      <find>valid</find>
-      <find>courein</find>
-      <find>loggin</find>
-      <find>logger</find>
+      <find>BaseCourseUrlHolder</find>
+      <find>emoon</find>
+      <find>`</find>
+      <find>emptyatt</find>
+      <find>coursename</find>
+      <find>Emoon</find>
+      <find>cost</find>
+      <find>khoahocon</find>
+      <find>mapk</find>
+      <find>khoahoc</find>
+      <find>domain</find>
+      <find>id=&quot;</find>
       <find>exception</find>
-      <find>xml</find>
-      <find>//</find>
-      <find>//resource</find>
-      <find>location.or</find>
-      <find>course-source-webappWeb</find>
-      <find>categoryid</find>
-      <find>unica</find>
-      <find>SPU</find>
-      <find>parsehtml</find>
-      <find>beg</find>
-      <find>logger.inf</find>
-      <find>begin</find>
+      <find>not valid</find>
+      <find>logger.</find>
+      <find>RejectedExecutionException</find>
+      <find>Course</find>
+      <find>border</find>
+      <find>video</find>
+      <find>jaxb</find>
+      <find>date</find>
+      <find>onre</find>
+      <find>button</find>
+      <find>xmlhttprequest</find>
+      <find>loadh</find>
+      <find>pdf</find>
+      <find>b</find>
+      <find>wrapper</find>
+      <find>download</find>
+      <find>createobject</find>
     </findStrings>
     <replaceStrings>
       <replace>Logger</replace>
       <replace>ConfigManager.getInstance().getConfigModel().getEdumall().getDomainUrl()</replace>
       <replace>schema/Course.xsd</replace>
       <replace>/</replace>
+      <replace>EMOON</replace>
+      <replace>Emoon</replace>
+      <replace>TUYENSINH</replace>
+      <replace>TuyenSinhCourseUrlHolder</replace>
+      <replace>tuyensinh</replace>
+      <replace>TuyenSinh</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -488,57 +375,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/crawler/UnicaEachCategoryCrawler.java" />
-        <option value="$PROJECT_DIR$/src/test/EdumallTest.java" />
-        <option value="$PROJECT_DIR$/src/test/UnicaTest.java" />
-        <option value="$PROJECT_DIR$/src/test/MainTest.java" />
-        <option value="$PROJECT_DIR$/src/crawler/UnicaMainCrawler.java" />
-        <option value="$PROJECT_DIR$/src/listerner/MainListener.java" />
-        <option value="$PROJECT_DIR$/src/crawler/EdumallCourseDetailCrawler.java" />
-        <option value="$PROJECT_DIR$/src/constant/UrlConstant.java" />
-        <option value="$PROJECT_DIR$/src/dao/CategoryDAO.java" />
-        <option value="$PROJECT_DIR$/src/entity/CourseEntity.java" />
-        <option value="$PROJECT_DIR$/src/entity/CategoryEntity.java" />
-        <option value="$PROJECT_DIR$/src/resource/CourseResource.java" />
-        <option value="$PROJECT_DIR$/src/util/PDFUtils.java" />
-        <option value="$PROJECT_DIR$/src/util/StringUtils.java" />
-        <option value="$PROJECT_DIR$/src/dao/CourseDAO.java" />
-        <option value="$PROJECT_DIR$/src/servlet/SearchServlet.java" />
-        <option value="$PROJECT_DIR$/src/servlet/MainListener.java" />
-        <option value="$PROJECT_DIR$/src/servlet/CourseDetailServlet.java" />
-        <option value="$PROJECT_DIR$/web/html/search.html" />
-        <option value="$PROJECT_DIR$/web/js/test.js" />
-        <option value="$PROJECT_DIR$/src/servlet/HomeCrawlerServlet.java" />
-        <option value="$PROJECT_DIR$/web/html-crawled/khoahoconline.vn.html" />
-        <option value="$PROJECT_DIR$/src/dao/DomainDAO.java" />
-        <option value="$PROJECT_DIR$/src/entity/DomainEntity.java" />
-        <option value="$PROJECT_DIR$/src/url_holder/CategoryUrlHolder.java" />
-        <option value="$PROJECT_DIR$/web/testCourse.xml" />
-        <option value="$PROJECT_DIR$/web/schema/ParserConfig.xsd" />
-        <option value="$PROJECT_DIR$/src/crawler/EdumallMainCrawler.java" />
-        <option value="$PROJECT_DIR$/src/config/model/ParserConfig.java" />
         <option value="$PROJECT_DIR$/src/crawler/EdumallCourseInEachCategoryPageCrawler.java" />
         <option value="$PROJECT_DIR$/src/url_holder/EdumallCourseUrlHolder.java" />
         <option value="$PROJECT_DIR$/src/url_holder/CourseUrlHolder.java" />
         <option value="$PROJECT_DIR$/src/url_holder/BaseCourseUrlHolder.java" />
         <option value="$PROJECT_DIR$/web/html-crawled/khoahoconlineCategory.html" />
         <option value="$PROJECT_DIR$/web/html-crawled/removedAtrributeKhoahoconlineCategory.html" />
-        <option value="$PROJECT_DIR$/src/test/UtilsTest.java" />
         <option value="$PROJECT_DIR$/web/html-crawled/kholCourseDetailJavascript.html" />
-        <option value="$PROJECT_DIR$/src/util/StaxParserUtils.java" />
         <option value="$PROJECT_DIR$/web/html-crawled/KhoahoconlineCourseDetail.html" />
-        <option value="$PROJECT_DIR$/web/schema/Course.xsd" />
-        <option value="$PROJECT_DIR$/src/test/KHOLTest.java" />
-        <option value="$PROJECT_DIR$/src/crawler/CrawlingThreadManager.java" />
-        <option value="$PROJECT_DIR$/web/searchResult.jsp" />
-        <option value="$PROJECT_DIR$/web/courseDetail.jsp" />
-        <option value="$PROJECT_DIR$/src/config/CategoryMapper.java" />
-        <option value="$PROJECT_DIR$/web/xml/ParserConfig.xml" />
         <option value="$PROJECT_DIR$/src/crawler/KHOLCourseInEachCategoryPageCrawler.java" />
         <option value="$PROJECT_DIR$/src/crawler/KHOLEachCategoryCrawler.java" />
-        <option value="$PROJECT_DIR$/src/crawler/KHOLCourseDetailCrawler.java" />
         <option value="$PROJECT_DIR$/src/crawler/KHOLMainCrawler.java" />
+        <option value="$PROJECT_DIR$/src/config/model/DomainType.java" />
+        <option value="$PROJECT_DIR$/src/crawler/UnicaCourseDetailCrawler.java" />
+        <option value="$PROJECT_DIR$/src/crawler/EmoonCourseInEachCategoryPageCrawler.java" />
+        <option value="$PROJECT_DIR$/web/html-crawled/emoonCourseList.html" />
+        <option value="$PROJECT_DIR$/web/html-crawled/emoonCourseList.xml" />
+        <option value="$PROJECT_DIR$/src/util/StringUtils.java" />
+        <option value="$PROJECT_DIR$/web/html-crawled/EmoonCourseDetail.xml" />
+        <option value="$PROJECT_DIR$/web/schema/Course.xsd" />
+        <option value="$PROJECT_DIR$/src/crawler/KHOLCourseDetailCrawler.java" />
+        <option value="$PROJECT_DIR$/web/schema/ParserConfig.xsd" />
+        <option value="$PROJECT_DIR$/src/config/CategoryMapper.java" />
         <option value="$PROJECT_DIR$/src/constant/AppConstants.java" />
+        <option value="$PROJECT_DIR$/src/crawler/TuyenSinhCourseDetail.java" />
+        <option value="$PROJECT_DIR$/src/crawler/TuyenSinhCourseInEachCategoryPage.java" />
+        <option value="$PROJECT_DIR$/src/crawler/EmoonMainCrawler.java" />
+        <option value="$PROJECT_DIR$/src/config/model/ParserConfig.java" />
+        <option value="$PROJECT_DIR$/src/test/TestEmoon.java" />
+        <option value="$PROJECT_DIR$/src/crawler/TuyenSinhMainCrawler.java" />
+        <option value="$PROJECT_DIR$/web/html-crawled/testTuyensinh.xml" />
+        <option value="$PROJECT_DIR$/src/url_holder/TueynSinhCourseUrlHolder.java" />
+        <option value="$PROJECT_DIR$/src/url_holder/TuyenSinhCourseUrlHolder.java" />
+        <option value="$PROJECT_DIR$/src/crawler/TuyenSinhCourseInEachCategoryPageCrawler.java" />
+        <option value="$PROJECT_DIR$/web/xml/ParserConfig.xml" />
+        <option value="$PROJECT_DIR$/src/util/StaxParserUtils.java" />
+        <option value="$PROJECT_DIR$/web/searchResult.jsp" />
+        <option value="$PROJECT_DIR$/src/test/TestTuyenSinh.java" />
+        <option value="$PROJECT_DIR$/src/crawler/TuyenSinhCourseDetailCrawler.java" />
+        <option value="$PROJECT_DIR$/src/test/KHOLTest.java" />
+        <option value="$PROJECT_DIR$/src/crawler/EmoonCourseDetailCrawler.java" />
+        <option value="$PROJECT_DIR$/src/crawler/CrawlingThreadManager.java" />
+        <option value="$PROJECT_DIR$/src/servlet/HomeCrawlerServlet.java" />
+        <option value="$PROJECT_DIR$/web/test/testDetailPDF.fo" />
+        <option value="$PROJECT_DIR$/web/testing/Course.xml" />
+        <option value="$PROJECT_DIR$/web/xsl/detailPDF.xsl" />
+        <option value="$PROJECT_DIR$/src/test/UtilsTest.java" />
+        <option value="$PROJECT_DIR$/src/resource/CourseResource.java" />
+        <option value="$PROJECT_DIR$/web/css/detail.css" />
+        <option value="$PROJECT_DIR$/web/homeCrawler.jsp" />
+        <option value="$PROJECT_DIR$/web/courseDetail.jsp" />
+        <option value="$PROJECT_DIR$/src/util/PDFUtils.java" />
       </list>
     </option>
   </component>
@@ -552,8 +439,8 @@
     <option name="FILTER_ERRORS" value="false" />
     <option name="FILTER_WARNINGS" value="false" />
     <option name="FILTER_INFO" value="false" />
-    <option name="FILTER_DEBUG" value="false" />
-    <option name="CUSTOM_FILTER" value="" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" value="insert " />
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="55" />
@@ -589,8 +476,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -608,6 +493,12 @@
               <item name="course-source-crawler" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="crawler" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="course-source-crawler" type="b2602c69:ProjectViewProjectNode" />
+              <item name="course-source-crawler" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="course-source-crawler" type="b2602c69:ProjectViewProjectNode" />
@@ -648,7 +539,19 @@
               <item name="course-source-crawler" type="b2602c69:ProjectViewProjectNode" />
               <item name="course-source-crawler" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="course-source-crawler" type="b2602c69:ProjectViewProjectNode" />
+              <item name="course-source-crawler" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
               <item name="schema" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="course-source-crawler" type="b2602c69:ProjectViewProjectNode" />
+              <item name="course-source-crawler" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="testing" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="course-source-crawler" type="b2602c69:ProjectViewProjectNode" />
@@ -662,15 +565,28 @@
               <item name="web" type="462c0819:PsiDirectoryNode" />
               <item name="xml" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="course-source-crawler" type="b2602c69:ProjectViewProjectNode" />
+              <item name="course-source-crawler" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="xsl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="course-source-crawler" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="Downloaded.Files.Path" value="$USER_HOME$/Downloads/Setups/jar dependencies/json" />
     <property name="Downloaded.Files.Path.Enabled" value="true" />
     <property name="JPA.DatabaseSchemaImportDialog" value="35405006-1886-49af-b85a-a11cf2a37d5e" />
     <property name="Repository.Attach.JavaDocs" value="true" />
@@ -678,27 +594,17 @@
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///Users/ziggy192/Documents/Code/Java/course-source-crawler/src/url_holder/BaseCourseUrlHolder.java" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542449715527" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542551835342" />
     <property name="database.console.LAST_STATE" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.25103307" />
-    <property name="settings.editor.selected.configurable" value="editing.templates" />
+    <property name="settings.editor.selected.configurable" value="settings.xslfo" />
   </component>
   <component name="RecentsManager">
-    <key name="ImportMappingsDialog.RecentPackages">
-      <recent name="entity_new" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/web/html-crawled" />
-      <recent name="$PROJECT_DIR$/web" />
-      <recent name="$PROJECT_DIR$/src/servlet" />
-      <recent name="$PROJECT_DIR$/src/resource" />
-      <recent name="$PROJECT_DIR$/src/config/model" />
-    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="util" />
       <recent name="test" />
@@ -708,6 +614,16 @@
       <recent name="$PROJECT_DIR$/web/xml" />
       <recent name="$PROJECT_DIR$/web/schema" />
       <recent name="$PROJECT_DIR$/web" />
+    </key>
+    <key name="ImportMappingsDialog.RecentPackages">
+      <recent name="entity_new" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/web/html-crawled" />
+      <recent name="$PROJECT_DIR$/web" />
+      <recent name="$PROJECT_DIR$/src/servlet" />
+      <recent name="$PROJECT_DIR$/src/resource" />
+      <recent name="$PROJECT_DIR$/src/config/model" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -722,7 +638,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TomEE Server.TomEE 9.0.121">
+  <component name="RunManager" selected="Application.Test Utils">
     <configuration name="Edumall Test" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="test.EdumallTest" />
       <module name="course-source-crawler" />
@@ -737,9 +653,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Test Emoon" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="test.TestEmoon" />
+      <module name="course-source-crawler" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Test KhoaHocOnline" type="Application" factoryName="Application">
       <output_file path="$PROJECT_DIR$/log/TestKhoaHocOnline.txt" is_save="true" />
       <option name="MAIN_CLASS_NAME" value="test.KHOLTest" />
+      <module name="course-source-crawler" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test TuyenSinh247" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="test.TestTuyenSinh" />
       <module name="course-source-crawler" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -843,6 +773,8 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.Test TuyenSinh247" />
+      <item itemvalue="Application.Test Emoon" />
       <item itemvalue="Application.Test KhoaHocOnline" />
       <item itemvalue="Application.Test Utils" />
       <item itemvalue="Application.Test Config Manger" />
@@ -868,12 +800,12 @@
       <workItem from="1541819488507" duration="53886000" />
       <workItem from="1542088313743" duration="13098000" />
       <workItem from="1542212694406" duration="38400000" />
-      <workItem from="1542450351206" duration="728000" />
+      <workItem from="1542450351206" duration="29480000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="125019000" />
+    <option name="totallyTimeSpent" value="153771000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -886,9 +818,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="55" y="40" width="1385" height="764" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.62759644" weight="0.33432615" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.62759644" visible="true" weight="0.16232316" />
       <window_info id="Structure" order="1" sideWeight="0.37091988" side_tool="true" weight="0.24248926" />
       <window_info id="Persistence" order="2" sideWeight="0.28635016" side_tool="true" weight="0.24248926" />
       <window_info id="Designer" order="3" />
@@ -900,11 +831,51 @@
       <window_info id="Web" order="9" sideWeight="0.37240356" side_tool="true" weight="0.24606581" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.47619048" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.5907738" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.44047618" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39880952" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32937685" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32886904" />
+      <window_info anchor="bottom" id="Application Servers" order="7" weight="0.32886904" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.33482143" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32886904" />
+      <window_info anchor="bottom" id="Java Enterprise" order="11" />
+      <window_info anchor="bottom" id="Database Changes" order="12" weight="0.32937685" />
+      <window_info anchor="bottom" id="Version Control" order="13" weight="0.32886904" />
+      <window_info anchor="bottom" id="Database Console" order="14" weight="0.32937685" />
+      <window_info anchor="bottom" id="Hibernate Console" order="15" weight="0.5667656" />
+      <window_info anchor="bottom" id="JPA Console" order="16" weight="0.32937685" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="CDI" order="5" />
+      <window_info anchor="right" id="Maven Projects" order="6" />
+      <window_info anchor="right" id="Database" order="7" weight="0.32911393" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info anchor="right" id="Theme Preview" order="9" />
+      <window_info anchor="right" id="Bean Validation" order="10" />
+    </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.62759644" visible="true" weight="0.16232316" />
+      <window_info id="Structure" order="1" sideWeight="0.37091988" side_tool="true" weight="0.24248926" />
+      <window_info id="Persistence" order="2" sideWeight="0.28635016" side_tool="true" weight="0.24248926" />
+      <window_info id="Designer" order="3" />
+      <window_info id="Image Layers" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" sideWeight="0.28635016" side_tool="true" weight="0.24248926" />
+      <window_info id="Capture Tool" order="7" />
+      <window_info id="Learn" order="8" />
+      <window_info id="Web" order="9" sideWeight="0.37240356" side_tool="true" weight="0.24606581" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.47619048" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.375" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39880952" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32886904" />
       <window_info anchor="bottom" id="Application Servers" order="7" weight="0.32886904" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.33482143" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
@@ -926,43 +897,6 @@
       <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info anchor="right" id="Theme Preview" order="9" />
       <window_info anchor="right" id="Bean Validation" order="10" />
-    </layout>
-    <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.71513355" visible="true" weight="0.37267524" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Persistence" order="2" sideWeight="0.28486648" side_tool="true" weight="0.37267524" />
-      <window_info id="Designer" order="3" />
-      <window_info id="Image Layers" order="4" />
-      <window_info id="UI Designer" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info id="Capture Tool" order="7" />
-      <window_info id="Learn" order="8" />
-      <window_info id="Web" order="9" sideWeight="0.28486648" side_tool="true" visible="true" weight="0.37267524" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32937685" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3635015" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39910978" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Application Servers" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32937685" />
-      <window_info anchor="bottom" id="Java Enterprise" order="11" />
-      <window_info anchor="bottom" id="Database Changes" order="12" />
-      <window_info anchor="bottom" id="Version Control" order="13" show_stripe_button="false" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="right" id="CDI" order="5" />
-      <window_info anchor="right" id="Maven Projects" order="6" />
-      <window_info anchor="right" id="Database" order="7" />
-      <window_info anchor="right" id="Palette&#9;" order="8" />
-      <window_info anchor="right" id="Theme Preview" order="9" />
-      <window_info anchor="right" id="Bean Validation" order="10" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -970,18 +904,6 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/crawler/KHOLCourseDetailCrawler.java</url>
-          <line>206</line>
-          <properties />
-          <option name="timeStamp" value="12" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="XPathView.XPathProjectComponent">
     <history>
@@ -1005,365 +927,139 @@
       <element expression="//div[@class='col-xs-12 col-md-8 content_course']/section" />
       <element expression="//div[@class='col-xs-12 col-md-8 content_course']" />
       <element expression="//div[@id='banner']//div[@class='course_name']/p" />
+      <element expression="//*[contains(@class,'glyphicon-user')]" />
     </history>
     <find-history />
   </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="watch">
+      <expression>
+        <expression-string>uri</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/EdumallTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="62" column="39" selection-start-line="62" selection-start-column="39" selection-end-line="62" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/html/search.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="241" column="38" selection-start-line="241" selection-start-column="38" selection-end-line="241" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="1" lean-forward="true" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/servlet/HomeCrawlerServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="25" column="26" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/net/URL.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1620">
-          <caret line="139" column="19" selection-start-line="139" selection-start-column="19" selection-end-line="139" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/KHOLTest.kt" />
-    <entry file="file://$PROJECT_DIR$/web/html-crawled/khoahoconline.vn" />
-    <entry file="file://$PROJECT_DIR$/src/dao/DomainDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="30" column="9" lean-forward="true" selection-start-line="30" selection-start-column="9" selection-end-line="30" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/entity/DomainEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
-          <caret line="23" column="20" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/html-crawled/khoahoconline.vn.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="52" column="1348" selection-start-line="52" selection-start-column="1348" selection-end-line="52" selection-end-column="1380" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/xsd/Course.xsd" />
-    <entry file="file://$PROJECT_DIR$/web/xsd/Category.xsd" />
-    <entry file="file://$PROJECT_DIR$/web/xsd/CourseList.xsd" />
-    <entry file="file://$PROJECT_DIR$/web/testCourse.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="96" selection-start-line="3" selection-start-column="96" selection-end-line="3" selection-end-column="96" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/test/testXML.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="23" selection-start-column="23" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/schema/ParserConfig.xsd">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="472">
-          <caret line="65" column="48" selection-start-line="65" selection-start-column="48" selection-end-line="65" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/crawler/UnicaMainCrawler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="33" column="72" lean-forward="true" selection-start-line="33" selection-start-column="72" selection-end-line="33" selection-end-column="72" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/config/model/ParserConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="292">
-          <caret line="70" column="22" selection-start-line="70" selection-start-column="22" selection-end-line="70" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/crawler/EdumallCourseInEachCategoryPageCrawler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="329">
-          <caret line="48" column="23" selection-start-line="48" selection-start-column="23" selection-end-line="48" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/crawler/EdumallEachCategoryCrawler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/lang/String.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="151">
-          <caret line="657" selection-start-line="657" selection-end-line="657" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/io/StringReader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="35" column="13" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />
+        <state relative-caret-position="142">
+          <caret line="46" column="17" lean-forward="true" selection-start-line="46" selection-start-column="17" selection-end-line="46" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/url_holder/BaseCourseUrlHolder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        <state relative-caret-position="126">
+          <caret line="34" column="52" lean-forward="true" selection-start-line="33" selection-start-column="16" selection-end-line="34" selection-end-column="52" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/url_holder/CategoryUrlHolder.java">
+    <entry file="file://$PROJECT_DIR$/src/crawler/EmoonCourseInEachCategoryPageCrawler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-23">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        <state relative-caret-position="44">
+          <caret line="45" column="11" lean-forward="true" selection-start-line="45" selection-start-column="11" selection-end-line="45" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/url_holder/EdumallCourseUrlHolder.java">
+    <entry file="file://$PROJECT_DIR$/src/url_holder/TuyenSinhCourseUrlHolder.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/html-crawled/TypeScript - ES6 (Javascript) Shopping Cart -Node.js và AngularJs 2.htm">
+    <entry file="file://$PROJECT_DIR$/web/html-crawled/testTuyensinh.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="41" column="51568" selection-start-line="41" selection-start-column="51555" selection-end-line="41" selection-end-column="51568" />
+        <state relative-caret-position="174">
+          <caret line="14" column="18" lean-forward="true" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/util/StringUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="57" column="25" selection-start-line="57" selection-start-column="25" selection-end-line="57" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/html-crawled/removedAtrributeKhoahoconlineCategory.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="1664" column="7" selection-start-line="1664" selection-start-column="7" selection-end-line="1664" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/html-crawled/kholCourseDetailJavascript.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="110" column="976" selection-start-line="110" selection-start-column="976" selection-end-line="110" selection-end-column="976" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/html-crawled/khoahoconlineCategory.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="35" column="531" selection-start-line="35" selection-start-column="525" selection-end-line="35" selection-end-column="531" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/html-crawled/KhoahoconlineCourseDetail.html">
+    <entry file="file://$PROJECT_DIR$/web/html-crawled/tuyensinhCourseDetail.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="57176" selection-start-column="57176" selection-end-column="57176" />
+          <caret column="3806" selection-start-column="3790" selection-end-column="3806" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/schema/Category.xsd">
+    <entry file="file://$PROJECT_DIR$/src/test/TestEmoon.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-154" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/schema/Course.xsd">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="40" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/crawler/EdumallMainCrawler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="171" column="62" selection-start-line="171" selection-start-column="47" selection-end-line="171" selection-end-column="62" />
-          <folding>
-            <element signature="method#testGetAllCourse#0;class#EdumallMainCrawler#0" />
-            <element signature="e#1060#1109#0" />
-            <element signature="method#testGetPageNumber#0;class#EdumallMainCrawler#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/crawler/UnicaCourseDetailCrawler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="63" column="5" lean-forward="true" selection-start-line="63" selection-start-column="5" selection-end-line="63" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/KHOLTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="394">
-          <caret line="54" column="18" selection-start-line="54" selection-start-column="18" selection-end-line="54" selection-end-column="18" />
+        <state relative-caret-position="162">
+          <caret line="13" selection-start-line="13" selection-end-line="14" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/UtilsTest.java">
+    <entry file="file://$PROJECT_DIR$/src/crawler/TuyenSinhMainCrawler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="41" column="24" selection-start-line="41" selection-start-column="24" selection-end-line="41" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/crawler/CrawlingThreadManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/crawler/EdumallCourseDetailCrawler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="94">
-          <caret line="560" column="36" selection-start-line="560" selection-start-column="29" selection-end-line="560" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dao/CourseDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1050">
-          <caret line="88" column="51" selection-start-line="88" selection-start-column="51" selection-end-line="88" selection-end-column="51" />
+        <state relative-caret-position="287">
+          <caret line="56" column="43" selection-start-line="56" selection-start-column="43" selection-end-line="56" selection-end-column="43" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/util/StaxParserUtils.java">
+    <entry file="file://$PROJECT_DIR$/src/test/TestTuyenSinh.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="870">
-          <caret line="546" column="34" selection-start-line="546" selection-start-column="34" selection-end-line="546" selection-end-column="34" />
+        <state relative-caret-position="124">
+          <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
           <folding>
-            <element signature="e#1517#1635#0" />
-            <element signature="e#1638#2345#0" />
-            <element signature="e#2004#2051#0" />
-            <element signature="e#2348#2579#0" />
-            <element signature="e#2582#2945#0" />
-            <element signature="e#2947#3831#0" />
-            <element signature="e#3834#4426#0" />
-            <element signature="e#4429#6628#0" />
-            <element signature="e#4670#4737#0" />
-            <element signature="e#5098#5131#0" />
-            <element signature="e#5310#5323#0" />
-            <element signature="e#6632#7282#0" />
-            <element signature="e#6788#6828#0" />
-            <element signature="e#7285#7588#0" />
-            <element signature="e#7591#7772#0" />
-            <element signature="e#7775#8691#0" />
-            <element signature="e#8449#8514#0" />
-            <element signature="e#8694#8896#0" />
-            <element signature="e#8899#8999#0" />
-            <element signature="e#9002#10038#0" />
-            <element signature="e#10041#11042#0" />
-            <element signature="e#11045#11260#0" />
-            <element signature="e#11264#11616#0" />
-            <element signature="e#11619#11937#0" />
-            <element signature="e#11868#11884#0" />
-            <element signature="e#11940#12320#0" />
-            <element signature="e#12323#12477#0" />
-            <element signature="e#12480#13199#0" />
-            <element signature="e#13203#13846#0" />
-            <element signature="e#13849#14102#0" />
-            <element signature="e#14105#15594#0" />
-            <element signature="e#15597#17497#0" />
-            <element signature="e#17501#17722#0" />
-            <element signature="e#17725#17921#0" />
-            <element signature="e#17925#18656#0" />
-            <element signature="e#18657#18659#0" />
-            <element signature="e#19094#20395#0" />
-            <element signature="e#19249#19289#0" />
-            <element signature="e#19714#19744#0" />
-            <element signature="e#20398#20673#0" />
-            <element signature="e#20677#20929#0" />
-            <element signature="e#20932#21142#0" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/searchResult.jsp">
+    <entry file="file://$PROJECT_DIR$/src/entity/CourseEntity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4950">
-          <caret line="330" column="21" selection-start-line="330" selection-start-column="21" selection-end-line="330" selection-end-column="21" />
+        <state relative-caret-position="114">
+          <caret line="233" column="18" selection-start-line="233" selection-start-column="18" selection-end-line="233" selection-end-column="18" />
+          <folding>
+            <element signature="e#7042#7043#0" expanded="true" />
+            <element signature="e#7060#7061#0" expanded="true" />
+            <element signature="e#7097#7098#0" expanded="true" />
+            <element signature="e#7120#7121#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/homeCrawler.jsp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/courseDetail.jsp">
+    <entry file="file://$PROJECT_DIR$/src/crawler/TuyenSinhCourseDetailCrawler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1905">
-          <caret line="127" column="46" selection-start-line="127" selection-start-column="46" selection-end-line="127" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/config/CategoryMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1080">
-          <caret line="78" column="53" selection-start-line="78" selection-start-column="52" selection-end-line="78" selection-end-column="53" />
+        <state relative-caret-position="106">
+          <caret line="106" column="55" selection-start-line="106" selection-start-column="55" selection-end-line="106" selection-end-column="55" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/xml/ParserConfig.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="427">
-          <caret line="101" column="39" selection-start-line="101" selection-start-column="39" selection-end-line="101" selection-end-column="39" />
+        <state relative-caret-position="105">
+          <caret line="81" column="14" selection-start-line="81" selection-start-column="5" selection-end-line="81" selection-end-column="14" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/crawler/KHOLMainCrawler.java">
+    <entry file="file://$PROJECT_DIR$/src/test/KHOLTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1125">
-          <caret line="95" column="57" selection-start-line="95" selection-start-column="57" selection-end-line="95" selection-end-column="57" />
+        <state relative-caret-position="170">
+          <caret line="26" column="18" lean-forward="true" selection-start-line="26" selection-start-column="18" selection-end-line="26" selection-end-column="18" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/crawler/KHOLCourseDetailCrawler.java">
+    <entry file="file://$PROJECT_DIR$/src/crawler/KHOLMainCrawler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2235">
-          <caret line="167" column="58" selection-start-line="167" selection-start-column="58" selection-end-line="167" selection-end-column="58" />
+        <state relative-caret-position="136">
+          <caret line="115" column="76" lean-forward="true" selection-start-line="115" selection-start-column="76" selection-end-line="115" selection-end-column="76" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1372,28 +1068,287 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/crawler/KHOLEachCategoryCrawler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="46" column="28" selection-start-line="46" selection-start-column="28" selection-end-line="46" selection-end-column="28" />
+        <state relative-caret-position="231">
+          <caret line="79" column="110" lean-forward="true" selection-start-line="79" selection-start-column="110" selection-end-line="79" selection-end-column="110" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/crawler/KHOLCourseDetailCrawler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="37">
+          <caret line="22" column="11" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/config/CategoryMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="58" selection-start-line="58" selection-end-line="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/servlet/CourseDetailServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/constant/AppConstants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="19" column="31" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/crawler/TuyenSinhCourseInEachCategoryPageCrawler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="60" selection-start-line="60" selection-end-line="60" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/crawler/EmoonCourseDetailCrawler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="174" column="29" selection-start-line="174" selection-start-column="23" selection-end-line="174" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/UnicaTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141">
+          <caret line="29" column="51" selection-start-line="29" selection-start-column="51" selection-end-line="29" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/crawler/CrawlingThreadManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="25" column="49" selection-start-line="25" selection-start-column="49" selection-end-line="25" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1719#1720#0" expanded="true" />
+            <element signature="e#1748#1749#0" expanded="true" />
+            <element signature="e#1797#1798#0" expanded="true" />
+            <element signature="e#1824#1825#0" expanded="true" />
+            <element signature="e#2120#2121#0" expanded="true" />
+            <element signature="e#2151#2152#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/crawler/KHOLCourseInEachCategoryPageCrawler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="55" column="115" selection-start-line="55" selection-start-column="115" selection-end-line="55" selection-end-column="115" />
+        <state relative-caret-position="206">
+          <caret line="40" selection-start-line="40" selection-end-line="40" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/constant/AppConstants.java">
+    <entry file="file://$PROJECT_DIR$/src/servlet/SearchServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="502">
-          <caret line="44" selection-start-line="44" selection-end-line="44" />
+        <state relative-caret-position="167">
+          <caret line="38" column="69" selection-start-line="38" selection-start-column="69" selection-end-line="38" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/servlet/HomeCrawlerServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="81" column="26" selection-start-line="81" selection-start-column="26" selection-end-line="81" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/test/testXML.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/testing/Course.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="14" lean-forward="true" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/xsl/search.xsl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="26">
+          <caret line="2" column="60" lean-forward="true" selection-start-line="2" selection-start-column="60" selection-end-line="2" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/Downloads/Setups/jar dependencies/mysql-connector-java-8.0.13/mysql-connector-java-8.0.13.jar!/com/mysql/cj/util/TestUtils.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/testing/transformResult.fo">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dao/CourseDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="72" column="50" selection-start-line="72" selection-start-column="43" selection-end-line="72" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/util/StaxParserUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="507" column="21" selection-start-line="507" selection-start-column="17" selection-end-line="507" selection-end-column="21" />
+          <folding>
+            <element signature="e#1517#1635#0" />
+            <element signature="e#1638#2345#0" />
+            <element signature="e#2004#2051#0" />
+            <element signature="e#2348#2579#0" />
+            <element signature="e#2582#2945#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/javax/xml/bind/Marshaller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="495" column="16" selection-start-line="495" selection-start-column="16" selection-end-line="495" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/UtilsTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="37" column="26" lean-forward="true" selection-start-line="37" selection-start-column="26" selection-end-line="37" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/Downloads/Setups/jar dependencies/apache-tomee-plume-8.0.0-M1/lib/javaee-api-8.0.jar!/javax/ws/rs/PathParam.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/xsl/detailPDF.xsl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-464">
+          <caret line="49" column="79" selection-start-line="49" selection-start-column="79" selection-end-line="49" selection-end-column="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/foconfig.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="19" lean-forward="true" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/javax/swing/JScrollPane.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="134">
+          <caret line="170" column="13" selection-start-line="170" selection-start-column="13" selection-end-line="170" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/css/crawlerMain.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="82">
+          <caret line="30" selection-start-line="30" selection-end-line="52" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="21" column="13" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/artifacts/course_source_crawler_war_exploded/css/detail.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2169" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/css/detail.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="176" column="18" selection-start-line="176" selection-start-column="18" selection-end-line="176" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/test/testDetailPDF.fo">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="532">
+          <caret line="153" column="10" lean-forward="true" selection-start-line="1" selection-end-line="153" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.dom.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="127">
+          <caret line="16172" column="4" selection-start-line="16172" selection-start-column="4" selection-end-line="16172" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/homeCrawler.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="387">
+          <caret line="40" selection-start-line="40" selection-end-line="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/resource/CourseResource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="49" selection-start-line="49" selection-end-line="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/util/PDFUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="118">
+          <caret line="106" column="41" selection-start-line="106" selection-start-column="27" selection-end-line="106" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/searchResult.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4083">
+          <caret line="292" column="33" selection-start-line="292" selection-start-column="29" selection-end-line="292" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/courseDetail.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-155">
+          <caret line="27" column="53" selection-start-line="27" selection-start-column="45" selection-end-line="27" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/crawler/EdumallCourseDetailCrawler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1404,9 +1359,9 @@
         <settings>
           <artifact-editor>
             <show-content>
-              <type id="artifact" />
-              <type id="jpa-descriptors" />
               <type id="javaee-facet-resources" />
+              <type id="jpa-descriptors" />
+              <type id="artifact" />
               <type id="library" />
             </show-content>
           </artifact-editor>
@@ -1435,7 +1390,7 @@
       </state>
       <state key="GlobalLibrariesConfigurable.UI">
         <settings>
-          <last-edited>FO Lib Depedency</last-edited>
+          <last-edited>org.json:json:20180813</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

@@ -15,6 +15,41 @@
     <title>Course Detail</title>
     <link rel="stylesheet" href="css/main.css" type="text/css"/>
     <link rel="stylesheet" href="css/detail.css" type="text/css"/>
+    <script>
+        function downloadPDF(courseId) {
+            var urlRequest = location.origin + "/resources/course/pdf/" + courseId;
+            var xmlHttpRequest = new XMLHttpRequest();
+            xmlHttpRequest.responseType = "blob";
+            xmlHttpRequest.open("GET", urlRequest, true);
+            xmlHttpRequest.onreadystatechange = function (event) {
+                if (xmlHttpRequest.readyState == 4) {
+                    if (xmlHttpRequest.status == 200) {
+                        var response = event.target.response;
+                        var file = new Blob([response], {type: "application/pdf"});
+
+                        var fileUrl = window.URL.createObjectURL(file);
+
+                        var a = document.createElement("a");
+                        a.style = "display: none";
+                        document.body.appendChild(a);
+                        //Create a DOMString representing the blob
+                        //and point the link element towards it
+                        a.href = fileUrl;
+                        a.target = '_blank';
+                        a.download = 'courseDetail.pdf';
+                        a.click();
+
+
+
+
+                    } else {
+                        console.error("Error on downloadPDF() | url=" + urlRequest + " | status=" + xmlHttp.statusText);
+                    }
+                }
+            };
+            xmlHttpRequest.send(null);
+        }
+    </script>
 </head>
 <body>
 
@@ -90,6 +125,9 @@
                         <span class="pull_right">${course.ratingNumber}</span>
                     </div>
 
+                </div>
+                <div class="btn_wrapper">
+                    <button class="button blue" type="button" onclick="downloadPDF(${course.id})">Download PDF</button>
                 </div>
 
             </div>

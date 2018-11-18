@@ -167,3 +167,29 @@
     font-weight: normal;
 
 }
+
+.button{
+    font-size: 16px;
+    border-radius: 5px;
+
+    height: 40px;
+    width: auto;
+    padding: 5px 30px;
+
+    margin: 10px 5px;
+
+
+
+}
+
+.red{
+    background-color: lightcoral;
+}
+
+.green{
+    background-color: lightgreen;
+}
+
+.blue{
+    background-color: lightskyblue;
+}

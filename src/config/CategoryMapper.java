@@ -14,6 +14,7 @@ public class CategoryMapper implements ConfigChangeListener {
 	private static CategoryMapper instance;
 
 	private static Object LOCK = new Object();
+
 	public static CategoryMapper getInstance() {
 		synchronized (LOCK) {
 			if (instance == null) {
@@ -26,11 +27,14 @@ public class CategoryMapper implements ConfigChangeListener {
 	private HashMap<String, CategoryNameType> edumallCategoryMap;
 	private HashMap<String, CategoryNameType> unicaCategoryMap;
 	private HashMap<String, CategoryNameType> kholCategoryMap;
+	private HashMap<String, CategoryNameType> emoonCategoryMap;
 
 	private CategoryMapper() {
 		edumallCategoryMap = new HashMap<>();
 		unicaCategoryMap = new HashMap<>();
 		kholCategoryMap = new HashMap<>();
+		emoonCategoryMap = new HashMap<>();
+
 
 	}
 
@@ -58,8 +62,16 @@ public class CategoryMapper implements ConfigChangeListener {
 		return CategoryNameType.OTHER;
 	}
 
+	public CategoryNameType mapEmoon(String emoonCategoryName) {
+		if (emoonCategoryMap.containsKey(emoonCategoryName)) {
+			return emoonCategoryMap.get(emoonCategoryName);
+		}
+		return CategoryNameType.OTHER;
+	}
 
-
+	public CategoryNameType mapTuyenSinh(String categoryName) {
+		return CategoryNameType.TEST_PREP;
+	}
 
 
 	@Override
@@ -84,6 +96,11 @@ public class CategoryMapper implements ConfigChangeListener {
 		List<DomainType.CategoryMappingList.CategoryMapping> khoaHocOnlineMappingList = ConfigManager.getInstance().getConfigModel().getKhoaHocOnline().getCategoryMappingList().getCategoryMapping();
 		for (DomainType.CategoryMappingList.CategoryMapping categoryMapping : khoaHocOnlineMappingList) {
 			kholCategoryMap.put(categoryMapping.getSource(), categoryMapping.getTo());
+		}
+		emoonCategoryMap.clear();
+		List<DomainType.CategoryMappingList.CategoryMapping> emoonMappingList = ConfigManager.getInstance().getConfigModel().getEmoon().getCategoryMappingList().getCategoryMapping();
+		for (DomainType.CategoryMappingList.CategoryMapping categoryMapping : emoonMappingList) {
+			emoonCategoryMap.put(categoryMapping.getSource(), categoryMapping.getTo());
 		}
 
 	}

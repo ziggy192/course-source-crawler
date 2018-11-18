@@ -1,313 +1,216 @@
-17-Nov-2018 16:54:44.635 INFO [main] org.apache.openejb.persistence.PersistenceBootstrap.getDefaultProvider Default JPA Provider changed to org.eclipse.persistence.jpa.PersistenceProvider specified by jar:file:/Users/ziggy192/Downloads/Setups/jar%20dependencies/apache-tomee-plume-8.0.0-M1/lib/openejb-core-eclipselink-8.0.0-M1.jar!/META-INF/org.apache.openejb.persistence.PersistenceBootstrap.provider
-17-Nov-2018 16:54:45.825 INFO [main] sun.reflect.NativeMethodAccessorImpl.invoke Server version:        Apache Tomcat (TomEE)/9.0.12 (8.0.0-M1)
-17-Nov-2018 16:54:45.828 INFO [main] sun.reflect.NativeMethodAccessorImpl.invoke Server built:          Sep 4 2018 22:13:41 UTC
-17-Nov-2018 16:54:45.829 INFO [main] sun.reflect.NativeMethodAccessorImpl.invoke Server number:         9.0.12.0
-17-Nov-2018 16:54:45.829 INFO [main] sun.reflect.NativeMethodAccessorImpl.invoke OS Name:               Mac OS X
-17-Nov-2018 16:54:45.829 INFO [main] sun.reflect.NativeMethodAccessorImpl.invoke OS Version:            10.13.6
-17-Nov-2018 16:54:45.830 INFO [main] sun.reflect.NativeMethodAccessorImpl.invoke Architecture:          x86_64
-17-Nov-2018 16:54:45.830 INFO [main] sun.reflect.NativeMethodAccessorImpl.invoke Java Home:             /Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre
-17-Nov-2018 16:54:45.830 INFO [main] sun.reflect.NativeMethodAccessorImpl.invoke JVM Version:           1.8.0_181-b13
-17-Nov-2018 16:54:45.830 INFO [main] sun.reflect.NativeMethodAccessorImpl.invoke JVM Vendor:            Oracle Corporation
-17-Nov-2018 16:54:45.830 INFO [main] sun.reflect.NativeMethodAccessorImpl.invoke CATALINA_BASE:         /Users/ziggy192/Library/Caches/IntelliJIdea2018.2/tomcat/TomEE_9_0_121_course-source-crawler
-17-Nov-2018 16:54:45.830 INFO [main] sun.reflect.NativeMethodAccessorImpl.invoke CATALINA_HOME:         /Users/ziggy192/Downloads/Setups/jar dependencies/apache-tomee-plume-8.0.0-M1
-17-Nov-2018 16:54:45.832 INFO [main] sun.reflect.NativeMethodAccessorImpl.invoke Command line argument: -Djava.util.logging.config.file=/Users/ziggy192/Library/Caches/IntelliJIdea2018.2/tomcat/TomEE_9_0_121_course-source-crawler/conf/logging.properties
-17-Nov-2018 16:54:45.832 INFO [main] sun.reflect.NativeMethodAccessorImpl.invoke Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
-17-Nov-2018 16:54:45.832 INFO [main] sun.reflect.NativeMethodAccessorImpl.invoke Command line argument: -javaagent:/Users/ziggy192/Downloads/Setups/jar dependencies/apache-tomee-plume-8.0.0-M1/lib/openejb-javaagent.jar
-17-Nov-2018 16:54:45.832 INFO [main] sun.reflect.NativeMethodAccessorImpl.invoke Command line argument: -Dcom.sun.management.jmxremote=
-17-Nov-2018 16:54:45.832 INFO [main] sun.reflect.NativeMethodAccessorImpl.invoke Command line argument: -Dcom.sun.management.jmxremote.port=1098
-17-Nov-2018 16:54:45.832 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Command line argument: -Dcom.sun.management.jmxremote.ssl=false
-17-Nov-2018 16:54:45.833 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Command line argument: -Dcom.sun.management.jmxremote.authenticate=false
-17-Nov-2018 16:54:45.833 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Command line argument: -Djava.rmi.server.hostname=127.0.0.1
-17-Nov-2018 16:54:45.833 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Command line argument: -Dtomee.serialization.class.whitelist=
-17-Nov-2018 16:54:45.833 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Command line argument: -Dtomee.serialization.class.blacklist=-
-17-Nov-2018 16:54:45.834 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Command line argument: -Dtomee.remote.support=true
-17-Nov-2018 16:54:45.834 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Command line argument: -Dopenejb.system.apps=true
-17-Nov-2018 16:54:45.834 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
-17-Nov-2018 16:54:45.834 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
-17-Nov-2018 16:54:45.834 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
-17-Nov-2018 16:54:45.834 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Command line argument: -Dignore.endorsed.dirs=
-17-Nov-2018 16:54:45.834 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Command line argument: -Dcatalina.base=/Users/ziggy192/Library/Caches/IntelliJIdea2018.2/tomcat/TomEE_9_0_121_course-source-crawler
-17-Nov-2018 16:54:45.834 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Command line argument: -Dcatalina.home=/Users/ziggy192/Downloads/Setups/jar dependencies/apache-tomee-plume-8.0.0-M1
-17-Nov-2018 16:54:45.834 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Command line argument: -Djava.io.tmpdir=/Users/ziggy192/Downloads/Setups/jar dependencies/apache-tomee-plume-8.0.0-M1/temp
-17-Nov-2018 16:54:45.834 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/ziggy192/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
-17-Nov-2018 16:54:46.475 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Initializing ProtocolHandler ["http-nio-8081"]
-17-Nov-2018 16:54:46.533 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Using a shared selector for servlet write/read
-17-Nov-2018 16:54:46.548 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Initializing ProtocolHandler ["ajp-nio-8009"]
-17-Nov-2018 16:54:46.549 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Using a shared selector for servlet write/read
-17-Nov-2018 16:54:46.958 INFO [main] org.apache.openejb.util.OptionsLog.info Using 'tomee.remote.support=true'
-17-Nov-2018 16:54:46.973 INFO [main] org.apache.openejb.util.OptionsLog.info Using 'openejb.jdbc.datasource-creator=org.apache.tomee.jdbc.TomEEDataSourceCreator'
-17-Nov-2018 16:54:47.270 INFO [main] org.apache.openejb.OpenEJB$Instance.<init> ********************************************************************************
-17-Nov-2018 16:54:47.270 INFO [main] org.apache.openejb.OpenEJB$Instance.<init> OpenEJB http://tomee.apache.org/
-17-Nov-2018 16:54:47.270 INFO [main] org.apache.openejb.OpenEJB$Instance.<init> Startup: Sat Nov 17 16:54:47 ICT 2018
-17-Nov-2018 16:54:47.270 INFO [main] org.apache.openejb.OpenEJB$Instance.<init> Copyright 1999-2018 (C) Apache OpenEJB Project, All Rights Reserved.
-17-Nov-2018 16:54:47.270 INFO [main] org.apache.openejb.OpenEJB$Instance.<init> Version: 8.0.0-M1
-17-Nov-2018 16:54:47.270 INFO [main] org.apache.openejb.OpenEJB$Instance.<init> Build date: 20181014
-17-Nov-2018 16:54:47.270 INFO [main] org.apache.openejb.OpenEJB$Instance.<init> Build time: 12:39
-17-Nov-2018 16:54:47.271 INFO [main] org.apache.openejb.OpenEJB$Instance.<init> ********************************************************************************
-17-Nov-2018 16:54:47.271 INFO [main] org.apache.openejb.OpenEJB$Instance.<init> openejb.home = /Users/ziggy192/Downloads/Setups/jar dependencies/apache-tomee-plume-8.0.0-M1
-17-Nov-2018 16:54:47.271 INFO [main] org.apache.openejb.OpenEJB$Instance.<init> openejb.base = /Users/ziggy192/Library/Caches/IntelliJIdea2018.2/tomcat/TomEE_9_0_121_course-source-crawler
-17-Nov-2018 16:54:47.273 INFO [main] org.apache.openejb.cdi.CdiBuilder.initializeOWB Created new singletonService org.apache.openejb.cdi.ThreadSingletonServiceImpl@2473d930
-17-Nov-2018 16:54:47.273 INFO [main] org.apache.openejb.cdi.CdiBuilder.initializeOWB Succeeded in installing singleton service
-17-Nov-2018 16:54:47.325 INFO [main] org.apache.openejb.config.ConfigurationFactory.init TomEE configuration file is '/Users/ziggy192/Library/Caches/IntelliJIdea2018.2/tomcat/TomEE_9_0_121_course-source-crawler/conf/tomee.xml'
-17-Nov-2018 16:54:47.383 INFO [main] org.apache.openejb.config.ConfigurationFactory.configureService Configuring Service(id=Tomcat Security Service, type=SecurityService, provider-id=Tomcat Security Service)
-17-Nov-2018 16:54:47.386 INFO [main] org.apache.openejb.config.ConfigurationFactory.configureService Configuring Service(id=Default Transaction Manager, type=TransactionManager, provider-id=Default Transaction Manager)
-17-Nov-2018 16:54:47.389 INFO [main] org.apache.openejb.util.OptionsLog.info Using 'openejb.system.apps=true'
-17-Nov-2018 16:54:47.393 INFO [main] org.apache.openejb.config.ConfigurationFactory.configureService Configuring Service(id=Default Singleton Container, type=Container, provider-id=Default Singleton Container)
-17-Nov-2018 16:54:47.401 INFO [main] org.apache.openejb.assembler.classic.Assembler.createRecipe Creating TransactionManager(id=Default Transaction Manager)
-17-Nov-2018 16:54:47.471 INFO [main] org.apache.openejb.assembler.classic.Assembler.createRecipe Creating SecurityService(id=Tomcat Security Service)
-17-Nov-2018 16:54:47.520 INFO [main] org.apache.openejb.assembler.classic.Assembler.createRecipe Creating Container(id=Default Singleton Container)
-17-Nov-2018 16:54:47.571 INFO [main] org.apache.openejb.assembler.classic.Assembler.createApplication Assembling app: openejb
-17-Nov-2018 16:54:47.670 INFO [main] org.apache.openejb.util.OptionsLog.info Using 'openejb.jndiname.format={deploymentId}{interfaceType.openejbLegacyName}'
-17-Nov-2018 16:54:47.700 INFO [main] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=openejb/DeployerBusinessRemote) --> Ejb(deployment-id=openejb/Deployer)
-17-Nov-2018 16:54:47.702 INFO [main] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=global/openejb/openejb/openejb/Deployer!org.apache.openejb.assembler.Deployer) --> Ejb(deployment-id=openejb/Deployer)
-17-Nov-2018 16:54:47.703 INFO [main] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=global/openejb/openejb/openejb/Deployer) --> Ejb(deployment-id=openejb/Deployer)
-17-Nov-2018 16:54:47.705 INFO [main] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=openejb/ConfigurationInfoBusinessRemote) --> Ejb(deployment-id=openejb/ConfigurationInfo)
-17-Nov-2018 16:54:47.705 INFO [main] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=global/openejb/openejb/openejb/Deployer!org.apache.openejb.assembler.classic.cmd.ConfigurationInfo) --> Ejb(deployment-id=openejb/ConfigurationInfo)
-17-Nov-2018 16:54:47.707 INFO [main] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=MEJB) --> Ejb(deployment-id=MEJB)
-17-Nov-2018 16:54:47.707 INFO [main] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=global/openejb/openejb/openejb/Deployer!javax.management.j2ee.ManagementHome) --> Ejb(deployment-id=MEJB)
-17-Nov-2018 16:54:47.721 INFO [main] org.apache.openejb.assembler.classic.Assembler.startEjbs Created Ejb(deployment-id=MEJB, ejb-name=openejb/Deployer, container=Default Singleton Container)
-17-Nov-2018 16:54:47.723 INFO [main] org.apache.openejb.assembler.classic.Assembler.startEjbs Created Ejb(deployment-id=openejb/ConfigurationInfo, ejb-name=openejb/Deployer, container=Default Singleton Container)
-17-Nov-2018 16:54:47.724 INFO [main] org.apache.openejb.assembler.classic.Assembler.startEjbs Created Ejb(deployment-id=openejb/Deployer, ejb-name=openejb/Deployer, container=Default Singleton Container)
-17-Nov-2018 16:54:47.725 INFO [main] org.apache.openejb.assembler.classic.Assembler.startEjbs Started Ejb(deployment-id=MEJB, ejb-name=openejb/Deployer, container=Default Singleton Container)
-17-Nov-2018 16:54:47.725 INFO [main] org.apache.openejb.assembler.classic.Assembler.startEjbs Started Ejb(deployment-id=openejb/ConfigurationInfo, ejb-name=openejb/Deployer, container=Default Singleton Container)
-17-Nov-2018 16:54:47.725 INFO [main] org.apache.openejb.assembler.classic.Assembler.startEjbs Started Ejb(deployment-id=openejb/Deployer, ejb-name=openejb/Deployer, container=Default Singleton Container)
-17-Nov-2018 16:54:47.737 INFO [main] org.apache.openejb.assembler.classic.Assembler.deployMBean Deployed MBean(openejb.user.mbeans:application=openejb,group=org.apache.openejb.assembler.monitoring,name=JMXDeployer)
-17-Nov-2018 16:54:47.753 INFO [main] org.apache.openejb.assembler.classic.Assembler.createApplication Deployed Application(path=openejb)
-17-Nov-2018 16:54:47.835 INFO [main] org.apache.openejb.server.ServiceManager.initServer Creating ServerService(id=cxf)
-17-Nov-2018 16:54:48.235 INFO [main] org.apache.openejb.server.ServiceManager.initServer Creating ServerService(id=cxf-rs)
-17-Nov-2018 16:54:48.320 INFO [main] org.apache.openejb.server.SimpleServiceManager.start   ** Bound Services **
-17-Nov-2018 16:54:48.320 INFO [main] org.apache.openejb.server.SimpleServiceManager.printRow   NAME                 IP              PORT  
-17-Nov-2018 16:54:48.320 INFO [main] org.apache.openejb.server.SimpleServiceManager.start -------
-17-Nov-2018 16:54:48.320 INFO [main] org.apache.openejb.server.SimpleServiceManager.start Ready!
-17-Nov-2018 16:54:48.320 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Initialization processed in 3487 ms
-17-Nov-2018 16:54:48.369 INFO [main] org.apache.tomee.catalina.OpenEJBNamingContextListener.bindResource Importing a Tomcat Resource with id 'UserDatabase' of type 'org.apache.catalina.UserDatabase'.
-17-Nov-2018 16:54:48.369 INFO [main] org.apache.openejb.assembler.classic.Assembler.createRecipe Creating Resource(id=UserDatabase)
-17-Nov-2018 16:54:48.399 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Starting service [Catalina]
-17-Nov-2018 16:54:48.400 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Starting Servlet Engine: Apache Tomcat (TomEE)/9.0.12 (8.0.0-M1)
-17-Nov-2018 16:54:48.548 INFO [main] org.apache.catalina.core.StandardContext.setClassLoaderProperty Unable to set the web application class loader property [clearReferencesRmiTargets] to [true] as the property does not exist.
-17-Nov-2018 16:54:48.548 INFO [main] org.apache.catalina.core.StandardContext.setClassLoaderProperty Unable to set the web application class loader property [clearReferencesObjectStreamClassCaches] to [true] as the property does not exist.
-17-Nov-2018 16:54:48.549 INFO [main] org.apache.catalina.core.StandardContext.setClassLoaderProperty Unable to set the web application class loader property [skipMemoryLeakChecksOnJvmShutdown] to [false] as the property does not exist.
-17-Nov-2018 16:54:48.603 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Starting ProtocolHandler ["http-nio-8081"]
-17-Nov-2018 16:54:48.622 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Starting ProtocolHandler ["ajp-nio-8009"]
-17-Nov-2018 16:54:48.627 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Server startup in 306 ms
-Nov 17, 2018 4:54:48 PM org.apache.openejb.client.EventLogger log
+18-Nov-2018 21:26:31.816 INFO [main] org.apache.openejb.persistence.PersistenceBootstrap.getDefaultProvider Default JPA Provider changed to org.eclipse.persistence.jpa.PersistenceProvider specified by jar:file:/Users/ziggy192/Downloads/Setups/jar%20dependencies/apache-tomee-plume-8.0.0-M1/lib/openejb-core-eclipselink-8.0.0-M1.jar!/META-INF/org.apache.openejb.persistence.PersistenceBootstrap.provider
+18-Nov-2018 21:26:32.489 INFO [main] sun.reflect.NativeMethodAccessorImpl.invoke Server version:        Apache Tomcat (TomEE)/9.0.12 (8.0.0-M1)
+18-Nov-2018 21:26:32.489 INFO [main] sun.reflect.NativeMethodAccessorImpl.invoke Server built:          Sep 4 2018 22:13:41 UTC
+18-Nov-2018 21:26:32.489 INFO [main] sun.reflect.NativeMethodAccessorImpl.invoke Server number:         9.0.12.0
+18-Nov-2018 21:26:32.489 INFO [main] sun.reflect.NativeMethodAccessorImpl.invoke OS Name:               Mac OS X
+18-Nov-2018 21:26:32.490 INFO [main] sun.reflect.NativeMethodAccessorImpl.invoke OS Version:            10.13.6
+18-Nov-2018 21:26:32.490 INFO [main] sun.reflect.NativeMethodAccessorImpl.invoke Architecture:          x86_64
+18-Nov-2018 21:26:32.490 INFO [main] sun.reflect.NativeMethodAccessorImpl.invoke Java Home:             /Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre
+18-Nov-2018 21:26:32.490 INFO [main] sun.reflect.NativeMethodAccessorImpl.invoke JVM Version:           1.8.0_181-b13
+18-Nov-2018 21:26:32.490 INFO [main] sun.reflect.NativeMethodAccessorImpl.invoke JVM Vendor:            Oracle Corporation
+18-Nov-2018 21:26:32.490 INFO [main] sun.reflect.NativeMethodAccessorImpl.invoke CATALINA_BASE:         /Users/ziggy192/Library/Caches/IntelliJIdea2018.2/tomcat/TomEE_9_0_121_course-source-crawler
+18-Nov-2018 21:26:32.490 INFO [main] sun.reflect.NativeMethodAccessorImpl.invoke CATALINA_HOME:         /Users/ziggy192/Downloads/Setups/jar dependencies/apache-tomee-plume-8.0.0-M1
+18-Nov-2018 21:26:32.492 INFO [main] sun.reflect.NativeMethodAccessorImpl.invoke Command line argument: -Djava.util.logging.config.file=/Users/ziggy192/Library/Caches/IntelliJIdea2018.2/tomcat/TomEE_9_0_121_course-source-crawler/conf/logging.properties
+18-Nov-2018 21:26:32.492 INFO [main] sun.reflect.NativeMethodAccessorImpl.invoke Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+18-Nov-2018 21:26:32.492 INFO [main] sun.reflect.NativeMethodAccessorImpl.invoke Command line argument: -javaagent:/Users/ziggy192/Downloads/Setups/jar dependencies/apache-tomee-plume-8.0.0-M1/lib/openejb-javaagent.jar
+18-Nov-2018 21:26:32.492 INFO [main] sun.reflect.NativeMethodAccessorImpl.invoke Command line argument: -Dcom.sun.management.jmxremote=
+18-Nov-2018 21:26:32.492 INFO [main] sun.reflect.NativeMethodAccessorImpl.invoke Command line argument: -Dcom.sun.management.jmxremote.port=1098
+18-Nov-2018 21:26:32.493 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Command line argument: -Dcom.sun.management.jmxremote.ssl=false
+18-Nov-2018 21:26:32.493 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Command line argument: -Dcom.sun.management.jmxremote.authenticate=false
+18-Nov-2018 21:26:32.493 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Command line argument: -Djava.rmi.server.hostname=127.0.0.1
+18-Nov-2018 21:26:32.493 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Command line argument: -Dtomee.serialization.class.whitelist=
+18-Nov-2018 21:26:32.493 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Command line argument: -Dtomee.serialization.class.blacklist=-
+18-Nov-2018 21:26:32.493 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Command line argument: -Dtomee.remote.support=true
+18-Nov-2018 21:26:32.493 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Command line argument: -Dopenejb.system.apps=true
+18-Nov-2018 21:26:32.493 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+18-Nov-2018 21:26:32.493 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+18-Nov-2018 21:26:32.493 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+18-Nov-2018 21:26:32.493 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Command line argument: -Dignore.endorsed.dirs=
+18-Nov-2018 21:26:32.493 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Command line argument: -Dcatalina.base=/Users/ziggy192/Library/Caches/IntelliJIdea2018.2/tomcat/TomEE_9_0_121_course-source-crawler
+18-Nov-2018 21:26:32.493 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Command line argument: -Dcatalina.home=/Users/ziggy192/Downloads/Setups/jar dependencies/apache-tomee-plume-8.0.0-M1
+18-Nov-2018 21:26:32.493 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Command line argument: -Djava.io.tmpdir=/Users/ziggy192/Downloads/Setups/jar dependencies/apache-tomee-plume-8.0.0-M1/temp
+18-Nov-2018 21:26:32.493 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/ziggy192/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+18-Nov-2018 21:26:32.754 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Initializing ProtocolHandler ["http-nio-8081"]
+18-Nov-2018 21:26:32.800 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Using a shared selector for servlet write/read
+18-Nov-2018 21:26:32.822 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Initializing ProtocolHandler ["ajp-nio-8009"]
+18-Nov-2018 21:26:32.823 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Using a shared selector for servlet write/read
+18-Nov-2018 21:26:33.090 INFO [main] org.apache.openejb.util.OptionsLog.info Using 'tomee.remote.support=true'
+18-Nov-2018 21:26:33.102 INFO [main] org.apache.openejb.util.OptionsLog.info Using 'openejb.jdbc.datasource-creator=org.apache.tomee.jdbc.TomEEDataSourceCreator'
+18-Nov-2018 21:26:33.232 INFO [main] org.apache.openejb.OpenEJB$Instance.<init> ********************************************************************************
+18-Nov-2018 21:26:33.232 INFO [main] org.apache.openejb.OpenEJB$Instance.<init> OpenEJB http://tomee.apache.org/
+18-Nov-2018 21:26:33.232 INFO [main] org.apache.openejb.OpenEJB$Instance.<init> Startup: Sun Nov 18 21:26:33 ICT 2018
+18-Nov-2018 21:26:33.232 INFO [main] org.apache.openejb.OpenEJB$Instance.<init> Copyright 1999-2018 (C) Apache OpenEJB Project, All Rights Reserved.
+18-Nov-2018 21:26:33.232 INFO [main] org.apache.openejb.OpenEJB$Instance.<init> Version: 8.0.0-M1
+18-Nov-2018 21:26:33.232 INFO [main] org.apache.openejb.OpenEJB$Instance.<init> Build date: 20181014
+18-Nov-2018 21:26:33.232 INFO [main] org.apache.openejb.OpenEJB$Instance.<init> Build time: 12:39
+18-Nov-2018 21:26:33.232 INFO [main] org.apache.openejb.OpenEJB$Instance.<init> ********************************************************************************
+18-Nov-2018 21:26:33.232 INFO [main] org.apache.openejb.OpenEJB$Instance.<init> openejb.home = /Users/ziggy192/Downloads/Setups/jar dependencies/apache-tomee-plume-8.0.0-M1
+18-Nov-2018 21:26:33.232 INFO [main] org.apache.openejb.OpenEJB$Instance.<init> openejb.base = /Users/ziggy192/Library/Caches/IntelliJIdea2018.2/tomcat/TomEE_9_0_121_course-source-crawler
+18-Nov-2018 21:26:33.234 INFO [main] org.apache.openejb.cdi.CdiBuilder.initializeOWB Created new singletonService org.apache.openejb.cdi.ThreadSingletonServiceImpl@2473d930
+18-Nov-2018 21:26:33.234 INFO [main] org.apache.openejb.cdi.CdiBuilder.initializeOWB Succeeded in installing singleton service
+18-Nov-2018 21:26:33.265 INFO [main] org.apache.openejb.config.ConfigurationFactory.init TomEE configuration file is '/Users/ziggy192/Library/Caches/IntelliJIdea2018.2/tomcat/TomEE_9_0_121_course-source-crawler/conf/tomee.xml'
+18-Nov-2018 21:26:33.296 INFO [main] org.apache.openejb.config.ConfigurationFactory.configureService Configuring Service(id=Tomcat Security Service, type=SecurityService, provider-id=Tomcat Security Service)
+18-Nov-2018 21:26:33.297 INFO [main] org.apache.openejb.config.ConfigurationFactory.configureService Configuring Service(id=Default Transaction Manager, type=TransactionManager, provider-id=Default Transaction Manager)
+18-Nov-2018 21:26:33.299 INFO [main] org.apache.openejb.util.OptionsLog.info Using 'openejb.system.apps=true'
+18-Nov-2018 21:26:33.302 INFO [main] org.apache.openejb.config.ConfigurationFactory.configureService Configuring Service(id=Default Singleton Container, type=Container, provider-id=Default Singleton Container)
+18-Nov-2018 21:26:33.308 INFO [main] org.apache.openejb.assembler.classic.Assembler.createRecipe Creating TransactionManager(id=Default Transaction Manager)
+18-Nov-2018 21:26:33.372 INFO [main] org.apache.openejb.assembler.classic.Assembler.createRecipe Creating SecurityService(id=Tomcat Security Service)
+18-Nov-2018 21:26:33.400 INFO [main] org.apache.openejb.assembler.classic.Assembler.createRecipe Creating Container(id=Default Singleton Container)
+18-Nov-2018 21:26:33.417 INFO [main] org.apache.openejb.assembler.classic.Assembler.createApplication Assembling app: openejb
+18-Nov-2018 21:26:33.466 INFO [main] org.apache.openejb.util.OptionsLog.info Using 'openejb.jndiname.format={deploymentId}{interfaceType.openejbLegacyName}'
+18-Nov-2018 21:26:33.477 INFO [main] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=openejb/DeployerBusinessRemote) --> Ejb(deployment-id=openejb/Deployer)
+18-Nov-2018 21:26:33.477 INFO [main] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=global/openejb/openejb/openejb/Deployer!org.apache.openejb.assembler.Deployer) --> Ejb(deployment-id=openejb/Deployer)
+18-Nov-2018 21:26:33.478 INFO [main] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=global/openejb/openejb/openejb/Deployer) --> Ejb(deployment-id=openejb/Deployer)
+18-Nov-2018 21:26:33.479 INFO [main] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=openejb/ConfigurationInfoBusinessRemote) --> Ejb(deployment-id=openejb/ConfigurationInfo)
+18-Nov-2018 21:26:33.481 INFO [main] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=global/openejb/openejb/openejb/Deployer!org.apache.openejb.assembler.classic.cmd.ConfigurationInfo) --> Ejb(deployment-id=openejb/ConfigurationInfo)
+18-Nov-2018 21:26:33.482 INFO [main] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=MEJB) --> Ejb(deployment-id=MEJB)
+18-Nov-2018 21:26:33.483 INFO [main] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=global/openejb/openejb/openejb/Deployer!javax.management.j2ee.ManagementHome) --> Ejb(deployment-id=MEJB)
+18-Nov-2018 21:26:33.492 INFO [main] org.apache.openejb.assembler.classic.Assembler.startEjbs Created Ejb(deployment-id=MEJB, ejb-name=openejb/Deployer, container=Default Singleton Container)
+18-Nov-2018 21:26:33.493 INFO [main] org.apache.openejb.assembler.classic.Assembler.startEjbs Created Ejb(deployment-id=openejb/ConfigurationInfo, ejb-name=openejb/Deployer, container=Default Singleton Container)
+18-Nov-2018 21:26:33.495 INFO [main] org.apache.openejb.assembler.classic.Assembler.startEjbs Created Ejb(deployment-id=openejb/Deployer, ejb-name=openejb/Deployer, container=Default Singleton Container)
+18-Nov-2018 21:26:33.495 INFO [main] org.apache.openejb.assembler.classic.Assembler.startEjbs Started Ejb(deployment-id=MEJB, ejb-name=openejb/Deployer, container=Default Singleton Container)
+18-Nov-2018 21:26:33.495 INFO [main] org.apache.openejb.assembler.classic.Assembler.startEjbs Started Ejb(deployment-id=openejb/ConfigurationInfo, ejb-name=openejb/Deployer, container=Default Singleton Container)
+18-Nov-2018 21:26:33.496 INFO [main] org.apache.openejb.assembler.classic.Assembler.startEjbs Started Ejb(deployment-id=openejb/Deployer, ejb-name=openejb/Deployer, container=Default Singleton Container)
+18-Nov-2018 21:26:33.500 INFO [main] org.apache.openejb.assembler.classic.Assembler.deployMBean Deployed MBean(openejb.user.mbeans:application=openejb,group=org.apache.openejb.assembler.monitoring,name=JMXDeployer)
+18-Nov-2018 21:26:33.502 INFO [main] org.apache.openejb.assembler.classic.Assembler.createApplication Deployed Application(path=openejb)
+18-Nov-2018 21:26:33.556 INFO [main] org.apache.openejb.server.ServiceManager.initServer Creating ServerService(id=cxf)
+18-Nov-2018 21:26:33.766 INFO [main] org.apache.openejb.server.ServiceManager.initServer Creating ServerService(id=cxf-rs)
+18-Nov-2018 21:26:33.810 INFO [main] org.apache.openejb.server.SimpleServiceManager.start   ** Bound Services **
+18-Nov-2018 21:26:33.810 INFO [main] org.apache.openejb.server.SimpleServiceManager.printRow   NAME                 IP              PORT  
+18-Nov-2018 21:26:33.810 INFO [main] org.apache.openejb.server.SimpleServiceManager.start -------
+18-Nov-2018 21:26:33.810 INFO [main] org.apache.openejb.server.SimpleServiceManager.start Ready!
+18-Nov-2018 21:26:33.810 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Initialization processed in 1964 ms
+18-Nov-2018 21:26:33.831 INFO [main] org.apache.tomee.catalina.OpenEJBNamingContextListener.bindResource Importing a Tomcat Resource with id 'UserDatabase' of type 'org.apache.catalina.UserDatabase'.
+18-Nov-2018 21:26:33.832 INFO [main] org.apache.openejb.assembler.classic.Assembler.createRecipe Creating Resource(id=UserDatabase)
+18-Nov-2018 21:26:33.842 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Starting service [Catalina]
+18-Nov-2018 21:26:33.843 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Starting Servlet Engine: Apache Tomcat (TomEE)/9.0.12 (8.0.0-M1)
+18-Nov-2018 21:26:33.919 INFO [main] org.apache.catalina.core.StandardContext.setClassLoaderProperty Unable to set the web application class loader property [clearReferencesRmiTargets] to [true] as the property does not exist.
+18-Nov-2018 21:26:33.920 INFO [main] org.apache.catalina.core.StandardContext.setClassLoaderProperty Unable to set the web application class loader property [clearReferencesObjectStreamClassCaches] to [true] as the property does not exist.
+18-Nov-2018 21:26:33.920 INFO [main] org.apache.catalina.core.StandardContext.setClassLoaderProperty Unable to set the web application class loader property [skipMemoryLeakChecksOnJvmShutdown] to [false] as the property does not exist.
+18-Nov-2018 21:26:33.958 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Starting ProtocolHandler ["http-nio-8081"]
+18-Nov-2018 21:26:33.967 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Starting ProtocolHandler ["ajp-nio-8009"]
+18-Nov-2018 21:26:33.972 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Server startup in 161 ms
+Nov 18, 2018 9:26:34 PM org.apache.openejb.client.EventLogger log
 INFO: RemoteInitialContextCreated{providerUri=http://localhost:8081/tomee/ejb}
 Connected to server
-17-Nov-2018 16:54:49.693 INFO [http-nio-8081-exec-4] org.apache.tomee.catalina.TomcatWebAppBuilder.deployWebApps using default host: localhost
-17-Nov-2018 16:54:49.694 INFO [http-nio-8081-exec-4] org.apache.tomee.catalina.TomcatWebAppBuilder.init ------------------------- localhost -> /
-17-Nov-2018 16:54:49.717 WARNING [http-nio-8081-exec-4] org.apache.catalina.startup.SetContextPropertiesRule.begin [SetContextPropertiesRule]{Context} Setting property 'cachingAllowed' to 'false' did not find a matching property.
-17-Nov-2018 16:54:50.595 INFO [http-nio-8081-exec-4] org.apache.openejb.config.ConfigurationFactory.configureApplication Configuring enterprise application: /Users/ziggy192/Documents/Code/Java/course-source-crawler/out/artifacts/course_source_crawler_war_exploded
-17-Nov-2018 16:54:51.201 INFO [http-nio-8081-exec-4] org.apache.openejb.config.ConfigurationFactory.configureService Configuring Service(id=Default Managed Container, type=Container, provider-id=Default Managed Container)
-17-Nov-2018 16:54:51.202 INFO [http-nio-8081-exec-4] org.apache.openejb.config.AutoConfig.createContainer Auto-creating a container for bean .Comp1055483999: Container(type=MANAGED, id=Default Managed Container)
-17-Nov-2018 16:54:51.202 INFO [http-nio-8081-exec-4] org.apache.openejb.assembler.classic.Assembler.createRecipe Creating Container(id=Default Managed Container)
-17-Nov-2018 16:54:51.214 INFO [http-nio-8081-exec-4] org.apache.openejb.core.managed.SimplePassivater.init Using directory /Users/ziggy192/Downloads/Setups/jar dependencies/apache-tomee-plume-8.0.0-M1/temp for stateful session passivation
-17-Nov-2018 16:54:51.219 INFO [http-nio-8081-exec-4] org.apache.openejb.config.AutoConfig.deploy Configuring PersistenceUnit(name=CourseSourcePersistenceUnit, provider=org.hibernate.jpa.HibernatePersistenceProvider)
-17-Nov-2018 16:54:51.220 INFO [http-nio-8081-exec-4] org.apache.openejb.config.ConfigurationFactory.configureService Configuring Service(id=Default JDBC Database, type=Resource, provider-id=Default JDBC Database)
-17-Nov-2018 16:54:51.221 INFO [http-nio-8081-exec-4] org.apache.openejb.config.AutoConfig.logAutoCreateResource Auto-creating a Resource with id 'Default JDBC Database' of type 'DataSource for 'CourseSourcePersistenceUnit'.
-17-Nov-2018 16:54:51.221 INFO [http-nio-8081-exec-4] org.apache.openejb.assembler.classic.Assembler.createRecipe Creating Resource(id=Default JDBC Database)
-17-Nov-2018 16:54:52.005 INFO [http-nio-8081-exec-4] org.hsqldb.persist.Logger.logInfoEvent Checkpoint start
-17-Nov-2018 16:54:52.006 INFO [http-nio-8081-exec-4] org.hsqldb.persist.Logger.logInfoEvent checkpointClose start
-17-Nov-2018 16:54:52.020 INFO [http-nio-8081-exec-4] org.hsqldb.persist.Logger.logInfoEvent checkpointClose end
-17-Nov-2018 16:54:52.021 INFO [http-nio-8081-exec-4] org.hsqldb.persist.Logger.logInfoEvent Checkpoint end - txts: 1
-17-Nov-2018 16:54:52.063 INFO [http-nio-8081-exec-4] org.apache.openejb.config.ConfigurationFactory.configureService Configuring Service(id=Default Unmanaged JDBC Database, type=Resource, provider-id=Default Unmanaged JDBC Database)
-17-Nov-2018 16:54:52.064 INFO [http-nio-8081-exec-4] org.apache.openejb.config.AutoConfig.logAutoCreateResource Auto-creating a Resource with id 'Default Unmanaged JDBC Database' of type 'DataSource for 'CourseSourcePersistenceUnit'.
-17-Nov-2018 16:54:52.065 INFO [http-nio-8081-exec-4] org.apache.openejb.assembler.classic.Assembler.createRecipe Creating Resource(id=Default Unmanaged JDBC Database)
-17-Nov-2018 16:54:52.090 INFO [http-nio-8081-exec-4] org.apache.openejb.config.AutoConfig.setJtaDataSource Adjusting PersistenceUnit CourseSourcePersistenceUnit <jta-data-source> to Resource ID 'Default JDBC Database' from 'null'
-17-Nov-2018 16:54:52.090 INFO [http-nio-8081-exec-4] org.apache.openejb.config.AutoConfig.setNonJtaDataSource Adjusting PersistenceUnit CourseSourcePersistenceUnit <non-jta-data-source> to Resource ID 'Default Unmanaged JDBC Database' from 'null'
-17-Nov-2018 16:54:52.127 INFO [http-nio-8081-exec-4] org.apache.openejb.config.AppInfoBuilder.build Enterprise application "/Users/ziggy192/Documents/Code/Java/course-source-crawler/out/artifacts/course_source_crawler_war_exploded" loaded.
-17-Nov-2018 16:54:52.130 INFO [http-nio-8081-exec-4] org.apache.openejb.assembler.classic.Assembler.createApplication Assembling app: /Users/ziggy192/Documents/Code/Java/course-source-crawler/out/artifacts/course_source_crawler_war_exploded
-17-Nov-2018 16:54:52.307 INFO [http-nio-8081-exec-4] org.hibernate.jpa.internal.util.LogHelper.logPersistenceUnitInformation HHH000204: Processing PersistenceUnitInfo [
+18-Nov-2018 21:26:34.644 INFO [http-nio-8081-exec-4] org.apache.tomee.catalina.TomcatWebAppBuilder.deployWebApps using default host: localhost
+18-Nov-2018 21:26:34.645 INFO [http-nio-8081-exec-4] org.apache.tomee.catalina.TomcatWebAppBuilder.init ------------------------- localhost -> /
+18-Nov-2018 21:26:34.661 WARNING [http-nio-8081-exec-4] org.apache.catalina.startup.SetContextPropertiesRule.begin [SetContextPropertiesRule]{Context} Setting property 'cachingAllowed' to 'false' did not find a matching property.
+18-Nov-2018 21:26:35.716 INFO [http-nio-8081-exec-4] org.apache.openejb.config.ConfigurationFactory.configureApplication Configuring enterprise application: /Users/ziggy192/Documents/Code/Java/course-source-crawler/out/artifacts/course_source_crawler_war_exploded
+18-Nov-2018 21:26:36.156 INFO [http-nio-8081-exec-4] org.apache.openejb.config.ConfigurationFactory.configureService Configuring Service(id=Default Managed Container, type=Container, provider-id=Default Managed Container)
+18-Nov-2018 21:26:36.156 INFO [http-nio-8081-exec-4] org.apache.openejb.config.AutoConfig.createContainer Auto-creating a container for bean .Comp587069823: Container(type=MANAGED, id=Default Managed Container)
+18-Nov-2018 21:26:36.156 INFO [http-nio-8081-exec-4] org.apache.openejb.assembler.classic.Assembler.createRecipe Creating Container(id=Default Managed Container)
+18-Nov-2018 21:26:36.163 INFO [http-nio-8081-exec-4] org.apache.openejb.core.managed.SimplePassivater.init Using directory /Users/ziggy192/Downloads/Setups/jar dependencies/apache-tomee-plume-8.0.0-M1/temp for stateful session passivation
+18-Nov-2018 21:26:36.166 INFO [http-nio-8081-exec-4] org.apache.openejb.config.AutoConfig.deploy Configuring PersistenceUnit(name=CourseSourcePersistenceUnit, provider=org.hibernate.jpa.HibernatePersistenceProvider)
+18-Nov-2018 21:26:36.168 INFO [http-nio-8081-exec-4] org.apache.openejb.config.ConfigurationFactory.configureService Configuring Service(id=Default JDBC Database, type=Resource, provider-id=Default JDBC Database)
+18-Nov-2018 21:26:36.168 INFO [http-nio-8081-exec-4] org.apache.openejb.config.AutoConfig.logAutoCreateResource Auto-creating a Resource with id 'Default JDBC Database' of type 'DataSource for 'CourseSourcePersistenceUnit'.
+18-Nov-2018 21:26:36.168 INFO [http-nio-8081-exec-4] org.apache.openejb.assembler.classic.Assembler.createRecipe Creating Resource(id=Default JDBC Database)
+18-Nov-2018 21:26:36.575 INFO [http-nio-8081-exec-4] org.hsqldb.persist.Logger.logInfoEvent Checkpoint start
+18-Nov-2018 21:26:36.576 INFO [http-nio-8081-exec-4] org.hsqldb.persist.Logger.logInfoEvent checkpointClose start
+18-Nov-2018 21:26:36.583 INFO [http-nio-8081-exec-4] org.hsqldb.persist.Logger.logInfoEvent checkpointClose end
+18-Nov-2018 21:26:36.584 INFO [http-nio-8081-exec-4] org.hsqldb.persist.Logger.logInfoEvent Checkpoint end - txts: 1
+18-Nov-2018 21:26:36.599 INFO [http-nio-8081-exec-4] org.apache.openejb.config.ConfigurationFactory.configureService Configuring Service(id=Default Unmanaged JDBC Database, type=Resource, provider-id=Default Unmanaged JDBC Database)
+18-Nov-2018 21:26:36.600 INFO [http-nio-8081-exec-4] org.apache.openejb.config.AutoConfig.logAutoCreateResource Auto-creating a Resource with id 'Default Unmanaged JDBC Database' of type 'DataSource for 'CourseSourcePersistenceUnit'.
+18-Nov-2018 21:26:36.600 INFO [http-nio-8081-exec-4] org.apache.openejb.assembler.classic.Assembler.createRecipe Creating Resource(id=Default Unmanaged JDBC Database)
+18-Nov-2018 21:26:36.611 INFO [http-nio-8081-exec-4] org.apache.openejb.config.AutoConfig.setJtaDataSource Adjusting PersistenceUnit CourseSourcePersistenceUnit <jta-data-source> to Resource ID 'Default JDBC Database' from 'null'
+18-Nov-2018 21:26:36.611 INFO [http-nio-8081-exec-4] org.apache.openejb.config.AutoConfig.setNonJtaDataSource Adjusting PersistenceUnit CourseSourcePersistenceUnit <non-jta-data-source> to Resource ID 'Default Unmanaged JDBC Database' from 'null'
+18-Nov-2018 21:26:36.632 INFO [http-nio-8081-exec-4] org.apache.openejb.config.AppInfoBuilder.build Enterprise application "/Users/ziggy192/Documents/Code/Java/course-source-crawler/out/artifacts/course_source_crawler_war_exploded" loaded.
+18-Nov-2018 21:26:36.632 INFO [http-nio-8081-exec-4] org.apache.openejb.assembler.classic.Assembler.createApplication Assembling app: /Users/ziggy192/Documents/Code/Java/course-source-crawler/out/artifacts/course_source_crawler_war_exploded
+18-Nov-2018 21:26:36.701 INFO [http-nio-8081-exec-4] org.hibernate.jpa.internal.util.LogHelper.logPersistenceUnitInformation HHH000204: Processing PersistenceUnitInfo [
 	name: CourseSourcePersistenceUnit
 	...]
-17-Nov-2018 16:54:52.578 INFO [http-nio-8081-exec-4] org.hibernate.Version.logVersion HHH000412: Hibernate Core {5.3.7.Final}
-17-Nov-2018 16:54:52.582 INFO [http-nio-8081-exec-4] org.hibernate.cfg.Environment.<clinit> HHH000206: hibernate.properties not found
-17-Nov-2018 16:54:53.005 INFO [http-nio-8081-exec-4] org.hibernate.annotations.common.reflection.java.JavaReflectionManager.<clinit> HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
-17-Nov-2018 16:54:53.505 INFO [http-nio-8081-exec-4] org.hibernate.dialect.Dialect.<init> HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect
-17-Nov-2018 16:54:54.200 INFO [http-nio-8081-exec-4] org.hibernate.resource.beans.spi.ManagedBeanRegistryInitiator.resoveBeanContainer HHH10005002: No explicit CDI BeanManager reference was passed to Hibernate, but CDI is available on the Hibernate ClassLoader.
-17-Nov-2018 16:54:55.721 INFO [http-nio-8081-exec-4] org.hibernate.hql.internal.QueryTranslatorFactoryInitiator.initiateService HHH000397: Using ASTQueryTranslatorFactory
-17-Nov-2018 16:54:56.045 INFO [http-nio-8081-exec-4] org.apache.openejb.assembler.classic.ReloadableEntityManagerFactory.createDelegate PersistenceUnit(name=CourseSourcePersistenceUnit, provider=org.hibernate.jpa.HibernatePersistenceProvider) - provider time 3890ms
-17-Nov-2018 16:54:56.140 INFO [http-nio-8081-exec-4] org.apache.openejb.assembler.classic.Assembler.createApplication Deployed Application(path=/Users/ziggy192/Documents/Code/Java/course-source-crawler/out/artifacts/course_source_crawler_war_exploded)
-17-Nov-2018 16:54:56.538 INFO [http-nio-8081-exec-4] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
-17-Nov-2018 16:54:56.562 INFO [http-nio-8081-exec-4] listerner.MainListener.contextInitialized CrawlerServletListener: Context init
+18-Nov-2018 21:26:36.886 INFO [http-nio-8081-exec-4] org.hibernate.Version.logVersion HHH000412: Hibernate Core {5.3.7.Final}
+18-Nov-2018 21:26:36.888 INFO [http-nio-8081-exec-4] org.hibernate.cfg.Environment.<clinit> HHH000206: hibernate.properties not found
+18-Nov-2018 21:26:37.136 INFO [http-nio-8081-exec-4] org.hibernate.annotations.common.reflection.java.JavaReflectionManager.<clinit> HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+18-Nov-2018 21:26:37.441 INFO [http-nio-8081-exec-4] org.hibernate.dialect.Dialect.<init> HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect
+18-Nov-2018 21:26:37.833 INFO [http-nio-8081-exec-4] org.hibernate.resource.beans.spi.ManagedBeanRegistryInitiator.resoveBeanContainer HHH10005002: No explicit CDI BeanManager reference was passed to Hibernate, but CDI is available on the Hibernate ClassLoader.
+18-Nov-2018 21:26:38.735 INFO [http-nio-8081-exec-4] org.hibernate.hql.internal.QueryTranslatorFactoryInitiator.initiateService HHH000397: Using ASTQueryTranslatorFactory
+18-Nov-2018 21:26:38.881 INFO [http-nio-8081-exec-4] org.apache.openejb.assembler.classic.ReloadableEntityManagerFactory.createDelegate PersistenceUnit(name=CourseSourcePersistenceUnit, provider=org.hibernate.jpa.HibernatePersistenceProvider) - provider time 2236ms
+18-Nov-2018 21:26:38.909 INFO [http-nio-8081-exec-4] org.apache.openejb.assembler.classic.Assembler.createApplication Deployed Application(path=/Users/ziggy192/Documents/Code/Java/course-source-crawler/out/artifacts/course_source_crawler_war_exploded)
+18-Nov-2018 21:26:39.284 INFO [http-nio-8081-exec-4] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+18-Nov-2018 21:26:39.303 INFO [http-nio-8081-exec-4] listerner.MainListener.contextInitialized CrawlerServletListener: Context init
 INFO: Found persistence provider "org.hibernate.jpa.HibernatePersistenceProvider". OpenJPA will not be used.
 Loading class `com.mysql.jdbc.Driver'. This is deprecated. The new driver class is `com.mysql.cj.jdbc.Driver'. The driver is automatically registered via the SPI and manual loading of the driver class is generally unnecessary.
-17-Nov-2018 16:54:58.582 INFO [http-nio-8081-exec-4] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication Using readers:
-17-Nov-2018 16:54:58.583 INFO [http-nio-8081-exec-4] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.provider.PrimitiveTextProvider@715fc44c
-17-Nov-2018 16:54:58.583 INFO [http-nio-8081-exec-4] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.provider.FormEncodingProvider@1f4c0f74
-17-Nov-2018 16:54:58.583 INFO [http-nio-8081-exec-4] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.provider.MultipartProvider@6c5f427d
-17-Nov-2018 16:54:58.583 INFO [http-nio-8081-exec-4] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.provider.SourceProvider@730c702d
-17-Nov-2018 16:54:58.583 INFO [http-nio-8081-exec-4] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.provider.JAXBElementTypedProvider@4135aa8c
-17-Nov-2018 16:54:58.584 INFO [http-nio-8081-exec-4] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.provider.JAXBElementProvider@3efd2a71
-17-Nov-2018 16:54:58.584 INFO [http-nio-8081-exec-4] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.openejb.server.cxf.rs.johnzon.TomEEJsonbProvider@1e7af543
-17-Nov-2018 16:54:58.584 INFO [http-nio-8081-exec-4] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.openejb.server.cxf.rs.johnzon.TomEEJsonpProvider@23866d04
-17-Nov-2018 16:54:58.584 INFO [http-nio-8081-exec-4] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.provider.StringTextProvider@52b95e7e
-17-Nov-2018 16:54:58.585 INFO [http-nio-8081-exec-4] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.provider.BinaryDataProvider@71492e86
-17-Nov-2018 16:54:58.585 INFO [http-nio-8081-exec-4] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.provider.DataSourceProvider@7e3be947
-17-Nov-2018 16:54:58.585 INFO [http-nio-8081-exec-4] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication Using writers:
-17-Nov-2018 16:54:58.586 INFO [http-nio-8081-exec-4] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.johnzon.jaxrs.WadlDocumentMessageBodyWriter@6e4555c9
-17-Nov-2018 16:54:58.586 INFO [http-nio-8081-exec-4] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.nio.NioMessageBodyWriter@7697bcd1
-17-Nov-2018 16:54:58.586 INFO [http-nio-8081-exec-4] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.provider.StringTextProvider@52b95e7e
-17-Nov-2018 16:54:58.586 INFO [http-nio-8081-exec-4] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.provider.JAXBElementTypedProvider@4135aa8c
-17-Nov-2018 16:54:58.586 INFO [http-nio-8081-exec-4] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.provider.PrimitiveTextProvider@715fc44c
-17-Nov-2018 16:54:58.587 INFO [http-nio-8081-exec-4] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.provider.FormEncodingProvider@1f4c0f74
-17-Nov-2018 16:54:58.587 INFO [http-nio-8081-exec-4] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.provider.MultipartProvider@6c5f427d
-17-Nov-2018 16:54:58.587 INFO [http-nio-8081-exec-4] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.provider.SourceProvider@730c702d
-17-Nov-2018 16:54:58.587 INFO [http-nio-8081-exec-4] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.provider.JAXBElementProvider@3efd2a71
-17-Nov-2018 16:54:58.587 INFO [http-nio-8081-exec-4] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.openejb.server.cxf.rs.johnzon.TomEEJsonbProvider@1e7af543
-17-Nov-2018 16:54:58.588 INFO [http-nio-8081-exec-4] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.openejb.server.cxf.rs.johnzon.TomEEJsonpProvider@23866d04
-17-Nov-2018 16:54:58.588 INFO [http-nio-8081-exec-4] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.provider.BinaryDataProvider@71492e86
-17-Nov-2018 16:54:58.588 INFO [http-nio-8081-exec-4] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.provider.DataSourceProvider@7e3be947
-17-Nov-2018 16:54:58.589 INFO [http-nio-8081-exec-4] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication Using exception mappers:
-17-Nov-2018 16:54:58.589 INFO [http-nio-8081-exec-4] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.impl.WebApplicationExceptionMapper@3f89b0eb
-17-Nov-2018 16:54:58.590 INFO [http-nio-8081-exec-4] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.openejb.server.cxf.rs.EJBExceptionMapper@7eca9405
-17-Nov-2018 16:54:58.591 INFO [http-nio-8081-exec-4] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.validation.ValidationExceptionMapper@3c6dbe53
-17-Nov-2018 16:54:58.591 INFO [http-nio-8081-exec-4] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.openejb.server.cxf.rs.CxfRsHttpListener$CxfResponseValidationExceptionMapper@718b5b94
-17-Nov-2018 16:54:58.595 INFO [http-nio-8081-exec-4] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.logEndpoints REST Application: http://localhost:8081/resources         -> resource.ApplicationConfig@7bcf7456
-17-Nov-2018 16:54:58.600 INFO [http-nio-8081-exec-4] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.logEndpoints      Service URI: http://localhost:8081/resources/course  -> Pojo resource.CourseResource
-17-Nov-2018 16:54:58.600 INFO [http-nio-8081-exec-4] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.logEndpoints               GET http://localhost:8081/resources/course/ ->      List<CourseEntity> getCourseByQuery(String, String, String, String, int)
-17-Nov-2018 16:54:58.605 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] sun.reflect.DelegatingMethodAccessorImpl.invoke Deploying web application directory [/Users/ziggy192/Downloads/Setups/jar dependencies/apache-tomee-plume-8.0.0-M1/webapps/manager]
-17-Nov-2018 16:54:58.608 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.tomee.catalina.TomcatWebAppBuilder.init ------------------------- localhost -> /manager
-17-Nov-2018 16:54:58.612 WARNING [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.SetContextPropertiesRule.begin [SetContextPropertiesRule]{Context} Setting property 'cachingAllowed' to 'false' did not find a matching property.
-17-Nov-2018 16:54:58.727 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.openejb.config.ConfigurationFactory.configureApplication Configuring enterprise application: /Users/ziggy192/Downloads/Setups/jar dependencies/apache-tomee-plume-8.0.0-M1/webapps/manager
-17-Nov-2018 16:54:58.744 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.openejb.config.AppInfoBuilder.build Enterprise application "/Users/ziggy192/Downloads/Setups/jar dependencies/apache-tomee-plume-8.0.0-M1/webapps/manager" loaded.
-17-Nov-2018 16:54:58.744 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.openejb.assembler.classic.Assembler.createApplication Assembling app: /Users/ziggy192/Downloads/Setups/jar dependencies/apache-tomee-plume-8.0.0-M1/webapps/manager
-17-Nov-2018 16:54:58.754 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.tomee.catalina.TomcatWebAppBuilder.deployWebApps using context file /Users/ziggy192/Downloads/Setups/jar dependencies/apache-tomee-plume-8.0.0-M1/webapps/manager/META-INF/context.xml
-17-Nov-2018 16:54:58.754 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.openejb.assembler.classic.Assembler.createApplication Deployed Application(path=/Users/ziggy192/Downloads/Setups/jar dependencies/apache-tomee-plume-8.0.0-M1/webapps/manager)
-17-Nov-2018 16:54:58.978 INFO [http-nio-8081-exec-5] servlet.HomeCrawlerServlet.processRequest Thử viết Unicode
-17-Nov-2018 16:54:58.980 INFO [http-nio-8081-exec-5] servlet.HomeCrawlerServlet.processRequest btAction=null
-17-Nov-2018 16:54:59.008 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
-17-Nov-2018 16:54:59.053 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] sun.reflect.DelegatingMethodAccessorImpl.invoke Deployment of web application directory [/Users/ziggy192/Downloads/Setups/jar dependencies/apache-tomee-plume-8.0.0-M1/webapps/manager] has finished in [447] ms
-17-Nov-2018 16:55:00.624 INFO [http-nio-8081-exec-9] servlet.HomeCrawlerServlet.processRequest Thử viết Unicode
-17-Nov-2018 16:55:00.624 INFO [http-nio-8081-exec-9] servlet.HomeCrawlerServlet.processRequest btAction=null
-17-Nov-2018 16:55:07.274 INFO [http-nio-8081-exec-1] [resource.CourseResource] .invoke0 start logging 
-17-Nov-2018 16:55:07.274 INFO [http-nio-8081-exec-1] [resource.CourseResource] .invoke0 getCourseByQuery() 
- query= 
- sort=name-up 
- page=1 
- domainId= 
- categoryId=
-17-Nov-2018 16:55:07.274 INFO [http-nio-8081-exec-1] [resource.CourseResource] .invoke0 categoryListsize=0 | domainIdListSize=0
-17-Nov-2018 16:55:07.277 INFO [http-nio-8081-exec-1] dao.CourseDAO.searchCourse query=|domainId=[]|categoryId=[]|sort=name-up|page=1
-17-Nov-2018 16:55:07.277 INFO [http-nio-8081-exec-1] dao.CourseDAO.searchCourse jpqlQuery=SELECT c FROM CourseEntity c where c.name like concat('%',:query,'%') order by c.name asc 
-17-Nov-2018 16:58:10.466 INFO [http-nio-8081-exec-2] [resource.CourseResource] .invoke0 start logging 
-17-Nov-2018 16:58:10.468 INFO [http-nio-8081-exec-2] [resource.CourseResource] .invoke0 getCourseByQuery() 
- query=long 
- sort=name-up 
- page=1 
- domainId= 
- categoryId=
-17-Nov-2018 16:58:10.468 INFO [http-nio-8081-exec-2] [resource.CourseResource] .invoke0 categoryListsize=0 | domainIdListSize=0
-17-Nov-2018 16:58:10.469 INFO [http-nio-8081-exec-2] dao.CourseDAO.searchCourse query=long|domainId=[]|categoryId=[]|sort=name-up|page=1
-17-Nov-2018 16:58:10.471 INFO [http-nio-8081-exec-2] dao.CourseDAO.searchCourse jpqlQuery=SELECT c FROM CourseEntity c where c.name like concat('%',:query,'%') order by c.name asc 
-17-Nov-2018 16:58:12.487 INFO [http-nio-8081-exec-1] [resource.CourseResource] .invoke0 start logging 
-17-Nov-2018 16:58:12.487 INFO [http-nio-8081-exec-1] [resource.CourseResource] .invoke0 getCourseByQuery() 
- query= 
- sort=name-up 
- page=1 
- domainId= 
- categoryId=
-17-Nov-2018 16:58:12.487 INFO [http-nio-8081-exec-1] [resource.CourseResource] .invoke0 categoryListsize=0 | domainIdListSize=0
-17-Nov-2018 16:58:12.488 INFO [http-nio-8081-exec-1] dao.CourseDAO.searchCourse query=|domainId=[]|categoryId=[]|sort=name-up|page=1
-17-Nov-2018 16:58:12.488 INFO [http-nio-8081-exec-1] dao.CourseDAO.searchCourse jpqlQuery=SELECT c FROM CourseEntity c where c.name like concat('%',:query,'%') order by c.name asc 
-17-Nov-2018 16:58:17.209 INFO [http-nio-8081-exec-3] [resource.CourseResource] .invoke0 start logging 
-17-Nov-2018 16:58:17.209 INFO [http-nio-8081-exec-3] [resource.CourseResource] .invoke0 getCourseByQuery() 
- query= 
- sort=name-up 
- page=1 
- domainId= 
- categoryId=
-17-Nov-2018 16:58:17.209 INFO [http-nio-8081-exec-3] [resource.CourseResource] .invoke0 categoryListsize=0 | domainIdListSize=1
-17-Nov-2018 16:58:17.210 INFO [http-nio-8081-exec-3] dao.CourseDAO.searchCourse query=|domainId=[5]|categoryId=[]|sort=name-up|page=1
-17-Nov-2018 16:58:17.211 INFO [http-nio-8081-exec-3] dao.CourseDAO.searchCourse jpqlQuery=SELECT c FROM CourseEntity c where c.name like concat('%',:query,'%')  and c.domainId in ( 5)  order by c.name asc 
-17-Nov-2018 16:58:20.745 INFO [http-nio-8081-exec-5] [resource.CourseResource] .invoke0 start logging 
-17-Nov-2018 16:58:20.746 INFO [http-nio-8081-exec-5] [resource.CourseResource] .invoke0 getCourseByQuery() 
- query= 
- sort=name-up 
- page=2 
- domainId= 
- categoryId=
-17-Nov-2018 16:58:20.746 INFO [http-nio-8081-exec-5] [resource.CourseResource] .invoke0 categoryListsize=0 | domainIdListSize=1
-17-Nov-2018 16:58:20.746 INFO [http-nio-8081-exec-5] dao.CourseDAO.searchCourse query=|domainId=[5]|categoryId=[]|sort=name-up|page=2
-17-Nov-2018 16:58:20.746 INFO [http-nio-8081-exec-5] dao.CourseDAO.searchCourse jpqlQuery=SELECT c FROM CourseEntity c where c.name like concat('%',:query,'%')  and c.domainId in ( 5)  order by c.name asc 
-17-Nov-2018 16:58:23.067 INFO [http-nio-8081-exec-6] [resource.CourseResource] .invoke0 start logging 
-17-Nov-2018 16:58:23.068 INFO [http-nio-8081-exec-6] [resource.CourseResource] .invoke0 getCourseByQuery() 
- query= 
- sort=name-up 
- page=3 
- domainId= 
- categoryId=
-17-Nov-2018 16:58:23.068 INFO [http-nio-8081-exec-6] [resource.CourseResource] .invoke0 categoryListsize=0 | domainIdListSize=1
-17-Nov-2018 16:58:23.068 INFO [http-nio-8081-exec-6] dao.CourseDAO.searchCourse query=|domainId=[5]|categoryId=[]|sort=name-up|page=3
-17-Nov-2018 16:58:23.068 INFO [http-nio-8081-exec-6] dao.CourseDAO.searchCourse jpqlQuery=SELECT c FROM CourseEntity c where c.name like concat('%',:query,'%')  and c.domainId in ( 5)  order by c.name asc 
-17-Nov-2018 16:58:25.730 INFO [http-nio-8081-exec-7] [resource.CourseResource] .invoke0 start logging 
-17-Nov-2018 16:58:25.730 INFO [http-nio-8081-exec-7] [resource.CourseResource] .invoke0 getCourseByQuery() 
- query= 
- sort=name-up 
- page=4 
- domainId= 
- categoryId=
-17-Nov-2018 16:58:25.730 INFO [http-nio-8081-exec-7] [resource.CourseResource] .invoke0 categoryListsize=0 | domainIdListSize=1
-17-Nov-2018 16:58:25.731 INFO [http-nio-8081-exec-7] dao.CourseDAO.searchCourse query=|domainId=[5]|categoryId=[]|sort=name-up|page=4
-17-Nov-2018 16:58:25.731 INFO [http-nio-8081-exec-7] dao.CourseDAO.searchCourse jpqlQuery=SELECT c FROM CourseEntity c where c.name like concat('%',:query,'%')  and c.domainId in ( 5)  order by c.name asc 
-17-Nov-2018 16:58:34.501 INFO [http-nio-8081-exec-9] [resource.CourseResource] .invoke0 start logging 
-17-Nov-2018 16:58:34.501 INFO [http-nio-8081-exec-9] [resource.CourseResource] .invoke0 getCourseByQuery() 
- query= 
- sort=name-up 
- page=5 
- domainId=8 
- categoryId=8
-17-Nov-2018 16:58:34.501 INFO [http-nio-8081-exec-9] [resource.CourseResource] .invoke0 categoryListsize=1 | domainIdListSize=1
-17-Nov-2018 16:58:34.501 INFO [http-nio-8081-exec-9] dao.CourseDAO.searchCourse query=|domainId=[5]|categoryId=[8]|sort=name-up|page=5
-17-Nov-2018 16:58:34.501 INFO [http-nio-8081-exec-9] dao.CourseDAO.searchCourse jpqlQuery=SELECT c FROM CourseEntity c where c.name like concat('%',:query,'%')  and c.domainId in ( 5)   and c.categoryId in ( 8)  order by c.name asc 
-17-Nov-2018 16:58:40.106 INFO [http-nio-8081-exec-8] [resource.CourseResource] .invoke0 start logging 
-17-Nov-2018 16:58:40.106 INFO [http-nio-8081-exec-8] [resource.CourseResource] .invoke0 getCourseByQuery() 
- query= 
- sort=name-up 
- page=1 
- domainId=8 
- categoryId=8
-17-Nov-2018 16:58:40.106 INFO [http-nio-8081-exec-8] [resource.CourseResource] .invoke0 categoryListsize=1 | domainIdListSize=1
-17-Nov-2018 16:58:40.106 INFO [http-nio-8081-exec-8] dao.CourseDAO.searchCourse query=|domainId=[5]|categoryId=[8]|sort=name-up|page=1
-17-Nov-2018 16:58:40.106 INFO [http-nio-8081-exec-8] dao.CourseDAO.searchCourse jpqlQuery=SELECT c FROM CourseEntity c where c.name like concat('%',:query,'%')  and c.domainId in ( 5)   and c.categoryId in ( 8)  order by c.name asc 
-17-Nov-2018 16:58:47.250 INFO [http-nio-8081-exec-10] [resource.CourseResource] .invoke0 start logging 
-17-Nov-2018 16:58:47.250 INFO [http-nio-8081-exec-10] [resource.CourseResource] .invoke0 getCourseByQuery() 
- query= 
- sort=name-up 
- page=1 
- domainId=9 
- categoryId=9
-17-Nov-2018 16:58:47.251 INFO [http-nio-8081-exec-10] [resource.CourseResource] .invoke0 categoryListsize=1 | domainIdListSize=1
-17-Nov-2018 16:58:47.251 INFO [http-nio-8081-exec-10] dao.CourseDAO.searchCourse query=|domainId=[5]|categoryId=[9]|sort=name-up|page=1
-17-Nov-2018 16:58:47.252 INFO [http-nio-8081-exec-10] dao.CourseDAO.searchCourse jpqlQuery=SELECT c FROM CourseEntity c where c.name like concat('%',:query,'%')  and c.domainId in ( 5)   and c.categoryId in ( 9)  order by c.name asc 
-17-Nov-2018 16:58:53.640 INFO [http-nio-8081-exec-2] [resource.CourseResource] .invoke0 start logging 
-17-Nov-2018 16:58:53.640 INFO [http-nio-8081-exec-2] [resource.CourseResource] .invoke0 getCourseByQuery() 
- query= 
- sort=name-up 
- page=1 
- domainId=6 
- categoryId=6
-17-Nov-2018 16:58:53.640 INFO [http-nio-8081-exec-2] [resource.CourseResource] .invoke0 categoryListsize=1 | domainIdListSize=1
-17-Nov-2018 16:58:53.640 INFO [http-nio-8081-exec-2] dao.CourseDAO.searchCourse query=|domainId=[5]|categoryId=[6]|sort=name-up|page=1
-17-Nov-2018 16:58:53.640 INFO [http-nio-8081-exec-2] dao.CourseDAO.searchCourse jpqlQuery=SELECT c FROM CourseEntity c where c.name like concat('%',:query,'%')  and c.domainId in ( 5)   and c.categoryId in ( 6)  order by c.name asc 
-Nov 17, 2018 5:13:16 PM org.apache.openejb.persistence.PersistenceBootstrap getDefaultProvider
+18-Nov-2018 21:26:40.583 INFO [http-nio-8081-exec-4] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication Using readers:
+18-Nov-2018 21:26:40.583 INFO [http-nio-8081-exec-4] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.provider.PrimitiveTextProvider@281bb6db
+18-Nov-2018 21:26:40.583 INFO [http-nio-8081-exec-4] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.provider.FormEncodingProvider@246f3094
+18-Nov-2018 21:26:40.583 INFO [http-nio-8081-exec-4] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.provider.MultipartProvider@46a305d
+18-Nov-2018 21:26:40.583 INFO [http-nio-8081-exec-4] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.provider.SourceProvider@396b43e2
+18-Nov-2018 21:26:40.584 INFO [http-nio-8081-exec-4] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.provider.JAXBElementTypedProvider@40cc498b
+18-Nov-2018 21:26:40.584 INFO [http-nio-8081-exec-4] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.provider.JAXBElementProvider@1dfa3a96
+18-Nov-2018 21:26:40.584 INFO [http-nio-8081-exec-4] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.openejb.server.cxf.rs.johnzon.TomEEJsonbProvider@7a9677f
+18-Nov-2018 21:26:40.584 INFO [http-nio-8081-exec-4] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.openejb.server.cxf.rs.johnzon.TomEEJsonpProvider@341dcf6c
+18-Nov-2018 21:26:40.584 INFO [http-nio-8081-exec-4] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.provider.StringTextProvider@5f7d116
+18-Nov-2018 21:26:40.585 INFO [http-nio-8081-exec-4] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.provider.BinaryDataProvider@22328a64
+18-Nov-2018 21:26:40.585 INFO [http-nio-8081-exec-4] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.provider.DataSourceProvider@57ea5d97
+18-Nov-2018 21:26:40.585 INFO [http-nio-8081-exec-4] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication Using writers:
+18-Nov-2018 21:26:40.585 INFO [http-nio-8081-exec-4] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.johnzon.jaxrs.WadlDocumentMessageBodyWriter@d568ea9
+18-Nov-2018 21:26:40.586 INFO [http-nio-8081-exec-4] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.nio.NioMessageBodyWriter@36129174
+18-Nov-2018 21:26:40.586 INFO [http-nio-8081-exec-4] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.provider.StringTextProvider@5f7d116
+18-Nov-2018 21:26:40.586 INFO [http-nio-8081-exec-4] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.provider.JAXBElementTypedProvider@40cc498b
+18-Nov-2018 21:26:40.586 INFO [http-nio-8081-exec-4] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.provider.PrimitiveTextProvider@281bb6db
+18-Nov-2018 21:26:40.586 INFO [http-nio-8081-exec-4] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.provider.FormEncodingProvider@246f3094
+18-Nov-2018 21:26:40.586 INFO [http-nio-8081-exec-4] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.provider.MultipartProvider@46a305d
+18-Nov-2018 21:26:40.586 INFO [http-nio-8081-exec-4] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.provider.SourceProvider@396b43e2
+18-Nov-2018 21:26:40.587 INFO [http-nio-8081-exec-4] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.provider.JAXBElementProvider@1dfa3a96
+18-Nov-2018 21:26:40.587 INFO [http-nio-8081-exec-4] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.openejb.server.cxf.rs.johnzon.TomEEJsonbProvider@7a9677f
+18-Nov-2018 21:26:40.587 INFO [http-nio-8081-exec-4] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.openejb.server.cxf.rs.johnzon.TomEEJsonpProvider@341dcf6c
+18-Nov-2018 21:26:40.587 INFO [http-nio-8081-exec-4] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.provider.BinaryDataProvider@22328a64
+18-Nov-2018 21:26:40.587 INFO [http-nio-8081-exec-4] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.provider.DataSourceProvider@57ea5d97
+18-Nov-2018 21:26:40.587 INFO [http-nio-8081-exec-4] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication Using exception mappers:
+18-Nov-2018 21:26:40.588 INFO [http-nio-8081-exec-4] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.impl.WebApplicationExceptionMapper@398132fe
+18-Nov-2018 21:26:40.588 INFO [http-nio-8081-exec-4] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.openejb.server.cxf.rs.EJBExceptionMapper@396f4bc8
+18-Nov-2018 21:26:40.588 INFO [http-nio-8081-exec-4] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.validation.ValidationExceptionMapper@227dacb1
+18-Nov-2018 21:26:40.588 INFO [http-nio-8081-exec-4] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.openejb.server.cxf.rs.CxfRsHttpListener$CxfResponseValidationExceptionMapper@a89c409
+18-Nov-2018 21:26:40.589 INFO [http-nio-8081-exec-4] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.logEndpoints REST Application: http://localhost:8081/resources                 -> resource.ApplicationConfig@13a1241d
+18-Nov-2018 21:26:40.591 INFO [http-nio-8081-exec-4] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.logEndpoints      Service URI: http://localhost:8081/resources/course          -> Pojo resource.CourseResource
+18-Nov-2018 21:26:40.591 INFO [http-nio-8081-exec-4] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.logEndpoints               GET http://localhost:8081/resources/course/         ->      List<CourseEntity> getCourseByQuery(String, String, String, String, int)
+18-Nov-2018 21:26:40.592 INFO [http-nio-8081-exec-4] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.logEndpoints               GET http://localhost:8081/resources/course/pdf/{id} ->      Response getPDF(int)                                                    
+18-Nov-2018 21:26:41.058 INFO [http-nio-8081-exec-6] servlet.HomeCrawlerServlet.processRequest Thử viết Unicode
+18-Nov-2018 21:26:41.058 INFO [http-nio-8081-exec-6] servlet.HomeCrawlerServlet.processRequest btAction=null
+18-Nov-2018 21:26:41.885 INFO [http-nio-8081-exec-10] servlet.HomeCrawlerServlet.processRequest Thử viết Unicode
+18-Nov-2018 21:26:41.885 INFO [http-nio-8081-exec-10] servlet.HomeCrawlerServlet.processRequest btAction=null
+18-Nov-2018 21:26:43.979 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] sun.reflect.DelegatingMethodAccessorImpl.invoke Deploying web application directory [/Users/ziggy192/Downloads/Setups/jar dependencies/apache-tomee-plume-8.0.0-M1/webapps/manager]
+18-Nov-2018 21:26:43.988 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.tomee.catalina.TomcatWebAppBuilder.init ------------------------- localhost -> /manager
+18-Nov-2018 21:26:43.992 WARNING [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.SetContextPropertiesRule.begin [SetContextPropertiesRule]{Context} Setting property 'cachingAllowed' to 'false' did not find a matching property.
+18-Nov-2018 21:26:44.144 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.openejb.config.ConfigurationFactory.configureApplication Configuring enterprise application: /Users/ziggy192/Downloads/Setups/jar dependencies/apache-tomee-plume-8.0.0-M1/webapps/manager
+18-Nov-2018 21:26:44.159 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.openejb.config.AppInfoBuilder.build Enterprise application "/Users/ziggy192/Downloads/Setups/jar dependencies/apache-tomee-plume-8.0.0-M1/webapps/manager" loaded.
+18-Nov-2018 21:26:44.159 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.openejb.assembler.classic.Assembler.createApplication Assembling app: /Users/ziggy192/Downloads/Setups/jar dependencies/apache-tomee-plume-8.0.0-M1/webapps/manager
+18-Nov-2018 21:26:44.175 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.tomee.catalina.TomcatWebAppBuilder.deployWebApps using context file /Users/ziggy192/Downloads/Setups/jar dependencies/apache-tomee-plume-8.0.0-M1/webapps/manager/META-INF/context.xml
+18-Nov-2018 21:26:44.175 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.openejb.assembler.classic.Assembler.createApplication Deployed Application(path=/Users/ziggy192/Downloads/Setups/jar dependencies/apache-tomee-plume-8.0.0-M1/webapps/manager)
+18-Nov-2018 21:26:44.306 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+18-Nov-2018 21:26:44.335 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] sun.reflect.DelegatingMethodAccessorImpl.invoke Deployment of web application directory [/Users/ziggy192/Downloads/Setups/jar dependencies/apache-tomee-plume-8.0.0-M1/webapps/manager] has finished in [359] ms
+18-Nov-2018 21:26:50.125 INFO [http-nio-8081-exec-3] org.apache.fop.events.LoggingEventListener.processEvent table-layout="fixed" and width="auto", but auto-layout not supported => assuming width="100%". (No context info available)
+18-Nov-2018 21:26:50.248 INFO [http-nio-8081-exec-3] org.apache.fop.events.LoggingEventListener.processEvent Rendered page #1.
+18-Nov-2018 21:27:09.093 INFO [http-nio-8081-exec-6] org.apache.fop.events.LoggingEventListener.processEvent table-layout="fixed" and width="auto", but auto-layout not supported => assuming width="100%". (No context info available)
+18-Nov-2018 21:27:09.120 INFO [http-nio-8081-exec-6] org.apache.fop.events.LoggingEventListener.processEvent Rendered page #1.
+18-Nov-2018 21:27:09.757 INFO [http-nio-8081-exec-8] org.apache.fop.events.LoggingEventListener.processEvent table-layout="fixed" and width="auto", but auto-layout not supported => assuming width="100%". (No context info available)
+18-Nov-2018 21:27:09.785 INFO [http-nio-8081-exec-8] org.apache.fop.events.LoggingEventListener.processEvent Rendered page #1.
+18-Nov-2018 21:27:10.561 INFO [http-nio-8081-exec-9] org.apache.fop.events.LoggingEventListener.processEvent table-layout="fixed" and width="auto", but auto-layout not supported => assuming width="100%". (No context info available)
+18-Nov-2018 21:27:10.590 INFO [http-nio-8081-exec-9] org.apache.fop.events.LoggingEventListener.processEvent Rendered page #1.
+18-Nov-2018 21:27:11.352 INFO [http-nio-8081-exec-10] org.apache.fop.events.LoggingEventListener.processEvent table-layout="fixed" and width="auto", but auto-layout not supported => assuming width="100%". (No context info available)
+18-Nov-2018 21:27:11.375 INFO [http-nio-8081-exec-10] org.apache.fop.events.LoggingEventListener.processEvent Rendered page #1.
+Nov 18, 2018 9:30:45 PM org.apache.openejb.persistence.PersistenceBootstrap getDefaultProvider
 INFO: Default JPA Provider changed to org.eclipse.persistence.jpa.PersistenceProvider specified by jar:file:/Users/ziggy192/Downloads/Setups/jar%20dependencies/apache-tomee-plume-8.0.0-M1/lib/openejb-core-eclipselink-8.0.0-M1.jar!/META-INF/org.apache.openejb.persistence.PersistenceBootstrap.provider
-17-Nov-2018 17:13:17.291 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke A valid shutdown command was received via the shutdown port. Stopping the Server instance.
-17-Nov-2018 17:13:17.341 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Pausing ProtocolHandler ["http-nio-8081"]
-17-Nov-2018 17:13:17.588 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Pausing ProtocolHandler ["ajp-nio-8009"]
-17-Nov-2018 17:13:17.597 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Stopping service [Catalina]
-17-Nov-2018 17:13:18.003 INFO [main] listerner.MainListener.contextDestroyed CrawlerServletListener: Context destroy
-17-Nov-2018 17:13:18.232 INFO [main] servlet.MainListener.contextDestroyed CrawlerServletListener: Context destroy
-17-Nov-2018 17:13:18.359 INFO [main] org.apache.openejb.assembler.classic.Assembler.destroyApplication Undeploying app: /Users/ziggy192/Documents/Code/Java/course-source-crawler/out/artifacts/course_source_crawler_war_exploded
-17-Nov-2018 17:13:20.327 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [ROOT] registered the JDBC driver [com.mysql.cj.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
-17-Nov-2018 17:13:20.329 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [ROOT] appears to have started a thread named [Abandoned connection cleanup thread] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+18-Nov-2018 21:30:46.184 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+18-Nov-2018 21:30:46.187 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Pausing ProtocolHandler ["http-nio-8081"]
+18-Nov-2018 21:30:46.247 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Pausing ProtocolHandler ["ajp-nio-8009"]
+18-Nov-2018 21:30:46.298 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Stopping service [Catalina]
+18-Nov-2018 21:30:46.320 INFO [main] listerner.MainListener.contextDestroyed CrawlerServletListener: Context destroy
+18-Nov-2018 21:30:46.442 INFO [main] config.ConfigManager.readConfigFile Config Validated | ConfigModel=ParserConfig{edumall=DomainType{domainUrl='https://edumall.vn', categoryMappingList=CategoryMappingList{categoryMapping=[CategoryMapping{source='Luyện thi', to=CategoryNameType{value='Luyện thi'}}|CategoryMapping{source='Multimedia', to=CategoryNameType{value='Multimedia'}}|CategoryMapping{source='Thiết kế', to=CategoryNameType{value='Thiết kế'}}|CategoryMapping{source='Phát triển cá nhân', to=CategoryNameType{value='Phát triển bản thân'}}|CategoryMapping{source='Tin học văn phòng', to=CategoryNameType{value='Tin học văn phòng'}}|CategoryMapping{source='Âm nhạc', to=null}|CategoryMapping{source='Marketing', to=CategoryNameType{value='Marketing'}}|CategoryMapping{source='Life style', to=CategoryNameType{value='Phong cách sống'}}|CategoryMapping{source='Ngoại ngữ', to=CategoryNameType{value='Ngoại ngữ'}}|CategoryMapping{source='Công nghệ thông tin', to=CategoryNameType{value='Công nghệ thông tin'}}|CategoryMapping{source='Thể thao và sức khỏe', to=CategoryNameType{value='Thể thao và sức khoẻ'}}|CategoryMapping{source='Kinh doanh khởi nghiệp', to=CategoryNameType{value='Kinh doanh'}}|CategoryMapping{source='Học thuật', to=CategoryNameType{value='Học thuật'}}|CategoryMapping{source='Nuôi dạy con', to=CategoryNameType{value='Trẻ con'}}|CategoryMapping{source='Phong thủy/Nhân tướng học', to=CategoryNameType{value='Khác'}}|]}, paginationSign=SignType{beginSign='class='list-paginate'', endSign='form class='form-paginate form-inline''}, categoryListSign=SignType{beginSign='col-xs col-sm col-md col-lg main-header-v4--content-c-header-left', endSign='col-xs col-sm col-md col-lg main-header-v4--content-c-header-search'}, courseListSign=SignType{beginSign='section class='area-display-courses'', endSign='</section>'}, courseDetailSign=SignType{beginSign='<div class='wrapper'', endSign='<section class='section_rating'}}, unica=DomainType{domainUrl='https://unica.vn', categoryMappingList=CategoryMappingList{categoryMapping=[CategoryMapping{source='Nhiếp ảnh, dựng phim', to=CategoryNameType{value='Multimedia'}}|CategoryMapping{source='Học Thiết kế', to=CategoryNameType{value='Thiết kế'}}|CategoryMapping{source='Khóa học Phát triển cá nhân', to=CategoryNameType{value='Phát triển bản thân'}}|CategoryMapping{source='Tin học văn phòng', to=CategoryNameType{value='Tin học văn phòng'}}|CategoryMapping{source='Âm nhạc', to=null}|CategoryMapping{source='Khóa học  Marketing', to=CategoryNameType{value='Marketing'}}|CategoryMapping{source='Phong cách sống', to=CategoryNameType{value='Phong cách sống'}}|CategoryMapping{source='Khóa học Tiếng Anh, Tiếng Nhật, Tiếng Hàn, Tiếng Trung Giao Tiếp', to=CategoryNameType{value='Ngoại ngữ'}}|CategoryMapping{source='Khóa học Công nghệ thông tin', to=CategoryNameType{value='Công nghệ thông tin'}}|CategoryMapping{source='Khóa học Sức khỏe - Giới tính', to=CategoryNameType{value='Thể thao và sức khoẻ'}}|CategoryMapping{source='Sale, bán hàng', to=CategoryNameType{value='Kinh doanh'}}|CategoryMapping{source='Khóa học Kinh doanh & Khởi nghiệp', to=CategoryNameType{value='Kinh doanh'}}|CategoryMapping{source='Khóa học Nuôi dạy con', to=CategoryNameType{value='Trẻ con'}}|]}, paginationSign=SignType{beginSign='<ul class="pagination"', endSign='<li class="next"'}, categoryListSign=SignType{beginSign='col-lg-3 col-md-3 col-sm-4 cate-md', endSign='col-lg-5 col-md-5 col-sm-4 cate-sm'}, courseListSign=SignType{beginSign='<div class="u-all-course"', endSign='<div class="u-number-page">'}, courseDetailSign=SignType{beginSign='<main', endSign='<input type="hidden" id="user_id"'}}, khoaHocOnline=DomainType{domainUrl='https://khoahoc.online', categoryMappingList=CategoryMappingList{categoryMapping=[CategoryMapping{source='Công Nghệ Đời Sống', to=CategoryNameType{value='Phong cách sống'}}|CategoryMapping{source='Công Nghệ Thông Tin', to=CategoryNameType{value='Công nghệ thông tin'}}|CategoryMapping{source='Đầu Tư Tài Chính', to=CategoryNameType{value='Kinh doanh'}}|CategoryMapping{source='Kiếm Tiền Online ( MMO )', to=CategoryNameType{value='Kinh doanh'}}|CategoryMapping{source='Kinh Doanh Và Khởi Nghiệp', to=CategoryNameType{value='Kinh doanh'}}|CategoryMapping{source='Phát Triển Bản Thân', to=CategoryNameType{value='Phát triển bản thân'}}|CategoryMapping{source='Sale - Marketting', to=CategoryNameType{value='Marketing'}}|CategoryMapping{source='Thiết Kế Đồ Họa', to=CategoryNameType{value='Thiết kế'}}|]}, paginationSign=SignType{beginSign='<nav class="learn-press-pagination navigation pagination"', endSign='</nav'}, categoryListSign=SignType{beginSign='<aside id="course-categories-3"', endSign='</aside'}, courseListSign=SignType{beginSign='<article id="post-0"', endSign='</article'}, courseDetailSign=SignType{beginSign='<main id="main"', endSign='<div id="sidebar"'}}, emoon=DomainType{domainUrl='https://emoon.vn', categoryMappingList=CategoryMappingList{categoryMapping=[CategoryMapping{source='Luyện thi TOEIC', to=CategoryNameType{value='Luyện thi'}}|CategoryMapping{source='Luyện thi  IELTS', to=CategoryNameType{value='Luyện thi'}}|CategoryMapping{source='Tiếng anh cơ bản', to=CategoryNameType{value='Ngoại ngữ'}}|CategoryMapping{source='Giao tiếp', to=CategoryNameType{value='Ngoại ngữ'}}|CategoryMapping{source='Ngữ pháp', to=CategoryNameType{value='Ngoại ngữ'}}|CategoryMapping{source='Toán cao cấp', to=CategoryNameType{value='Học thuật'}}|]}, paginationSign=SignType{beginSign='', endSign=''}, categoryListSign=SignType{beginSign='<ul class="navbar-nav ml-auto"', endSign='<ul class="navbar-nav navbar-right"'}, courseListSign=SignType{beginSign='<header', endSign='<footer class="py-5 bg-dark"'}, courseDetailSign=SignType{beginSign='<div class="bg_Course"', endSign='<footer class="py-5 bg-dark"'}}}
+18-Nov-2018 21:30:46.442 INFO [main] servlet.MainListener.contextDestroyed CrawlerServletListener: Context destroy
+18-Nov-2018 21:30:46.447 INFO [main] org.apache.openejb.assembler.classic.Assembler.destroyApplication Undeploying app: /Users/ziggy192/Documents/Code/Java/course-source-crawler/out/artifacts/course_source_crawler_war_exploded
+18-Nov-2018 21:30:46.892 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [ROOT] registered the JDBC driver [com.mysql.cj.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+18-Nov-2018 21:30:46.893 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [ROOT] appears to have started a thread named [Abandoned connection cleanup thread] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
  java.lang.Object.wait(Native Method)
  java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:144)
  com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:70)
  java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
  java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
  java.lang.Thread.run(Thread.java:748)
-17-Nov-2018 17:13:20.350 INFO [main] org.apache.openejb.assembler.classic.Assembler.destroyApplication Undeploying app: /Users/ziggy192/Downloads/Setups/jar dependencies/apache-tomee-plume-8.0.0-M1/webapps/manager
-17-Nov-2018 17:13:20.680 INFO [92] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Illegal access: this web application instance has been stopped already. Could not load []. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+18-Nov-2018 21:30:46.894 SEVERE [main] org.apache.catalina.loader.WebappClassLoaderBase.checkThreadLocalMapForLeaks The web application [ROOT] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@6bffbc6d]) and a value of type [org.apache.xerces.parsers.SAXParser] (value [org.apache.xerces.parsers.SAXParser@688c7442]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+18-Nov-2018 21:30:46.904 INFO [main] org.apache.openejb.assembler.classic.Assembler.destroyApplication Undeploying app: /Users/ziggy192/Downloads/Setups/jar dependencies/apache-tomee-plume-8.0.0-M1/webapps/manager
+18-Nov-2018 21:30:47.061 INFO [90] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Illegal access: this web application instance has been stopped already. Could not load []. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
  java.lang.IllegalStateException: Illegal access: this web application instance has been stopped already. Could not load []. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
 	at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1329)
 	at org.apache.catalina.loader.WebappClassLoaderBase.getResource(WebappClassLoaderBase.java:1006)
@@ -317,14 +220,14 @@ INFO: Default JPA Provider changed to org.eclipse.persistence.jpa.PersistencePro
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at java.lang.Thread.run(Thread.java:748)
 
-17-Nov-2018 17:13:20.690 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Stopping ProtocolHandler ["http-nio-8081"]
-17-Nov-2018 17:13:20.699 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Stopping ProtocolHandler ["ajp-nio-8009"]
-17-Nov-2018 17:13:20.702 INFO [main] org.apache.openejb.server.SimpleServiceManager.stop Stopping server services
-17-Nov-2018 17:13:20.723 INFO [main] org.apache.openejb.assembler.classic.Assembler.destroyApplication Undeploying app: openejb
-17-Nov-2018 17:13:20.726 SEVERE [main] org.apache.openejb.core.singleton.SingletonInstanceManager.undeploy Unable to unregister MBean openejb.management:J2EEServer=openejb,J2EEApplication=<empty>,EJBModule=openejb,SingletonSessionBean=openejb/Deployer,name=openejb/Deployer,j2eeType=Invocations
-17-Nov-2018 17:13:20.738 SEVERE [main] org.apache.openejb.core.singleton.SingletonInstanceManager.undeploy Unable to unregister MBean openejb.management:J2EEServer=openejb,J2EEApplication=<empty>,EJBModule=openejb,SingletonSessionBean=openejb/Deployer,name=openejb/Deployer,j2eeType=Invocations
-17-Nov-2018 17:13:20.793 INFO [main] org.apache.openejb.assembler.classic.Assembler.doResourceDestruction Closing DataSource: Default JDBC Database
-17-Nov-2018 17:13:20.803 INFO [main] org.apache.openejb.assembler.classic.Assembler.doResourceDestruction Closing DataSource: Default Unmanaged JDBC Database
-17-Nov-2018 17:13:20.810 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Destroying ProtocolHandler ["http-nio-8081"]
-17-Nov-2018 17:13:20.812 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Destroying ProtocolHandler ["ajp-nio-8009"]
+18-Nov-2018 21:30:47.067 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Stopping ProtocolHandler ["http-nio-8081"]
+18-Nov-2018 21:30:47.072 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Stopping ProtocolHandler ["ajp-nio-8009"]
+18-Nov-2018 21:30:47.075 INFO [main] org.apache.openejb.server.SimpleServiceManager.stop Stopping server services
+18-Nov-2018 21:30:47.087 INFO [main] org.apache.openejb.assembler.classic.Assembler.destroyApplication Undeploying app: openejb
+18-Nov-2018 21:30:47.094 SEVERE [main] org.apache.openejb.core.singleton.SingletonInstanceManager.undeploy Unable to unregister MBean openejb.management:J2EEServer=openejb,J2EEApplication=<empty>,EJBModule=openejb,SingletonSessionBean=openejb/Deployer,name=openejb/Deployer,j2eeType=Invocations
+18-Nov-2018 21:30:47.095 SEVERE [main] org.apache.openejb.core.singleton.SingletonInstanceManager.undeploy Unable to unregister MBean openejb.management:J2EEServer=openejb,J2EEApplication=<empty>,EJBModule=openejb,SingletonSessionBean=openejb/Deployer,name=openejb/Deployer,j2eeType=Invocations
+18-Nov-2018 21:30:47.135 INFO [main] org.apache.openejb.assembler.classic.Assembler.doResourceDestruction Closing DataSource: Default JDBC Database
+18-Nov-2018 21:30:47.142 INFO [main] org.apache.openejb.assembler.classic.Assembler.doResourceDestruction Closing DataSource: Default Unmanaged JDBC Database
+18-Nov-2018 21:30:47.151 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Destroying ProtocolHandler ["http-nio-8081"]
+18-Nov-2018 21:30:47.152 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Destroying ProtocolHandler ["ajp-nio-8009"]
 Disconnected from server

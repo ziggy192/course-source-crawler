@@ -37,6 +37,7 @@
     </xsd:simpleType>
     <xsd:complexType name="DomainType">
         <xsd:sequence>
+            <xsd:element name="ThreadLimit" type="xsd:positiveInteger"/>
             <xsd:element name="DomainUrl" type="URL"/>
             <xsd:element name="CategoryMappingList">
                 <xsd:complexType>
@@ -64,6 +65,8 @@
                 <xsd:element name="Edumall" type="DomainType"/>
                 <xsd:element name="Unica" type="DomainType"/>
                 <xsd:element name="KhoaHocOnline" type="DomainType"/>
+                <xsd:element name="Emoon" type="DomainType"/>
+                <xsd:element name="TuyenSinh247" type="DomainType"/>
             </xsd:all>
         </xsd:complexType>
     </xsd:element>
